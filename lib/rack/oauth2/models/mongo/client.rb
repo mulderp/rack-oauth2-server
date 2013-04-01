@@ -1,3 +1,6 @@
+require 'orm_adapter'
+require 'orm_adapter/adapters/active_record'
+
 module Rack
   module OAuth2
     class Server
@@ -66,8 +69,9 @@ module Rack
           end
 
           def collection
-            prefix = Server.options[:collection_prefix]
-            Server.database["#{prefix}.clients"]
+            # prefix = Server.options[:collection_prefix]
+            # Server.database["#{prefix}.clients"]
+            self.to_adapter
           end
         end
 

@@ -62,21 +62,13 @@ class AccessGrantTest < ActiveSupport::TestCase
   def setup
     super
     # Get authorization code.
-    params = { :redirect_uri=>client.redirect_uri, :client_id=>client.id, :client_secret=>client.secret, :response_type=>"code",
-               :scope=>"read write", :state=>"bring this back" }
+    params = { :redirect_uri=>client.redirect_uri, :client_id=>client.id, :client_secret=>client.secret, :response_type=>"code", :scope=>"read write", :state=>"bring this back" }
+
     get "/oauth/authorize?" + Rack::Utils.build_query(params)
     get last_response["Location"] if last_response.status == 303
     authorization = last_response.body[/authorization:\s*(\S+)/, 1]
     post "/oauth/grant", :authorization=>authorization
     @code = Rack::Utils.parse_query(URI.parse(last_response["Location"]).query)["code"]
-  end
-
-  test "request none" do
-    basic_authorize client.id, client.secret
-    # Note: This grant_type becomes "client_credentials" in version 11 of the OAuth 2.0 spec
-    params = { :grant_type=>"none", :scope=>"read write" }
-    params[:scope] = scope if scope
-    post "/oauth/access_token", params
   end
 
   def request_none(scope = nil)

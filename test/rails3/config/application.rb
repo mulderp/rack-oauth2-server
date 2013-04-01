@@ -1,8 +1,12 @@
+require File.expand_path('../boot', __FILE__)
+
 require "action_controller/railtie"
 
 if ORM == :active_record
   require "active_record/railtie"
 end
+
+require 'rack-oauth2-server'
 
 module MyApp
   class Application < Rails::Application
@@ -18,7 +22,7 @@ module MyApp
       config.oauth.authenticator = lambda do |username, password|
         "Batman" if username == "cowbell" && password == "more"
       end
-      config.middleware.use Rack::OAuth2::Server::Admin.mount
+      ## config.middleware.use Rack::OAuth2::Server::Admin.mount
     end
   end
 end
