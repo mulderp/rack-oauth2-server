@@ -4,7 +4,7 @@ require "openssl"
 
 
 # 4.  Obtaining an Access Token
-class AccessGrantTest < Test::Unit::TestCase
+class AccessGrantTest < ActiveSupport::TestCase
   module Helpers
 
     def should_return_error(error)
@@ -69,6 +69,14 @@ class AccessGrantTest < Test::Unit::TestCase
     authorization = last_response.body[/authorization:\s*(\S+)/, 1]
     post "/oauth/grant", :authorization=>authorization
     @code = Rack::Utils.parse_query(URI.parse(last_response["Location"]).query)["code"]
+  end
+
+  test "request none" do
+    basic_authorize client.id, client.secret
+    # Note: This grant_type becomes "client_credentials" in version 11 of the OAuth 2.0 spec
+    params = { :grant_type=>"none", :scope=>"read write" }
+    params[:scope] = scope if scope
+    post "/oauth/access_token", params
   end
 
   def request_none(scope = nil)

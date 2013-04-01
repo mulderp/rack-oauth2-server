@@ -1,13 +1,11 @@
-require "bundler"
-Bundler.setup
-require "test/unit"
-require "rack/test"
-require "shoulda"
-require "timecop"
-require "ap"
-require "json"
-require "logger"
+ENV["RAILS_ENV"] = "test"
+
+require 'mocha'
+require 'logger'
+require 'shoulda'
+
 $: << File.dirname(__FILE__) + "/../lib"
+$: << File.dirname(__FILE__)
 $: << File.expand_path(File.dirname(__FILE__) + "/..")
 require "rack/oauth2/server"
 require "rack/oauth2/server/admin"
@@ -15,8 +13,8 @@ require "rack/oauth2/server/admin"
 
 ENV["RACK_ENV"] = "test"
 ENV["DB"] = "rack_oauth2_server_test"
-DATABASE = Mongo::Connection.new[ENV["DB"]]
-FRAMEWORK = ENV["FRAMEWORK"] || "sinatra"
+# DATABASE = Mongo::Connection.new[ENV["DB"]]
+FRAMEWORK = ENV["FRAMEWORK"] || "rails"
 
 
 $logger = Logger.new("test.log")
@@ -53,18 +51,22 @@ when "sinatra", nil
 
 when "rails"
 
+  puts "*** Testing with Rails"
   RAILS_ENV = "test"
   RAILS_ROOT = File.dirname(__FILE__) + "/rails3"
-  begin
-    require "rails"
-  rescue LoadError
-  end
+  ORM = :active_record
+
+  require "rails"
+  require "rails/test_help"
 
   if defined?(Rails::Railtie)
+    puts "Testing with Rails #{Rails.version}"
     # Rails 3.x
     require "rack/oauth2/server/railtie"
-    require File.dirname(__FILE__) + "/rails3/config/environment"
-    puts "Testing with Rails #{Rails.version}"
+    require "#{RAILS_ROOT}/config/environment"
+#    require 'active_support/test_case'
+#    require 'active_record/fixtures'
+    require "orm/#{ORM}"
   
     class Test::Unit::TestCase
       def app

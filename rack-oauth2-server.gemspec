@@ -32,4 +32,5 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency 'ap', '~>0.1.1'
   spec.add_development_dependency 'crack', '~>0.3.2'
   spec.add_development_dependency 'rails', '~>3.0'
+  spec.add_dependency("orm_adapter", "~> 0.1")
 end

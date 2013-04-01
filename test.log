@@ -1,0 +1,937 @@
+# Logfile created on 2013-04-01 18:54:22 +0200 by logger.rb/31641
+I, [2013-04-01T18:54:23.798366 #22863]  INFO -- : RO2S: Client UberClient requested code with scope read write
+I, [2013-04-01T18:54:23.989086 #22863]  INFO -- : RO2S: Client 5159bbbeb9eab0594f000001 granted access code 27ff3d049886ba3812f9c11a572f450d8b3d031577c0786c772cea3a9df06a6e
+I, [2013-04-01T18:54:24.041473 #22863]  INFO -- : RO2S: Client UberClient requested code with scope read write
+I, [2013-04-01T18:54:24.048425 #22863]  INFO -- : RO2S: Client 5159bbc0b9eab0594f000003 granted access code b4e2cbd9eaa260cab690e3c7afb72abb7dedfa7a811e2f471987a724e8077695
+E, [2013-04-01T18:59:24.058133 #22863] ERROR -- : RO2S: Access token request error invalid_grant: This access grant expired
+I, [2013-04-01T18:54:24.078075 #22863]  INFO -- : RO2S: Client UberClient requested code with scope read write
+I, [2013-04-01T18:54:24.085352 #22863]  INFO -- : RO2S: Client 5159bbc0b9eab0594f000005 granted access code 9a0de7c744453c666cd21fea698e671cb6e97f0870f86384ccfc67fb259f899b
+E, [2013-04-01T18:59:24.090138 #22863] ERROR -- : RO2S: Access token request error invalid_grant: This access grant expired
+I, [2013-04-01T18:54:24.108690 #22863]  INFO -- : RO2S: Client UberClient requested code with scope read write
+I, [2013-04-01T18:54:24.115710 #22863]  INFO -- : RO2S: Client 5159bbc0b9eab0594f000007 granted access code f038d97d043691f85d5da6996bae5c4a0f74fcd1302bcd8ae9ffb1a18489b2f1
+E, [2013-04-01T18:59:24.119813 #22863] ERROR -- : RO2S: Access token request error invalid_grant: This access grant expired
+I, [2013-04-01T18:54:24.132914 #22863]  INFO -- : RO2S: Client UberClient requested code with scope read write
+I, [2013-04-01T18:54:24.139911 #22863]  INFO -- : RO2S: Client 5159bbc0b9eab0594f000009 granted access code c6e9d0fcd9cb2af581bf0052740a49cc2a1015108070b8110fa905f7d0c2d62c
+I, [2013-04-01T18:54:24.183077 #22863]  INFO -- : RO2S: Access token 6aa9e4d5baaec5434961663de9ec237a6f038eb0b0d1fdaf7a0ed09e9316047d granted to client UberClient, identity Batman
+E, [2013-04-01T18:54:24.186970 #22863] ERROR -- : RO2S: Access token request error invalid_grant: You can't use the same access grant twice
+I, [2013-04-01T18:54:24.203252 #22863]  INFO -- : RO2S: Client UberClient requested code with scope read write
+I, [2013-04-01T18:54:24.211029 #22863]  INFO -- : RO2S: Client 5159bbc0b9eab0594f00000b granted access code 3f3fb38f01698fa2185fffcd7fd4c638175af700c30214c48c299af0272c036e
+I, [2013-04-01T18:54:24.227278 #22863]  INFO -- : RO2S: Access token 8f1cea00e58ed634949ae2f09eca7f17ddf07603ce68718d08d9fe545aec9746 granted to client UberClient, identity Batman
+E, [2013-04-01T18:54:24.231131 #22863] ERROR -- : RO2S: Access token request error invalid_grant: You can't use the same access grant twice
+I, [2013-04-01T18:54:24.243752 #22863]  INFO -- : RO2S: Client UberClient requested code with scope read write
+I, [2013-04-01T18:54:24.250851 #22863]  INFO -- : RO2S: Client 5159bbc0b9eab0594f00000d granted access code 8cc054c26f5403a3acdee6fa21c28c2b31a0c8b9641fa3f11800e777f1d759fa
+I, [2013-04-01T18:54:24.262249 #22863]  INFO -- : RO2S: Access token 7530cf9c95dce9a06183bf64d420cebfb9fcf2a0ce8bbc5b7e5572b329eadef0 granted to client UberClient, identity Batman
+E, [2013-04-01T18:54:24.265894 #22863] ERROR -- : RO2S: Access token request error invalid_grant: You can't use the same access grant twice
+I, [2013-04-01T18:54:24.278470 #22863]  INFO -- : RO2S: Client UberClient requested code with scope read write
+I, [2013-04-01T18:54:24.285275 #22863]  INFO -- : RO2S: Client 5159bbc0b9eab0594f00000f granted access code 069fefd23f85f26983d2248ea8a04325136f417c1fca29d009db4d430e61c2a6
+I, [2013-04-01T18:54:24.315100 #22863]  INFO -- : RO2S: Access token ce9bae5463a1ac2c954d30ae1cb261d3dbcf31983a6668e1ee547bcb00b4840b granted to client UberClient, identity 1234567890
+I, [2013-04-01T18:54:24.329883 #22863]  INFO -- : RO2S: Client UberClient requested code with scope read write
+I, [2013-04-01T18:54:24.337146 #22863]  INFO -- : RO2S: Client 5159bbc0b9eab0594f000011 granted access code 03c0603bfc7048d364fa07d10c8ce89293056b979613666917acffc82cd5600f
+I, [2013-04-01T18:54:24.350994 #22863]  INFO -- : RO2S: Access token d2fbae202df78f88484d403016d9d45f71587c6e7004b84fd54cb866e7800531 granted to client UberClient, identity 1234567890
+I, [2013-04-01T18:54:24.364669 #22863]  INFO -- : RO2S: Client UberClient requested code with scope read write
+I, [2013-04-01T18:54:24.372419 #22863]  INFO -- : RO2S: Client 5159bbc0b9eab0594f000013 granted access code b40ebf2f482af3abe832a61d6a552e8c26a6751cc41f3959753c3d1c0c33f80f
+I, [2013-04-01T18:54:24.381242 #22863]  INFO -- : RO2S: Access token e89791d9f687e8d1bda66e49fba1c83180a9a8d5e4740b3caf58ffe0d914d0e4 granted to client UberClient, identity 1234567890
+I, [2013-04-01T18:54:24.395239 #22863]  INFO -- : RO2S: Client UberClient requested code with scope read write
+I, [2013-04-01T18:54:24.442364 #22863]  INFO -- : RO2S: Client 5159bbc0b9eab0594f000015 granted access code b0f6bc86e70c6675426ed24ad859b7b1f17ff7ece4bd65f6a268d91afab14ac3
+I, [2013-04-01T18:54:24.452896 #22863]  INFO -- : RO2S: Access token ec46f484a1252e029b77843f45ff8b6bd6c41318106548cd1c2f719419499256 granted to client UberClient, identity 1234567890
+I, [2013-04-01T18:54:24.465913 #22863]  INFO -- : RO2S: Client UberClient requested code with scope read write
+I, [2013-04-01T18:54:24.472532 #22863]  INFO -- : RO2S: Client 5159bbc0b9eab0594f000017 granted access code 1a6dbaea0ab7d2a6c4b4e5fd15a754b25c4838ff0a997951860c467fb56ad135
+I, [2013-04-01T18:54:24.480933 #22863]  INFO -- : RO2S: Access token bd99e6086021026169e2cf9bae09816d7b47cf93ae4b2ad2177f5ac43207c284 granted to client UberClient, identity 1234567890
+I, [2013-04-01T18:54:24.493590 #22863]  INFO -- : RO2S: Client UberClient requested code with scope read write
+I, [2013-04-01T18:54:24.500522 #22863]  INFO -- : RO2S: Client 5159bbc0b9eab0594f000019 granted access code 5a9fd42251cd906f28fabc56129748a2f9e9522e1761d996818fb6339cfa0d2e
+I, [2013-04-01T18:54:24.509412 #22863]  INFO -- : RO2S: Access token d40afba8e6156d155091d9db7fdf673503881fe921f617deb6c1f11c989a71f6 granted to client UberClient, identity 1234567890
+I, [2013-04-01T18:54:24.522269 #22863]  INFO -- : RO2S: Client UberClient requested code with scope read write
+I, [2013-04-01T18:54:24.529145 #22863]  INFO -- : RO2S: Client 5159bbc0b9eab0594f00001b granted access code 90ac4e676a418b9a91d1392a1e20b005f2f555646c1b5d4b6492482152dc0023
+E, [2013-04-01T18:54:24.535292 #22863] ERROR -- : RO2S: Access token request error invalid_grant: expired claims
+I, [2013-04-01T18:54:24.547128 #22863]  INFO -- : RO2S: Client UberClient requested code with scope read write
+I, [2013-04-01T18:54:24.556942 #22863]  INFO -- : RO2S: Client 5159bbc0b9eab0594f00001d granted access code 8196bf6e900e74ccd2415373b0a1023e2a312dc2d14a8cbeeef6405e73ba4781
+E, [2013-04-01T18:54:24.563223 #22863] ERROR -- : RO2S: Access token request error invalid_grant: expired claims
+I, [2013-04-01T18:54:24.575091 #22863]  INFO -- : RO2S: Client UberClient requested code with scope read write
+I, [2013-04-01T18:54:24.581709 #22863]  INFO -- : RO2S: Client 5159bbc0b9eab0594f00001f granted access code 38d44097dd6b04eee22bbfbbb57dd6a4618558749ff7910d7f31586899cc8964
+E, [2013-04-01T18:54:24.587919 #22863] ERROR -- : RO2S: Access token request error invalid_grant: expired claims
+I, [2013-04-01T18:54:24.600101 #22863]  INFO -- : RO2S: Client UberClient requested code with scope read write
+I, [2013-04-01T18:54:24.607246 #22863]  INFO -- : RO2S: Client 5159bbc0b9eab0594f000021 granted access code 1207f459630e69a92e4035748e5009788a53d62163bf9aaa02bd466e8fef1840
+E, [2013-04-01T18:54:24.611115 #22863] ERROR -- : RO2S: Access token request error invalid_grant: Invalid segment encoding
+I, [2013-04-01T18:54:24.623341 #22863]  INFO -- : RO2S: Client UberClient requested code with scope read write
+I, [2013-04-01T18:54:24.630050 #22863]  INFO -- : RO2S: Client 5159bbc0b9eab0594f000023 granted access code 8b053c50b456fac37b04eab191e205093367163601e131a826e965a200bdc3b0
+E, [2013-04-01T18:54:24.634391 #22863] ERROR -- : RO2S: Access token request error invalid_grant: Invalid segment encoding
+I, [2013-04-01T18:54:24.645589 #22863]  INFO -- : RO2S: Client UberClient requested code with scope read write
+I, [2013-04-01T18:54:24.653978 #22863]  INFO -- : RO2S: Client 5159bbc0b9eab0594f000025 granted access code aaad9a6385788aa540f397e6d4871ddb806e5c90a51653705ad4044374d9f6a4
+E, [2013-04-01T18:54:24.657934 #22863] ERROR -- : RO2S: Access token request error invalid_grant: Invalid segment encoding
+I, [2013-04-01T18:54:24.669514 #22863]  INFO -- : RO2S: Client UberClient requested code with scope read write
+I, [2013-04-01T18:54:24.676347 #22863]  INFO -- : RO2S: Client 5159bbc0b9eab0594f000027 granted access code 00360f93db0e575068d5284754bf7870358506e0d20d528d40e9a32115e12707
+E, [2013-04-01T18:54:24.682833 #22863] ERROR -- : RO2S: Access token request error invalid_grant: missing audience claim
+I, [2013-04-01T18:54:24.738302 #22863]  INFO -- : RO2S: Client UberClient requested code with scope read write
+I, [2013-04-01T18:54:24.745150 #22863]  INFO -- : RO2S: Client 5159bbc0b9eab0594f000029 granted access code a1e692d0dc32f99da639deb992103b7082b83c8bb1ca5e15ea7b453973a484fe
+E, [2013-04-01T18:54:24.751662 #22863] ERROR -- : RO2S: Access token request error invalid_grant: missing audience claim
+I, [2013-04-01T18:54:24.764129 #22863]  INFO -- : RO2S: Client UberClient requested code with scope read write
+I, [2013-04-01T18:54:24.771700 #22863]  INFO -- : RO2S: Client 5159bbc0b9eab0594f00002b granted access code c0dae9cf3146f2c8904a48d4aeee81662fbcf73b45be873508f668de574ee3ab
+E, [2013-04-01T18:54:24.778040 #22863] ERROR -- : RO2S: Access token request error invalid_grant: missing audience claim
+I, [2013-04-01T18:54:24.790151 #22863]  INFO -- : RO2S: Client UberClient requested code with scope read write
+I, [2013-04-01T18:54:24.797374 #22863]  INFO -- : RO2S: Client 5159bbc0b9eab0594f00002d granted access code 20c735b24da08df2bb391019a981bf969d4befd9cfe75511ac88a3d7e6296ee9
+E, [2013-04-01T18:54:24.803688 #22863] ERROR -- : RO2S: Access token request error invalid_grant: Signature verification failed
+I, [2013-04-01T18:54:24.815664 #22863]  INFO -- : RO2S: Client UberClient requested code with scope read write
+I, [2013-04-01T18:54:24.822982 #22863]  INFO -- : RO2S: Client 5159bbc0b9eab0594f00002f granted access code d7a861a121964bbc5ff88697fc0e1b014023e41610055b3a44882dbf3aee965b
+E, [2013-04-01T18:54:24.829283 #22863] ERROR -- : RO2S: Access token request error invalid_grant: Signature verification failed
+I, [2013-04-01T18:54:24.841000 #22863]  INFO -- : RO2S: Client UberClient requested code with scope read write
+I, [2013-04-01T18:54:24.847547 #22863]  INFO -- : RO2S: Client 5159bbc0b9eab0594f000031 granted access code daba977855ab2c62ca7ac13fb3b34ca8079eb6f53492be42e563c76e5b723902
+E, [2013-04-01T18:54:24.853838 #22863] ERROR -- : RO2S: Access token request error invalid_grant: Signature verification failed
+I, [2013-04-01T18:54:24.866461 #22863]  INFO -- : RO2S: Client UberClient requested code with scope read write
+I, [2013-04-01T18:54:24.873967 #22863]  INFO -- : RO2S: Client 5159bbc0b9eab0594f000033 granted access code 07576b18b3fd839aec6467cf766d909c7e8b275806b21bd007382eed6b6a8ef9
+E, [2013-04-01T18:54:24.878020 #22863] ERROR -- : RO2S: Access token request error invalid_grant: missing issuer claim
+I, [2013-04-01T18:54:24.890406 #22863]  INFO -- : RO2S: Client UberClient requested code with scope read write
+I, [2013-04-01T18:54:24.897556 #22863]  INFO -- : RO2S: Client 5159bbc0b9eab0594f000035 granted access code 1f55d4700634d6e098bb80adadec25fd87a0383362637f2d4a98a7b45c5e4227
+E, [2013-04-01T18:54:24.901728 #22863] ERROR -- : RO2S: Access token request error invalid_grant: missing issuer claim
+I, [2013-04-01T18:54:24.913213 #22863]  INFO -- : RO2S: Client UberClient requested code with scope read write
+I, [2013-04-01T18:54:24.921358 #22863]  INFO -- : RO2S: Client 5159bbc0b9eab0594f000037 granted access code bb9c02524b67389621afb415e1a41c812786aea811e915b22445405d5107f86e
+E, [2013-04-01T18:54:24.927413 #22863] ERROR -- : RO2S: Access token request error invalid_grant: missing issuer claim
+I, [2013-04-01T18:54:24.939741 #22863]  INFO -- : RO2S: Client UberClient requested code with scope read write
+I, [2013-04-01T18:54:24.947382 #22863]  INFO -- : RO2S: Client 5159bbc0b9eab0594f000039 granted access code e1d853bd8c0848a9417525f338ad9130f52831296da3ffa0bcf3122b2b5719a7
+E, [2013-04-01T18:54:24.953641 #22863] ERROR -- : RO2S: Access token request error invalid_grant: missing principal claim
+I, [2013-04-01T18:54:24.965823 #22863]  INFO -- : RO2S: Client UberClient requested code with scope read write
+I, [2013-04-01T18:54:24.973220 #22863]  INFO -- : RO2S: Client 5159bbc0b9eab0594f00003b granted access code 6b31a324de1192d770b48c10bb73f5ae7393a063dfd2f2a2d086708f7278efd7
+E, [2013-04-01T18:54:25.020516 #22863] ERROR -- : RO2S: Access token request error invalid_grant: missing principal claim
+I, [2013-04-01T18:54:25.032904 #22863]  INFO -- : RO2S: Client UberClient requested code with scope read write
+I, [2013-04-01T18:54:25.039926 #22863]  INFO -- : RO2S: Client 5159bbc1b9eab0594f00003d granted access code 104ab347c414b67cf00ab2d4c5dbe8d17eb668d5f9906c855cc5d676971c4148
+E, [2013-04-01T18:54:25.046099 #22863] ERROR -- : RO2S: Access token request error invalid_grant: missing principal claim
+I, [2013-04-01T18:54:25.062607 #22863]  INFO -- : RO2S: Client UberClient requested code with scope read write
+I, [2013-04-01T18:54:25.073452 #22863]  INFO -- : RO2S: Client 5159bbc1b9eab0594f00003f granted access code db75c021816287ef154a75ea81adf7a03333b2e500f70b39a37b37ea74ea0800
+E, [2013-04-01T18:54:25.079068 #22863] ERROR -- : RO2S: Access token request error invalid_grant: Invalid issuer
+I, [2013-04-01T18:54:25.092489 #22863]  INFO -- : RO2S: Client UberClient requested code with scope read write
+I, [2013-04-01T18:54:25.099685 #22863]  INFO -- : RO2S: Client 5159bbc1b9eab0594f000041 granted access code a2e4d333c74e49f0ed6308c1ad0d2e86abb20ec112ef9c5724098724af7eaca8
+E, [2013-04-01T18:54:25.104044 #22863] ERROR -- : RO2S: Access token request error invalid_grant: Invalid issuer
+I, [2013-04-01T18:54:25.115095 #22863]  INFO -- : RO2S: Client UberClient requested code with scope read write
+I, [2013-04-01T18:54:25.122332 #22863]  INFO -- : RO2S: Client 5159bbc1b9eab0594f000043 granted access code fe336c1a5d1bd4a4d5743c4fe843d020d304690328196513bfe5232d2f2facf8
+E, [2013-04-01T18:54:25.126568 #22863] ERROR -- : RO2S: Access token request error invalid_grant: Invalid issuer
+I, [2013-04-01T18:54:25.138180 #22863]  INFO -- : RO2S: Client UberClient requested code with scope read write
+I, [2013-04-01T18:54:25.144915 #22863]  INFO -- : RO2S: Client 5159bbc1b9eab0594f000045 granted access code 062a3020266c372c7f02fd5337d25e4b066ea6512ea7801b801de4c371659cd1
+I, [2013-04-01T18:54:25.160678 #22863]  INFO -- : RO2S: Access token 072b489045f789f25657adc168cf8284853c61ee167c633ff73ecd2a2f2e0f89 granted to client UberClient, identity 1234567890
+I, [2013-04-01T18:54:25.173808 #22863]  INFO -- : RO2S: Client UberClient requested code with scope read write
+I, [2013-04-01T18:54:25.180902 #22863]  INFO -- : RO2S: Client 5159bbc1b9eab0594f000047 granted access code e4acf69cc6d28aacfbe343cc7ae1d92f95738dc3839915547423591bef9ba908
+I, [2013-04-01T18:54:25.189831 #22863]  INFO -- : RO2S: Access token e6ee98c20f33522df379dff1eda913d68066feb6472beacafef854a12c705e2a granted to client UberClient, identity 1234567890
+I, [2013-04-01T18:54:25.201636 #22863]  INFO -- : RO2S: Client UberClient requested code with scope read write
+I, [2013-04-01T18:54:25.209054 #22863]  INFO -- : RO2S: Client 5159bbc1b9eab0594f000049 granted access code e357e66848c126803d8c30e7919ea7e985e7c6caf445e0fbba047d12a9bf4dfb
+I, [2013-04-01T18:54:25.217813 #22863]  INFO -- : RO2S: Access token 74794a854bd48f4253edefa6afad9ef6fa6380f6beabd589ee55dbc41219e054 granted to client UberClient, identity 1234567890
+I, [2013-04-01T18:54:25.230401 #22863]  INFO -- : RO2S: Client UberClient requested code with scope read write
+I, [2013-04-01T18:54:25.237230 #22863]  INFO -- : RO2S: Client 5159bbc1b9eab0594f00004b granted access code 231b7d5c24789090cd6aab494220c084cc72e7868e943b5d364bc5adaa65087f
+I, [2013-04-01T18:54:25.245616 #22863]  INFO -- : RO2S: Access token 2c4e9c81175d8366a76d49589a5c51c3eec9baca63ebbd051e558a5b77b8a9af granted to client UberClient, identity 1234567890
+I, [2013-04-01T18:54:25.257985 #22863]  INFO -- : RO2S: Client UberClient requested code with scope read write
+I, [2013-04-01T18:54:25.265067 #22863]  INFO -- : RO2S: Client 5159bbc1b9eab0594f00004d granted access code b280a52a8333e9abf2401b5333cfa38df5da8bf16243043a587bfb7d1592ee3a
+I, [2013-04-01T18:54:25.274224 #22863]  INFO -- : RO2S: Access token 2fb9b067abcbb6a3fed7925749c95b5954cea5e7d2b5182f01ef18fef5221d8e granted to client UberClient, identity 1234567890
+I, [2013-04-01T18:54:25.327377 #22863]  INFO -- : RO2S: Client UberClient requested code with scope read write
+I, [2013-04-01T18:54:25.334540 #22863]  INFO -- : RO2S: Client 5159bbc1b9eab0594f00004f granted access code ea2564f69b07217e97fd77e8d7afb7bb923d483fd9c96eac88cccb611e6f7d65
+I, [2013-04-01T18:54:25.343936 #22863]  INFO -- : RO2S: Access token 3460fd1474401166df66bbfbfa6a4ce257764ee862abe89128ffed641d07e10f granted to client UberClient, identity 1234567890
+I, [2013-04-01T18:54:25.356109 #22863]  INFO -- : RO2S: Client UberClient requested code with scope read write
+I, [2013-04-01T18:54:25.362772 #22863]  INFO -- : RO2S: Client 5159bbc1b9eab0594f000051 granted access code 048b4b379a0bd9819b09e193fcf3c84ee35ed504f3bba07deeabaf7af915645d
+I, [2013-04-01T18:54:25.846506 #22863]  INFO -- : RO2S: Access token 93e1bba7472be8b7db86f443c279873d94c18494a5fafc9f7422899e108e62bf granted to client UberClient, identity 1234567890
+I, [2013-04-01T18:54:25.859233 #22863]  INFO -- : RO2S: Client UberClient requested code with scope read write
+I, [2013-04-01T18:54:25.865797 #22863]  INFO -- : RO2S: Client 5159bbc1b9eab0594f000053 granted access code 2f02eaf005a212604a1d55d42452c92791882098e49a4f7337cd324952ecbc09
+I, [2013-04-01T18:54:25.923909 #22863]  INFO -- : RO2S: Access token dc8d2ef3788f5c9a3b5ea632bb77382b37e6ca7c75e407ff740c6b2615c288bc granted to client UberClient, identity 1234567890
+I, [2013-04-01T18:54:25.935491 #22863]  INFO -- : RO2S: Client UberClient requested code with scope read write
+I, [2013-04-01T18:54:26.032390 #22863]  INFO -- : RO2S: Client 5159bbc1b9eab0594f000055 granted access code 9b56cd8cd2d86277abb0c6fee26662cbff62cc6e445332e9a27d29ff2bd47a68
+I, [2013-04-01T18:54:26.054546 #22863]  INFO -- : RO2S: Access token a6603af6c5cea49e04dec5ce666df3ed22aa1bfea250d3fdba564b07b66fcf81 granted to client UberClient, identity 1234567890
+I, [2013-04-01T18:54:26.070513 #22863]  INFO -- : RO2S: Client UberClient requested code with scope read write
+I, [2013-04-01T18:54:26.077528 #22863]  INFO -- : RO2S: Client 5159bbc2b9eab0594f000057 granted access code e588be13c00df001e92244bbc7ccd3f46e2e8a47c55a715cc60c0b5ca0105f0e
+I, [2013-04-01T18:54:26.095521 #22863]  INFO -- : RO2S: Access token 599e78d1f777355a1d82af07c151589e8af77f823e451f1c3b7643c7ffbddb3f granted to client UberClient, identity 1234567890
+I, [2013-04-01T18:54:26.108335 #22863]  INFO -- : RO2S: Client UberClient requested code with scope read write
+I, [2013-04-01T18:54:26.115024 #22863]  INFO -- : RO2S: Client 5159bbc2b9eab0594f000059 granted access code a4cbdb56e194ca83e332a61e700586e25a1e38389e8d9a1e59494fa37c9885d1
+I, [2013-04-01T18:54:26.130917 #22863]  INFO -- : RO2S: Access token 142f4c60d0e657f15e36603b11ac67be3fb681cc60db1028e901b31a8a7c63ed granted to client UberClient, identity 1234567890
+I, [2013-04-01T18:54:26.143769 #22863]  INFO -- : RO2S: Client UberClient requested code with scope read write
+I, [2013-04-01T18:54:26.150949 #22863]  INFO -- : RO2S: Client 5159bbc2b9eab0594f00005b granted access code 9041f4f8a47dee1f2d438ddedd3e11da634fd8880f07670de6162d96f85d7c83
+I, [2013-04-01T18:54:26.184405 #22863]  INFO -- : RO2S: Access token 2e4eeccb8ad042aacb23dcc3c9ea6683d19b1076e18af32617dc3c78de121ef5 granted to client UberClient, identity 1234567890
+I, [2013-04-01T18:54:26.197224 #22863]  INFO -- : RO2S: Client UberClient requested code with scope read write
+I, [2013-04-01T18:54:26.204240 #22863]  INFO -- : RO2S: Client 5159bbc2b9eab0594f00005d granted access code 7c760b5a423eb7f6afa19eafd6f0b1c7292ca954e65e4ecfede52fc7f9fa9580
+I, [2013-04-01T18:54:26.209555 #22863]  INFO -- : RO2S: Access token 499d95f836a9ab37d008cc46598d3bd46813c632294d4b0063c028f55c8f3f51 granted to client UberClient, identity Spiderman
+E, [2013-04-01T18:54:26.211802 #22863] ERROR -- : RO2S: Access token request error invalid_grant: Unknown assertion for special_assertion_type
+I, [2013-04-01T18:54:26.223270 #22863]  INFO -- : RO2S: Client UberClient requested code with scope read write
+I, [2013-04-01T18:54:26.230005 #22863]  INFO -- : RO2S: Client 5159bbc2b9eab0594f00005f granted access code af2dd70b86d93af917442923cce30057952b2c7cea6d6c1ca135b80d2250741d
+I, [2013-04-01T18:54:26.235447 #22863]  INFO -- : RO2S: Access token 053e0eac98a607e9ad52d3c82ec5197a8d97162d905ea941bf176012aecf7bef granted to client UberClient, identity Spiderman
+E, [2013-04-01T18:54:26.237938 #22863] ERROR -- : RO2S: Access token request error invalid_grant: Unknown assertion for special_assertion_type
+I, [2013-04-01T18:54:26.249960 #22863]  INFO -- : RO2S: Client UberClient requested code with scope read write
+I, [2013-04-01T18:54:26.256730 #22863]  INFO -- : RO2S: Client 5159bbc2b9eab0594f000061 granted access code d3cbacde3a1e1ca42dc01d05497f8bab95ab3a8cbe4dc84cfbcddf8fbdb24b19
+I, [2013-04-01T18:54:26.261896 #22863]  INFO -- : RO2S: Access token 51c60a77a37c4fcb73aa706a10a7dbaba0a0f001b22b754cd017de4f7b676c1d granted to client UberClient, identity Spiderman
+E, [2013-04-01T18:54:26.264178 #22863] ERROR -- : RO2S: Access token request error invalid_grant: Unknown assertion for special_assertion_type
+I, [2013-04-01T18:54:26.275430 #22863]  INFO -- : RO2S: Client UberClient requested code with scope read write
+I, [2013-04-01T18:54:26.325260 #22863]  INFO -- : RO2S: Client 5159bbc2b9eab0594f000063 granted access code a2b5e0fcc436e77baecc375830a223b2ab2905bff99eda23a2825d09d5a3d399
+I, [2013-04-01T18:54:26.330747 #22863]  INFO -- : RO2S: Access token 781230b4a018d83c0870a04475390526481cacb516d036ecea26a64463bd8e80 granted to client UberClient, identity Spiderman
+I, [2013-04-01T18:54:26.334133 #22863]  INFO -- : RO2S: Access token 781230b4a018d83c0870a04475390526481cacb516d036ecea26a64463bd8e80 granted to client UberClient, identity Spiderman
+I, [2013-04-01T18:54:26.346474 #22863]  INFO -- : RO2S: Client UberClient requested code with scope read write
+I, [2013-04-01T18:54:26.353451 #22863]  INFO -- : RO2S: Client 5159bbc2b9eab0594f000065 granted access code 4716ea3bb76861daa6aff0c082fd84e7e4d8c3a03f15c4abc573dc1389d9a84a
+I, [2013-04-01T18:54:26.358363 #22863]  INFO -- : RO2S: Access token bb2745cfff06bd8609ba50830f62168043b78fc8c24f02f76eecaf45762376c3 granted to client UberClient, identity Spiderman
+I, [2013-04-01T18:54:26.361323 #22863]  INFO -- : RO2S: Access token bb2745cfff06bd8609ba50830f62168043b78fc8c24f02f76eecaf45762376c3 granted to client UberClient, identity Spiderman
+I, [2013-04-01T18:54:26.372899 #22863]  INFO -- : RO2S: Client UberClient requested code with scope read write
+I, [2013-04-01T18:54:26.380190 #22863]  INFO -- : RO2S: Client 5159bbc2b9eab0594f000067 granted access code ccc9fb045ffd14b4a9361af599a2a9539cd5911c116c2fbd42395c309e56f7cc
+I, [2013-04-01T18:54:26.385333 #22863]  INFO -- : RO2S: Access token 097c8be945fc2bbb1d9eee0b96ef96ce40f69de700606d4405dd403d3dde038b granted to client UberClient, identity Spiderman
+I, [2013-04-01T18:54:26.388359 #22863]  INFO -- : RO2S: Access token 097c8be945fc2bbb1d9eee0b96ef96ce40f69de700606d4405dd403d3dde038b granted to client UberClient, identity Spiderman
+I, [2013-04-01T18:54:26.400061 #22863]  INFO -- : RO2S: Client UberClient requested code with scope read write
+I, [2013-04-01T18:54:26.406764 #22863]  INFO -- : RO2S: Client 5159bbc2b9eab0594f000069 granted access code 34252b0402c0f43adef5a15209055a505d73fbb6bd7f489b01151fab1feb076d
+I, [2013-04-01T18:54:26.411753 #22863]  INFO -- : RO2S: Access token b9fb477bc9e70a633b90db8d5f9cdd97b684bea5eda9e9058fed6a57b41dac20 granted to client UberClient, identity Spiderman
+I, [2013-04-01T18:54:26.414586 #22863]  INFO -- : RO2S: Access token b9fb477bc9e70a633b90db8d5f9cdd97b684bea5eda9e9058fed6a57b41dac20 granted to client UberClient, identity Spiderman
+I, [2013-04-01T18:54:26.425864 #22863]  INFO -- : RO2S: Client UberClient requested code with scope read write
+I, [2013-04-01T18:54:26.432787 #22863]  INFO -- : RO2S: Client 5159bbc2b9eab0594f00006b granted access code 906e161e6f41f3b1ce98275f200e0862241292d7b3e4dbdc1c4c53c4868a1882
+I, [2013-04-01T18:54:26.438020 #22863]  INFO -- : RO2S: Access token bbeb38314c705f2b5ae2cdb35928fba1b4988be5975c9548dac0ab2baabe9dd4 granted to client UberClient, identity Spiderman
+I, [2013-04-01T18:54:26.441583 #22863]  INFO -- : RO2S: Access token bbeb38314c705f2b5ae2cdb35928fba1b4988be5975c9548dac0ab2baabe9dd4 granted to client UberClient, identity Spiderman
+I, [2013-04-01T18:54:26.453153 #22863]  INFO -- : RO2S: Client UberClient requested code with scope read write
+I, [2013-04-01T18:54:26.459886 #22863]  INFO -- : RO2S: Client 5159bbc2b9eab0594f00006d granted access code 84a0b0d07a976d3a781d33adf73d18b5a89e6c8217ad67f214ed915695a0eecb
+I, [2013-04-01T18:54:26.464817 #22863]  INFO -- : RO2S: Access token 319ef6cb7f73b836ed1086a86d732e84c6fd4764dd44a39535f29369325837f4 granted to client UberClient, identity Spiderman
+I, [2013-04-01T18:54:26.467840 #22863]  INFO -- : RO2S: Access token 319ef6cb7f73b836ed1086a86d732e84c6fd4764dd44a39535f29369325837f4 granted to client UberClient, identity Spiderman
+I, [2013-04-01T18:54:26.479203 #22863]  INFO -- : RO2S: Client UberClient requested code with scope read write
+I, [2013-04-01T18:54:26.486852 #22863]  INFO -- : RO2S: Client 5159bbc2b9eab0594f00006f granted access code 1393c9cfeb51332c9a2f1e87e2f16bdd0c8d482f941ecab6a21412a5298a982c
+I, [2013-04-01T18:54:26.491760 #22863]  INFO -- : RO2S: Access token 1b1325dddd6c2f570e9d69a0b6aaa33deaf9fda618c2cf0a31fc515c3c5034fe granted to client UberClient, identity Spiderman
+I, [2013-04-01T18:54:26.494668 #22863]  INFO -- : RO2S: Access token 1b1325dddd6c2f570e9d69a0b6aaa33deaf9fda618c2cf0a31fc515c3c5034fe granted to client UberClient, identity Spiderman
+I, [2013-04-01T18:54:26.507806 #22863]  INFO -- : RO2S: Client UberClient requested code with scope read write
+I, [2013-04-01T18:54:26.514807 #22863]  INFO -- : RO2S: Client 5159bbc2b9eab0594f000071 granted access code c74c5c7a66a29d5139dc3640c0e183b83687642b9b934b7d75dcdc9bd2e1d705
+I, [2013-04-01T18:54:26.519647 #22863]  INFO -- : RO2S: Access token 2f0dc459083e8e29a0102233de4b17a7a89789670ab8bd4664f0b9f8445baed2 granted to client UberClient, identity Spiderman
+I, [2013-04-01T18:54:26.522608 #22863]  INFO -- : RO2S: Access token 2f0dc459083e8e29a0102233de4b17a7a89789670ab8bd4664f0b9f8445baed2 granted to client UberClient, identity Spiderman
+I, [2013-04-01T18:54:26.535138 #22863]  INFO -- : RO2S: Client UberClient requested code with scope read write
+I, [2013-04-01T18:54:26.543377 #22863]  INFO -- : RO2S: Client 5159bbc2b9eab0594f000073 granted access code 6015612f6c8654c21a778301f1b0a6d8d70b540d3b071f72fc26b90e7dc02064
+E, [2013-04-01T18:54:26.547073 #22863] ERROR -- : RO2S: Access token request error invalid_grant: Missing assertion_type/assertion
+I, [2013-04-01T18:54:26.560498 #22863]  INFO -- : RO2S: Client UberClient requested code with scope read write
+I, [2013-04-01T18:54:26.568901 #22863]  INFO -- : RO2S: Client 5159bbc2b9eab0594f000075 granted access code 05eccbed9fdd6f47cc8263ce481a543cfb734a470efd5b07639e6cc836326504
+E, [2013-04-01T18:54:26.572089 #22863] ERROR -- : RO2S: Access token request error invalid_grant: Missing assertion_type/assertion
+I, [2013-04-01T18:54:26.586369 #22863]  INFO -- : RO2S: Client UberClient requested code with scope read write
+I, [2013-04-01T18:54:26.594762 #22863]  INFO -- : RO2S: Client 5159bbc2b9eab0594f000077 granted access code 7c663b7b6eed88adb53f981499fba26220acdec456cbf90df049d60a4cb9f930
+E, [2013-04-01T18:54:26.597710 #22863] ERROR -- : RO2S: Access token request error invalid_grant: Missing assertion_type/assertion
+I, [2013-04-01T18:54:26.610145 #22863]  INFO -- : RO2S: Client UberClient requested code with scope read write
+I, [2013-04-01T18:54:26.616967 #22863]  INFO -- : RO2S: Client 5159bbc2b9eab0594f000079 granted access code 749b9817b7a637269c996e14a9cb066ebb0465f13db77373e4033b4794a20ffd
+E, [2013-04-01T18:54:26.620711 #22863] ERROR -- : RO2S: Access token request error invalid_grant: Missing assertion_type/assertion
+I, [2013-04-01T18:54:26.634508 #22863]  INFO -- : RO2S: Client UberClient requested code with scope read write
+I, [2013-04-01T18:54:26.642793 #22863]  INFO -- : RO2S: Client 5159bbc2b9eab0594f00007b granted access code 4354f0f7afb5bfb546bc88bd2318168faa32950517db34ffcacfce845d1d75f1
+E, [2013-04-01T18:54:26.646099 #22863] ERROR -- : RO2S: Access token request error invalid_grant: Missing assertion_type/assertion
+I, [2013-04-01T18:54:26.659775 #22863]  INFO -- : RO2S: Client UberClient requested code with scope read write
+I, [2013-04-01T18:54:26.666767 #22863]  INFO -- : RO2S: Client 5159bbc2b9eab0594f00007d granted access code 69f0a6113a4c155c0e1c778701a930e5a1e97c53646dc6c9350ed5c0fbd8358d
+E, [2013-04-01T18:54:26.670534 #22863] ERROR -- : RO2S: Access token request error invalid_grant: Missing assertion_type/assertion
+I, [2013-04-01T18:54:26.683461 #22863]  INFO -- : RO2S: Client UberClient requested code with scope read write
+I, [2013-04-01T18:54:26.692428 #22863]  INFO -- : RO2S: Client 5159bbc2b9eab0594f00007f granted access code 0c579b5357808ea6030f6c4732ddece99236189fcdf6b9fd9dc94b5291517a7b
+E, [2013-04-01T18:54:26.696121 #22863] ERROR -- : RO2S: Access token request error invalid_grant: Unsupported assertion_type
+I, [2013-04-01T18:54:26.758337 #22863]  INFO -- : RO2S: Client UberClient requested code with scope read write
+I, [2013-04-01T18:54:26.765884 #22863]  INFO -- : RO2S: Client 5159bbc2b9eab0594f000081 granted access code 7ca31ee0f8370440fc5f771978dba0e7a4b8e6e176597e2dbdacba7b82ee13a7
+E, [2013-04-01T18:54:26.768981 #22863] ERROR -- : RO2S: Access token request error invalid_grant: Unsupported assertion_type
+I, [2013-04-01T18:54:26.780185 #22863]  INFO -- : RO2S: Client UberClient requested code with scope read write
+I, [2013-04-01T18:54:26.787358 #22863]  INFO -- : RO2S: Client 5159bbc2b9eab0594f000083 granted access code b1999f020db158b98437a13c1237ede63ab8d578105780894e83ac0ee0831df2
+E, [2013-04-01T18:54:26.790700 #22863] ERROR -- : RO2S: Access token request error invalid_grant: Unsupported assertion_type
+I, [2013-04-01T18:54:26.802207 #22863]  INFO -- : RO2S: Client UberClient requested code with scope read write
+I, [2013-04-01T18:54:26.809510 #22863]  INFO -- : RO2S: Client 5159bbc2b9eab0594f000085 granted access code 77116a880f9b4999fa1fe0cfe3900ae66180a7a2af847bd5a2007917f3d1997d
+I, [2013-04-01T18:54:26.814339 #22863]  INFO -- : RO2S: Access token 17608663287bfd981696f6f8875d0e81a47cb86ab18952ef55d073e614066ac6 granted to client UberClient, identity Batman
+I, [2013-04-01T18:54:26.826052 #22863]  INFO -- : RO2S: Client UberClient requested code with scope read write
+I, [2013-04-01T18:54:26.833585 #22863]  INFO -- : RO2S: Client 5159bbc2b9eab0594f000087 granted access code 1d8f33d5498c340f972a39f881c7708ea5881219d3ca9ce15ba3fd4deccfbf3d
+I, [2013-04-01T18:54:26.838499 #22863]  INFO -- : RO2S: Access token 9927c669b4605fd1728f9801cac7857c98dd44dcf6cf757c5babb8f93a930354 granted to client UberClient, identity Batman
+I, [2013-04-01T18:54:26.850321 #22863]  INFO -- : RO2S: Client UberClient requested code with scope read write
+I, [2013-04-01T18:54:26.857205 #22863]  INFO -- : RO2S: Client 5159bbc2b9eab0594f000089 granted access code 1b0127676d6a731a3e7a82a38c0caecbb46aedc71c8dc4e6561df3cfee8d0c8e
+I, [2013-04-01T18:54:26.862065 #22863]  INFO -- : RO2S: Access token d532ec89b20a7f165fdbc8abbeccfd290f0c9dbd1536a1beb6b483189e36c1a9 granted to client UberClient, identity Batman
+I, [2013-04-01T18:54:26.873893 #22863]  INFO -- : RO2S: Client UberClient requested code with scope read write
+I, [2013-04-01T18:54:26.881119 #22863]  INFO -- : RO2S: Client 5159bbc2b9eab0594f00008b granted access code 191d2e4d49eac3070c1d87e3c310ac063739274b04e4ff0447897b2b127442b3
+I, [2013-04-01T18:54:26.886511 #22863]  INFO -- : RO2S: Access token b6cd5a7a93ff2794a696be3affc4493448a3eb0fca7684667ea9ca23894c2a32 granted to client UberClient, identity Batman
+I, [2013-04-01T18:54:26.898226 #22863]  INFO -- : RO2S: Client UberClient requested code with scope read write
+I, [2013-04-01T18:54:26.904837 #22863]  INFO -- : RO2S: Client 5159bbc2b9eab0594f00008d granted access code 7725ba23f5e50de7ff33fc95e8a28012ce889ced18167bb6f042b1f0b332e7db
+I, [2013-04-01T18:54:26.909623 #22863]  INFO -- : RO2S: Access token 8556148350cf42d847a204af3b798d0f9c49e1bedeeed71059cf3b94a61ec7e1 granted to client UberClient, identity Batman
+I, [2013-04-01T18:54:26.920950 #22863]  INFO -- : RO2S: Client UberClient requested code with scope read write
+I, [2013-04-01T18:54:26.928317 #22863]  INFO -- : RO2S: Client 5159bbc2b9eab0594f00008f granted access code 9b5a40c261b1d98c46b2395e774acc3c77e56ff945a6977664e107e559a26731
+I, [2013-04-01T18:54:26.933427 #22863]  INFO -- : RO2S: Access token a519a3604d96c3b49cb49bb156b818d07e84e2a2b3b125ec4bbe7d6983c0f0d7 granted to client UberClient, identity Batman
+I, [2013-04-01T18:54:26.945326 #22863]  INFO -- : RO2S: Client UberClient requested code with scope read write
+I, [2013-04-01T18:54:26.952511 #22863]  INFO -- : RO2S: Client 5159bbc2b9eab0594f000091 granted access code 31e32771be1a95fd2eec3ba80a436ab43e00dafcc9364a90a8090a2efb4b6e8b
+I, [2013-04-01T18:54:26.957390 #22863]  INFO -- : RO2S: Access token 9c3d85e8edbafd6a9eab66b2491d98d2d61a136fd1799e1797ed87227e341043 granted to client UberClient, identity Batman
+I, [2013-04-01T18:54:26.968951 #22863]  INFO -- : RO2S: Client UberClient requested code with scope read write
+I, [2013-04-01T18:54:26.976264 #22863]  INFO -- : RO2S: Client 5159bbc2b9eab0594f000093 granted access code 2f379a360b726e44791f805c5d9e61076c299e766aaf7d88f040ebda455e3002
+I, [2013-04-01T18:54:26.981334 #22863]  INFO -- : RO2S: Access token 5c8cb8006ac1fc25d655526f967e0dac630bea47f7a5ad0be6cc71927de37535 granted to client UberClient, identity Batman
+I, [2013-04-01T18:54:26.993964 #22863]  INFO -- : RO2S: Client UberClient requested code with scope read write
+I, [2013-04-01T18:54:27.000664 #22863]  INFO -- : RO2S: Client 5159bbc2b9eab0594f000095 granted access code c7d0651fb895583a01450849082c3a8210af139c93be396baef3a0b2d30d5dd7
+E, [2013-04-01T18:54:27.005358 #22863] ERROR -- : RO2S: Access token request error invalid_grant: Wrong client
+I, [2013-04-01T18:54:27.025378 #22863]  INFO -- : RO2S: Client UberClient requested code with scope read write
+I, [2013-04-01T18:54:27.038345 #22863]  INFO -- : RO2S: Client 5159bbc3b9eab0594f000098 granted access code 5de7ce293d5772a8d31c145e656a4b417580e98028adbfc1c63a90d34d802097
+E, [2013-04-01T18:54:27.045638 #22863] ERROR -- : RO2S: Access token request error invalid_grant: Wrong client
+I, [2013-04-01T18:54:27.065860 #22863]  INFO -- : RO2S: Client UberClient requested code with scope read write
+I, [2013-04-01T18:54:27.075601 #22863]  INFO -- : RO2S: Client 5159bbc3b9eab0594f00009b granted access code 5c64fea60cf6473fcdbc5a47091f77ae4be20c5e3f6178cd12ca3bfe41b13d90
+E, [2013-04-01T18:54:27.080823 #22863] ERROR -- : RO2S: Access token request error invalid_grant: Wrong client
+I, [2013-04-01T18:54:27.099365 #22863]  INFO -- : RO2S: Client UberClient requested code with scope read write
+I, [2013-04-01T18:54:27.106987 #22863]  INFO -- : RO2S: Client 5159bbc3b9eab0594f00009e granted access code 9f2a1aaa6ae5acc2ffbcf293cfb55d894e571928b908dfdcb814d0d3d7d33548
+E, [2013-04-01T18:54:27.111939 #22863] ERROR -- : RO2S: Access token request error invalid_grant: Wrong client
+I, [2013-04-01T18:54:27.124011 #22863]  INFO -- : RO2S: Client UberClient requested code with scope read write
+I, [2013-04-01T18:54:27.131085 #22863]  INFO -- : RO2S: Client 5159bbc3b9eab0594f0000a0 granted access code a0feaf9274de6196b13bec1a26d4623c74fc26c4a852bae61469d7bf2ad3defa
+E, [2013-04-01T18:54:27.136785 #22863] ERROR -- : RO2S: Access token request error invalid_grant: Wrong client
+I, [2013-04-01T18:54:27.193336 #22863]  INFO -- : RO2S: Client UberClient requested code with scope read write
+I, [2013-04-01T18:54:27.200670 #22863]  INFO -- : RO2S: Client 5159bbc3b9eab0594f0000a2 granted access code 282001deee59a13d2d42aeec9727aa97b3935a11c91a32a4839efc8661a92e24
+E, [2013-04-01T18:54:27.205723 #22863] ERROR -- : RO2S: Access token request error invalid_grant: Wrong client
+I, [2013-04-01T18:54:27.217342 #22863]  INFO -- : RO2S: Client UberClient requested code with scope read write
+I, [2013-04-01T18:54:27.225185 #22863]  INFO -- : RO2S: Client 5159bbc3b9eab0594f0000a4 granted access code 0d576e165babf77beb0b8283b1ff09956bcc5edefd84782f6f0a0974accf8071
+E, [2013-04-01T18:54:27.228031 #22863] ERROR -- : RO2S: Access token request error invalid_client: Client ID and client secret do not match.
+I, [2013-04-01T18:54:27.240257 #22863]  INFO -- : RO2S: Client UberClient requested code with scope read write
+I, [2013-04-01T18:54:27.246781 #22863]  INFO -- : RO2S: Client 5159bbc3b9eab0594f0000a6 granted access code 7bd85c26f16d8ed5072c346d48b8778d0985a3f3f4fe498add82d69eeef37141
+E, [2013-04-01T18:54:27.249720 #22863] ERROR -- : RO2S: Access token request error invalid_client: Client ID and client secret do not match.
+I, [2013-04-01T18:54:27.260471 #22863]  INFO -- : RO2S: Client UberClient requested code with scope read write
+I, [2013-04-01T18:54:27.267327 #22863]  INFO -- : RO2S: Client 5159bbc3b9eab0594f0000a8 granted access code 736846a0cca27e1dbad0f41331761a414b3a4f099dc7375c0721a1b075cb42d8
+E, [2013-04-01T18:54:27.270271 #22863] ERROR -- : RO2S: Access token request error invalid_client: Client ID and client secret do not match.
+I, [2013-04-01T18:54:27.281400 #22863]  INFO -- : RO2S: Client UberClient requested code with scope read write
+I, [2013-04-01T18:54:27.288249 #22863]  INFO -- : RO2S: Client 5159bbc3b9eab0594f0000aa granted access code 47a1e7371f155998e61a8809f3d3cc478111a8d4856df74bb7fd750e324768e8
+E, [2013-04-01T18:54:27.291410 #22863] ERROR -- : RO2S: Access token request error invalid_client: Client ID and client secret do not match.
+I, [2013-04-01T18:54:27.302295 #22863]  INFO -- : RO2S: Client UberClient requested code with scope read write
+I, [2013-04-01T18:54:27.309027 #22863]  INFO -- : RO2S: Client 5159bbc3b9eab0594f0000ac granted access code 955e1041187e6ef35533fc87dc1b2810805bc207a6c29cb8396d40881755f1e0
+E, [2013-04-01T18:54:27.314682 #22863] ERROR -- : RO2S: Access token request error invalid_client: Client ID and client secret do not match.
+I, [2013-04-01T18:54:27.326133 #22863]  INFO -- : RO2S: Client UberClient requested code with scope read write
+I, [2013-04-01T18:54:27.332971 #22863]  INFO -- : RO2S: Client 5159bbc3b9eab0594f0000ae granted access code 727864cb52df4b67e625a342cf90979d8370e39b155a8510ec626524dcc0ae00
+E, [2013-04-01T18:54:27.337857 #22863] ERROR -- : RO2S: Access token request error invalid_client: Client ID and client secret do not match.
+I, [2013-04-01T18:54:27.348865 #22863]  INFO -- : RO2S: Client UberClient requested code with scope read write
+I, [2013-04-01T18:54:27.355546 #22863]  INFO -- : RO2S: Client 5159bbc3b9eab0594f0000b0 granted access code c03ebe62011c6c07f38dea02593c1933be268b3ab7504ef7c715857bca277bfd
+E, [2013-04-01T18:54:27.360652 #22863] ERROR -- : RO2S: Access token request error invalid_client: Client ID and client secret do not match.
+I, [2013-04-01T18:54:27.372157 #22863]  INFO -- : RO2S: Client UberClient requested code with scope read write
+I, [2013-04-01T18:54:27.378941 #22863]  INFO -- : RO2S: Client 5159bbc3b9eab0594f0000b2 granted access code 436db0cf2ac8dbdfa86c44b2f9afc24ac7c4560ee5ffcde0c9cd3a99a7c635eb
+E, [2013-04-01T18:54:27.383919 #22863] ERROR -- : RO2S: Access token request error invalid_client: Client ID and client secret do not match.
+I, [2013-04-01T18:54:27.394805 #22863]  INFO -- : RO2S: Client UberClient requested code with scope read write
+I, [2013-04-01T18:54:27.402115 #22863]  INFO -- : RO2S: Client 5159bbc3b9eab0594f0000b4 granted access code b99b2ba4282892ae7bf7e8a664ba74fdb9d4a2741dd30029fe4253e48af8f817
+I, [2013-04-01T18:54:27.407343 #22863]  INFO -- : RO2S: Access token 354142aeabb7eac665be0a130daef3c5db2bd7e0251850c47bc88453275f9f1d granted to client UberClient, identity Batman
+I, [2013-04-01T18:54:27.419942 #22863]  INFO -- : RO2S: Client UberClient requested code with scope read write
+I, [2013-04-01T18:54:27.426743 #22863]  INFO -- : RO2S: Client 5159bbc3b9eab0594f0000b6 granted access code 2ae38dc9847dbd21f8097b56cb4f5393b03a3418a5e33803d490e2d1e438d259
+I, [2013-04-01T18:54:27.431826 #22863]  INFO -- : RO2S: Access token 7faa0b5d0ec7383190f4dbc04847e498ca28c56cbf0ac397f0ee45729a4ea7ee granted to client UberClient, identity Batman
+I, [2013-04-01T18:54:27.443335 #22863]  INFO -- : RO2S: Client UberClient requested code with scope read write
+I, [2013-04-01T18:54:27.450313 #22863]  INFO -- : RO2S: Client 5159bbc3b9eab0594f0000b8 granted access code 6405669fcbd56caf47072a79b33f1bf8f1d73d0d2245a6cc13351996ddd5d71b
+I, [2013-04-01T18:54:27.455256 #22863]  INFO -- : RO2S: Access token 891c4cbd611124270d6adb3b14d45173fd935ba5b340b88ee5f822a90b2031f6 granted to client UberClient, identity Batman
+I, [2013-04-01T18:54:27.467374 #22863]  INFO -- : RO2S: Client UberClient requested code with scope read write
+I, [2013-04-01T18:54:27.474098 #22863]  INFO -- : RO2S: Client 5159bbc3b9eab0594f0000ba granted access code 11cd06d36f6a9e7be8c24eb73f492f446926008c9dd19368243c1aea3d6bfd7e
+I, [2013-04-01T18:54:27.479039 #22863]  INFO -- : RO2S: Access token 75b09e6b87a69d0554cd0dd6023f8c1c8c009eeffdd77d7a37887412e4b92eb6 granted to client UberClient, identity Batman
+I, [2013-04-01T18:54:27.490837 #22863]  INFO -- : RO2S: Client UberClient requested code with scope read write
+I, [2013-04-01T18:54:27.498282 #22863]  INFO -- : RO2S: Client 5159bbc3b9eab0594f0000bc granted access code e6cb9ffd85fa60b9d6cb45c1e0a17a31a40c13d75dd36a17ab2da39d21c74297
+I, [2013-04-01T18:54:27.503551 #22863]  INFO -- : RO2S: Access token 5afd1c8f08266c8476157aeefb24e2b4c908c8ce4cab8c5635db8020ee41dcfb granted to client UberClient, identity Batman
+I, [2013-04-01T18:54:27.515460 #22863]  INFO -- : RO2S: Client UberClient requested code with scope read write
+I, [2013-04-01T18:54:27.522133 #22863]  INFO -- : RO2S: Client 5159bbc3b9eab0594f0000be granted access code 4d0f8e4ec0dec286706d8d433df24d6f9ec059cd8feafeb1a7c2115edc1c5211
+I, [2013-04-01T18:54:27.527065 #22863]  INFO -- : RO2S: Access token 41e3e8f1d7909110644d5a668ad5885b9ebafe2466ac4e6617c87b043ec63b2f granted to client UberClient, identity Batman
+I, [2013-04-01T18:54:27.581857 #22863]  INFO -- : RO2S: Client UberClient requested code with scope read write
+I, [2013-04-01T18:54:27.588833 #22863]  INFO -- : RO2S: Client 5159bbc3b9eab0594f0000c0 granted access code 708d56a577a9b1b92f8ef8383b0cae64c7cd0b719ab8fdd3b83a0a80a69f5434
+E, [2013-04-01T18:54:27.591139 #22863] ERROR -- : RO2S: Access token request error invalid_client: Client ID and client secret do not match.
+I, [2013-04-01T18:54:27.603129 #22863]  INFO -- : RO2S: Client UberClient requested code with scope read write
+I, [2013-04-01T18:54:27.609921 #22863]  INFO -- : RO2S: Client 5159bbc3b9eab0594f0000c2 granted access code 61d6dfdd527dff3d39d4348852dd79b8489d259ea7c9a3de72859065cb9583ec
+E, [2013-04-01T18:54:27.612696 #22863] ERROR -- : RO2S: Access token request error invalid_client: Client ID and client secret do not match.
+I, [2013-04-01T18:54:27.624182 #22863]  INFO -- : RO2S: Client UberClient requested code with scope read write
+I, [2013-04-01T18:54:27.631323 #22863]  INFO -- : RO2S: Client 5159bbc3b9eab0594f0000c4 granted access code f63fcaa9735636f48fac89ee2eb287dbb2e3e899f1153c53e88dbe812cf0d6b4
+E, [2013-04-01T18:54:27.633899 #22863] ERROR -- : RO2S: Access token request error invalid_client: Client ID and client secret do not match.
+I, [2013-04-01T18:54:27.646281 #22863]  INFO -- : RO2S: Client UberClient requested code with scope read write
+I, [2013-04-01T18:54:27.653376 #22863]  INFO -- : RO2S: Client 5159bbc3b9eab0594f0000c6 granted access code e0fedd61ab1b527b826a6b1b841928156e8da6230aa9b11cf1e667bcd012d01b
+E, [2013-04-01T18:54:27.656068 #22863] ERROR -- : RO2S: Access token request error invalid_client: Client ID and client secret do not match.
+I, [2013-04-01T18:54:27.666949 #22863]  INFO -- : RO2S: Client UberClient requested code with scope read write
+I, [2013-04-01T18:54:27.674348 #22863]  INFO -- : RO2S: Client 5159bbc3b9eab0594f0000c8 granted access code 266d21af7ca224a019df784e79117d0f19b892792d12512f273f40dd1ff145de
+E, [2013-04-01T18:54:27.679047 #22863] ERROR -- : RO2S: Access token request error invalid_grant: Wrong redirect URI
+I, [2013-04-01T18:54:27.692169 #22863]  INFO -- : RO2S: Client UberClient requested code with scope read write
+I, [2013-04-01T18:54:27.699128 #22863]  INFO -- : RO2S: Client 5159bbc3b9eab0594f0000ca granted access code c25edfadb5010e321019865c57b07b7f4f4ee9fc9f7bc28b5771f91e82ca0625
+E, [2013-04-01T18:54:27.702771 #22863] ERROR -- : RO2S: Access token request error invalid_grant: Wrong redirect URI
+I, [2013-04-01T18:54:27.714686 #22863]  INFO -- : RO2S: Client UberClient requested code with scope read write
+I, [2013-04-01T18:54:27.721145 #22863]  INFO -- : RO2S: Client 5159bbc3b9eab0594f0000cc granted access code f456e2c208a241b531e81141e9b9c9dfe4631b14210d6222c3c3d232404c79fc
+E, [2013-04-01T18:54:27.725149 #22863] ERROR -- : RO2S: Access token request error invalid_grant: Wrong redirect URI
+I, [2013-04-01T18:54:27.737397 #22863]  INFO -- : RO2S: Client UberClient requested code with scope read write
+I, [2013-04-01T18:54:27.744364 #22863]  INFO -- : RO2S: Client 5159bbc3b9eab0594f0000ce granted access code 277ca6429b768e4acd0c7efec07aab960d5fe2de3c9fddf3289ea347891d29b2
+E, [2013-04-01T18:54:27.747621 #22863] ERROR -- : RO2S: Access token request error invalid_grant: Wrong client
+I, [2013-04-01T18:54:27.759031 #22863]  INFO -- : RO2S: Client UberClient requested code with scope read write
+I, [2013-04-01T18:54:27.765652 #22863]  INFO -- : RO2S: Client 5159bbc3b9eab0594f0000d0 granted access code 0aa3b5a677e7bdd8992755e0acd0482323ec8ebe17e906dec2558646c9e0c08a
+E, [2013-04-01T18:54:27.769186 #22863] ERROR -- : RO2S: Access token request error invalid_grant: Wrong client
+I, [2013-04-01T18:54:27.779924 #22863]  INFO -- : RO2S: Client UberClient requested code with scope read write
+I, [2013-04-01T18:54:27.787125 #22863]  INFO -- : RO2S: Client 5159bbc3b9eab0594f0000d2 granted access code d1889639ae6812fa4d1a8a5d33874c8a6a70fc409bf783b3c920c507b2a48fa5
+E, [2013-04-01T18:54:27.790507 #22863] ERROR -- : RO2S: Access token request error invalid_grant: Wrong client
+I, [2013-04-01T18:54:27.801921 #22863]  INFO -- : RO2S: Client UberClient requested code with scope read write
+I, [2013-04-01T18:54:27.808229 #22863]  INFO -- : RO2S: Client 5159bbc3b9eab0594f0000d4 granted access code dfe2c6a4665653de2b03bfe60fca35fd50d5e82da2d1b2f97c1ad09bf1d8ee36
+E, [2013-04-01T18:54:27.811023 #22863] ERROR -- : RO2S: Access token request error invalid_client: Client ID and client secret do not match.
+I, [2013-04-01T18:54:27.827092 #22863]  INFO -- : RO2S: Client UberClient requested code with scope read write
+I, [2013-04-01T18:54:27.836607 #22863]  INFO -- : RO2S: Client 5159bbc3b9eab0594f0000d6 granted access code 341edaa1d5061510bfb4da04f7103eb5e79536a28d67284d9b0938501064728e
+E, [2013-04-01T18:54:27.839694 #22863] ERROR -- : RO2S: Access token request error invalid_client: Client ID and client secret do not match.
+I, [2013-04-01T18:54:27.855051 #22863]  INFO -- : RO2S: Client UberClient requested code with scope read write
+I, [2013-04-01T18:54:27.862642 #22863]  INFO -- : RO2S: Client 5159bbc3b9eab0594f0000d8 granted access code 7b13f662408dddd21b65cb9b7fc542e657214774c26c48aa4886cdecc3a9ff28
+E, [2013-04-01T18:54:27.864819 #22863] ERROR -- : RO2S: Access token request error invalid_client: Client ID and client secret do not match.
+I, [2013-04-01T18:54:27.876532 #22863]  INFO -- : RO2S: Client UberClient requested code with scope read write
+I, [2013-04-01T18:54:27.883090 #22863]  INFO -- : RO2S: Client 5159bbc3b9eab0594f0000da granted access code 19008acbb6b205a18e71f3a0dc6d1ccc77b8e809a558a731c1f1ca38f8ed245e
+E, [2013-04-01T18:54:27.885539 #22863] ERROR -- : RO2S: Access token request error invalid_client: Client ID and client secret do not match.
+I, [2013-04-01T18:54:27.896492 #22863]  INFO -- : RO2S: Client UberClient requested code with scope read write
+I, [2013-04-01T18:54:27.903562 #22863]  INFO -- : RO2S: Client 5159bbc3b9eab0594f0000dc granted access code d1b93c76bcfd6ca1f16cfebb4e4adb1e769cbe1f9c62b42b18fea85e7fb51fb1
+E, [2013-04-01T18:54:27.906565 #22863] ERROR -- : RO2S: Access token request error invalid_client: Client ID and client secret do not match.
+I, [2013-04-01T18:54:27.964986 #22863]  INFO -- : RO2S: Client UberClient requested code with scope read write
+I, [2013-04-01T18:54:27.972366 #22863]  INFO -- : RO2S: Client 5159bbc3b9eab0594f0000de granted access code 88672df52725df76ed6efd5c847c1858f9e2bb3a8e5ae3ebce4a9ac4444ea584
+E, [2013-04-01T18:54:27.975285 #22863] ERROR -- : RO2S: Access token request error invalid_client: Client ID and client secret do not match.
+I, [2013-04-01T18:54:27.986737 #22863]  INFO -- : RO2S: Client UberClient requested code with scope read write
+I, [2013-04-01T18:54:27.993725 #22863]  INFO -- : RO2S: Client 5159bbc3b9eab0594f0000e0 granted access code 44cc88bacbb7e120001c13dcf03888bc8b7a143b66f2e91f3e3f01132be5bbb3
+E, [2013-04-01T18:54:27.997021 #22863] ERROR -- : RO2S: Access token request error invalid_client: Client ID and client secret do not match.
+I, [2013-04-01T18:54:28.008311 #22863]  INFO -- : RO2S: Client UberClient requested code with scope read write
+I, [2013-04-01T18:54:28.015765 #22863]  INFO -- : RO2S: Client 5159bbc4b9eab0594f0000e2 granted access code 8184ac87071a6e74e4fcd4f9693f01fcbe6ea47edcd49130a2dadb3c8cb5a198
+E, [2013-04-01T18:54:28.018567 #22863] ERROR -- : RO2S: Access token request error invalid_client: Client ID and client secret do not match.
+I, [2013-04-01T18:54:28.030056 #22863]  INFO -- : RO2S: Client UberClient requested code with scope read write
+I, [2013-04-01T18:54:28.036923 #22863]  INFO -- : RO2S: Client 5159bbc4b9eab0594f0000e4 granted access code ae3ceacc4cd1b7e6ffdf753eaea57e5f364e9e3b42e67050b1a748944333259f
+E, [2013-04-01T18:54:28.040091 #22863] ERROR -- : RO2S: Access token request error invalid_grant: Missing username/password
+I, [2013-04-01T18:54:28.051045 #22863]  INFO -- : RO2S: Client UberClient requested code with scope read write
+I, [2013-04-01T18:54:28.057883 #22863]  INFO -- : RO2S: Client 5159bbc4b9eab0594f0000e6 granted access code 56d19ca4822124c1325f53ad4f327b69950e5c5190d26228d39bd7a87184d9b6
+E, [2013-04-01T18:54:28.060746 #22863] ERROR -- : RO2S: Access token request error invalid_grant: Missing username/password
+I, [2013-04-01T18:54:28.072254 #22863]  INFO -- : RO2S: Client UberClient requested code with scope read write
+I, [2013-04-01T18:54:28.078721 #22863]  INFO -- : RO2S: Client 5159bbc4b9eab0594f0000e8 granted access code c22937df426f630fc93ee8d474ededc271dde7ef86eb27e403007d784c634670
+E, [2013-04-01T18:54:28.081742 #22863] ERROR -- : RO2S: Access token request error invalid_grant: Missing username/password
+I, [2013-04-01T18:54:28.093038 #22863]  INFO -- : RO2S: Client UberClient requested code with scope read write
+I, [2013-04-01T18:54:28.100233 #22863]  INFO -- : RO2S: Client 5159bbc4b9eab0594f0000ea granted access code e1d115064f1d9a58ca8571a44864eb7db0c8ce49bc650817586eefda1c5c9b33
+I, [2013-04-01T18:54:28.110905 #22863]  INFO -- : RO2S: Access token 52327ccfcc225483265b32ce17c0370d5db3c4a4021be7fc049dbc359d54cc8f granted to client No rediret, identity foo bar
+I, [2013-04-01T18:54:28.124166 #22863]  INFO -- : RO2S: Client UberClient requested code with scope read write
+I, [2013-04-01T18:54:28.130906 #22863]  INFO -- : RO2S: Client 5159bbc4b9eab0594f0000ed granted access code 9f39ddfd8d9feb4653d9b794c96769bb9b7361396a03563fa5ba9adee35226b1
+I, [2013-04-01T18:54:28.139211 #22863]  INFO -- : RO2S: Access token c032583504e0062d4822e342c20ec487f8af760e617eb219170a32f702602463 granted to client No rediret, identity foo bar
+I, [2013-04-01T18:54:28.153405 #22863]  INFO -- : RO2S: Client UberClient requested code with scope read write
+I, [2013-04-01T18:54:28.160304 #22863]  INFO -- : RO2S: Client 5159bbc4b9eab0594f0000f0 granted access code 582cf2740474fdcbb30dfa6f33952939765fbf3324cc67b9e4600b3f6e156d9f
+I, [2013-04-01T18:54:28.169163 #22863]  INFO -- : RO2S: Access token 0521df992f0b66c8ad6fd0c7109b49b2a894f87e0c04248d42523d20035fb523 granted to client No rediret, identity foo bar
+I, [2013-04-01T18:54:28.181892 #22863]  INFO -- : RO2S: Client UberClient requested code with scope read write
+I, [2013-04-01T18:54:28.188642 #22863]  INFO -- : RO2S: Client 5159bbc4b9eab0594f0000f3 granted access code 96c5fe239c9be7adb46a2d10bbd0e1d0cb031534ee4a7cdeab32cace3729df50
+I, [2013-04-01T18:54:28.196634 #22863]  INFO -- : RO2S: Access token cd9459d69b8cd551b5a6a62f1149303db6ab1807eb4799799555b6f2d34ab671 granted to client No rediret, identity foo bar
+I, [2013-04-01T18:54:28.208296 #22863]  INFO -- : RO2S: Client UberClient requested code with scope read write
+I, [2013-04-01T18:54:28.215640 #22863]  INFO -- : RO2S: Client 5159bbc4b9eab0594f0000f6 granted access code e12098532ff3018948466b4f4e97e0d98ad943898f24ec86c5e2002af08a00f8
+I, [2013-04-01T18:54:28.224154 #22863]  INFO -- : RO2S: Access token 86daa9c6e6ead788774a93bcc0af8086e68bb52d4565d7b42fc4fa0771b85ad8 granted to client No rediret, identity foo bar
+I, [2013-04-01T18:54:28.235946 #22863]  INFO -- : RO2S: Client UberClient requested code with scope read write
+I, [2013-04-01T18:54:28.242566 #22863]  INFO -- : RO2S: Client 5159bbc4b9eab0594f0000f9 granted access code 4720950b4c2c871c4a792805ca840bb0449d84fe1d9d6c6a3a20aae2a57bd0d6
+I, [2013-04-01T18:54:28.250636 #22863]  INFO -- : RO2S: Access token aed1180792ed4228e6e70853b299e08c7ca4d93eb6318f86ca49ffc277b2d87a granted to client No rediret, identity foo bar
+I, [2013-04-01T18:54:28.262335 #22863]  INFO -- : RO2S: Client UberClient requested code with scope read write
+I, [2013-04-01T18:54:28.269449 #22863]  INFO -- : RO2S: Client 5159bbc4b9eab0594f0000fc granted access code f24bcac0fcb382bf8b510ba1d3267e6fe22c78765fbf82d5b3004a0502357fc2
+I, [2013-04-01T18:54:28.274162 #22863]  INFO -- : RO2S: Access token f69d2912d36372cbd50111657a2f88c01a02c631c0d669988d847ab78f92b033 granted to client UberClient, identity Batman
+I, [2013-04-01T18:54:28.286559 #22863]  INFO -- : RO2S: Client UberClient requested code with scope read write
+I, [2013-04-01T18:54:28.293298 #22863]  INFO -- : RO2S: Client 5159bbc4b9eab0594f0000fe granted access code 970687239901abc546f2bad3fd547c9b52d0f9340809d4a20bc07b025cd30673
+I, [2013-04-01T18:54:28.298172 #22863]  INFO -- : RO2S: Access token 1bf6e075fdfea48ea7eed5c3aca974bc7bae620c72fd8e1177f1027e2a3358f5 granted to client UberClient, identity Batman
+I, [2013-04-01T18:54:28.309971 #22863]  INFO -- : RO2S: Client UberClient requested code with scope read write
+I, [2013-04-01T18:54:28.316886 #22863]  INFO -- : RO2S: Client 5159bbc4b9eab0594f000100 granted access code b4deed170096df6f8caba42ade74591f0c2430a135969270424de320193ab54b
+I, [2013-04-01T18:54:28.367190 #22863]  INFO -- : RO2S: Access token 369fc573094053a5556ea22af411311a44a71915b31809d4b931b904fc07644e granted to client UberClient, identity Batman
+I, [2013-04-01T18:54:28.379349 #22863]  INFO -- : RO2S: Client UberClient requested code with scope read write
+I, [2013-04-01T18:54:28.386350 #22863]  INFO -- : RO2S: Client 5159bbc4b9eab0594f000102 granted access code bcc1a6aa91a624d9d6aec54e687079b613bf702556019f7537e16264da4184af
+I, [2013-04-01T18:54:28.391533 #22863]  INFO -- : RO2S: Access token 67009ec92077814f4473ba99aba2ed5e97f71216ab342433edf507f52899c1b2 granted to client UberClient, identity Batman
+I, [2013-04-01T18:54:28.403228 #22863]  INFO -- : RO2S: Client UberClient requested code with scope read write
+I, [2013-04-01T18:54:28.410855 #22863]  INFO -- : RO2S: Client 5159bbc4b9eab0594f000104 granted access code a9453960af6175766649212b83ceef0b78387cd4fe564c0153e2d092d28aba9e
+I, [2013-04-01T18:54:28.415791 #22863]  INFO -- : RO2S: Access token 52af948c92244733a753e66045b3a53510a45faa367956d11ac297fdc3283a1a granted to client UberClient, identity Batman
+I, [2013-04-01T18:54:28.427924 #22863]  INFO -- : RO2S: Client UberClient requested code with scope read write
+I, [2013-04-01T18:54:28.434747 #22863]  INFO -- : RO2S: Client 5159bbc4b9eab0594f000106 granted access code c42aeb34b4f0609a784c80bc7deee156674fb095a722e36f8434529d7b81bd2e
+I, [2013-04-01T18:54:28.439656 #22863]  INFO -- : RO2S: Access token 1a9c7969dce421bea2a0faa214eec88d53d80b276697799d03a0f67eec90aeea granted to client UberClient, identity Batman
+I, [2013-04-01T18:54:28.451800 #22863]  INFO -- : RO2S: Client UberClient requested code with scope read write
+I, [2013-04-01T18:54:28.458501 #22863]  INFO -- : RO2S: Client 5159bbc4b9eab0594f000108 granted access code 0077b7e6869b295295e0f142f1ec1fa6fce43fcbfc278271445c9986f0e530c7
+E, [2013-04-01T18:54:28.461971 #22863] ERROR -- : RO2S: Access token request error invalid_grant: Missing username/password
+I, [2013-04-01T18:54:28.474062 #22863]  INFO -- : RO2S: Client UberClient requested code with scope read write
+I, [2013-04-01T18:54:28.480551 #22863]  INFO -- : RO2S: Client 5159bbc4b9eab0594f00010a granted access code 3104ea424c38ae1a92e6781dfd1d31ae4c267e139dbadb3b172214f69ea041df
+E, [2013-04-01T18:54:28.483375 #22863] ERROR -- : RO2S: Access token request error invalid_grant: Missing username/password
+I, [2013-04-01T18:54:28.494462 #22863]  INFO -- : RO2S: Client UberClient requested code with scope read write
+I, [2013-04-01T18:54:28.501134 #22863]  INFO -- : RO2S: Client 5159bbc4b9eab0594f00010c granted access code 4784ac27a35b63db6f3993a4f605855d9cca0c3abae98da1e66462bdda8066f6
+E, [2013-04-01T18:54:28.504883 #22863] ERROR -- : RO2S: Access token request error invalid_grant: Missing username/password
+I, [2013-04-01T18:54:28.515852 #22863]  INFO -- : RO2S: Client UberClient requested code with scope read write
+I, [2013-04-01T18:54:28.522910 #22863]  INFO -- : RO2S: Client 5159bbc4b9eab0594f00010e granted access code 2ab83bced5076bcb8de935fafdef98002de40ccb215240ec6cd1ceef93df5944
+E, [2013-04-01T18:54:28.525686 #22863] ERROR -- : RO2S: Access token request error invalid_grant: Username/password do not match
+I, [2013-04-01T18:54:28.537276 #22863]  INFO -- : RO2S: Client UberClient requested code with scope read write
+I, [2013-04-01T18:54:28.544012 #22863]  INFO -- : RO2S: Client 5159bbc4b9eab0594f000110 granted access code 0b21b73fed013c9c333074e4f65e6a0e7e90f90f4761113680fcc508604748d3
+E, [2013-04-01T18:54:28.547485 #22863] ERROR -- : RO2S: Access token request error invalid_grant: Username/password do not match
+I, [2013-04-01T18:54:28.559109 #22863]  INFO -- : RO2S: Client UberClient requested code with scope read write
+I, [2013-04-01T18:54:28.566243 #22863]  INFO -- : RO2S: Client 5159bbc4b9eab0594f000112 granted access code 679bba8529a4b34bd4f8267dfd89c053b427754e9e3ede8e8a0bd8f4255d6881
+E, [2013-04-01T18:54:28.569274 #22863] ERROR -- : RO2S: Access token request error invalid_grant: Username/password do not match
+I, [2013-04-01T18:54:28.580911 #22863]  INFO -- : RO2S: Client UberClient requested code with scope read write
+I, [2013-04-01T18:54:28.587745 #22863]  INFO -- : RO2S: Client 5159bbc4b9eab0594f000114 granted access code 02117e977f69482df11b97ee7003183ca319a0f84959523afe346fef0363d375
+E, [2013-04-01T18:54:28.591918 #22863] ERROR -- : RO2S: Access token request error invalid_grant: Wrong client
+I, [2013-04-01T18:54:28.603547 #22863]  INFO -- : RO2S: Client UberClient requested code with scope read write
+I, [2013-04-01T18:54:28.610244 #22863]  INFO -- : RO2S: Client 5159bbc4b9eab0594f000116 granted access code 209f915865be540d8b475159720b6db7a8cef94a5a1ff779c17074e84acf5d01
+E, [2013-04-01T18:54:28.613485 #22863] ERROR -- : RO2S: Access token request error invalid_grant: Wrong client
+I, [2013-04-01T18:54:28.624784 #22863]  INFO -- : RO2S: Client UberClient requested code with scope read write
+I, [2013-04-01T18:54:28.631766 #22863]  INFO -- : RO2S: Client 5159bbc4b9eab0594f000118 granted access code c55d7ac7b2132bf58956dbf28591c45f02932dcca288d91989e6cf3df41e9cd9
+E, [2013-04-01T18:54:28.635557 #22863] ERROR -- : RO2S: Access token request error invalid_grant: Wrong client
+I, [2013-04-01T18:54:28.646454 #22863]  INFO -- : RO2S: Client UberClient requested code with scope read write
+I, [2013-04-01T18:54:28.653949 #22863]  INFO -- : RO2S: Client 5159bbc4b9eab0594f00011a granted access code 9332708a33378a555b10d6d1ac34f17a605660b93db1470b720d09deff1448e5
+E, [2013-04-01T18:54:28.656733 #22863] ERROR -- : RO2S: Access token request error unsupported_grant_type: This access grant type is not supported by this server.
+I, [2013-04-01T18:54:28.668176 #22863]  INFO -- : RO2S: Client UberClient requested code with scope read write
+I, [2013-04-01T18:54:28.677056 #22863]  INFO -- : RO2S: Client 5159bbc4b9eab0594f00011c granted access code a0490b1b465d8f6ae2cae23a125296946ad15f61adc2829782ba273f0b5a4861
+E, [2013-04-01T18:54:28.680053 #22863] ERROR -- : RO2S: Access token request error unsupported_grant_type: This access grant type is not supported by this server.
+I, [2013-04-01T18:54:28.692917 #22863]  INFO -- : RO2S: Client UberClient requested code with scope read write
+I, [2013-04-01T18:54:28.699823 #22863]  INFO -- : RO2S: Client 5159bbc4b9eab0594f00011e granted access code ec30b22c4921af5057f7e46c0569ab475a86dc8f3e8711bfb9692854e266bd5a
+E, [2013-04-01T18:54:28.702608 #22863] ERROR -- : RO2S: Access token request error unsupported_grant_type: This access grant type is not supported by this server.
+I, [2013-04-01T18:54:28.758052 #22863]  INFO -- : RO2S: Client UberClient requested code with scope read write
+I, [2013-04-01T18:54:28.764964 #22863]  INFO -- : RO2S: Client 5159bbc4b9eab0594f000120 granted access code 5d74aa25e745f4be1d3788d7deaeec51e574b8c9f36d9840faeac6b9f0ec0320
+E, [2013-04-01T18:54:28.767734 #22863] ERROR -- : RO2S: Access token request error invalid_scope: The requested scope is not supported.
+I, [2013-04-01T18:54:28.779355 #22863]  INFO -- : RO2S: Client UberClient requested code with scope read write
+I, [2013-04-01T18:54:28.786392 #22863]  INFO -- : RO2S: Client 5159bbc4b9eab0594f000122 granted access code 2933cb298e58877e0653528d385cc57ceb524991a0adcf4df2b284b1a444c0f4
+E, [2013-04-01T18:54:28.789687 #22863] ERROR -- : RO2S: Access token request error invalid_scope: The requested scope is not supported.
+I, [2013-04-01T18:54:28.800677 #22863]  INFO -- : RO2S: Client UberClient requested code with scope read write
+I, [2013-04-01T18:54:28.808108 #22863]  INFO -- : RO2S: Client 5159bbc4b9eab0594f000124 granted access code dbb388556c586e9b94634201d30e83c556c7d29c6e1d1fd283622be4f0f58969
+E, [2013-04-01T18:54:28.811167 #22863] ERROR -- : RO2S: Access token request error invalid_scope: The requested scope is not supported.
+I, [2013-04-01T18:54:28.823669 #22863]  INFO -- : RO2S: Client UberClient requested code with scope read write
+I, [2013-04-01T18:54:28.830278 #22863]  INFO -- : RO2S: Client 5159bbc4b9eab0594f000126 granted access code a83b8dafb0765a7090ccd3eec118c14e1549d981f4e37a642868f582ca0aa15c
+I, [2013-04-01T18:54:28.838341 #22863]  INFO -- : RO2S: Access token e7d0a240a743eaf50929c7fc96292a259d515f25712c558bf0d3e1c546cfb38a granted to client UberClient, identity Batman
+I, [2013-04-01T18:54:28.851675 #22863]  INFO -- : RO2S: Client UberClient requested code with scope read write
+I, [2013-04-01T18:54:28.858574 #22863]  INFO -- : RO2S: Client 5159bbc4b9eab0594f000128 granted access code 4ab4a3efedc96cc7bb82a40d7be8ee97a1c9836b58226c9091689faa118fa00e
+I, [2013-04-01T18:54:28.866667 #22863]  INFO -- : RO2S: Access token e3cac1f6bb5cebac91a35c1c01f62a63942b454d938bd48fe3323a7e61d004dd granted to client UberClient, identity Batman
+I, [2013-04-01T18:54:28.879079 #22863]  INFO -- : RO2S: Client UberClient requested code with scope read write
+I, [2013-04-01T18:54:28.886087 #22863]  INFO -- : RO2S: Client 5159bbc4b9eab0594f00012a granted access code 72031aacc9cb9d3a943ec8aeb63526cdb619c5ed69f37bc30a5a5771b8873f12
+I, [2013-04-01T18:54:28.893904 #22863]  INFO -- : RO2S: Access token f70a4f77960491a16dc436df48d9d9e3891da7b28835178361204cc625153896 granted to client UberClient, identity Batman
+I, [2013-04-01T18:54:28.906835 #22863]  INFO -- : RO2S: Client UberClient requested code with scope read write
+I, [2013-04-01T18:54:28.913681 #22863]  INFO -- : RO2S: Client 5159bbc4b9eab0594f00012c granted access code 514c02f463e26da84abf625ac0fb5a9aa951c0cf196720c274e17a2befd5a0b4
+I, [2013-04-01T18:54:28.922094 #22863]  INFO -- : RO2S: Access token 5763b2112a8213a757e37da2bcf66708d4985cac8c3cd01c652a2f3bf276f9b9 granted to client UberClient, identity Batman
+I, [2013-04-01T18:54:28.934094 #22863]  INFO -- : RO2S: Client UberClient requested code with scope read write
+I, [2013-04-01T18:54:28.940700 #22863]  INFO -- : RO2S: Client 5159bbc4b9eab0594f00012e granted access code f81975c194cc2f306abf069d9547745c32bed18c448d13d65393212147342b60
+I, [2013-04-01T18:54:28.948898 #22863]  INFO -- : RO2S: Access token 1da077d6df662063dd43c8fb8428bfcaace1d22828212d1d0271fef2a015d58c granted to client UberClient, identity Batman
+I, [2013-04-01T18:54:28.961179 #22863]  INFO -- : RO2S: Client UberClient requested code with scope read write
+I, [2013-04-01T18:54:28.968278 #22863]  INFO -- : RO2S: Client 5159bbc4b9eab0594f000130 granted access code 9cfe7e2c880b5fdaea21581c7abf77c0a6f6a9604c23d7739fc82ceb6d2ba66a
+I, [2013-04-01T18:54:28.976473 #22863]  INFO -- : RO2S: Access token 8c235fda5aa83f49bbd10d9c66d2ad75c9cd9e1c38056db16573b4e98b96da2d granted to client UberClient, identity Batman
+I, [2013-04-01T18:54:28.988939 #22863]  INFO -- : RO2S: Client UberClient requested code with scope read write
+I, [2013-04-01T18:54:28.995606 #22863]  INFO -- : RO2S: Client 5159bbc4b9eab0594f000132 granted access code 77b297099ece5bb249d567231b4d81bc9206bce0cfdab689e149371663cacebc
+I, [2013-04-01T18:54:29.001565 #22863]  INFO -- : RO2S: Access token 0d75c822c9ca219c0ecf87961130d3535e92eeaf945f000ac07bd64216e62719 granted to client UberClient, identity 
+I, [2013-04-01T18:54:29.005910 #22863]  INFO -- : RO2S: Access token 594a6934967b5aba9e555db51ba297d25161393f3253f2642f7116d35349508f granted to client UberClient, identity 
+I, [2013-04-01T18:54:29.008585 #22863]  INFO -- : RO2S: Access token 07649e56a5b0a3471194eb1d7820bc505f0cb74da2681d254757f986667bebf6 granted to client UberClient, identity 
+I, [2013-04-01T18:54:29.011230 #22863]  INFO -- : RO2S: Access token 94dd234ca022c300c2b6ecb6d64931200b0f84731a501220c9f59ac05bfe30cf granted to client UberClient, identity 
+I, [2013-04-01T18:54:29.023159 #22863]  INFO -- : RO2S: Client UberClient requested code with scope read write
+I, [2013-04-01T18:54:29.029898 #22863]  INFO -- : RO2S: Client 5159bbc5b9eab0594f000134 granted access code bd5b29a359b7855175c34dd1b44fc7eab2b6cd7e09bef0cada1e00318a679326
+I, [2013-04-01T18:54:29.034551 #22863]  INFO -- : RO2S: Access token e327fcd2cad0f3d41da1cf7031de09811e597dddbed46489d0f2876c5b6c9fdc granted to client UberClient, identity 
+I, [2013-04-01T18:54:29.045945 #22863]  INFO -- : RO2S: Client UberClient requested code with scope read write
+I, [2013-04-01T18:54:29.053235 #22863]  INFO -- : RO2S: Client 5159bbc5b9eab0594f000136 granted access code d11dc25d0e73b2a0db74abd856c84241fc126e47def58ab369ac02a92fc80dfd
+I, [2013-04-01T18:54:29.057423 #22863]  INFO -- : RO2S: Access token 0f95550321fdcde49477797c4c098423f44728a674cadd709e2df1f968380ced granted to client UberClient, identity 
+I, [2013-04-01T18:54:29.069104 #22863]  INFO -- : RO2S: Client UberClient requested code with scope read write
+I, [2013-04-01T18:54:29.076040 #22863]  INFO -- : RO2S: Client 5159bbc5b9eab0594f000138 granted access code 8df25d04bf4be75b4ac8db70331d0def579f86c3636f570929b1f14f7eb7a16f
+I, [2013-04-01T18:54:29.080545 #22863]  INFO -- : RO2S: Access token c533b02a39e39721d6a581e3b402d492d5fdc25fe5e54315a1c90a87ef538809 granted to client UberClient, identity 
+I, [2013-04-01T18:54:29.092783 #22863]  INFO -- : RO2S: Client UberClient requested code with scope read write
+I, [2013-04-01T18:54:29.100160 #22863]  INFO -- : RO2S: Client 5159bbc5b9eab0594f00013a granted access code a9ade97d5005c484270a0239c9951da48fdf83bd4ad282602fa696aa6b1d6941
+I, [2013-04-01T18:54:29.104506 #22863]  INFO -- : RO2S: Access token 7029be8b8e0fada538715d0bb05f8663e9b0859c7490ba7e77bbef879619b4f5 granted to client UberClient, identity 
+I, [2013-04-01T18:54:29.116036 #22863]  INFO -- : RO2S: Client UberClient requested code with scope read write
+I, [2013-04-01T18:54:29.170091 #22863]  INFO -- : RO2S: Client 5159bbc5b9eab0594f00013c granted access code b8899def4c695b7de2787a7af879c8e7b92b21833cf6dde797d62738d7d32230
+I, [2013-04-01T18:54:29.174826 #22863]  INFO -- : RO2S: Access token 593ad8d8004dc3c0581d064fc4e043a8a9b3bdd7103e0461d696e09bf16e98c4 granted to client UberClient, identity 
+I, [2013-04-01T18:54:29.186780 #22863]  INFO -- : RO2S: Client UberClient requested code with scope read write
+I, [2013-04-01T18:54:29.193458 #22863]  INFO -- : RO2S: Client 5159bbc5b9eab0594f00013e granted access code d52b4be89e07029342373092beda8c4ef98d3d8bf61d950fdacc3a95f363b00c
+I, [2013-04-01T18:54:29.197672 #22863]  INFO -- : RO2S: Access token 5559207de95f1ea62e312b67da305c60a81c97e4bd1e637e31f5d0094cd2d6da granted to client UberClient, identity 
+I, [2013-04-01T18:54:29.210684 #22863]  INFO -- : RO2S: Client UberClient requested code with scope read write
+I, [2013-04-01T18:54:29.221623 #22863]  INFO -- : RO2S: Client 5159bbc5b9eab0594f000140 granted access code 2f26f208263766067d6c031f0a701ffc7df4a25dbb8fa80fd5fa07248724305e
+I, [2013-04-01T18:54:29.228396 #22863]  INFO -- : RO2S: Access token 9ccb7ae7355cad8034c64a4c3d431510341dc57b5a1fe99f22ace45cce6ede6b granted to client UberClient, identity Batman
+I, [2013-04-01T18:54:29.241473 #22863]  INFO -- : RO2S: Client UberClient requested code with scope read write
+I, [2013-04-01T18:54:29.248155 #22863]  INFO -- : RO2S: Client 5159bbc5b9eab0594f000142 granted access code d94771401f8d3a793279045dcbd4976285a0cfa288544a7c225120710abca339
+I, [2013-04-01T18:54:29.253278 #22863]  INFO -- : RO2S: Access token 773981ee2ea91616a480a30b75b801743c15531c9935f6563b5834d50313c1bf granted to client UberClient, identity Batman
+I, [2013-04-01T18:54:29.265100 #22863]  INFO -- : RO2S: Client UberClient requested code with scope read write
+I, [2013-04-01T18:54:29.272046 #22863]  INFO -- : RO2S: Client 5159bbc5b9eab0594f000144 granted access code cce80af8463b89d59eb27da8c7b5501d946d32f4132c37dccb99bf95cb27c38a
+I, [2013-04-01T18:54:29.276974 #22863]  INFO -- : RO2S: Access token 5a20594d048bd65d902aec2ecbaf8bc79051821a97ca875629b387f2eec53d06 granted to client UberClient, identity Batman
+I, [2013-04-01T18:54:29.289510 #22863]  INFO -- : RO2S: Client UberClient requested code with scope read write
+I, [2013-04-01T18:54:29.296678 #22863]  INFO -- : RO2S: Client 5159bbc5b9eab0594f000146 granted access code 67f95bf8b532bba6d56960254b2f992ee9063c4c928918a77fc28bef7231a136
+I, [2013-04-01T18:54:29.301603 #22863]  INFO -- : RO2S: Access token 0bda28b039e2622bb8143dc75812a6e1bba51b817842775c94f5293939569409 granted to client UberClient, identity Batman
+I, [2013-04-01T18:54:29.316236 #22863]  INFO -- : RO2S: Client UberClient requested code with scope read write
+I, [2013-04-01T18:54:29.325285 #22863]  INFO -- : RO2S: Client 5159bbc5b9eab0594f000148 granted access code fe796a62917ef160bc3fdf69a6418d3493196620db4c8db1dfc2c47cd893126f
+I, [2013-04-01T18:54:29.331403 #22863]  INFO -- : RO2S: Access token f4b12a3df387d2d7cd990faf202861065d6ac68c7b691ac1f6021da7e56bfa0b granted to client UberClient, identity Batman
+I, [2013-04-01T18:54:29.345459 #22863]  INFO -- : RO2S: Client UberClient requested code with scope read write
+I, [2013-04-01T18:54:29.353055 #22863]  INFO -- : RO2S: Client 5159bbc5b9eab0594f00014a granted access code f3b01dc097a336a41d45aa396a188af16a0567c2f175a9161ed6106f28d3afb6
+I, [2013-04-01T18:54:29.357970 #22863]  INFO -- : RO2S: Access token d72c458705679041952e7b16481685dbe9e74c54f0c42d8deaac363f01ac447f granted to client UberClient, identity Batman
+I, [2013-04-01T18:54:29.370121 #22863]  INFO -- : RO2S: Client UberClient requested code with scope read write
+I, [2013-04-01T18:54:29.377138 #22863]  INFO -- : RO2S: Client 5159bbc5b9eab0594f00014c granted access code 293597ce45fe3079bd93d26b7f823e3946ee19e7c0ef4be0caa3861235f18f82
+E, [2013-04-01T18:54:29.379893 #22863] ERROR -- : RO2S: Access token request error invalid_client: Client ID and client secret do not match.
+I, [2013-04-01T18:54:29.392786 #22863]  INFO -- : RO2S: Client UberClient requested code with scope read write
+I, [2013-04-01T18:54:29.399149 #22863]  INFO -- : RO2S: Client 5159bbc5b9eab0594f00014e granted access code daedede6d04725751fe74f57e03813d1da299f24297c39734aca50244afb2b20
+E, [2013-04-01T18:54:29.402235 #22863] ERROR -- : RO2S: Access token request error invalid_client: Client ID and client secret do not match.
+I, [2013-04-01T18:54:29.413290 #22863]  INFO -- : RO2S: Client UberClient requested code with scope read write
+I, [2013-04-01T18:54:29.420987 #22863]  INFO -- : RO2S: Client 5159bbc5b9eab0594f000150 granted access code fe150e03fa6f7f69f33afac786b1e924d8f32f8f29075bdc0658432fca39e9bc
+E, [2013-04-01T18:54:29.423916 #22863] ERROR -- : RO2S: Access token request error invalid_client: Client ID and client secret do not match.
+I, [2013-04-01T18:54:29.436438 #22863]  INFO -- : RO2S: Client UberClient requested code with scope read write
+I, [2013-04-01T18:54:29.443230 #22863]  INFO -- : RO2S: Client 5159bbc5b9eab0594f000152 granted access code 9da9ff40c92d509700d573871802bf512baa84516daa61bef9184aa16e1cffc8
+E, [2013-04-01T18:54:29.446547 #22863] ERROR -- : RO2S: Access token request error invalid_client: Client ID and client secret do not match.
+I, [2013-04-01T18:54:29.458607 #22863]  INFO -- : RO2S: Client UberClient requested code with scope read write
+I, [2013-04-01T18:54:29.466674 #22863]  INFO -- : RO2S: Client 5159bbc5b9eab0594f000154 granted access code 967832e362462cdba8c52577626a81546d600dd7cd002838ac15ba676132cc36
+I, [2013-04-01T18:54:29.473748 #22863]  INFO -- : RO2S: Access token 8b7f27e540b680a6858a1bc4279a2f5ac251d524a931f78ebe0bfacf5b6d7b82 granted to client UberClient, identity Batman
+I, [2013-04-01T18:54:29.476404 #22863]  INFO -- : RO2S: HTTP authorization failed invalid_token
+I, [2013-04-01T18:54:29.488973 #22863]  INFO -- : RO2S: Client UberClient requested code with scope read write
+I, [2013-04-01T18:54:29.495736 #22863]  INFO -- : RO2S: Client 5159bbc5b9eab0594f000156 granted access code f95c1c446e1617083316936dd6611820c6e23b81636cd59442d4dd8bc13931bb
+I, [2013-04-01T18:54:29.502620 #22863]  INFO -- : RO2S: Access token 7d6b1ed3029c51941bc2cac05f8b77cf07ddce8d7e496d2f6ea1dad27af3a465 granted to client UberClient, identity Batman
+I, [2013-04-01T18:54:29.505123 #22863]  INFO -- : RO2S: HTTP authorization failed invalid_token
+I, [2013-04-01T18:54:29.517637 #22863]  INFO -- : RO2S: Client UberClient requested code with scope read write
+I, [2013-04-01T18:54:29.524653 #22863]  INFO -- : RO2S: Client 5159bbc5b9eab0594f000158 granted access code 8ea7f9d8c378d7fda8ebf770073661827b54bfbdc7eb3023d393539ce8a9a01d
+I, [2013-04-01T18:54:29.531763 #22863]  INFO -- : RO2S: Access token 113cbd252346eb6a39cc36ef8ff3390fc68081309cf1ea991edf198f643d0c13 granted to client UberClient, identity Batman
+I, [2013-04-01T18:54:29.534656 #22863]  INFO -- : RO2S: HTTP authorization failed invalid_token
+I, [2013-04-01T18:54:29.593562 #22863]  INFO -- : RO2S: Client UberClient requested code with scope read write
+I, [2013-04-01T18:54:29.600425 #22863]  INFO -- : RO2S: Client 5159bbc5b9eab0594f00015a granted access code c6630ba0c7f47d63731efdd15c2454b8b5e01827cb44ddf7b9cd520e2ae96149
+I, [2013-04-01T18:54:29.608008 #22863]  INFO -- : RO2S: Access token dedbdc172686eb290e229a29d3d5d348d79fe066f35218561dde8fb2a6d05191 granted to client UberClient, identity Batman
+I, [2013-04-01T18:54:29.610511 #22863]  INFO -- : RO2S: HTTP authorization failed invalid_token
+I, [2013-04-01T18:54:29.622186 #22863]  INFO -- : RO2S: Client UberClient requested code with scope read write
+I, [2013-04-01T18:54:29.628604 #22863]  INFO -- : RO2S: Client 5159bbc5b9eab0594f00015c granted access code 97b087a806269358fcbce3701d55ce94bb1f72e3cd72e2fc737a206b2fd31104
+I, [2013-04-01T18:54:29.635988 #22863]  INFO -- : RO2S: Access token 59a4bf10132d9de22bc2a1bae7bb492f54f0ce21897d696e40a067356355f11a granted to client UberClient, identity Batman
+I, [2013-04-01T18:54:29.639052 #22863]  INFO -- : RO2S: Authorized Batman
+I, [2013-04-01T18:54:29.650948 #22863]  INFO -- : RO2S: Client UberClient requested code with scope read write
+I, [2013-04-01T18:54:29.657716 #22863]  INFO -- : RO2S: Client 5159bbc5b9eab0594f00015e granted access code 30eb31bacceab0b31172505e5a059b20a03b3aff55b149279f650fdcc14902ce
+I, [2013-04-01T18:54:29.665464 #22863]  INFO -- : RO2S: Access token 5b09ef3f4aa5cc91f0635548d964d244343f2d33eedf213cc6b4c451a435360c granted to client UberClient, identity Batman
+I, [2013-04-01T18:54:29.669189 #22863]  INFO -- : RO2S: Authorized Batman
+I, [2013-04-01T18:54:29.680919 #22863]  INFO -- : RO2S: Client UberClient requested code with scope read write
+I, [2013-04-01T18:54:29.687617 #22863]  INFO -- : RO2S: Client 5159bbc5b9eab0594f000160 granted access code 4836f0109a11134100503e3a9ce92cb273c9b8f37da0f24179fe5b0d89a102f3
+I, [2013-04-01T18:54:29.694649 #22863]  INFO -- : RO2S: Access token 96ffe4c67ee5e729c2ac23b746344e1cf98d83a0442ecc0221788b2c414e64ba granted to client UberClient, identity Batman
+D, [2013-04-01T18:54:29.697030 #22863] DEBUG -- : RO2S: Unauthorized request
+I, [2013-04-01T18:54:29.710109 #22863]  INFO -- : RO2S: Client UberClient requested code with scope read write
+I, [2013-04-01T18:54:29.717522 #22863]  INFO -- : RO2S: Client 5159bbc5b9eab0594f000162 granted access code d48fddeb5833910750ddea85e3a597d8495e3cef9f0c6a57c85aa471d9525792
+I, [2013-04-01T18:54:29.724409 #22863]  INFO -- : RO2S: Access token 7e12ba9f475578bfc8774daa7147c5e59cb3fb1f2477dac412929dd3b163aa68 granted to client UberClient, identity Batman
+D, [2013-04-01T18:54:29.726514 #22863] DEBUG -- : RO2S: Unauthorized request
+I, [2013-04-01T18:54:29.741344 #22863]  INFO -- : RO2S: Client UberClient requested code with scope read write
+I, [2013-04-01T18:54:29.748093 #22863]  INFO -- : RO2S: Client 5159bbc5b9eab0594f000164 granted access code 182eca665cfa352b30b256ddcde0db64cd8f26d755d621b2bf203a91a9c29ea8
+I, [2013-04-01T18:54:29.755218 #22863]  INFO -- : RO2S: Access token b7812052973ff4e2be3632ed01adc9d3e706037678ef2a5f8612e46b913f5a10 granted to client UberClient, identity Batman
+D, [2013-04-01T18:54:29.757473 #22863] DEBUG -- : RO2S: Unauthorized request
+I, [2013-04-01T18:54:29.769589 #22863]  INFO -- : RO2S: Client UberClient requested code with scope read write
+I, [2013-04-01T18:54:29.776359 #22863]  INFO -- : RO2S: Client 5159bbc5b9eab0594f000166 granted access code bcb6331fde18f19382ee4abbf04e5a728c074d2c87e0ed4b5dbd7a78b7fb2a05
+I, [2013-04-01T18:54:29.783622 #22863]  INFO -- : RO2S: Access token 43f130b32ff9270f8657634a82d9c6dc18cc1cc186372e06c61fbfeb9ef6cc4a granted to client UberClient, identity Batman
+D, [2013-04-01T18:54:29.785758 #22863] DEBUG -- : RO2S: Unauthorized request
+I, [2013-04-01T18:54:29.797797 #22863]  INFO -- : RO2S: Client UberClient requested code with scope read write
+I, [2013-04-01T18:54:29.804254 #22863]  INFO -- : RO2S: Client 5159bbc5b9eab0594f000168 granted access code a18fbfaa365b0342e478a46cad25115a4f3e5cad0e31f15ffebdd26108ee3fc6
+I, [2013-04-01T18:54:29.811099 #22863]  INFO -- : RO2S: Access token 5b33a33a9f75c2f056997126f006a9a1c7ea493c0f02dd724a701cf1cb40df34 granted to client UberClient, identity Batman
+I, [2013-04-01T18:54:29.813655 #22863]  INFO -- : RO2S: HTTP authorization failed invalid_token
+I, [2013-04-01T18:54:29.825236 #22863]  INFO -- : RO2S: Client UberClient requested code with scope read write
+I, [2013-04-01T18:54:29.832937 #22863]  INFO -- : RO2S: Client 5159bbc5b9eab0594f00016a granted access code 54eb072bf9c286c64a5e8d4ee9c7c52f08f950e8d904807369a62b75433bee69
+I, [2013-04-01T18:54:29.840582 #22863]  INFO -- : RO2S: Access token 6feaff82a79634bfde3e77c346f11e1ac99136b960e69d3df0059975289c4d47 granted to client UberClient, identity Batman
+I, [2013-04-01T18:54:29.843560 #22863]  INFO -- : RO2S: HTTP authorization failed invalid_token
+I, [2013-04-01T18:54:29.854762 #22863]  INFO -- : RO2S: Client UberClient requested code with scope read write
+I, [2013-04-01T18:54:29.861698 #22863]  INFO -- : RO2S: Client 5159bbc5b9eab0594f00016c granted access code 27f33f3957e49aa0f132e375997859540d7204955e3472910b3d914a76daa72e
+I, [2013-04-01T18:54:29.869308 #22863]  INFO -- : RO2S: Access token 3bdfb38416aa52398487e1278d50bbc9e7ca2c6a745d32128760e6c9e6a15883 granted to client UberClient, identity Batman
+I, [2013-04-01T18:54:29.872276 #22863]  INFO -- : RO2S: HTTP authorization failed invalid_token
+I, [2013-04-01T18:54:29.883917 #22863]  INFO -- : RO2S: Client UberClient requested code with scope read write
+I, [2013-04-01T18:54:29.890593 #22863]  INFO -- : RO2S: Client 5159bbc5b9eab0594f00016e granted access code 144fda736ae69920926ac03352ddd959caecb0940c22232f6046b3eaf46249bb
+I, [2013-04-01T18:54:29.897510 #22863]  INFO -- : RO2S: Access token e29bb0e1040f11fedf2ec77352abe69bdef47b184302376822e2733734c4b399 granted to client UberClient, identity Batman
+I, [2013-04-01T18:54:29.900923 #22863]  INFO -- : RO2S: HTTP authorization failed invalid_token
+I, [2013-04-01T18:54:29.912111 #22863]  INFO -- : RO2S: Client UberClient requested code with scope read write
+I, [2013-04-01T18:54:29.918860 #22863]  INFO -- : RO2S: Client 5159bbc5b9eab0594f000170 granted access code be61240cf79e93c8e448d4202b9f01cdca33ff9887f6f085a0fce309b53b9c37
+I, [2013-04-01T18:54:29.926103 #22863]  INFO -- : RO2S: Access token b5ae768d31314a2a5efd4698d856a476b243a4a5dd6dde3d537d5ac8671e7770 granted to client UberClient, identity Batman
+I, [2013-04-01T18:54:29.929473 #22863]  INFO -- : RO2S: Authorized Batman
+I, [2013-04-01T18:54:29.942175 #22863]  INFO -- : RO2S: Client UberClient requested code with scope read write
+I, [2013-04-01T18:54:29.996011 #22863]  INFO -- : RO2S: Client 5159bbc5b9eab0594f000172 granted access code 2152ef43179b51dd031c3bded95317caf862d9cbe76cae440749601b9f9a273b
+I, [2013-04-01T18:54:30.003452 #22863]  INFO -- : RO2S: Access token eaf08d06a0766eff447800fea21381600b1ee2b6c2bee2631c6f7b0201ea1cfd granted to client UberClient, identity Batman
+I, [2013-04-01T18:54:30.007018 #22863]  INFO -- : RO2S: Authorized Batman
+I, [2013-04-01T18:54:30.018802 #22863]  INFO -- : RO2S: Client UberClient requested code with scope read write
+I, [2013-04-01T18:54:30.025961 #22863]  INFO -- : RO2S: Client 5159bbc6b9eab0594f000174 granted access code b40d4ec1ad708c75dbc7b022c00547cf1097356465772063268f2620d049a99e
+I, [2013-04-01T18:54:30.033235 #22863]  INFO -- : RO2S: Access token 752870f7d315a1d384c39ee718c26fde3be838e135b7595532c0dfdc1559cd50 granted to client UberClient, identity Batman
+D, [2013-04-01T18:54:30.035569 #22863] DEBUG -- : RO2S: Unauthorized request
+I, [2013-04-01T18:54:30.047048 #22863]  INFO -- : RO2S: Client UberClient requested code with scope read write
+I, [2013-04-01T18:54:30.054623 #22863]  INFO -- : RO2S: Client 5159bbc6b9eab0594f000176 granted access code 2b84e8f4ec1c79056662a3bfe831c90a374cf601732740b5b0aa7bc06ccbc3fb
+I, [2013-04-01T18:54:30.061614 #22863]  INFO -- : RO2S: Access token 081c2991728eafd26cf802e67a1bba63f7daa8f717d7819a2569245f6bbb7571 granted to client UberClient, identity Batman
+D, [2013-04-01T18:54:30.063637 #22863] DEBUG -- : RO2S: Unauthorized request
+I, [2013-04-01T18:54:30.075040 #22863]  INFO -- : RO2S: Client UberClient requested code with scope read write
+I, [2013-04-01T18:54:30.082099 #22863]  INFO -- : RO2S: Client 5159bbc6b9eab0594f000178 granted access code e0f0767cc3f6552001da9dcc0dbd6ed523d819808e2a3a36f4e33d1682b93c0c
+I, [2013-04-01T18:54:30.089333 #22863]  INFO -- : RO2S: Access token 430cf82b4a2dd89697ae9e3200b07a6066afe36cae3fa605783af3f3f4bce5b6 granted to client UberClient, identity Batman
+D, [2013-04-01T18:54:30.091402 #22863] DEBUG -- : RO2S: Unauthorized request
+I, [2013-04-01T18:54:30.103369 #22863]  INFO -- : RO2S: Client UberClient requested code with scope read write
+I, [2013-04-01T18:54:30.110134 #22863]  INFO -- : RO2S: Client 5159bbc6b9eab0594f00017a granted access code 59103127df60f4897f92b52594804951caed627ec52b367a0561c83bb4c266b0
+I, [2013-04-01T18:54:30.117645 #22863]  INFO -- : RO2S: Access token cc09bd294c06fbcc08a4cb27edbfead605625315cb102f0c7033e71f47e823d9 granted to client UberClient, identity Batman
+D, [2013-04-01T18:54:30.119672 #22863] DEBUG -- : RO2S: Unauthorized request
+I, [2013-04-01T18:54:30.130903 #22863]  INFO -- : RO2S: Client UberClient requested code with scope read write
+I, [2013-04-01T18:54:30.137529 #22863]  INFO -- : RO2S: Client 5159bbc6b9eab0594f00017c granted access code 39369f6dd2e1ec41120f8ba8b53fff474bd2d7b860bb2a452db8b1bbab44bc3a
+I, [2013-04-01T18:54:30.144685 #22863]  INFO -- : RO2S: Access token 9619624ca1fef641168789ba18391fc93bce2d4d6331a98df9c30cd76fa7c51c granted to client UberClient, identity Batman
+I, [2013-04-01T18:54:30.147916 #22863]  INFO -- : RO2S: Authorized Batman
+I, [2013-04-01T18:54:30.162146 #22863]  INFO -- : RO2S: Client UberClient requested code with scope read write
+I, [2013-04-01T18:54:30.169365 #22863]  INFO -- : RO2S: Client 5159bbc6b9eab0594f00017e granted access code 7ad8a181cd66802473b98d25c9f341bc3b0ce3174eafa4ed0f8b4ef0d433c21e
+I, [2013-04-01T18:54:30.176217 #22863]  INFO -- : RO2S: Access token 077536bcdce448945159c278a783df091aa7a4f0b8cde0c34ab5378a7df5626a granted to client UberClient, identity Batman
+I, [2013-04-01T18:54:30.179880 #22863]  INFO -- : RO2S: Authorized Batman
+I, [2013-04-01T18:54:30.192929 #22863]  INFO -- : RO2S: Client UberClient requested code with scope read write
+I, [2013-04-01T18:54:30.199634 #22863]  INFO -- : RO2S: Client 5159bbc6b9eab0594f000180 granted access code 38426541afb84943cad9a062d345b068c85abffeea438ae1ca24a938422522c6
+I, [2013-04-01T18:54:30.206668 #22863]  INFO -- : RO2S: Access token f55d06ff9a41117ae5912ea1c9ee2e29d95189d2b81df2e5e4978e8580e89da0 granted to client UberClient, identity Batman
+I, [2013-04-01T18:54:30.209778 #22863]  INFO -- : RO2S: Authorized Batman
+I, [2013-04-01T18:54:30.222963 #22863]  INFO -- : RO2S: Client UberClient requested code with scope read write
+I, [2013-04-01T18:54:30.230525 #22863]  INFO -- : RO2S: Client 5159bbc6b9eab0594f000182 granted access code 4f82afea8a9c85eb12a324660bfee6e0f3b99373dcbb220267f6c666877cfdb3
+I, [2013-04-01T18:54:30.237577 #22863]  INFO -- : RO2S: Access token ec7bb08463e431a3c9f8d5bd898cc88c5774578a128ab508194ba8a2fd0fd7e7 granted to client UberClient, identity Batman
+I, [2013-04-01T18:54:30.240777 #22863]  INFO -- : RO2S: Authorized Batman
+I, [2013-04-01T18:54:30.252919 #22863]  INFO -- : RO2S: Client UberClient requested code with scope read write
+I, [2013-04-01T18:54:30.259678 #22863]  INFO -- : RO2S: Client 5159bbc6b9eab0594f000184 granted access code 7a755822895d04a0edd951b7c0479416f78fb4a5935b47ade25d6b7678de187a
+I, [2013-04-01T18:54:30.266635 #22863]  INFO -- : RO2S: Access token f74bab294e22125b970d774a1a949facc246a5c24b60aee4ef49b5c7351ca83a granted to client UberClient, identity Batman
+I, [2013-04-01T18:54:30.269759 #22863]  INFO -- : RO2S: Authorized Batman
+I, [2013-04-01T18:54:30.292176 #22863]  INFO -- : RO2S: Client UberClient requested code with scope read write
+I, [2013-04-01T18:54:30.300520 #22863]  INFO -- : RO2S: Client 5159bbc6b9eab0594f000186 granted access code 567751651945e8a6f4e42894a57498ccc91024ab709d84859c85568655a42525
+I, [2013-04-01T18:54:30.308546 #22863]  INFO -- : RO2S: Access token 5fdf59d650017a04e8ac9554900c6949749e8309de8f126553dee8067216a133 granted to client UberClient, identity Batman
+I, [2013-04-01T18:54:30.312259 #22863]  INFO -- : RO2S: Authorized Batman
+I, [2013-04-01T18:54:30.327791 #22863]  INFO -- : RO2S: Client UberClient requested code with scope read write
+I, [2013-04-01T18:54:30.334992 #22863]  INFO -- : RO2S: Client 5159bbc6b9eab0594f000188 granted access code 454ef4069691b30de2667c4a3489ee65738e90197a92080b921072df457fab69
+I, [2013-04-01T18:54:30.342255 #22863]  INFO -- : RO2S: Access token 42fd59eefe9dd1feea91e3cb52dee6012f67514a0a3c2b811f9c3f60eecd32a3 granted to client UberClient, identity Batman
+I, [2013-04-01T18:54:30.360576 #22863]  INFO -- : RO2S: Client UberClient requested code with scope read write
+I, [2013-04-01T18:54:30.412189 #22863]  INFO -- : RO2S: Client 5159bbc6b9eab0594f00018a granted access code 2ae03c72f596668341bc8b34a288eaf88e254a6772d5ccdcc1f4ba1c0cc1a550
+I, [2013-04-01T18:54:30.419293 #22863]  INFO -- : RO2S: Access token f43e5a70ba6f909b7b7fe9f1c0a344b491e697bec7d0ab3432cc6e4721d28997 granted to client UberClient, identity Batman
+I, [2013-04-01T18:54:30.435327 #22863]  INFO -- : RO2S: Client UberClient requested code with scope read write
+I, [2013-04-01T18:54:30.442370 #22863]  INFO -- : RO2S: Client 5159bbc6b9eab0594f00018c granted access code 9f3c009eda2deb0e5613ac5d90fa6fc3d9a2a2be7a9aec9156976569beecfc1e
+I, [2013-04-01T18:54:30.449760 #22863]  INFO -- : RO2S: Access token fca15b51d42690582e486e2771def7a10591703d88d6864ad96631b72c0c6768 granted to client UberClient, identity Batman
+I, [2013-04-01T18:54:30.454357 #22863]  INFO -- : RO2S: HTTP authorization failed invalid_token
+I, [2013-04-01T18:54:30.466918 #22863]  INFO -- : RO2S: Client UberClient requested code with scope read write
+I, [2013-04-01T18:54:30.473799 #22863]  INFO -- : RO2S: Client 5159bbc6b9eab0594f00018e granted access code 9bc755b326a0e60301755ece735c5c0c70797094298583016f3afc1a1d22f6e8
+I, [2013-04-01T18:54:30.481518 #22863]  INFO -- : RO2S: Access token 3f4f54f7e3815477ff1bf2d6f063ede970133a5b5401d7cb232b5f0537d2ea71 granted to client UberClient, identity Batman
+I, [2013-04-01T18:54:30.486173 #22863]  INFO -- : RO2S: HTTP authorization failed invalid_token
+I, [2013-04-01T18:54:30.497558 #22863]  INFO -- : RO2S: Client UberClient requested code with scope read write
+I, [2013-04-01T18:54:30.504142 #22863]  INFO -- : RO2S: Client 5159bbc6b9eab0594f000190 granted access code 0bd89a09557c6b624f0e3fc88ab2678d9d76d62fbf21a77c328926b9f4acf325
+I, [2013-04-01T18:54:30.511028 #22863]  INFO -- : RO2S: Access token fe2f352127dad5cb08839380f80a48286df01345deb88de70d9d6290824f3b69 granted to client UberClient, identity Batman
+I, [2013-04-01T18:54:30.515470 #22863]  INFO -- : RO2S: HTTP authorization failed invalid_token
+I, [2013-04-01T18:54:30.527069 #22863]  INFO -- : RO2S: Client UberClient requested code with scope read write
+I, [2013-04-01T18:54:30.534089 #22863]  INFO -- : RO2S: Client 5159bbc6b9eab0594f000192 granted access code 3cc9d5dc2b9e93a9b3051351b730c300a106253b144b7bdc8275e1872288fe83
+I, [2013-04-01T18:54:30.541019 #22863]  INFO -- : RO2S: Access token 24151e2f30219bfda0b547cec34f45cab2e845545d5497c7592cee9f44050afa granted to client UberClient, identity Batman
+I, [2013-04-01T18:54:30.545316 #22863]  INFO -- : RO2S: HTTP authorization failed invalid_token
+I, [2013-04-01T18:54:30.556245 #22863]  INFO -- : RO2S: Client UberClient requested code with scope read write
+I, [2013-04-01T18:54:30.562754 #22863]  INFO -- : RO2S: Client 5159bbc6b9eab0594f000194 granted access code 12ef460a34f2bf27c2e984eca5f92c3904b5497885a36997f4c2ec78144cf8f8
+I, [2013-04-01T18:54:30.569495 #22863]  INFO -- : RO2S: Access token 4e65fd6b1de3dac060e28818b24f4c795ab62412a345036da891cf7048c7eb7f granted to client UberClient, identity Batman
+I, [2013-04-01T18:54:30.574464 #22863]  INFO -- : RO2S: HTTP authorization failed invalid_token
+I, [2013-04-01T18:54:30.585548 #22863]  INFO -- : RO2S: Client UberClient requested code with scope read write
+I, [2013-04-01T18:54:30.592475 #22863]  INFO -- : RO2S: Client 5159bbc6b9eab0594f000196 granted access code 859fbff85e86e16272ace5e0e9ce90e108893929b69b6e2813ffbe9c13388de5
+I, [2013-04-01T18:54:30.601015 #22863]  INFO -- : RO2S: Access token 6ca780a8c1459625fb4019796bdb16756291fb4e4a1723beaabd06c7b8abb7d8 granted to client UberClient, identity Batman
+I, [2013-04-01T18:54:30.606199 #22863]  INFO -- : RO2S: HTTP authorization failed invalid_token
+I, [2013-04-01T18:54:30.617480 #22863]  INFO -- : RO2S: Client UberClient requested code with scope read write
+I, [2013-04-01T18:54:30.624235 #22863]  INFO -- : RO2S: Client 5159bbc6b9eab0594f000198 granted access code d0515ce146c362f80ada1d6c34ec970d79096c12c668be94089812a7a68c25bb
+I, [2013-04-01T18:54:30.631132 #22863]  INFO -- : RO2S: Access token 2fb2f5b039d717618c4386993785bd42d9692cbf5c159efd3d1453b405f9c6dc granted to client UberClient, identity Batman
+I, [2013-04-01T18:54:30.636016 #22863]  INFO -- : RO2S: HTTP authorization failed invalid_token
+I, [2013-04-01T18:54:30.647435 #22863]  INFO -- : RO2S: Client UberClient requested code with scope read write
+I, [2013-04-01T18:54:30.654066 #22863]  INFO -- : RO2S: Client 5159bbc6b9eab0594f00019a granted access code e6993d61c4069cb27b249f3367b532c9654313d32d15fc967263242fbf86e92b
+I, [2013-04-01T18:54:30.661558 #22863]  INFO -- : RO2S: Access token af5d0ea61768157541c0cd34f328cde34c87aacc5448706fde53af83a17d3f1d granted to client UberClient, identity Batman
+I, [2013-04-01T18:54:30.666946 #22863]  INFO -- : RO2S: HTTP authorization failed invalid_token
+I, [2013-04-01T18:54:30.678259 #22863]  INFO -- : RO2S: Client UberClient requested code with scope read write
+I, [2013-04-01T18:54:30.684958 #22863]  INFO -- : RO2S: Client 5159bbc6b9eab0594f00019c granted access code 8a1fa4084bfb1b612f53025991f5082595941163d4f1398f295a5245be99298b
+I, [2013-04-01T18:54:30.692578 #22863]  INFO -- : RO2S: Access token e06ee5858bbb5ebf92d0152a110c964a6992e788fdb64b6f267e73c0e64110a0 granted to client UberClient, identity Batman
+I, [2013-04-01T18:54:30.695141 #22863]  INFO -- : RO2S: HTTP authorization failed invalid_token
+I, [2013-04-01T18:54:30.707253 #22863]  INFO -- : RO2S: Client UberClient requested code with scope read write
+I, [2013-04-01T18:54:30.715229 #22863]  INFO -- : RO2S: Client 5159bbc6b9eab0594f00019e granted access code a332ca4be9cf49c87b55251f8763b6f897e992abbace51a00fbbec41f86164ed
+I, [2013-04-01T18:54:30.721992 #22863]  INFO -- : RO2S: Access token 6d493d399daa45c3de61b7e33357c70e7a43e3e95269b788c6c04180060d5b9e granted to client UberClient, identity Batman
+I, [2013-04-01T18:54:30.724336 #22863]  INFO -- : RO2S: HTTP authorization failed invalid_token
+I, [2013-04-01T18:54:30.735828 #22863]  INFO -- : RO2S: Client UberClient requested code with scope read write
+I, [2013-04-01T18:54:30.742524 #22863]  INFO -- : RO2S: Client 5159bbc6b9eab0594f0001a0 granted access code c21b0e9b46d2a8272d6f7436cfc3139020eeff1656da7876f499b9faa9a8359f
+I, [2013-04-01T18:54:30.749640 #22863]  INFO -- : RO2S: Access token 30200491bdbe8e74d010125a1a8d278b4e3808050498d4df32a33766676efc4c granted to client UberClient, identity Batman
+I, [2013-04-01T18:54:30.751998 #22863]  INFO -- : RO2S: HTTP authorization failed invalid_token
+I, [2013-04-01T18:54:30.814050 #22863]  INFO -- : RO2S: Client UberClient requested code with scope read write
+I, [2013-04-01T18:54:30.820962 #22863]  INFO -- : RO2S: Client 5159bbc6b9eab0594f0001a2 granted access code f1b0f42e376fa033d38334cc8ed61be15199354b698db3084a55dfffff9609a6
+I, [2013-04-01T18:54:30.828127 #22863]  INFO -- : RO2S: Access token 87ff7f8d9c3668aef488ccb287f1080895fa7cbe5a71f911681f61f9c09889b6 granted to client UberClient, identity Batman
+I, [2013-04-01T18:54:30.830806 #22863]  INFO -- : RO2S: HTTP authorization failed invalid_token
+I, [2013-04-01T18:54:30.843277 #22863]  INFO -- : RO2S: Client UberClient requested code with scope read write
+I, [2013-04-01T18:54:30.851052 #22863]  INFO -- : RO2S: Client 5159bbc6b9eab0594f0001a4 granted access code 7ccd670bf2f6310a21b19ca185897e827e175004b5e1e3745c0a1aa6f0d489cc
+I, [2013-04-01T18:54:30.858166 #22863]  INFO -- : RO2S: Access token 892a42a49279c3497695c3314e5ae5b6efad54f0b7899ac4869fda54ee994219 granted to client UberClient, identity Batman
+I, [2013-04-01T18:54:30.861351 #22863]  INFO -- : RO2S: Authorized Batman
+I, [2013-04-01T18:54:30.872926 #22863]  INFO -- : RO2S: Client UberClient requested code with scope read write
+I, [2013-04-01T18:54:30.879648 #22863]  INFO -- : RO2S: Client 5159bbc6b9eab0594f0001a6 granted access code a94e7020dc34c6a67924222ee1c7624a9f78eca3df0bbeb7007ea66a7bfb702e
+I, [2013-04-01T18:54:30.888384 #22863]  INFO -- : RO2S: Access token 06c9c8ac19d3f2a7fd35a39da141e059dc24fbe5e9e2105ea991a82641a2409b granted to client UberClient, identity Batman
+I, [2013-04-01T18:54:30.891657 #22863]  INFO -- : RO2S: Authorized Batman
+I, [2013-04-01T18:54:30.904231 #22863]  INFO -- : RO2S: Client UberClient requested code with scope read write
+I, [2013-04-01T18:54:30.911066 #22863]  INFO -- : RO2S: Client 5159bbc6b9eab0594f0001a8 granted access code 324775de93d0e3c76633810fb92253d97e79a92c4538b4018268dfcd75da125e
+I, [2013-04-01T18:54:30.918572 #22863]  INFO -- : RO2S: Access token 80a985a61cb13e1e002257ee032039a625c89c4b3889fd43aad8dc073ef4c1d8 granted to client UberClient, identity Batman
+I, [2013-04-01T18:54:30.921851 #22863]  INFO -- : RO2S: HTTP authorization failed expired_token
+I, [2013-04-01T18:54:30.932893 #22863]  INFO -- : RO2S: Client UberClient requested code with scope read write
+I, [2013-04-01T18:54:30.939851 #22863]  INFO -- : RO2S: Client 5159bbc6b9eab0594f0001aa granted access code 0e93d8acfafdd6b9fb99b60c2f1383518fad55b8de4e4f67a9c0e78ab4ff1b28
+I, [2013-04-01T18:54:30.946995 #22863]  INFO -- : RO2S: Access token 4c413e14e09f56c3ddfcf7ce82b172862f95fbf0fa0b7999a0a92921a32cc85f granted to client UberClient, identity Batman
+I, [2013-04-01T18:54:30.950418 #22863]  INFO -- : RO2S: HTTP authorization failed expired_token
+I, [2013-04-01T18:54:30.961852 #22863]  INFO -- : RO2S: Client UberClient requested code with scope read write
+I, [2013-04-01T18:54:30.968539 #22863]  INFO -- : RO2S: Client 5159bbc6b9eab0594f0001ac granted access code 47a6887833ef9472c812673e3c52f88be806105ab30df5eb5d16ba9ef16f3031
+I, [2013-04-01T18:54:30.975477 #22863]  INFO -- : RO2S: Access token 2abf5f7c88e23eed2aa17c2558a87249dc929ab2763a06374837e3848348a92b granted to client UberClient, identity Batman
+I, [2013-04-01T18:54:30.978993 #22863]  INFO -- : RO2S: HTTP authorization failed expired_token
+I, [2013-04-01T18:54:30.990835 #22863]  INFO -- : RO2S: Client UberClient requested code with scope read write
+I, [2013-04-01T18:54:30.997997 #22863]  INFO -- : RO2S: Client 5159bbc6b9eab0594f0001ae granted access code 38f110dc5a5cf5b741b56269dc2e65bb25cad6677cf081513844873a2937b60d
+I, [2013-04-01T18:54:31.006065 #22863]  INFO -- : RO2S: Access token 7ba218269a680af3e95042bc29021a21e35af70786956e8fb50b61db05b8ad6e granted to client UberClient, identity Batman
+I, [2013-04-01T18:54:31.009891 #22863]  INFO -- : RO2S: HTTP authorization failed expired_token
+I, [2013-04-01T18:54:31.022413 #22863]  INFO -- : RO2S: Client UberClient requested code with scope read write
+I, [2013-04-01T18:54:31.029564 #22863]  INFO -- : RO2S: Client 5159bbc7b9eab0594f0001b0 granted access code 74981adaba28c0e80e16bfbc9e692f231cd38d46c930c57ba10adfbac1e8b4ea
+I, [2013-04-01T18:54:31.037180 #22863]  INFO -- : RO2S: Access token 5954c7cac7c93783b2fbbf9d55cad2db7c866481df8874e7c28e643da64cd771 granted to client UberClient, identity Batman
+D, [2013-04-01T18:54:31.039315 #22863] DEBUG -- : RO2S: Unauthorized request
+I, [2013-04-01T18:54:31.050705 #22863]  INFO -- : RO2S: Client UberClient requested code with scope read write
+I, [2013-04-01T18:54:31.057374 #22863]  INFO -- : RO2S: Client 5159bbc7b9eab0594f0001b2 granted access code 77b49cdd4c600f14a1e4fb33e6774abfb63574439661aff7054547755442e040
+I, [2013-04-01T18:54:31.064870 #22863]  INFO -- : RO2S: Access token 3577fb37447c99c9aae1a756839e9525b02d67c6addd9f565388ef84b5c5f816 granted to client UberClient, identity Batman
+D, [2013-04-01T18:54:31.066835 #22863] DEBUG -- : RO2S: Unauthorized request
+I, [2013-04-01T18:54:31.078559 #22863]  INFO -- : RO2S: Client UberClient requested code with scope read write
+I, [2013-04-01T18:54:31.087706 #22863]  INFO -- : RO2S: Client 5159bbc7b9eab0594f0001b4 granted access code 4bb2cc83ab59b1b07b2c9a3fa4b1a3fc65e123c9eb7be6ffe1b1293ef809901d
+I, [2013-04-01T18:54:31.099087 #22863]  INFO -- : RO2S: Access token b20f986d0e67fea16a8c2b941609b3876dcdab8b0480a2bcb85ff366313267d9 granted to client UberClient, identity Batman
+D, [2013-04-01T18:54:31.102175 #22863] DEBUG -- : RO2S: Unauthorized request
+I, [2013-04-01T18:54:31.119139 #22863]  INFO -- : RO2S: Client UberClient requested code with scope read write
+I, [2013-04-01T18:54:31.128326 #22863]  INFO -- : RO2S: Client 5159bbc7b9eab0594f0001b6 granted access code a3da43a3f25cc005fdc78d357f7594dc2c57faae4c7d6422ab7f0977e775285d
+I, [2013-04-01T18:54:31.139768 #22863]  INFO -- : RO2S: Access token f0a618d656a9c34585c4fffa2d6f94053429840e449981847423d25b70df5d2d granted to client UberClient, identity Batman
+D, [2013-04-01T18:54:31.143038 #22863] DEBUG -- : RO2S: Unauthorized request
+I, [2013-04-01T18:54:31.160140 #22863]  INFO -- : RO2S: Client UberClient requested code with scope read write
+I, [2013-04-01T18:54:31.169645 #22863]  INFO -- : RO2S: Client 5159bbc7b9eab0594f0001b8 granted access code 99a30f8620c4c489a097005df3078887c0f2e70865ec1a65731d474c92aa7521
+I, [2013-04-01T18:54:31.178461 #22863]  INFO -- : RO2S: Access token 1d96b46a58dd5c14db40db32c011050538c7c74c8c027f0de93e97430c1c1e7b granted to client UberClient, identity Batman
+D, [2013-04-01T18:54:31.181620 #22863] DEBUG -- : RO2S: Unauthorized request
+I, [2013-04-01T18:54:31.253352 #22863]  INFO -- : RO2S: Client UberClient requested code with scope read write
+I, [2013-04-01T18:54:31.260231 #22863]  INFO -- : RO2S: Client 5159bbc7b9eab0594f0001ba granted access code cce0bd8a5a2f811917dddfdbf466b38a586786b931900a06db2ee140d1546143
+I, [2013-04-01T18:54:31.269538 #22863]  INFO -- : RO2S: Access token cc4fd3804ead2d2b9047bfcad50d82926dca32f0e1d5fb6f684064c360998d52 granted to client UberClient, identity Batman
+D, [2013-04-01T18:54:31.272146 #22863] DEBUG -- : RO2S: Unauthorized request
+I, [2013-04-01T18:54:31.288778 #22863]  INFO -- : RO2S: Client UberClient requested code with scope read write
+I, [2013-04-01T18:54:31.298708 #22863]  INFO -- : RO2S: Client 5159bbc7b9eab0594f0001bc granted access code f84c2f6dd4393ce43bea7a3e1af64d0ccbec1cbd7901e088bbdd1e574fa00e3c
+I, [2013-04-01T18:54:31.309136 #22863]  INFO -- : RO2S: Access token d1e3c2cbe534182914f0c995dcbc5171cd4279d62e10525a326a939dfc2c8b7f granted to client UberClient, identity Batman
+D, [2013-04-01T18:54:31.312647 #22863] DEBUG -- : RO2S: Unauthorized request
+I, [2013-04-01T18:54:31.329724 #22863]  INFO -- : RO2S: Client UberClient requested code with scope read write
+I, [2013-04-01T18:54:31.337937 #22863]  INFO -- : RO2S: Client 5159bbc7b9eab0594f0001be granted access code a4bdac37fb63cba5a2f986b246b427d4c83226ec224c0acb19680f04fcb2fa8e
+I, [2013-04-01T18:54:31.346492 #22863]  INFO -- : RO2S: Access token 6a8db8d5cbb428770c3cccd5495b7e073465b42926dedee33271baa2bf5b9eca granted to client UberClient, identity Batman
+D, [2013-04-01T18:54:31.349847 #22863] DEBUG -- : RO2S: Unauthorized request
+I, [2013-04-01T18:54:31.366579 #22863]  INFO -- : RO2S: Client UberClient requested code with scope read write
+I, [2013-04-01T18:54:31.377236 #22863]  INFO -- : RO2S: Client 5159bbc7b9eab0594f0001c0 granted access code e7f320645e3d540dbb872c8402b5298b61e4d48331869b0d334fd2c98e41dab7
+I, [2013-04-01T18:54:31.388342 #22863]  INFO -- : RO2S: Access token e54ab2c48acae042e0174a9b5c6b3edd4033649f200d76cd6d7c7176c54430bd granted to client UberClient, identity Batman
+I, [2013-04-01T18:54:31.398098 #22863]  INFO -- : RO2S: HTTP authorization failed invalid_token
+I, [2013-04-01T18:54:31.420787 #22863]  INFO -- : RO2S: Client UberClient requested code with scope read write
+I, [2013-04-01T18:54:31.433359 #22863]  INFO -- : RO2S: Client 5159bbc7b9eab0594f0001c2 granted access code 0d101e4ab812eb3e9218d45317bd712200ab327c2e59eee45e02b7d11819ce58
+I, [2013-04-01T18:54:31.450939 #22863]  INFO -- : RO2S: Access token 4bd96f39c99b7b0e7f0f76e4844a86e70a6e179e4cf4f68d4c34cefa7ec24ca4 granted to client UberClient, identity Batman
+I, [2013-04-01T18:54:31.455309 #22863]  INFO -- : RO2S: HTTP authorization failed invalid_token
+I, [2013-04-01T18:54:31.469763 #22863]  INFO -- : RO2S: Client UberClient requested code with scope read write
+I, [2013-04-01T18:54:31.481322 #22863]  INFO -- : RO2S: Client 5159bbc7b9eab0594f0001c4 granted access code ac0653811688995be7cd407dc0b9c3e5478297436a9baba47cb96f5d27b1136f
+I, [2013-04-01T18:54:31.493175 #22863]  INFO -- : RO2S: Access token 50a1103b9aa73823e88fe13557a48d482f82f69c60c83c672c242e1cc5daff76 granted to client UberClient, identity Batman
+I, [2013-04-01T18:54:31.501104 #22863]  INFO -- : RO2S: HTTP authorization failed invalid_token
+I, [2013-04-01T18:54:31.517952 #22863]  INFO -- : RO2S: Client UberClient requested code with scope read write
+I, [2013-04-01T18:54:31.526283 #22863]  INFO -- : RO2S: Client 5159bbc7b9eab0594f0001c6 granted access code 3b97549ad6b54d447c8c17e868d1728402858831a742eaa09d4c8cabd4601fea
+I, [2013-04-01T18:54:31.537185 #22863]  INFO -- : RO2S: Access token 70c5e4818ac1d7948f73ebec1b6331beb54c80ba81bdd82263e65f05a181c20d granted to client UberClient, identity Batman
+I, [2013-04-01T18:54:31.540799 #22863]  INFO -- : RO2S: HTTP authorization failed invalid_token
+I, [2013-04-01T18:54:31.558550 #22863]  INFO -- : RO2S: Client UberClient requested code with scope read write
+I, [2013-04-01T18:54:31.566485 #22863]  INFO -- : RO2S: Client 5159bbc7b9eab0594f0001c8 granted access code 223488a0a9e2ac658f4dad3d089e0d0ad2414827ad0a7a28eb415c2ad77609f2
+I, [2013-04-01T18:54:31.576517 #22863]  INFO -- : RO2S: Access token cff5ffaf3861c9931e2b6609992fb67b566dc94a7a13e2166f8aa6bab7e4de53 granted to client UberClient, identity Batman
+I, [2013-04-01T18:54:31.581123 #22863]  INFO -- : RO2S: Authorized Batman
+I, [2013-04-01T18:54:31.598674 #22863]  INFO -- : RO2S: Client UberClient requested code with scope read write
+I, [2013-04-01T18:54:31.606704 #22863]  INFO -- : RO2S: Client 5159bbc7b9eab0594f0001ca granted access code afbdaf743e02868ea6ccbf4a13ce54ea949ccd378eff4f02f64438a0a23c84ce
+I, [2013-04-01T18:54:31.618723 #22863]  INFO -- : RO2S: Access token e476decb3f8b9e2acda086fe6f67bcfb668dfbd62daae969506ed81579438bf3 granted to client UberClient, identity Batman
+I, [2013-04-01T18:54:31.623659 #22863]  INFO -- : RO2S: Authorized Batman
+I, [2013-04-01T18:54:31.639202 #22863]  INFO -- : RO2S: Client UberClient requested code with scope read write
+I, [2013-04-01T18:54:31.646450 #22863]  INFO -- : RO2S: Client 5159bbc7b9eab0594f0001cc granted access code 3d1d86ad5644fa2ed54d6350b3c0af5f6c6b82617aa639990255092264a895cd
+I, [2013-04-01T18:54:31.656818 #22863]  INFO -- : RO2S: Access token dd863d3c5ad1b1642c1da1b2ad0371bb465e779a032dcc19d000a53e00ceb84c granted to client UberClient, identity Batman
+I, [2013-04-01T18:54:31.673885 #22863]  INFO -- : RO2S: Client UberClient requested code with scope read write
+I, [2013-04-01T18:54:31.683114 #22863]  INFO -- : RO2S: Client 5159bbc7b9eab0594f0001ce granted access code e55e19ae782675ff680823636a120d233e26c1403c8b7023f75cd7f876413b0c
+I, [2013-04-01T18:54:31.692634 #22863]  INFO -- : RO2S: Access token 021917ad9228a00c26799997c0e8ae0cff43a529e030e7a84c5fd0e27f8b4959 granted to client UberClient, identity Batman
+I, [2013-04-01T18:54:31.716292 #22863]  INFO -- : RO2S: Client UberClient requested code with scope read write
+I, [2013-04-01T18:54:31.727413 #22863]  INFO -- : RO2S: Client 5159bbc7b9eab0594f0001d0 granted access code fab21a14ec8f309b2e6ce2fa9c22995a4340941818f44951f3836e6d41d3f4ff
+I, [2013-04-01T18:54:31.739782 #22863]  INFO -- : RO2S: Access token 37aded671ac1aaa9d2f325587886ff8774d40651da8c6995267981f59692e963 granted to client UberClient, identity Batman
+I, [2013-04-01T18:54:31.745995 #22863]  INFO -- : RO2S: Authorized Batman
+I, [2013-04-01T18:54:31.763514 #22863]  INFO -- : RO2S: Client UberClient requested code with scope read write
+I, [2013-04-01T18:54:31.830212 #22863]  INFO -- : RO2S: Client 5159bbc7b9eab0594f0001d2 granted access code 2c67361f89dc34263a753a11094f5b6db72b7390c950d31e75b40fcdeef0a346
+I, [2013-04-01T18:54:31.840861 #22863]  INFO -- : RO2S: Access token 3cf9e8865ad79659f7fe02da545141a082d83533cb419be2362e885a1493659b granted to client UberClient, identity Batman
+I, [2013-04-01T18:54:31.845359 #22863]  INFO -- : RO2S: Authorized Batman
+I, [2013-04-01T18:54:31.863949 #22863]  INFO -- : RO2S: Client UberClient requested code with scope read write
+I, [2013-04-01T18:54:31.873365 #22863]  INFO -- : RO2S: Client 5159bbc7b9eab0594f0001d4 granted access code e61e7f9c3174bfdaa8d05bf1f6ce75a6fc5c48dc47d1d9101e28e06ef7a57c58
+I, [2013-04-01T18:54:31.883902 #22863]  INFO -- : RO2S: Access token 34186032746ad672df69ac376b30e1ce77008015c8cdd1d412a243ebe3fdb966 granted to client UberClient, identity Batman
+I, [2013-04-01T18:54:31.887626 #22863]  INFO -- : RO2S: Authorized Batman
+I, [2013-04-01T18:54:31.903573 #22863]  INFO -- : RO2S: Client UberClient requested code with scope read write
+I, [2013-04-01T18:54:31.911678 #22863]  INFO -- : RO2S: Client 5159bbc7b9eab0594f0001d6 granted access code 7f8ac7750e5360caed9726468aeae58dadf3231f3db04c155d22aeccf643bcd6
+I, [2013-04-01T18:54:31.922979 #22863]  INFO -- : RO2S: Access token 2d2e3e9b48d5357c94453c2199d399e32362d71b9899985fc70f3cb3458e01c7 granted to client UberClient, identity Batman
+I, [2013-04-01T18:54:31.941524 #22863]  INFO -- : RO2S: Client UberClient requested code with scope read write
+I, [2013-04-01T18:54:31.954934 #22863]  INFO -- : RO2S: Client 5159bbc7b9eab0594f0001d8 granted access code e6f4e08498e1a4d2f63e321b965aecb38a24f2692a423ed48b56b4d5f8a48294
+I, [2013-04-01T18:54:31.968941 #22863]  INFO -- : RO2S: Access token 74c2c864b4f040b1f7ce237bed42d81c3c204e39a39883a908cca57f1008313b granted to client UberClient, identity Batman
+I, [2013-04-01T18:54:31.991234 #22863]  INFO -- : RO2S: Client UberClient requested code with scope read write
+I, [2013-04-01T18:54:32.000533 #22863]  INFO -- : RO2S: Client 5159bbc7b9eab0594f0001da granted access code 7cf8dca4e779be4e23a5a12941585e4d44f54812577416c571a940827d2ac173
+I, [2013-04-01T18:54:32.011792 #22863]  INFO -- : RO2S: Access token 3b8b633f77f615ba04fddfdd220681009fa4018c7b92e9cd5b6c76f9d7d4f144 granted to client UberClient, identity Batman
+I, [2013-04-01T18:54:32.037294 #22863]  INFO -- : RO2S: Client UberClient requested code with scope read write
+I, [2013-04-01T18:54:32.052729 #22863]  INFO -- : RO2S: Client 5159bbc8b9eab0594f0001dc granted access code 773cc3f1f411e81729c000244e7c013ab44895eba6ec8b3214d2e3b4afade715
+I, [2013-04-01T18:54:32.065463 #22863]  INFO -- : RO2S: Access token 3b937a44326b82bd4e500e580ba4720453d11a6a0d1001a3f2ba63693699272b granted to client UberClient, identity Batman
+I, [2013-04-01T18:54:32.096395 #22863]  INFO -- : RO2S: Client UberClient requested code with scope read write
+I, [2013-04-01T18:54:32.105862 #22863]  INFO -- : RO2S: Client 5159bbc8b9eab0594f0001de granted access code f18a51b6e99ab1bc80054df4b2e1dda29d86d2d24578d5af51516ae8b85031ee
+I, [2013-04-01T18:54:32.121501 #22863]  INFO -- : RO2S: Access token 297c5220343e3e0a90682fbda860056ec1966cc241341696b54829a94844c744 granted to client UberClient, identity Batman
+I, [2013-04-01T18:54:32.142566 #22863]  INFO -- : RO2S: Client UberClient requested code with scope read write
+I, [2013-04-01T18:54:32.155951 #22863]  INFO -- : RO2S: Client 5159bbc8b9eab0594f0001e0 granted access code 5af038d0c7a298422c9e39fb410f356707ccdbdd2721b68aa269e3124683aa78
+I, [2013-04-01T18:54:32.176753 #22863]  INFO -- : RO2S: Access token 2b82c293226d9c9c9a038bc36669b0b2423ac145c7def87724c670411cda6629 granted to client UberClient, identity Batman
+I, [2013-04-01T18:54:32.200664 #22863]  INFO -- : RO2S: Client UberClient requested code with scope read write
+I, [2013-04-01T18:54:32.210328 #22863]  INFO -- : RO2S: Client 5159bbc8b9eab0594f0001e2 granted access code 2bbf1bbba2d89ef02b93396908390aff477aff734f4f03668a2c883bd849de27
+I, [2013-04-01T18:54:32.218882 #22863]  INFO -- : RO2S: Access token 7100e12f1f3c13b45a3fac25c5a7a457b513702eb85fd359f147a171c2d2e1f9 granted to client UberClient, identity Batman
+I, [2013-04-01T18:54:32.223290 #22863]  INFO -- : RO2S: Authorized Batman
+I, [2013-04-01T18:54:32.238646 #22863]  INFO -- : RO2S: Client UberClient requested code with scope read write
+I, [2013-04-01T18:54:32.247021 #22863]  INFO -- : RO2S: Client 5159bbc8b9eab0594f0001e4 granted access code 8f978dc45dc4e267a5b7c1d8492d48da59c439d6f9c658881619eda0d5edb1d6
+I, [2013-04-01T18:54:32.256312 #22863]  INFO -- : RO2S: Access token 57210ce52777784b996e0e4b0efd8953e9fc7cea120f8bc8bb190f7d1b0835c1 granted to client UberClient, identity Batman
+I, [2013-04-01T18:54:32.259741 #22863]  INFO -- : RO2S: Authorized Batman
+I, [2013-04-01T18:54:32.273296 #22863]  INFO -- : RO2S: Client UberClient requested code with scope read write
+I, [2013-04-01T18:54:32.281304 #22863]  INFO -- : RO2S: Client 5159bbc8b9eab0594f0001e6 granted access code bdaf372dc7e9ba5e423c56bc87e9f48b0ef6ed1a105d7de4c07a4226f986889e
+I, [2013-04-01T18:54:32.291163 #22863]  INFO -- : RO2S: Access token 97c68a30d7abbb01fb0aefe6b3c864a2ef93430f736f941ef9b84ddd7ef71799 granted to client UberClient, identity Batman
+I, [2013-04-01T18:54:32.308464 #22863]  INFO -- : RO2S: Client UberClient requested code with scope read write
+I, [2013-04-01T18:54:32.317375 #22863]  INFO -- : RO2S: Client 5159bbc8b9eab0594f0001e8 granted access code cb6274e44ea1bfb3ede005da669119a7d285bba1f4aeebc99448350387d8ba34
+I, [2013-04-01T18:54:32.326792 #22863]  INFO -- : RO2S: Access token 684d47bb1ebd727fabd9186042050165b3a41c81ce6acc5b332fb91beefa03f9 granted to client UberClient, identity Batman
+I, [2013-04-01T18:54:32.343872 #22863]  INFO -- : RO2S: Authorized Superman
+I, [2013-04-01T18:54:32.413633 #22863]  INFO -- : RO2S: Authorized Superman
+I, [2013-04-01T18:54:32.429815 #22863]  INFO -- : RO2S: Authorized Superman
+I, [2013-04-01T18:54:32.443514 #22863]  INFO -- : RO2S: Authorized Superman
+I, [2013-04-01T18:54:32.456842 #22863]  INFO -- : RO2S: Authorized Superman
+I, [2013-04-01T18:54:32.470146 #22863]  INFO -- : RO2S: Authorized Superman
+I, [2013-04-01T18:54:32.482625 #22863]  INFO -- : RO2S: Authorized Superman
+I, [2013-04-01T18:54:32.496501 #22863]  INFO -- : RO2S: Authorized Superman
+I, [2013-04-01T18:54:32.509207 #22863]  INFO -- : RO2S: Authorized Superman
+I, [2013-04-01T18:54:32.521984 #22863]  INFO -- : RO2S: Authorized Superman
+I, [2013-04-01T18:54:32.535348 #22863]  INFO -- : RO2S: Authorized Superman
+I, [2013-04-01T18:54:32.547801 #22863]  INFO -- : RO2S: Authorized Superman
+I, [2013-04-01T18:54:32.560042 #22863]  INFO -- : RO2S: Authorized Superman
+I, [2013-04-01T18:54:32.573117 #22863]  INFO -- : RO2S: Authorized Superman
+I, [2013-04-01T18:54:32.587586 #22863]  INFO -- : RO2S: Authorized Superman
+I, [2013-04-01T18:54:32.601919 #22863]  INFO -- : RO2S: Authorized Superman
+I, [2013-04-01T18:54:32.639100 #22863]  INFO -- : RO2S: Authorized Superman
+I, [2013-04-01T18:54:32.676518 #22863]  INFO -- : RO2S: Authorized Superman
+I, [2013-04-01T18:54:32.720249 #22863]  INFO -- : RO2S: Authorized Superman
+D, [2013-04-01T18:54:32.731307 #22863] DEBUG -- : RO2S: Unauthorized request
+I, [2013-04-01T18:54:32.741410 #22863]  INFO -- : RO2S: Authorized Superman
+I, [2013-04-01T18:54:32.753264 #22863]  INFO -- : RO2S: Authorized Superman
+I, [2013-04-01T18:54:32.765864 #22863]  INFO -- : RO2S: Authorized Superman
+I, [2013-04-01T18:54:32.780173 #22863]  INFO -- : RO2S: Authorized Superman
+I, [2013-04-01T18:54:32.846124 #22863]  INFO -- : RO2S: Authorized Superman
+I, [2013-04-01T18:54:32.860711 #22863]  INFO -- : RO2S: Authorized Superman
+I, [2013-04-01T18:54:32.876320 #22863]  INFO -- : RO2S: Authorized Superman
+I, [2013-04-01T18:54:32.891219 #22863]  INFO -- : RO2S: Authorized Superman
+I, [2013-04-01T18:54:32.906547 #22863]  INFO -- : RO2S: Authorized Superman
+I, [2013-04-01T18:54:32.922425 #22863]  INFO -- : RO2S: Authorized Superman
+I, [2013-04-01T18:54:32.938498 #22863]  INFO -- : RO2S: Authorized Superman
+I, [2013-04-01T18:54:32.953032 #22863]  INFO -- : RO2S: Authorized Superman
+I, [2013-04-01T18:54:32.966843 #22863]  INFO -- : RO2S: Authorized Superman
+I, [2013-04-01T18:54:32.982073 #22863]  INFO -- : RO2S: Authorized Superman
+D, [2013-04-01T18:54:32.992369 #22863] DEBUG -- : RO2S: Unauthorized request
+I, [2013-04-01T18:54:33.001554 #22863]  INFO -- : RO2S: Authorized Superman
+E, [2013-04-01T18:54:33.041060 #22863] ERROR -- : RO2S: Authorization request error invalid_client: Client ID and client secret do not match.
+E, [2013-04-01T18:54:33.048537 #22863] ERROR -- : RO2S: Authorization request error invalid_client: Client ID and client secret do not match.
+E, [2013-04-01T18:54:33.057942 #22863] ERROR -- : RO2S: Authorization request error invalid_client: Client ID and client secret do not match.
+E, [2013-04-01T18:54:33.066738 #22863] ERROR -- : RO2S: Authorization request error invalid_client: Client ID and client secret do not match.
+I, [2013-04-01T18:54:33.078320 #22863]  INFO -- : RO2S: Client UberClient requested token with scope read write
+I, [2013-04-01T18:54:33.083614 #22863]  INFO -- : RO2S: Client 5159bbc9b9eab0594f000216 denied authorization
+I, [2013-04-01T18:54:33.100421 #22863]  INFO -- : RO2S: Client UberClient requested token with scope read write
+I, [2013-04-01T18:54:33.106196 #22863]  INFO -- : RO2S: Client 5159bbc9b9eab0594f000218 denied authorization
+I, [2013-04-01T18:54:33.119207 #22863]  INFO -- : RO2S: Client UberClient requested token with scope read write
+I, [2013-04-01T18:54:33.124906 #22863]  INFO -- : RO2S: Client 5159bbc9b9eab0594f00021a denied authorization
+I, [2013-04-01T18:54:33.137031 #22863]  INFO -- : RO2S: Client UberClient requested token with scope read write
+I, [2013-04-01T18:54:33.142799 #22863]  INFO -- : RO2S: Client 5159bbc9b9eab0594f00021c denied authorization
+I, [2013-04-01T18:54:33.154857 #22863]  INFO -- : RO2S: Client UberClient requested token with scope read write
+I, [2013-04-01T18:54:33.160584 #22863]  INFO -- : RO2S: Client 5159bbc9b9eab0594f00021e denied authorization
+I, [2013-04-01T18:54:33.171609 #22863]  INFO -- : RO2S: Client UberClient requested token with scope read write
+I, [2013-04-01T18:54:33.179725 #22863]  INFO -- : RO2S: Client 5159bbc9b9eab0594f000220 granted access token 432f8fd5217502f6ecb3662854d07e28f10554a43854cc31183b788345b21d0e
+I, [2013-04-01T18:54:33.237966 #22863]  INFO -- : RO2S: Client UberClient requested token with scope read write
+I, [2013-04-01T18:54:33.246483 #22863]  INFO -- : RO2S: Client 5159bbc9b9eab0594f000222 granted access token 875525bbb3dea757af9ce570cfbddfd69c286dca822fde3d3c33dee48c30bf94
+I, [2013-04-01T18:54:33.259371 #22863]  INFO -- : RO2S: Client UberClient requested token with scope read write
+I, [2013-04-01T18:54:33.267600 #22863]  INFO -- : RO2S: Client 5159bbc9b9eab0594f000224 granted access token 7d59a932d62e6a262a611e02ec70e79bcead96d480fe0ceff50ffb09bfd4fdcf
+I, [2013-04-01T18:54:33.279481 #22863]  INFO -- : RO2S: Client UberClient requested token with scope read write
+I, [2013-04-01T18:54:33.287811 #22863]  INFO -- : RO2S: Client 5159bbc9b9eab0594f000226 granted access token c5c86faea58793a766ee7ad53b6e9828c41fdf190018dde1e213041a28a5de0f
+I, [2013-04-01T18:54:33.300106 #22863]  INFO -- : RO2S: Client UberClient requested token with scope read write
+I, [2013-04-01T18:54:33.308834 #22863]  INFO -- : RO2S: Client 5159bbc9b9eab0594f000228 granted access token ae9168d527c41fa96a6260f6d775445ad0716d79e88efbb8dd4a64d864729e6e
+I, [2013-04-01T18:54:33.321249 #22863]  INFO -- : RO2S: Client UberClient requested token with scope read write
+I, [2013-04-01T18:54:33.334390 #22863]  INFO -- : RO2S: Client UberClient requested token with scope read write
+I, [2013-04-01T18:54:33.347132 #22863]  INFO -- : RO2S: Client UberClient requested code with scope read write
+I, [2013-04-01T18:54:33.353663 #22863]  INFO -- : RO2S: Client 5159bbc9b9eab0594f00022e denied authorization
+I, [2013-04-01T18:54:33.365759 #22863]  INFO -- : RO2S: Client UberClient requested code with scope read write
+I, [2013-04-01T18:54:33.371304 #22863]  INFO -- : RO2S: Client 5159bbc9b9eab0594f000230 denied authorization
+I, [2013-04-01T18:54:33.382497 #22863]  INFO -- : RO2S: Client UberClient requested code with scope read write
+I, [2013-04-01T18:54:33.388311 #22863]  INFO -- : RO2S: Client 5159bbc9b9eab0594f000232 denied authorization
+I, [2013-04-01T18:54:33.400979 #22863]  INFO -- : RO2S: Client UberClient requested code with scope read write
+I, [2013-04-01T18:54:33.406288 #22863]  INFO -- : RO2S: Client 5159bbc9b9eab0594f000234 denied authorization
+I, [2013-04-01T18:54:33.417795 #22863]  INFO -- : RO2S: Client UberClient requested code with scope read write
+I, [2013-04-01T18:54:33.423168 #22863]  INFO -- : RO2S: Client 5159bbc9b9eab0594f000236 denied authorization
+I, [2013-04-01T18:54:33.435108 #22863]  INFO -- : RO2S: Client UberClient requested code with scope read write
+I, [2013-04-01T18:54:33.442471 #22863]  INFO -- : RO2S: Client 5159bbc9b9eab0594f000238 granted access code 1102770b3730c06d48bee67fbe803800a45454c99d5c4cf375896955c17752f6
+I, [2013-04-01T18:54:33.455711 #22863]  INFO -- : RO2S: Client UberClient requested code with scope read write
+I, [2013-04-01T18:54:33.462679 #22863]  INFO -- : RO2S: Client 5159bbc9b9eab0594f00023a granted access code d8df25fa38349e894ceb6c13f0c749af0573377ae68527a9265f8d7c58c9b811
+I, [2013-04-01T18:54:33.478293 #22863]  INFO -- : RO2S: Client UberClient requested code with scope read write
+I, [2013-04-01T18:54:33.486079 #22863]  INFO -- : RO2S: Client 5159bbc9b9eab0594f00023c granted access code 9bacfa412baeab337112b4eaa74a34763d30ae3d592819596a7ba94855b683ca
+I, [2013-04-01T18:54:33.498814 #22863]  INFO -- : RO2S: Client UberClient requested code with scope read write
+I, [2013-04-01T18:54:33.506319 #22863]  INFO -- : RO2S: Client 5159bbc9b9eab0594f00023e granted access code efdc2417c4e12b06417a895fe16d700f0ee8223f54ee34ba18ecf99436d7ba64
+I, [2013-04-01T18:54:33.518647 #22863]  INFO -- : RO2S: Client UberClient requested code with scope read write
+I, [2013-04-01T18:54:33.526256 #22863]  INFO -- : RO2S: Client 5159bbc9b9eab0594f000240 granted access code 064b5411c4b4078e5125e5cad63b63420222c6ac6e6945a7f3e4cdf79489d0f8
+I, [2013-04-01T18:54:33.538803 #22863]  INFO -- : RO2S: Client UberClient requested code with scope read write
+I, [2013-04-01T18:54:33.552994 #22863]  INFO -- : RO2S: Client UberClient requested code with scope read write
+E, [2013-04-01T18:54:33.561878 #22863] ERROR -- : RO2S: Authorization request error invalid_client: Client ID and client secret do not match.
+E, [2013-04-01T18:54:33.569865 #22863] ERROR -- : RO2S: Authorization request error invalid_client: Client ID and client secret do not match.
+E, [2013-04-01T18:54:33.580234 #22863] ERROR -- : RO2S: Authorization request error invalid_client: Client ID and client secret do not match.
+E, [2013-04-01T18:54:33.632929 #22863] ERROR -- : RO2S: Authorization request error invalid_client: Client ID and client secret do not match.
+E, [2013-04-01T18:54:33.640265 #22863] ERROR -- : RO2S: Authorization request with invalid redirect_uri: http:not-valid Redirect URL must be absolute URL
+E, [2013-04-01T18:54:33.648068 #22863] ERROR -- : RO2S: Authorization request error redirect_uri_mismatch: Must use the same redirect URI you registered with us.
+E, [2013-04-01T18:54:33.655733 #22863] ERROR -- : RO2S: Authorization request error redirect_uri_mismatch: Must use the same redirect URI you registered with us.
+E, [2013-04-01T18:54:33.663848 #22863] ERROR -- : RO2S: Authorization request error redirect_uri_mismatch: Must use the same redirect URI you registered with us.
+E, [2013-04-01T18:54:33.672797 #22863] ERROR -- : RO2S: Authorization request error redirect_uri_mismatch: Must use the same redirect URI you registered with us.
+E, [2013-04-01T18:54:33.680077 #22863] ERROR -- : RO2S: Authorization request error invalid_client: Client ID and client secret do not match.
+E, [2013-04-01T18:54:33.687174 #22863] ERROR -- : RO2S: Authorization request error invalid_client: Client ID and client secret do not match.
+E, [2013-04-01T18:54:33.694899 #22863] ERROR -- : RO2S: Authorization request error invalid_client: Client ID and client secret do not match.
+E, [2013-04-01T18:54:33.702278 #22863] ERROR -- : RO2S: Authorization request error invalid_client: Client ID and client secret do not match.
+E, [2013-04-01T18:54:33.709747 #22863] ERROR -- : RO2S: Authorization request with invalid redirect_uri:  Missing redirect URL
+E, [2013-04-01T18:54:33.718938 #22863] ERROR -- : RO2S: Authorization request error unsupported_response_type: The requested response type is not supported.
+E, [2013-04-01T18:54:33.726490 #22863] ERROR -- : RO2S: Authorization request error unsupported_response_type: The requested response type is not supported.
+E, [2013-04-01T18:54:33.733800 #22863] ERROR -- : RO2S: Authorization request error unsupported_response_type: The requested response type is not supported.
+E, [2013-04-01T18:54:33.741761 #22863] ERROR -- : RO2S: Authorization request error unsupported_response_type: The requested response type is not supported.
+E, [2013-04-01T18:54:33.752722 #22863] ERROR -- : RO2S: Authorization request error invalid_client: Client ID and client secret do not match.
+E, [2013-04-01T18:54:33.762748 #22863] ERROR -- : RO2S: Authorization request error invalid_client: Client ID and client secret do not match.
+E, [2013-04-01T18:54:33.772822 #22863] ERROR -- : RO2S: Authorization request error invalid_client: Client ID and client secret do not match.
+E, [2013-04-01T18:54:33.782984 #22863] ERROR -- : RO2S: Authorization request error invalid_client: Client ID and client secret do not match.
+E, [2013-04-01T18:54:33.791268 #22863] ERROR -- : RO2S: Authorization request error unsupported_response_type: The requested response type is not supported.
+E, [2013-04-01T18:54:33.799763 #22863] ERROR -- : RO2S: Authorization request error unsupported_response_type: The requested response type is not supported.
+E, [2013-04-01T18:54:33.807704 #22863] ERROR -- : RO2S: Authorization request error unsupported_response_type: The requested response type is not supported.
+E, [2013-04-01T18:54:33.815362 #22863] ERROR -- : RO2S: Authorization request error unsupported_response_type: The requested response type is not supported.
+I, [2013-04-01T18:54:33.826965 #22863]  INFO -- : RO2S: Client UberClient requested code with scope read write
+I, [2013-04-01T18:54:33.840676 #22863]  INFO -- : RO2S: Client UberClient requested code with scope read write
+E, [2013-04-01T18:54:33.850415 #22863] ERROR -- : RO2S: Authorization request error invalid_scope: The requested scope is not supported.
+E, [2013-04-01T18:54:33.859257 #22863] ERROR -- : RO2S: Authorization request error invalid_scope: The requested scope is not supported.
+E, [2013-04-01T18:54:33.866984 #22863] ERROR -- : RO2S: Authorization request error invalid_scope: The requested scope is not supported.
+E, [2013-04-01T18:54:33.875680 #22863] ERROR -- : RO2S: Authorization request error invalid_scope: The requested scope is not supported.
+I, [2013-04-01T18:54:33.887146 #22863]  INFO -- : RO2S: Client UberClient requested code with scope read write
+I, [2013-04-01T18:54:33.890885 #22863]  INFO -- : RO2S: Client UberClient requested code with scope read write
+I, [2013-04-01T18:54:33.903628 #22863]  INFO -- : RO2S: Client UberClient requested code with scope read write
+I, [2013-04-01T18:54:33.907725 #22863]  INFO -- : RO2S: Client UberClient requested code with scope read write
+I, [2013-04-01T18:54:33.921268 #22863]  INFO -- : RO2S: Client UberClient requested code with scope read write
+E, [2013-04-01T18:54:33.923932 #22863] ERROR -- : RO2S: Invalid authorization request 
+I, [2013-04-01T18:54:33.934888 #22863]  INFO -- : RO2S: Client UberClient requested code with scope read write
+E, [2013-04-01T18:54:33.988409 #22863] ERROR -- : RO2S: Invalid authorization request #<Rack::OAuth2::Server::AuthRequest:0x007fefbe301e60>
+I, [2013-04-01T18:54:34.002373 #22863]  INFO -- : RO2S: Access token 8443f28fe1bf5d58ccf0173d87087d1bbce8b010d8af940c12fd4ab04befdec9 granted to client UberClient, identity Batman
+E, [2013-04-01T19:24:34.007987 #22863] ERROR -- : RO2S: Access token request error invalid_grant: This access grant expired
+I, [2013-04-01T18:54:34.021655 #22863]  INFO -- : RO2S: Access token c412190be4b67f0ac54fc7207fdee87863006fd37cec0bf82cfd0d6654f47058 granted to client UberClient, identity Batman
+I, [2013-04-01T19:23:44.031554 #22863]  INFO -- : RO2S: Access token 055275869962dec4eb89d03df028baa02d7238f85e3298f0a11f880e292f8b14 granted to client UberClient, identity Batman
+I, [2013-04-01T18:54:34.045582 #22863]  INFO -- : RO2S: Access token 44e94467b926724be5fa9bd3d3a484da0353e8ac716dc5b2b7b361e6b133f2b8 granted to client UberClient, identity Batman
+E, [2013-04-01T18:59:34.051783 #22863] ERROR -- : RO2S: Access token request error invalid_grant: This access grant expired
+I, [2013-04-01T18:54:34.066194 #22863]  INFO -- : RO2S: Access token 3e8ebb292938ff15bf699918425670e293a6ac6e2236136a753c5e7ec485fa9c granted to client UberClient, identity Batman
+I, [2013-04-01T18:55:34.076066 #22863]  INFO -- : RO2S: Access token 429ff1796f2fc16a05969319b0a7e39112419fa326a02fd28a761ae067f00847 granted to client UberClient, identity Batman
+I, [2013-04-01T18:54:34.091262 #22863]  INFO -- : RO2S: Access token 53b19127b7595a4387f4e9145ede63bd825f4728bec86e4013801f0b90e9e690 granted to client UberClient, identity Batman
+I, [2013-04-01T18:54:34.106628 #22863]  INFO -- : RO2S: Access token 39d333115863574ec8157e1905ae04be3b99e341400ac2d27bfdc2325a9b88a0 granted to client UberClient, identity Batman
+I, [2013-04-01T18:54:34.121608 #22863]  INFO -- : RO2S: Access token e22a2407c32e229e5f8a838f1820015dac3d25144641d3c58e13e46f5214fd50 granted to client UberClient, identity Batman
+I, [2013-04-01T18:54:34.136610 #22863]  INFO -- : RO2S: Access token 6bf01ec45c9d67fe18750b95151f373e06d9d8771070d13e497d37d5f00190b5 granted to client UberClient, identity Batman
+I, [2013-04-01T18:54:34.150990 #22863]  INFO -- : RO2S: Access token f863c648dd7aa746a8da259fa2d886124ecc540ee6e24b2b5df1fffb916ce12b granted to client UberClient, identity Batman
