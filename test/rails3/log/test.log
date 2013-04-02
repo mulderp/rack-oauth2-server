@@ -9645,3 +9645,1587 @@ Migrating to CreateTables (20130401)
   [1m[35m (0.1ms)[0m  begin transaction
   [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
   [1m[35m (0.0ms)[0m  commit transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (1.2ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+Migrating to CreateTables (20130401)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "clients" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "secret" varchar(255) DEFAULT '' NOT NULL, "scope" varchar(255) DEFAULT '' NOT NULL, "redirect_uri" varchar(255) DEFAULT '' NOT NULL, "display_name" varchar(255) DEFAULT '' NOT NULL, "link" varchar(255) DEFAULT '' NOT NULL, "image_url" varchar(255) DEFAULT '' NOT NULL, "notes" varchar(255) DEFAULT '' NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20130401')[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (3.8ms)[0m  INSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[35m (0.0ms)[0m  commit transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (1.2ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+Migrating to CreateTables (20130401)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "clients" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "secret" varchar(255) DEFAULT '' NOT NULL, "scope" varchar(255) DEFAULT '' NOT NULL, "redirect_uri" varchar(255) DEFAULT '' NOT NULL, "display_name" varchar(255) DEFAULT '' NOT NULL, "link" varchar(255) DEFAULT '' NOT NULL, "image_url" varchar(255) DEFAULT '' NOT NULL, "notes" varchar(255) DEFAULT '' NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20130401')[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (3.9ms)[0m  INSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[35m (0.0ms)[0m  commit transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (1.2ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+Migrating to CreateTables (20130401)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "clients" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "secret" varchar(255) DEFAULT '' NOT NULL, "scope" varchar(255) DEFAULT '' NOT NULL, "redirect_uri" varchar(255) DEFAULT '' NOT NULL, "display_name" varchar(255) DEFAULT '' NOT NULL, "link" varchar(255) DEFAULT '' NOT NULL, "image_url" varchar(255) DEFAULT '' NOT NULL, "notes" varchar(255) DEFAULT '' NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20130401')[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (3.9ms)[0m  INSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+Started GET "/oauth/authorize?redirect_uri=http%3A%2F%2Fuberclient.dot%2Fcallback&client_id=4cc7bc483321e814b8000000&client_secret=&response_type=code&scope=read+write&state=bring+this+back" for 127.0.0.1 at 2013-04-03 00:14:10 +0200
+  [1m[35mRack::OAuth2::Server::Client Load (0.2ms)[0m  SELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1  [["id", "4cc7bc483321e814b8000000"]]
+
+NameError (uninitialized constant Rack::OAuth2::Server::BSON):
+  test/oauth/authorization_test.rb:44:in `request_authorization'
+  test/oauth/authorization_test.rb:81:in `block (2 levels) in <class:AuthorizationTest>'
+
+
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+Started GET "/oauth/authorize?redirect_uri=http%3A%2F%2Fuberclient.dot%2Fcallback&client_id=4cc7bc483321e814b8000000&client_secret=&response_type=code&scope=read+write&state=bring+this+back" for 127.0.0.1 at 2013-04-03 00:14:10 +0200
+  [1m[35mRack::OAuth2::Server::Client Load (0.1ms)[0m  SELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1  [["id", "4cc7bc483321e814b8000000"]]
+
+NameError (uninitialized constant Rack::OAuth2::Server::BSON):
+  test/oauth/authorization_test.rb:44:in `request_authorization'
+  test/oauth/authorization_test.rb:81:in `block (2 levels) in <class:AuthorizationTest>'
+
+
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+Started GET "/oauth/authorize?redirect_uri=http%3A%2F%2Fuberclient.dot%2Fcallback&client_id=4cc7bc483321e814b8000000&client_secret=&response_type=code&scope=read+write&state=bring+this+back" for 127.0.0.1 at 2013-04-03 00:14:10 +0200
+  [1m[35mRack::OAuth2::Server::Client Load (0.1ms)[0m  SELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1  [["id", "4cc7bc483321e814b8000000"]]
+
+NameError (uninitialized constant Rack::OAuth2::Server::BSON):
+  test/oauth/authorization_test.rb:44:in `request_authorization'
+  test/oauth/authorization_test.rb:81:in `block (2 levels) in <class:AuthorizationTest>'
+
+
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+Started GET "/oauth/authorize?redirect_uri=http%3A%2F%2Fuberclient.dot%2Fcallback&client_id=4cc7bc483321e814b8000000&client_secret=&response_type=code&scope=read+write&state=bring+this+back" for 127.0.0.1 at 2013-04-03 00:14:10 +0200
+  [1m[35mRack::OAuth2::Server::Client Load (0.1ms)[0m  SELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1  [["id", "4cc7bc483321e814b8000000"]]
+
+NameError (uninitialized constant Rack::OAuth2::Server::BSON):
+  test/oauth/authorization_test.rb:44:in `request_authorization'
+  test/oauth/authorization_test.rb:81:in `block (2 levels) in <class:AuthorizationTest>'
+
+
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+Started GET "/oauth/authorize?redirect_uri=http%3A%2F%2Fuberclient.dot%2Fcallback&client_id=5&client_secret=&response_type=token&scope=read+write&state=bring+this+back" for 127.0.0.1 at 2013-04-03 00:14:10 +0200
+  [1m[35mRack::OAuth2::Server::Client Load (0.1ms)[0m  SELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1  [["id", "5"]]
+
+NameError (uninitialized constant Rack::OAuth2::Server::BSON):
+  test/oauth/authorization_test.rb:44:in `request_authorization'
+  test/oauth/authorization_test.rb:188:in `block (2 levels) in <class:AuthorizationTest>'
+
+
+Started POST "/oauth/deny" for 127.0.0.1 at 2013-04-03 00:14:10 +0200
+Processing by OauthController#deny as HTML
+  Parameters: {"authorization"=>nil}
+Completed 500 Internal Server Error in 0ms
+
+NoMethodError (undefined method `include?' for nil:NilClass):
+  app/controllers/oauth_controller.rb:3:in `block in <class:OauthController>'
+  test/oauth/authorization_test.rb:222:in `block (3 levels) in <class:AuthorizationTest>'
+
+
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+Started GET "/oauth/authorize?redirect_uri=http%3A%2F%2Fuberclient.dot%2Fcallback&client_id=6&client_secret=&response_type=token&scope=read+write&state=bring+this+back" for 127.0.0.1 at 2013-04-03 00:14:10 +0200
+  [1m[35mRack::OAuth2::Server::Client Load (0.1ms)[0m  SELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1  [["id", "6"]]
+
+NameError (uninitialized constant Rack::OAuth2::Server::BSON):
+  test/oauth/authorization_test.rb:44:in `request_authorization'
+  test/oauth/authorization_test.rb:188:in `block (2 levels) in <class:AuthorizationTest>'
+
+
+Started POST "/oauth/deny" for 127.0.0.1 at 2013-04-03 00:14:10 +0200
+Processing by OauthController#deny as HTML
+  Parameters: {"authorization"=>nil}
+Completed 500 Internal Server Error in 0ms
+
+NoMethodError (undefined method `include?' for nil:NilClass):
+  app/controllers/oauth_controller.rb:3:in `block in <class:OauthController>'
+  test/oauth/authorization_test.rb:222:in `block (3 levels) in <class:AuthorizationTest>'
+
+
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+Started GET "/oauth/authorize?redirect_uri=http%3A%2F%2Fuberclient.dot%2Fcallback&client_id=7&client_secret=&response_type=token&scope=read+write&state=bring+this+back" for 127.0.0.1 at 2013-04-03 00:14:10 +0200
+  [1m[35mRack::OAuth2::Server::Client Load (0.1ms)[0m  SELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1  [["id", "7"]]
+
+NameError (uninitialized constant Rack::OAuth2::Server::BSON):
+  test/oauth/authorization_test.rb:44:in `request_authorization'
+  test/oauth/authorization_test.rb:188:in `block (2 levels) in <class:AuthorizationTest>'
+
+
+Started POST "/oauth/deny" for 127.0.0.1 at 2013-04-03 00:14:10 +0200
+Processing by OauthController#deny as HTML
+  Parameters: {"authorization"=>nil}
+Completed 500 Internal Server Error in 0ms
+
+NoMethodError (undefined method `include?' for nil:NilClass):
+  app/controllers/oauth_controller.rb:3:in `block in <class:OauthController>'
+  test/oauth/authorization_test.rb:222:in `block (3 levels) in <class:AuthorizationTest>'
+
+
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+Started GET "/oauth/authorize?redirect_uri=http%3A%2F%2Fuberclient.dot%2Fcallback&client_id=8&client_secret=&response_type=token&scope=read+write&state=bring+this+back" for 127.0.0.1 at 2013-04-03 00:14:10 +0200
+  [1m[35mRack::OAuth2::Server::Client Load (0.1ms)[0m  SELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1  [["id", "8"]]
+
+NameError (uninitialized constant Rack::OAuth2::Server::BSON):
+  test/oauth/authorization_test.rb:44:in `request_authorization'
+  test/oauth/authorization_test.rb:188:in `block (2 levels) in <class:AuthorizationTest>'
+
+
+Started POST "/oauth/deny" for 127.0.0.1 at 2013-04-03 00:14:10 +0200
+Processing by OauthController#deny as HTML
+  Parameters: {"authorization"=>nil}
+Completed 500 Internal Server Error in 0ms
+
+NoMethodError (undefined method `include?' for nil:NilClass):
+  app/controllers/oauth_controller.rb:3:in `block in <class:OauthController>'
+  test/oauth/authorization_test.rb:222:in `block (3 levels) in <class:AuthorizationTest>'
+
+
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+Started GET "/oauth/authorize?redirect_uri=http%3A%2F%2Fuberclient.dot%2Fcallback&client_id=9&client_secret=&response_type=token&scope=read+write&state=bring+this+back" for 127.0.0.1 at 2013-04-03 00:14:10 +0200
+  [1m[35mRack::OAuth2::Server::Client Load (0.1ms)[0m  SELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1  [["id", "9"]]
+
+NameError (uninitialized constant Rack::OAuth2::Server::BSON):
+  test/oauth/authorization_test.rb:44:in `request_authorization'
+  test/oauth/authorization_test.rb:188:in `block (2 levels) in <class:AuthorizationTest>'
+
+
+Started POST "/oauth/deny" for 127.0.0.1 at 2013-04-03 00:14:10 +0200
+Processing by OauthController#deny as HTML
+  Parameters: {"authorization"=>nil}
+Completed 500 Internal Server Error in 0ms
+
+NoMethodError (undefined method `include?' for nil:NilClass):
+  app/controllers/oauth_controller.rb:3:in `block in <class:OauthController>'
+  test/oauth/authorization_test.rb:222:in `block (3 levels) in <class:AuthorizationTest>'
+
+
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+Started GET "/oauth/authorize?redirect_uri=http%3A%2F%2Fuberclient.dot%2Fcallback&client_id=10&client_secret=&response_type=token&scope=read+write&state=bring+this+back" for 127.0.0.1 at 2013-04-03 00:14:10 +0200
+  [1m[35mRack::OAuth2::Server::Client Load (0.1ms)[0m  SELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1  [["id", "10"]]
+
+NameError (uninitialized constant Rack::OAuth2::Server::BSON):
+  test/oauth/authorization_test.rb:44:in `request_authorization'
+  test/oauth/authorization_test.rb:188:in `block (2 levels) in <class:AuthorizationTest>'
+
+
+Started POST "/oauth/grant" for 127.0.0.1 at 2013-04-03 00:14:10 +0200
+Processing by OauthController#grant as HTML
+  Parameters: {"authorization"=>nil}
+Completed 500 Internal Server Error in 0ms
+
+NoMethodError (undefined method `include?' for nil:NilClass):
+  app/controllers/oauth_controller.rb:3:in `block in <class:OauthController>'
+  test/oauth/authorization_test.rb:193:in `block (3 levels) in <class:AuthorizationTest>'
+
+
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+Started GET "/oauth/authorize?redirect_uri=http%3A%2F%2Fuberclient.dot%2Fcallback&client_id=11&client_secret=&response_type=token&scope=read+write&state=bring+this+back" for 127.0.0.1 at 2013-04-03 00:14:10 +0200
+  [1m[35mRack::OAuth2::Server::Client Load (0.1ms)[0m  SELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1  [["id", "11"]]
+
+NameError (uninitialized constant Rack::OAuth2::Server::BSON):
+  test/oauth/authorization_test.rb:44:in `request_authorization'
+  test/oauth/authorization_test.rb:188:in `block (2 levels) in <class:AuthorizationTest>'
+
+
+Started POST "/oauth/grant" for 127.0.0.1 at 2013-04-03 00:14:10 +0200
+Processing by OauthController#grant as HTML
+  Parameters: {"authorization"=>nil}
+Completed 500 Internal Server Error in 0ms
+
+NoMethodError (undefined method `include?' for nil:NilClass):
+  app/controllers/oauth_controller.rb:3:in `block in <class:OauthController>'
+  test/oauth/authorization_test.rb:193:in `block (3 levels) in <class:AuthorizationTest>'
+
+
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+Started GET "/oauth/authorize?redirect_uri=http%3A%2F%2Fuberclient.dot%2Fcallback&client_id=12&client_secret=&response_type=token&scope=read+write&state=bring+this+back" for 127.0.0.1 at 2013-04-03 00:14:10 +0200
+  [1m[35mRack::OAuth2::Server::Client Load (0.1ms)[0m  SELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1  [["id", "12"]]
+
+NameError (uninitialized constant Rack::OAuth2::Server::BSON):
+  test/oauth/authorization_test.rb:44:in `request_authorization'
+  test/oauth/authorization_test.rb:188:in `block (2 levels) in <class:AuthorizationTest>'
+
+
+Started POST "/oauth/grant" for 127.0.0.1 at 2013-04-03 00:14:10 +0200
+Processing by OauthController#grant as HTML
+  Parameters: {"authorization"=>nil}
+Completed 500 Internal Server Error in 0ms
+
+NoMethodError (undefined method `include?' for nil:NilClass):
+  app/controllers/oauth_controller.rb:3:in `block in <class:OauthController>'
+  test/oauth/authorization_test.rb:193:in `block (3 levels) in <class:AuthorizationTest>'
+
+
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+Started GET "/oauth/authorize?redirect_uri=http%3A%2F%2Fuberclient.dot%2Fcallback&client_id=13&client_secret=&response_type=token&scope=read+write&state=bring+this+back" for 127.0.0.1 at 2013-04-03 00:14:10 +0200
+  [1m[35mRack::OAuth2::Server::Client Load (0.1ms)[0m  SELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1  [["id", "13"]]
+
+NameError (uninitialized constant Rack::OAuth2::Server::BSON):
+  test/oauth/authorization_test.rb:44:in `request_authorization'
+  test/oauth/authorization_test.rb:188:in `block (2 levels) in <class:AuthorizationTest>'
+
+
+Started POST "/oauth/grant" for 127.0.0.1 at 2013-04-03 00:14:10 +0200
+Processing by OauthController#grant as HTML
+  Parameters: {"authorization"=>nil}
+Completed 500 Internal Server Error in 0ms
+
+NoMethodError (undefined method `include?' for nil:NilClass):
+  app/controllers/oauth_controller.rb:3:in `block in <class:OauthController>'
+  test/oauth/authorization_test.rb:193:in `block (3 levels) in <class:AuthorizationTest>'
+
+
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+Started GET "/oauth/authorize?redirect_uri=http%3A%2F%2Fuberclient.dot%2Fcallback&client_id=14&client_secret=&response_type=token&scope=read+write&state=bring+this+back" for 127.0.0.1 at 2013-04-03 00:14:10 +0200
+  [1m[35mRack::OAuth2::Server::Client Load (0.1ms)[0m  SELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1  [["id", "14"]]
+
+NameError (uninitialized constant Rack::OAuth2::Server::BSON):
+  test/oauth/authorization_test.rb:44:in `request_authorization'
+  test/oauth/authorization_test.rb:188:in `block (2 levels) in <class:AuthorizationTest>'
+
+
+Started POST "/oauth/grant" for 127.0.0.1 at 2013-04-03 00:14:10 +0200
+Processing by OauthController#grant as HTML
+  Parameters: {"authorization"=>nil}
+Completed 500 Internal Server Error in 0ms
+
+NoMethodError (undefined method `include?' for nil:NilClass):
+  app/controllers/oauth_controller.rb:3:in `block in <class:OauthController>'
+  test/oauth/authorization_test.rb:193:in `block (3 levels) in <class:AuthorizationTest>'
+
+
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+Started GET "/oauth/authorize?redirect_uri=http%3A%2F%2Fuberclient.dot%2Fcallback&client_id=15&client_secret=&response_type=token&scope=read+write&state=bring+this+back" for 127.0.0.1 at 2013-04-03 00:14:10 +0200
+  [1m[35mRack::OAuth2::Server::Client Load (0.1ms)[0m  SELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1  [["id", "15"]]
+
+NameError (uninitialized constant Rack::OAuth2::Server::BSON):
+  test/oauth/authorization_test.rb:44:in `request_authorization'
+  test/oauth/authorization_test.rb:188:in `block (2 levels) in <class:AuthorizationTest>'
+
+
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+Started GET "/oauth/authorize?redirect_uri=http%3A%2F%2Fuberclient.dot%2Fcallback&client_id=16&client_secret=&response_type=token&scope=read+write&state=bring+this+back" for 127.0.0.1 at 2013-04-03 00:14:10 +0200
+  [1m[35mRack::OAuth2::Server::Client Load (0.1ms)[0m  SELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1  [["id", "16"]]
+
+NameError (uninitialized constant Rack::OAuth2::Server::BSON):
+  test/oauth/authorization_test.rb:44:in `request_authorization'
+  test/oauth/authorization_test.rb:188:in `block (2 levels) in <class:AuthorizationTest>'
+
+
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+Started GET "/oauth/authorize?redirect_uri=http%3A%2F%2Fuberclient.dot%2Fcallback&client_id=17&client_secret=&response_type=code&scope=read+write&state=bring+this+back" for 127.0.0.1 at 2013-04-03 00:14:10 +0200
+  [1m[35mRack::OAuth2::Server::Client Load (0.1ms)[0m  SELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1  [["id", "17"]]
+
+NameError (uninitialized constant Rack::OAuth2::Server::BSON):
+  test/oauth/authorization_test.rb:44:in `request_authorization'
+  test/oauth/authorization_test.rb:121:in `block (2 levels) in <class:AuthorizationTest>'
+
+
+Started POST "/oauth/deny" for 127.0.0.1 at 2013-04-03 00:14:10 +0200
+Processing by OauthController#deny as HTML
+  Parameters: {"authorization"=>nil}
+Completed 500 Internal Server Error in 0ms
+
+NoMethodError (undefined method `include?' for nil:NilClass):
+  app/controllers/oauth_controller.rb:3:in `block in <class:OauthController>'
+  test/oauth/authorization_test.rb:155:in `block (3 levels) in <class:AuthorizationTest>'
+
+
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+Started GET "/oauth/authorize?redirect_uri=http%3A%2F%2Fuberclient.dot%2Fcallback&client_id=18&client_secret=&response_type=code&scope=read+write&state=bring+this+back" for 127.0.0.1 at 2013-04-03 00:14:10 +0200
+  [1m[35mRack::OAuth2::Server::Client Load (0.1ms)[0m  SELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1  [["id", "18"]]
+
+NameError (uninitialized constant Rack::OAuth2::Server::BSON):
+  test/oauth/authorization_test.rb:44:in `request_authorization'
+  test/oauth/authorization_test.rb:121:in `block (2 levels) in <class:AuthorizationTest>'
+
+
+Started POST "/oauth/deny" for 127.0.0.1 at 2013-04-03 00:14:10 +0200
+Processing by OauthController#deny as HTML
+  Parameters: {"authorization"=>nil}
+Completed 500 Internal Server Error in 0ms
+
+NoMethodError (undefined method `include?' for nil:NilClass):
+  app/controllers/oauth_controller.rb:3:in `block in <class:OauthController>'
+  test/oauth/authorization_test.rb:155:in `block (3 levels) in <class:AuthorizationTest>'
+
+
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+Started GET "/oauth/authorize?redirect_uri=http%3A%2F%2Fuberclient.dot%2Fcallback&client_id=19&client_secret=&response_type=code&scope=read+write&state=bring+this+back" for 127.0.0.1 at 2013-04-03 00:14:10 +0200
+  [1m[35mRack::OAuth2::Server::Client Load (0.1ms)[0m  SELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1  [["id", "19"]]
+
+NameError (uninitialized constant Rack::OAuth2::Server::BSON):
+  test/oauth/authorization_test.rb:44:in `request_authorization'
+  test/oauth/authorization_test.rb:121:in `block (2 levels) in <class:AuthorizationTest>'
+
+
+Started POST "/oauth/deny" for 127.0.0.1 at 2013-04-03 00:14:10 +0200
+Processing by OauthController#deny as HTML
+  Parameters: {"authorization"=>nil}
+Completed 500 Internal Server Error in 0ms
+
+NoMethodError (undefined method `include?' for nil:NilClass):
+  app/controllers/oauth_controller.rb:3:in `block in <class:OauthController>'
+  test/oauth/authorization_test.rb:155:in `block (3 levels) in <class:AuthorizationTest>'
+
+
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+Started GET "/oauth/authorize?redirect_uri=http%3A%2F%2Fuberclient.dot%2Fcallback&client_id=20&client_secret=&response_type=code&scope=read+write&state=bring+this+back" for 127.0.0.1 at 2013-04-03 00:14:10 +0200
+  [1m[35mRack::OAuth2::Server::Client Load (0.1ms)[0m  SELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1  [["id", "20"]]
+
+NameError (uninitialized constant Rack::OAuth2::Server::BSON):
+  test/oauth/authorization_test.rb:44:in `request_authorization'
+  test/oauth/authorization_test.rb:121:in `block (2 levels) in <class:AuthorizationTest>'
+
+
+Started POST "/oauth/deny" for 127.0.0.1 at 2013-04-03 00:14:10 +0200
+Processing by OauthController#deny as HTML
+  Parameters: {"authorization"=>nil}
+Completed 500 Internal Server Error in 0ms
+
+NoMethodError (undefined method `include?' for nil:NilClass):
+  app/controllers/oauth_controller.rb:3:in `block in <class:OauthController>'
+  test/oauth/authorization_test.rb:155:in `block (3 levels) in <class:AuthorizationTest>'
+
+
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+Started GET "/oauth/authorize?redirect_uri=http%3A%2F%2Fuberclient.dot%2Fcallback&client_id=21&client_secret=&response_type=code&scope=read+write&state=bring+this+back" for 127.0.0.1 at 2013-04-03 00:14:10 +0200
+  [1m[35mRack::OAuth2::Server::Client Load (0.1ms)[0m  SELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1  [["id", "21"]]
+
+NameError (uninitialized constant Rack::OAuth2::Server::BSON):
+  test/oauth/authorization_test.rb:44:in `request_authorization'
+  test/oauth/authorization_test.rb:121:in `block (2 levels) in <class:AuthorizationTest>'
+
+
+Started POST "/oauth/deny" for 127.0.0.1 at 2013-04-03 00:14:10 +0200
+Processing by OauthController#deny as HTML
+  Parameters: {"authorization"=>nil}
+Completed 500 Internal Server Error in 0ms
+
+NoMethodError (undefined method `include?' for nil:NilClass):
+  app/controllers/oauth_controller.rb:3:in `block in <class:OauthController>'
+  test/oauth/authorization_test.rb:155:in `block (3 levels) in <class:AuthorizationTest>'
+
+
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+Started GET "/oauth/authorize?redirect_uri=http%3A%2F%2Fuberclient.dot%2Fcallback&client_id=22&client_secret=&response_type=code&scope=read+write&state=bring+this+back" for 127.0.0.1 at 2013-04-03 00:14:10 +0200
+  [1m[35mRack::OAuth2::Server::Client Load (0.1ms)[0m  SELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1  [["id", "22"]]
+
+NameError (uninitialized constant Rack::OAuth2::Server::BSON):
+  test/oauth/authorization_test.rb:44:in `request_authorization'
+  test/oauth/authorization_test.rb:121:in `block (2 levels) in <class:AuthorizationTest>'
+
+
+Started POST "/oauth/grant" for 127.0.0.1 at 2013-04-03 00:14:10 +0200
+Processing by OauthController#grant as HTML
+  Parameters: {"authorization"=>nil}
+Completed 500 Internal Server Error in 0ms
+
+NoMethodError (undefined method `include?' for nil:NilClass):
+  app/controllers/oauth_controller.rb:3:in `block in <class:OauthController>'
+  test/oauth/authorization_test.rb:126:in `block (3 levels) in <class:AuthorizationTest>'
+
+
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+Started GET "/oauth/authorize?redirect_uri=http%3A%2F%2Fuberclient.dot%2Fcallback&client_id=23&client_secret=&response_type=code&scope=read+write&state=bring+this+back" for 127.0.0.1 at 2013-04-03 00:14:10 +0200
+  [1m[35mRack::OAuth2::Server::Client Load (0.1ms)[0m  SELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1  [["id", "23"]]
+
+NameError (uninitialized constant Rack::OAuth2::Server::BSON):
+  test/oauth/authorization_test.rb:44:in `request_authorization'
+  test/oauth/authorization_test.rb:121:in `block (2 levels) in <class:AuthorizationTest>'
+
+
+Started POST "/oauth/grant" for 127.0.0.1 at 2013-04-03 00:14:10 +0200
+Processing by OauthController#grant as HTML
+  Parameters: {"authorization"=>nil}
+Completed 500 Internal Server Error in 0ms
+
+NoMethodError (undefined method `include?' for nil:NilClass):
+  app/controllers/oauth_controller.rb:3:in `block in <class:OauthController>'
+  test/oauth/authorization_test.rb:126:in `block (3 levels) in <class:AuthorizationTest>'
+
+
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+Started GET "/oauth/authorize?redirect_uri=http%3A%2F%2Fuberclient.dot%2Fcallback&client_id=24&client_secret=&response_type=code&scope=read+write&state=bring+this+back" for 127.0.0.1 at 2013-04-03 00:14:10 +0200
+  [1m[35mRack::OAuth2::Server::Client Load (0.1ms)[0m  SELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1  [["id", "24"]]
+
+NameError (uninitialized constant Rack::OAuth2::Server::BSON):
+  test/oauth/authorization_test.rb:44:in `request_authorization'
+  test/oauth/authorization_test.rb:121:in `block (2 levels) in <class:AuthorizationTest>'
+
+
+Started POST "/oauth/grant" for 127.0.0.1 at 2013-04-03 00:14:10 +0200
+Processing by OauthController#grant as HTML
+  Parameters: {"authorization"=>nil}
+Completed 500 Internal Server Error in 0ms
+
+NoMethodError (undefined method `include?' for nil:NilClass):
+  app/controllers/oauth_controller.rb:3:in `block in <class:OauthController>'
+  test/oauth/authorization_test.rb:126:in `block (3 levels) in <class:AuthorizationTest>'
+
+
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+Started GET "/oauth/authorize?redirect_uri=http%3A%2F%2Fuberclient.dot%2Fcallback&client_id=25&client_secret=&response_type=code&scope=read+write&state=bring+this+back" for 127.0.0.1 at 2013-04-03 00:14:10 +0200
+  [1m[35mRack::OAuth2::Server::Client Load (0.1ms)[0m  SELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1  [["id", "25"]]
+
+NameError (uninitialized constant Rack::OAuth2::Server::BSON):
+  test/oauth/authorization_test.rb:44:in `request_authorization'
+  test/oauth/authorization_test.rb:121:in `block (2 levels) in <class:AuthorizationTest>'
+
+
+Started POST "/oauth/grant" for 127.0.0.1 at 2013-04-03 00:14:10 +0200
+Processing by OauthController#grant as HTML
+  Parameters: {"authorization"=>nil}
+Completed 500 Internal Server Error in 0ms
+
+NoMethodError (undefined method `include?' for nil:NilClass):
+  app/controllers/oauth_controller.rb:3:in `block in <class:OauthController>'
+  test/oauth/authorization_test.rb:126:in `block (3 levels) in <class:AuthorizationTest>'
+
+
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+Started GET "/oauth/authorize?redirect_uri=http%3A%2F%2Fuberclient.dot%2Fcallback&client_id=26&client_secret=&response_type=code&scope=read+write&state=bring+this+back" for 127.0.0.1 at 2013-04-03 00:14:10 +0200
+  [1m[35mRack::OAuth2::Server::Client Load (0.1ms)[0m  SELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1  [["id", "26"]]
+
+NameError (uninitialized constant Rack::OAuth2::Server::BSON):
+  test/oauth/authorization_test.rb:44:in `request_authorization'
+  test/oauth/authorization_test.rb:121:in `block (2 levels) in <class:AuthorizationTest>'
+
+
+Started POST "/oauth/grant" for 127.0.0.1 at 2013-04-03 00:14:11 +0200
+Processing by OauthController#grant as HTML
+  Parameters: {"authorization"=>nil}
+Completed 500 Internal Server Error in 0ms
+
+NoMethodError (undefined method `include?' for nil:NilClass):
+  app/controllers/oauth_controller.rb:3:in `block in <class:OauthController>'
+  test/oauth/authorization_test.rb:126:in `block (3 levels) in <class:AuthorizationTest>'
+
+
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+Started GET "/oauth/authorize?redirect_uri=http%3A%2F%2Fuberclient.dot%2Fcallback&client_id=27&client_secret=&response_type=code&scope=read+write&state=bring+this+back" for 127.0.0.1 at 2013-04-03 00:14:11 +0200
+  [1m[35mRack::OAuth2::Server::Client Load (0.1ms)[0m  SELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1  [["id", "27"]]
+
+NameError (uninitialized constant Rack::OAuth2::Server::BSON):
+  test/oauth/authorization_test.rb:44:in `request_authorization'
+  test/oauth/authorization_test.rb:121:in `block (2 levels) in <class:AuthorizationTest>'
+
+
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+Started GET "/oauth/authorize?redirect_uri=http%3A%2F%2Fuberclient.dot%2Fcallback&client_id=28&client_secret=&response_type=code&scope=read+write&state=bring+this+back" for 127.0.0.1 at 2013-04-03 00:14:11 +0200
+  [1m[35mRack::OAuth2::Server::Client Load (0.1ms)[0m  SELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1  [["id", "28"]]
+
+NameError (uninitialized constant Rack::OAuth2::Server::BSON):
+  test/oauth/authorization_test.rb:44:in `request_authorization'
+  test/oauth/authorization_test.rb:121:in `block (2 levels) in <class:AuthorizationTest>'
+
+
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+Started GET "/oauth/authorize?redirect_uri=http%3A%2F%2Fuberclient.dot%2Fcallback&client_id=foobar&client_secret=&response_type=code&scope=read+write&state=bring+this+back" for 127.0.0.1 at 2013-04-03 00:14:11 +0200
+  [1m[35mRack::OAuth2::Server::Client Load (0.1ms)[0m  SELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1  [["id", "foobar"]]
+
+NameError (uninitialized constant Rack::OAuth2::Server::BSON):
+  test/oauth/authorization_test.rb:44:in `request_authorization'
+  test/oauth/authorization_test.rb:76:in `block (2 levels) in <class:AuthorizationTest>'
+
+
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+Started GET "/oauth/authorize?redirect_uri=http%3A%2F%2Fuberclient.dot%2Fcallback&client_id=foobar&client_secret=&response_type=code&scope=read+write&state=bring+this+back" for 127.0.0.1 at 2013-04-03 00:14:11 +0200
+  [1m[35mRack::OAuth2::Server::Client Load (0.0ms)[0m  SELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1  [["id", "foobar"]]
+
+NameError (uninitialized constant Rack::OAuth2::Server::BSON):
+  test/oauth/authorization_test.rb:44:in `request_authorization'
+  test/oauth/authorization_test.rb:76:in `block (2 levels) in <class:AuthorizationTest>'
+
+
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+Started GET "/oauth/authorize?redirect_uri=http%3A%2F%2Fuberclient.dot%2Fcallback&client_id=foobar&client_secret=&response_type=code&scope=read+write&state=bring+this+back" for 127.0.0.1 at 2013-04-03 00:14:11 +0200
+  [1m[35mRack::OAuth2::Server::Client Load (0.1ms)[0m  SELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1  [["id", "foobar"]]
+
+NameError (uninitialized constant Rack::OAuth2::Server::BSON):
+  test/oauth/authorization_test.rb:44:in `request_authorization'
+  test/oauth/authorization_test.rb:76:in `block (2 levels) in <class:AuthorizationTest>'
+
+
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+Started GET "/oauth/authorize?redirect_uri=http%3A%2F%2Fuberclient.dot%2Fcallback&client_id=foobar&client_secret=&response_type=code&scope=read+write&state=bring+this+back" for 127.0.0.1 at 2013-04-03 00:14:11 +0200
+  [1m[35mRack::OAuth2::Server::Client Load (0.1ms)[0m  SELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1  [["id", "foobar"]]
+
+NameError (uninitialized constant Rack::OAuth2::Server::BSON):
+  test/oauth/authorization_test.rb:44:in `request_authorization'
+  test/oauth/authorization_test.rb:76:in `block (2 levels) in <class:AuthorizationTest>'
+
+
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+Started GET "/oauth/authorize?redirect_uri=http%3Anot-valid&client_id=33&client_secret=&response_type=code&scope=read+write&state=bring+this+back" for 127.0.0.1 at 2013-04-03 00:14:11 +0200
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[35m (0.0ms)[0m  commit transaction
+Started GET "/oauth/authorize?redirect_uri=http%3A%2F%2Fuberclient.dot%2Foz&client_id=34&client_secret=&response_type=code&scope=read+write&state=bring+this+back" for 127.0.0.1 at 2013-04-03 00:14:11 +0200
+  [1m[36mRack::OAuth2::Server::Client Load (0.1ms)[0m  [1mSELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1[0m  [["id", "34"]]
+
+NameError (uninitialized constant Rack::OAuth2::Server::BSON):
+  test/oauth/authorization_test.rb:44:in `request_authorization'
+  test/oauth/authorization_test.rb:86:in `block (2 levels) in <class:AuthorizationTest>'
+
+
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[35m (0.0ms)[0m  commit transaction
+Started GET "/oauth/authorize?redirect_uri=http%3A%2F%2Fuberclient.dot%2Foz&client_id=35&client_secret=&response_type=code&scope=read+write&state=bring+this+back" for 127.0.0.1 at 2013-04-03 00:14:11 +0200
+  [1m[36mRack::OAuth2::Server::Client Load (0.1ms)[0m  [1mSELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1[0m  [["id", "35"]]
+
+NameError (uninitialized constant Rack::OAuth2::Server::BSON):
+  test/oauth/authorization_test.rb:44:in `request_authorization'
+  test/oauth/authorization_test.rb:86:in `block (2 levels) in <class:AuthorizationTest>'
+
+
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[35m (0.0ms)[0m  commit transaction
+Started GET "/oauth/authorize?redirect_uri=http%3A%2F%2Fuberclient.dot%2Foz&client_id=36&client_secret=&response_type=code&scope=read+write&state=bring+this+back" for 127.0.0.1 at 2013-04-03 00:14:11 +0200
+  [1m[36mRack::OAuth2::Server::Client Load (0.1ms)[0m  [1mSELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1[0m  [["id", "36"]]
+
+NameError (uninitialized constant Rack::OAuth2::Server::BSON):
+  test/oauth/authorization_test.rb:44:in `request_authorization'
+  test/oauth/authorization_test.rb:86:in `block (2 levels) in <class:AuthorizationTest>'
+
+
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[35m (0.0ms)[0m  commit transaction
+Started GET "/oauth/authorize?redirect_uri=http%3A%2F%2Fuberclient.dot%2Foz&client_id=37&client_secret=&response_type=code&scope=read+write&state=bring+this+back" for 127.0.0.1 at 2013-04-03 00:14:11 +0200
+  [1m[36mRack::OAuth2::Server::Client Load (0.1ms)[0m  [1mSELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1[0m  [["id", "37"]]
+
+NameError (uninitialized constant Rack::OAuth2::Server::BSON):
+  test/oauth/authorization_test.rb:44:in `request_authorization'
+  test/oauth/authorization_test.rb:86:in `block (2 levels) in <class:AuthorizationTest>'
+
+
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[35m (0.0ms)[0m  commit transaction
+Started GET "/oauth/authorize?redirect_uri=http%3A%2F%2Fuberclient.dot%2Fcallback&client_id&client_secret=&response_type=code&scope=read+write&state=bring+this+back" for 127.0.0.1 at 2013-04-03 00:14:11 +0200
+
+NameError (uninitialized constant Rack::OAuth2::Server::BSON):
+  test/oauth/authorization_test.rb:44:in `request_authorization'
+  test/oauth/authorization_test.rb:71:in `block (2 levels) in <class:AuthorizationTest>'
+
+
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+Started GET "/oauth/authorize?redirect_uri=http%3A%2F%2Fuberclient.dot%2Fcallback&client_id&client_secret=&response_type=code&scope=read+write&state=bring+this+back" for 127.0.0.1 at 2013-04-03 00:14:11 +0200
+
+NameError (uninitialized constant Rack::OAuth2::Server::BSON):
+  test/oauth/authorization_test.rb:44:in `request_authorization'
+  test/oauth/authorization_test.rb:71:in `block (2 levels) in <class:AuthorizationTest>'
+
+
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[35m (0.0ms)[0m  commit transaction
+Started GET "/oauth/authorize?redirect_uri=http%3A%2F%2Fuberclient.dot%2Fcallback&client_id&client_secret=&response_type=code&scope=read+write&state=bring+this+back" for 127.0.0.1 at 2013-04-03 00:14:11 +0200
+
+NameError (uninitialized constant Rack::OAuth2::Server::BSON):
+  test/oauth/authorization_test.rb:44:in `request_authorization'
+  test/oauth/authorization_test.rb:71:in `block (2 levels) in <class:AuthorizationTest>'
+
+
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+Started GET "/oauth/authorize?redirect_uri=http%3A%2F%2Fuberclient.dot%2Fcallback&client_id&client_secret=&response_type=code&scope=read+write&state=bring+this+back" for 127.0.0.1 at 2013-04-03 00:14:11 +0200
+
+NameError (uninitialized constant Rack::OAuth2::Server::BSON):
+  test/oauth/authorization_test.rb:44:in `request_authorization'
+  test/oauth/authorization_test.rb:71:in `block (2 levels) in <class:AuthorizationTest>'
+
+
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[35m (0.0ms)[0m  commit transaction
+Started GET "/oauth/authorize?redirect_uri&client_id=42&client_secret=&response_type=code&scope=read+write&state=bring+this+back" for 127.0.0.1 at 2013-04-03 00:14:11 +0200
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+Started GET "/oauth/authorize?redirect_uri=http%3A%2F%2Fuberclient.dot%2Fcallback&client_id=43&client_secret=&response_type&scope=read+write&state=bring+this+back" for 127.0.0.1 at 2013-04-03 00:14:11 +0200
+  [1m[35mRack::OAuth2::Server::Client Load (0.1ms)[0m  SELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1  [["id", "43"]]
+
+NameError (uninitialized constant Rack::OAuth2::Server::BSON):
+  test/oauth/authorization_test.rb:44:in `request_authorization'
+  test/oauth/authorization_test.rb:99:in `block (2 levels) in <class:AuthorizationTest>'
+
+
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+Started GET "/oauth/authorize?redirect_uri=http%3A%2F%2Fuberclient.dot%2Fcallback&client_id=44&client_secret=&response_type&scope=read+write&state=bring+this+back" for 127.0.0.1 at 2013-04-03 00:14:11 +0200
+  [1m[35mRack::OAuth2::Server::Client Load (0.1ms)[0m  SELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1  [["id", "44"]]
+
+NameError (uninitialized constant Rack::OAuth2::Server::BSON):
+  test/oauth/authorization_test.rb:44:in `request_authorization'
+  test/oauth/authorization_test.rb:99:in `block (2 levels) in <class:AuthorizationTest>'
+
+
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+Started GET "/oauth/authorize?redirect_uri=http%3A%2F%2Fuberclient.dot%2Fcallback&client_id=45&client_secret=&response_type&scope=read+write&state=bring+this+back" for 127.0.0.1 at 2013-04-03 00:14:11 +0200
+  [1m[35mRack::OAuth2::Server::Client Load (0.1ms)[0m  SELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1  [["id", "45"]]
+
+NameError (uninitialized constant Rack::OAuth2::Server::BSON):
+  test/oauth/authorization_test.rb:44:in `request_authorization'
+  test/oauth/authorization_test.rb:99:in `block (2 levels) in <class:AuthorizationTest>'
+
+
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+Started GET "/oauth/authorize?redirect_uri=http%3A%2F%2Fuberclient.dot%2Fcallback&client_id=46&client_secret=&response_type&scope=read+write&state=bring+this+back" for 127.0.0.1 at 2013-04-03 00:14:11 +0200
+  [1m[35mRack::OAuth2::Server::Client Load (0.1ms)[0m  SELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1  [["id", "46"]]
+
+NameError (uninitialized constant Rack::OAuth2::Server::BSON):
+  test/oauth/authorization_test.rb:44:in `request_authorization'
+  test/oauth/authorization_test.rb:99:in `block (2 levels) in <class:AuthorizationTest>'
+
+
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+Started GET "/oauth/authorize?redirect_uri=http%3A%2F%2Fuberclient.dot%2Fcallback&client_id=51&client_secret=&response_type=foobar&scope=read+write&state=bring+this+back" for 127.0.0.1 at 2013-04-03 00:14:11 +0200
+  [1m[35mRack::OAuth2::Server::Client Load (0.1ms)[0m  SELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1  [["id", "51"]]
+
+NameError (uninitialized constant Rack::OAuth2::Server::BSON):
+  test/oauth/authorization_test.rb:44:in `request_authorization'
+  test/oauth/authorization_test.rb:104:in `block (2 levels) in <class:AuthorizationTest>'
+
+
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+Started GET "/oauth/authorize?redirect_uri=http%3A%2F%2Fuberclient.dot%2Fcallback&client_id=52&client_secret=&response_type=foobar&scope=read+write&state=bring+this+back" for 127.0.0.1 at 2013-04-03 00:14:11 +0200
+  [1m[35mRack::OAuth2::Server::Client Load (0.1ms)[0m  SELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1  [["id", "52"]]
+
+NameError (uninitialized constant Rack::OAuth2::Server::BSON):
+  test/oauth/authorization_test.rb:44:in `request_authorization'
+  test/oauth/authorization_test.rb:104:in `block (2 levels) in <class:AuthorizationTest>'
+
+
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+Started GET "/oauth/authorize?redirect_uri=http%3A%2F%2Fuberclient.dot%2Fcallback&client_id=53&client_secret=&response_type=foobar&scope=read+write&state=bring+this+back" for 127.0.0.1 at 2013-04-03 00:14:11 +0200
+  [1m[35mRack::OAuth2::Server::Client Load (0.1ms)[0m  SELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1  [["id", "53"]]
+
+NameError (uninitialized constant Rack::OAuth2::Server::BSON):
+  test/oauth/authorization_test.rb:44:in `request_authorization'
+  test/oauth/authorization_test.rb:104:in `block (2 levels) in <class:AuthorizationTest>'
+
+
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+Started GET "/oauth/authorize?redirect_uri=http%3A%2F%2Fuberclient.dot%2Fcallback&client_id=54&client_secret=&response_type=foobar&scope=read+write&state=bring+this+back" for 127.0.0.1 at 2013-04-03 00:14:11 +0200
+  [1m[35mRack::OAuth2::Server::Client Load (0.1ms)[0m  SELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1  [["id", "54"]]
+
+NameError (uninitialized constant Rack::OAuth2::Server::BSON):
+  test/oauth/authorization_test.rb:44:in `request_authorization'
+  test/oauth/authorization_test.rb:104:in `block (2 levels) in <class:AuthorizationTest>'
+
+
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+Started GET "/oauth/authorize?redirect_uri=http%3A%2F%2Fuberclient.dot%2Fcallback&client_id=57&client_secret=&response_type=code&scope=read+write+math&state=bring+this+back" for 127.0.0.1 at 2013-04-03 00:14:11 +0200
+  [1m[35mRack::OAuth2::Server::Client Load (0.1ms)[0m  SELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1  [["id", "57"]]
+
+NameError (uninitialized constant Rack::OAuth2::Server::BSON):
+  test/oauth/authorization_test.rb:44:in `request_authorization'
+  test/oauth/authorization_test.rb:110:in `block (2 levels) in <class:AuthorizationTest>'
+
+
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+Started GET "/oauth/authorize?redirect_uri=http%3A%2F%2Fuberclient.dot%2Fcallback&client_id=58&client_secret=&response_type=code&scope=read+write+math&state=bring+this+back" for 127.0.0.1 at 2013-04-03 00:14:11 +0200
+  [1m[35mRack::OAuth2::Server::Client Load (0.1ms)[0m  SELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1  [["id", "58"]]
+
+NameError (uninitialized constant Rack::OAuth2::Server::BSON):
+  test/oauth/authorization_test.rb:44:in `request_authorization'
+  test/oauth/authorization_test.rb:110:in `block (2 levels) in <class:AuthorizationTest>'
+
+
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+Started GET "/oauth/authorize?redirect_uri=http%3A%2F%2Fuberclient.dot%2Fcallback&client_id=59&client_secret=&response_type=code&scope=read+write+math&state=bring+this+back" for 127.0.0.1 at 2013-04-03 00:14:11 +0200
+  [1m[35mRack::OAuth2::Server::Client Load (0.1ms)[0m  SELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1  [["id", "59"]]
+
+NameError (uninitialized constant Rack::OAuth2::Server::BSON):
+  test/oauth/authorization_test.rb:44:in `request_authorization'
+  test/oauth/authorization_test.rb:110:in `block (2 levels) in <class:AuthorizationTest>'
+
+
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+Started GET "/oauth/authorize?redirect_uri=http%3A%2F%2Fuberclient.dot%2Fcallback&client_id=60&client_secret=&response_type=code&scope=read+write+math&state=bring+this+back" for 127.0.0.1 at 2013-04-03 00:14:11 +0200
+  [1m[35mRack::OAuth2::Server::Client Load (0.1ms)[0m  SELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1  [["id", "60"]]
+
+NameError (uninitialized constant Rack::OAuth2::Server::BSON):
+  test/oauth/authorization_test.rb:44:in `request_authorization'
+  test/oauth/authorization_test.rb:110:in `block (2 levels) in <class:AuthorizationTest>'
+
+
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+Started GET "/oauth/authorize?redirect_uri=http%3A%2F%2Fuberclient.dot%2Fcallback&client_id=61&client_secret=&response_type=code&scope=read+write&state=bring+this+back" for 127.0.0.1 at 2013-04-03 00:14:11 +0200
+  [1m[35mRack::OAuth2::Server::Client Load (0.1ms)[0m  SELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1  [["id", "61"]]
+
+NameError (uninitialized constant Rack::OAuth2::Server::BSON):
+  test/oauth/authorization_test.rb:44:in `request_authorization'
+  test/oauth/authorization_test.rb:256:in `block (2 levels) in <class:AuthorizationTest>'
+
+
+Started GET "/oauth/authorize?authorization" for 127.0.0.1 at 2013-04-03 00:14:11 +0200
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+Started GET "/oauth/authorize?redirect_uri=http%3A%2F%2Fuberclient.dot%2Fcallback&client_id=62&client_secret=&response_type=code&scope=read+write&state=bring+this+back" for 127.0.0.1 at 2013-04-03 00:14:11 +0200
+  [1m[35mRack::OAuth2::Server::Client Load (0.1ms)[0m  SELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1  [["id", "62"]]
+
+NameError (uninitialized constant Rack::OAuth2::Server::BSON):
+  test/oauth/authorization_test.rb:44:in `request_authorization'
+  test/oauth/authorization_test.rb:256:in `block (2 levels) in <class:AuthorizationTest>'
+
+
+Started GET "/oauth/authorize?authorization" for 127.0.0.1 at 2013-04-03 00:14:11 +0200
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+Started GET "/oauth/authorize?redirect_uri=http%3A%2F%2Fuberclient.dot%2Fcallback&client_id=63&client_secret=&response_type=code&scope=read+write&state=bring+this+back" for 127.0.0.1 at 2013-04-03 00:14:11 +0200
+  [1m[35mRack::OAuth2::Server::Client Load (0.1ms)[0m  SELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1  [["id", "63"]]
+
+NameError (uninitialized constant Rack::OAuth2::Server::BSON):
+  test/oauth/authorization_test.rb:44:in `request_authorization'
+  test/oauth/authorization_test.rb:265:in `block (2 levels) in <class:AuthorizationTest>'
+
+
+Started GET "/oauth/authorize?authorization=foobar" for 127.0.0.1 at 2013-04-03 00:14:11 +0200
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+Started GET "/oauth/authorize?redirect_uri=http%3A%2F%2Fuberclient.dot%2Fcallback&client_id=64&client_secret=&response_type=code&scope=read+write&state=bring+this+back" for 127.0.0.1 at 2013-04-03 00:14:11 +0200
+  [1m[35mRack::OAuth2::Server::Client Load (0.1ms)[0m  SELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1  [["id", "64"]]
+
+NameError (uninitialized constant Rack::OAuth2::Server::BSON):
+  test/oauth/authorization_test.rb:44:in `request_authorization'
+  test/oauth/authorization_test.rb:276:in `block (2 levels) in <class:AuthorizationTest>'
+
+
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (1.2ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+Migrating to CreateTables (20130401)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "clients" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "secret" varchar(255) DEFAULT '' NOT NULL, "scope" varchar(255) DEFAULT '' NOT NULL, "redirect_uri" varchar(255) DEFAULT '' NOT NULL, "display_name" varchar(255) DEFAULT '' NOT NULL, "link" varchar(255) DEFAULT '' NOT NULL, "image_url" varchar(255) DEFAULT '' NOT NULL, "notes" varchar(255) DEFAULT '' NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20130401')[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (4.0ms)[0m  INSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+Started GET "/oauth/authorize?redirect_uri=http%3A%2F%2Fuberclient.dot%2Fcallback&client_id=4cc7bc483321e814b8000000&client_secret=&response_type=code&scope=read+write&state=bring+this+back" for 127.0.0.1 at 2013-04-03 00:17:31 +0200
+  [1m[35mRack::OAuth2::Server::Client Load (0.2ms)[0m  SELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1  [["id", "4cc7bc483321e814b8000000"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+Started GET "/oauth/authorize?redirect_uri=http%3A%2F%2Fuberclient.dot%2Fcallback&client_id=4cc7bc483321e814b8000000&client_secret=&response_type=code&scope=read+write&state=bring+this+back" for 127.0.0.1 at 2013-04-03 00:17:31 +0200
+  [1m[35mRack::OAuth2::Server::Client Load (0.1ms)[0m  SELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1  [["id", "4cc7bc483321e814b8000000"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+Started GET "/oauth/authorize?redirect_uri=http%3A%2F%2Fuberclient.dot%2Fcallback&client_id=4cc7bc483321e814b8000000&client_secret=&response_type=code&scope=read+write&state=bring+this+back" for 127.0.0.1 at 2013-04-03 00:17:31 +0200
+  [1m[35mRack::OAuth2::Server::Client Load (0.1ms)[0m  SELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1  [["id", "4cc7bc483321e814b8000000"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+Started GET "/oauth/authorize?redirect_uri=http%3A%2F%2Fuberclient.dot%2Fcallback&client_id=4cc7bc483321e814b8000000&client_secret=&response_type=code&scope=read+write&state=bring+this+back" for 127.0.0.1 at 2013-04-03 00:17:31 +0200
+  [1m[35mRack::OAuth2::Server::Client Load (0.1ms)[0m  SELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1  [["id", "4cc7bc483321e814b8000000"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+Started GET "/oauth/authorize?redirect_uri=http%3A%2F%2Fuberclient.dot%2Fcallback&client_id=5&client_secret=&response_type=token&scope=read+write&state=bring+this+back" for 127.0.0.1 at 2013-04-03 00:17:31 +0200
+  [1m[35mRack::OAuth2::Server::Client Load (0.1ms)[0m  SELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1  [["id", "5"]]
+Started POST "/oauth/deny" for 127.0.0.1 at 2013-04-03 00:17:31 +0200
+Processing by OauthController#deny as HTML
+  Parameters: {"authorization"=>nil}
+Completed 500 Internal Server Error in 0ms
+
+NoMethodError (undefined method `include?' for nil:NilClass):
+  app/controllers/oauth_controller.rb:3:in `block in <class:OauthController>'
+  test/oauth/authorization_test.rb:222:in `block (3 levels) in <class:AuthorizationTest>'
+
+
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+Started GET "/oauth/authorize?redirect_uri=http%3A%2F%2Fuberclient.dot%2Fcallback&client_id=6&client_secret=&response_type=token&scope=read+write&state=bring+this+back" for 127.0.0.1 at 2013-04-03 00:17:31 +0200
+  [1m[35mRack::OAuth2::Server::Client Load (0.1ms)[0m  SELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1  [["id", "6"]]
+Started POST "/oauth/deny" for 127.0.0.1 at 2013-04-03 00:17:31 +0200
+Processing by OauthController#deny as HTML
+  Parameters: {"authorization"=>nil}
+Completed 500 Internal Server Error in 0ms
+
+NoMethodError (undefined method `include?' for nil:NilClass):
+  app/controllers/oauth_controller.rb:3:in `block in <class:OauthController>'
+  test/oauth/authorization_test.rb:222:in `block (3 levels) in <class:AuthorizationTest>'
+
+
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+Started GET "/oauth/authorize?redirect_uri=http%3A%2F%2Fuberclient.dot%2Fcallback&client_id=7&client_secret=&response_type=token&scope=read+write&state=bring+this+back" for 127.0.0.1 at 2013-04-03 00:17:31 +0200
+  [1m[35mRack::OAuth2::Server::Client Load (0.1ms)[0m  SELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1  [["id", "7"]]
+Started POST "/oauth/deny" for 127.0.0.1 at 2013-04-03 00:17:31 +0200
+Processing by OauthController#deny as HTML
+  Parameters: {"authorization"=>nil}
+Completed 500 Internal Server Error in 0ms
+
+NoMethodError (undefined method `include?' for nil:NilClass):
+  app/controllers/oauth_controller.rb:3:in `block in <class:OauthController>'
+  test/oauth/authorization_test.rb:222:in `block (3 levels) in <class:AuthorizationTest>'
+
+
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+Started GET "/oauth/authorize?redirect_uri=http%3A%2F%2Fuberclient.dot%2Fcallback&client_id=8&client_secret=&response_type=token&scope=read+write&state=bring+this+back" for 127.0.0.1 at 2013-04-03 00:17:31 +0200
+  [1m[35mRack::OAuth2::Server::Client Load (0.1ms)[0m  SELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1  [["id", "8"]]
+Started POST "/oauth/deny" for 127.0.0.1 at 2013-04-03 00:17:31 +0200
+Processing by OauthController#deny as HTML
+  Parameters: {"authorization"=>nil}
+Completed 500 Internal Server Error in 0ms
+
+NoMethodError (undefined method `include?' for nil:NilClass):
+  app/controllers/oauth_controller.rb:3:in `block in <class:OauthController>'
+  test/oauth/authorization_test.rb:222:in `block (3 levels) in <class:AuthorizationTest>'
+
+
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+Started GET "/oauth/authorize?redirect_uri=http%3A%2F%2Fuberclient.dot%2Fcallback&client_id=9&client_secret=&response_type=token&scope=read+write&state=bring+this+back" for 127.0.0.1 at 2013-04-03 00:17:31 +0200
+  [1m[35mRack::OAuth2::Server::Client Load (0.1ms)[0m  SELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1  [["id", "9"]]
+Started POST "/oauth/deny" for 127.0.0.1 at 2013-04-03 00:17:31 +0200
+Processing by OauthController#deny as HTML
+  Parameters: {"authorization"=>nil}
+Completed 500 Internal Server Error in 0ms
+
+NoMethodError (undefined method `include?' for nil:NilClass):
+  app/controllers/oauth_controller.rb:3:in `block in <class:OauthController>'
+  test/oauth/authorization_test.rb:222:in `block (3 levels) in <class:AuthorizationTest>'
+
+
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+Started GET "/oauth/authorize?redirect_uri=http%3A%2F%2Fuberclient.dot%2Fcallback&client_id=10&client_secret=&response_type=token&scope=read+write&state=bring+this+back" for 127.0.0.1 at 2013-04-03 00:17:31 +0200
+  [1m[35mRack::OAuth2::Server::Client Load (0.1ms)[0m  SELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1  [["id", "10"]]
+Started POST "/oauth/grant" for 127.0.0.1 at 2013-04-03 00:17:31 +0200
+Processing by OauthController#grant as HTML
+  Parameters: {"authorization"=>nil}
+Completed 500 Internal Server Error in 1ms
+
+NoMethodError (undefined method `include?' for nil:NilClass):
+  app/controllers/oauth_controller.rb:3:in `block in <class:OauthController>'
+  test/oauth/authorization_test.rb:193:in `block (3 levels) in <class:AuthorizationTest>'
+
+
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+Started GET "/oauth/authorize?redirect_uri=http%3A%2F%2Fuberclient.dot%2Fcallback&client_id=11&client_secret=&response_type=token&scope=read+write&state=bring+this+back" for 127.0.0.1 at 2013-04-03 00:17:31 +0200
+  [1m[35mRack::OAuth2::Server::Client Load (0.1ms)[0m  SELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1  [["id", "11"]]
+Started POST "/oauth/grant" for 127.0.0.1 at 2013-04-03 00:17:31 +0200
+Processing by OauthController#grant as HTML
+  Parameters: {"authorization"=>nil}
+Completed 500 Internal Server Error in 0ms
+
+NoMethodError (undefined method `include?' for nil:NilClass):
+  app/controllers/oauth_controller.rb:3:in `block in <class:OauthController>'
+  test/oauth/authorization_test.rb:193:in `block (3 levels) in <class:AuthorizationTest>'
+
+
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+Started GET "/oauth/authorize?redirect_uri=http%3A%2F%2Fuberclient.dot%2Fcallback&client_id=12&client_secret=&response_type=token&scope=read+write&state=bring+this+back" for 127.0.0.1 at 2013-04-03 00:17:31 +0200
+  [1m[35mRack::OAuth2::Server::Client Load (0.1ms)[0m  SELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1  [["id", "12"]]
+Started POST "/oauth/grant" for 127.0.0.1 at 2013-04-03 00:17:31 +0200
+Processing by OauthController#grant as HTML
+  Parameters: {"authorization"=>nil}
+Completed 500 Internal Server Error in 0ms
+
+NoMethodError (undefined method `include?' for nil:NilClass):
+  app/controllers/oauth_controller.rb:3:in `block in <class:OauthController>'
+  test/oauth/authorization_test.rb:193:in `block (3 levels) in <class:AuthorizationTest>'
+
+
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+Started GET "/oauth/authorize?redirect_uri=http%3A%2F%2Fuberclient.dot%2Fcallback&client_id=13&client_secret=&response_type=token&scope=read+write&state=bring+this+back" for 127.0.0.1 at 2013-04-03 00:17:31 +0200
+  [1m[35mRack::OAuth2::Server::Client Load (0.1ms)[0m  SELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1  [["id", "13"]]
+Started POST "/oauth/grant" for 127.0.0.1 at 2013-04-03 00:17:31 +0200
+Processing by OauthController#grant as HTML
+  Parameters: {"authorization"=>nil}
+Completed 500 Internal Server Error in 0ms
+
+NoMethodError (undefined method `include?' for nil:NilClass):
+  app/controllers/oauth_controller.rb:3:in `block in <class:OauthController>'
+  test/oauth/authorization_test.rb:193:in `block (3 levels) in <class:AuthorizationTest>'
+
+
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+Started GET "/oauth/authorize?redirect_uri=http%3A%2F%2Fuberclient.dot%2Fcallback&client_id=14&client_secret=&response_type=token&scope=read+write&state=bring+this+back" for 127.0.0.1 at 2013-04-03 00:17:31 +0200
+  [1m[35mRack::OAuth2::Server::Client Load (0.1ms)[0m  SELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1  [["id", "14"]]
+Started POST "/oauth/grant" for 127.0.0.1 at 2013-04-03 00:17:31 +0200
+Processing by OauthController#grant as HTML
+  Parameters: {"authorization"=>nil}
+Completed 500 Internal Server Error in 0ms
+
+NoMethodError (undefined method `include?' for nil:NilClass):
+  app/controllers/oauth_controller.rb:3:in `block in <class:OauthController>'
+  test/oauth/authorization_test.rb:193:in `block (3 levels) in <class:AuthorizationTest>'
+
+
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+Started GET "/oauth/authorize?redirect_uri=http%3A%2F%2Fuberclient.dot%2Fcallback&client_id=15&client_secret=&response_type=token&scope=read+write&state=bring+this+back" for 127.0.0.1 at 2013-04-03 00:17:31 +0200
+  [1m[35mRack::OAuth2::Server::Client Load (0.1ms)[0m  SELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1  [["id", "15"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+Started GET "/oauth/authorize?redirect_uri=http%3A%2F%2Fuberclient.dot%2Fcallback&client_id=16&client_secret=&response_type=token&scope=read+write&state=bring+this+back" for 127.0.0.1 at 2013-04-03 00:17:31 +0200
+  [1m[35mRack::OAuth2::Server::Client Load (0.1ms)[0m  SELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1  [["id", "16"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+Started GET "/oauth/authorize?redirect_uri=http%3A%2F%2Fuberclient.dot%2Fcallback&client_id=17&client_secret=&response_type=code&scope=read+write&state=bring+this+back" for 127.0.0.1 at 2013-04-03 00:17:31 +0200
+  [1m[35mRack::OAuth2::Server::Client Load (0.1ms)[0m  SELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1  [["id", "17"]]
+Started POST "/oauth/deny" for 127.0.0.1 at 2013-04-03 00:17:31 +0200
+Processing by OauthController#deny as HTML
+  Parameters: {"authorization"=>nil}
+Completed 500 Internal Server Error in 0ms
+
+NoMethodError (undefined method `include?' for nil:NilClass):
+  app/controllers/oauth_controller.rb:3:in `block in <class:OauthController>'
+  test/oauth/authorization_test.rb:155:in `block (3 levels) in <class:AuthorizationTest>'
+
+
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+Started GET "/oauth/authorize?redirect_uri=http%3A%2F%2Fuberclient.dot%2Fcallback&client_id=18&client_secret=&response_type=code&scope=read+write&state=bring+this+back" for 127.0.0.1 at 2013-04-03 00:17:31 +0200
+  [1m[35mRack::OAuth2::Server::Client Load (0.1ms)[0m  SELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1  [["id", "18"]]
+Started POST "/oauth/deny" for 127.0.0.1 at 2013-04-03 00:17:31 +0200
+Processing by OauthController#deny as HTML
+  Parameters: {"authorization"=>nil}
+Completed 500 Internal Server Error in 0ms
+
+NoMethodError (undefined method `include?' for nil:NilClass):
+  app/controllers/oauth_controller.rb:3:in `block in <class:OauthController>'
+  test/oauth/authorization_test.rb:155:in `block (3 levels) in <class:AuthorizationTest>'
+
+
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+Started GET "/oauth/authorize?redirect_uri=http%3A%2F%2Fuberclient.dot%2Fcallback&client_id=19&client_secret=&response_type=code&scope=read+write&state=bring+this+back" for 127.0.0.1 at 2013-04-03 00:17:31 +0200
+  [1m[35mRack::OAuth2::Server::Client Load (0.1ms)[0m  SELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1  [["id", "19"]]
+Started POST "/oauth/deny" for 127.0.0.1 at 2013-04-03 00:17:31 +0200
+Processing by OauthController#deny as HTML
+  Parameters: {"authorization"=>nil}
+Completed 500 Internal Server Error in 0ms
+
+NoMethodError (undefined method `include?' for nil:NilClass):
+  app/controllers/oauth_controller.rb:3:in `block in <class:OauthController>'
+  test/oauth/authorization_test.rb:155:in `block (3 levels) in <class:AuthorizationTest>'
+
+
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+Started GET "/oauth/authorize?redirect_uri=http%3A%2F%2Fuberclient.dot%2Fcallback&client_id=20&client_secret=&response_type=code&scope=read+write&state=bring+this+back" for 127.0.0.1 at 2013-04-03 00:17:31 +0200
+  [1m[35mRack::OAuth2::Server::Client Load (0.1ms)[0m  SELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1  [["id", "20"]]
+Started POST "/oauth/deny" for 127.0.0.1 at 2013-04-03 00:17:31 +0200
+Processing by OauthController#deny as HTML
+  Parameters: {"authorization"=>nil}
+Completed 500 Internal Server Error in 0ms
+
+NoMethodError (undefined method `include?' for nil:NilClass):
+  app/controllers/oauth_controller.rb:3:in `block in <class:OauthController>'
+  test/oauth/authorization_test.rb:155:in `block (3 levels) in <class:AuthorizationTest>'
+
+
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+Started GET "/oauth/authorize?redirect_uri=http%3A%2F%2Fuberclient.dot%2Fcallback&client_id=21&client_secret=&response_type=code&scope=read+write&state=bring+this+back" for 127.0.0.1 at 2013-04-03 00:17:31 +0200
+  [1m[35mRack::OAuth2::Server::Client Load (0.1ms)[0m  SELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1  [["id", "21"]]
+Started POST "/oauth/deny" for 127.0.0.1 at 2013-04-03 00:17:31 +0200
+Processing by OauthController#deny as HTML
+  Parameters: {"authorization"=>nil}
+Completed 500 Internal Server Error in 0ms
+
+NoMethodError (undefined method `include?' for nil:NilClass):
+  app/controllers/oauth_controller.rb:3:in `block in <class:OauthController>'
+  test/oauth/authorization_test.rb:155:in `block (3 levels) in <class:AuthorizationTest>'
+
+
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+Started GET "/oauth/authorize?redirect_uri=http%3A%2F%2Fuberclient.dot%2Fcallback&client_id=22&client_secret=&response_type=code&scope=read+write&state=bring+this+back" for 127.0.0.1 at 2013-04-03 00:17:31 +0200
+  [1m[35mRack::OAuth2::Server::Client Load (0.1ms)[0m  SELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1  [["id", "22"]]
+Started POST "/oauth/grant" for 127.0.0.1 at 2013-04-03 00:17:31 +0200
+Processing by OauthController#grant as HTML
+  Parameters: {"authorization"=>nil}
+Completed 500 Internal Server Error in 0ms
+
+NoMethodError (undefined method `include?' for nil:NilClass):
+  app/controllers/oauth_controller.rb:3:in `block in <class:OauthController>'
+  test/oauth/authorization_test.rb:126:in `block (3 levels) in <class:AuthorizationTest>'
+
+
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+Started GET "/oauth/authorize?redirect_uri=http%3A%2F%2Fuberclient.dot%2Fcallback&client_id=23&client_secret=&response_type=code&scope=read+write&state=bring+this+back" for 127.0.0.1 at 2013-04-03 00:17:31 +0200
+  [1m[35mRack::OAuth2::Server::Client Load (0.1ms)[0m  SELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1  [["id", "23"]]
+Started POST "/oauth/grant" for 127.0.0.1 at 2013-04-03 00:17:31 +0200
+Processing by OauthController#grant as HTML
+  Parameters: {"authorization"=>nil}
+Completed 500 Internal Server Error in 0ms
+
+NoMethodError (undefined method `include?' for nil:NilClass):
+  app/controllers/oauth_controller.rb:3:in `block in <class:OauthController>'
+  test/oauth/authorization_test.rb:126:in `block (3 levels) in <class:AuthorizationTest>'
+
+
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+Started GET "/oauth/authorize?redirect_uri=http%3A%2F%2Fuberclient.dot%2Fcallback&client_id=24&client_secret=&response_type=code&scope=read+write&state=bring+this+back" for 127.0.0.1 at 2013-04-03 00:17:31 +0200
+  [1m[35mRack::OAuth2::Server::Client Load (0.1ms)[0m  SELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1  [["id", "24"]]
+Started POST "/oauth/grant" for 127.0.0.1 at 2013-04-03 00:17:31 +0200
+Processing by OauthController#grant as HTML
+  Parameters: {"authorization"=>nil}
+Completed 500 Internal Server Error in 0ms
+
+NoMethodError (undefined method `include?' for nil:NilClass):
+  app/controllers/oauth_controller.rb:3:in `block in <class:OauthController>'
+  test/oauth/authorization_test.rb:126:in `block (3 levels) in <class:AuthorizationTest>'
+
+
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+Started GET "/oauth/authorize?redirect_uri=http%3A%2F%2Fuberclient.dot%2Fcallback&client_id=25&client_secret=&response_type=code&scope=read+write&state=bring+this+back" for 127.0.0.1 at 2013-04-03 00:17:31 +0200
+  [1m[35mRack::OAuth2::Server::Client Load (0.1ms)[0m  SELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1  [["id", "25"]]
+Started POST "/oauth/grant" for 127.0.0.1 at 2013-04-03 00:17:31 +0200
+Processing by OauthController#grant as HTML
+  Parameters: {"authorization"=>nil}
+Completed 500 Internal Server Error in 0ms
+
+NoMethodError (undefined method `include?' for nil:NilClass):
+  app/controllers/oauth_controller.rb:3:in `block in <class:OauthController>'
+  test/oauth/authorization_test.rb:126:in `block (3 levels) in <class:AuthorizationTest>'
+
+
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+Started GET "/oauth/authorize?redirect_uri=http%3A%2F%2Fuberclient.dot%2Fcallback&client_id=26&client_secret=&response_type=code&scope=read+write&state=bring+this+back" for 127.0.0.1 at 2013-04-03 00:17:31 +0200
+  [1m[35mRack::OAuth2::Server::Client Load (0.1ms)[0m  SELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1  [["id", "26"]]
+Started POST "/oauth/grant" for 127.0.0.1 at 2013-04-03 00:17:31 +0200
+Processing by OauthController#grant as HTML
+  Parameters: {"authorization"=>nil}
+Completed 500 Internal Server Error in 0ms
+
+NoMethodError (undefined method `include?' for nil:NilClass):
+  app/controllers/oauth_controller.rb:3:in `block in <class:OauthController>'
+  test/oauth/authorization_test.rb:126:in `block (3 levels) in <class:AuthorizationTest>'
+
+
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+Started GET "/oauth/authorize?redirect_uri=http%3A%2F%2Fuberclient.dot%2Fcallback&client_id=27&client_secret=&response_type=code&scope=read+write&state=bring+this+back" for 127.0.0.1 at 2013-04-03 00:17:31 +0200
+  [1m[35mRack::OAuth2::Server::Client Load (0.1ms)[0m  SELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1  [["id", "27"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+Started GET "/oauth/authorize?redirect_uri=http%3A%2F%2Fuberclient.dot%2Fcallback&client_id=28&client_secret=&response_type=code&scope=read+write&state=bring+this+back" for 127.0.0.1 at 2013-04-03 00:17:32 +0200
+  [1m[35mRack::OAuth2::Server::Client Load (0.1ms)[0m  SELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1  [["id", "28"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+Started GET "/oauth/authorize?redirect_uri=http%3A%2F%2Fuberclient.dot%2Fcallback&client_id=foobar&client_secret=&response_type=code&scope=read+write&state=bring+this+back" for 127.0.0.1 at 2013-04-03 00:17:32 +0200
+  [1m[35mRack::OAuth2::Server::Client Load (0.1ms)[0m  SELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1  [["id", "foobar"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+Started GET "/oauth/authorize?redirect_uri=http%3A%2F%2Fuberclient.dot%2Fcallback&client_id=foobar&client_secret=&response_type=code&scope=read+write&state=bring+this+back" for 127.0.0.1 at 2013-04-03 00:17:32 +0200
+  [1m[35mRack::OAuth2::Server::Client Load (0.1ms)[0m  SELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1  [["id", "foobar"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+Started GET "/oauth/authorize?redirect_uri=http%3A%2F%2Fuberclient.dot%2Fcallback&client_id=foobar&client_secret=&response_type=code&scope=read+write&state=bring+this+back" for 127.0.0.1 at 2013-04-03 00:17:32 +0200
+  [1m[35mRack::OAuth2::Server::Client Load (0.1ms)[0m  SELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1  [["id", "foobar"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+Started GET "/oauth/authorize?redirect_uri=http%3A%2F%2Fuberclient.dot%2Fcallback&client_id=foobar&client_secret=&response_type=code&scope=read+write&state=bring+this+back" for 127.0.0.1 at 2013-04-03 00:17:32 +0200
+  [1m[35mRack::OAuth2::Server::Client Load (0.1ms)[0m  SELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1  [["id", "foobar"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+Started GET "/oauth/authorize?redirect_uri=http%3Anot-valid&client_id=33&client_secret=&response_type=code&scope=read+write&state=bring+this+back" for 127.0.0.1 at 2013-04-03 00:17:32 +0200
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[35m (0.1ms)[0m  commit transaction
+Started GET "/oauth/authorize?redirect_uri=http%3A%2F%2Fuberclient.dot%2Foz&client_id=34&client_secret=&response_type=code&scope=read+write&state=bring+this+back" for 127.0.0.1 at 2013-04-03 00:17:32 +0200
+  [1m[36mRack::OAuth2::Server::Client Load (0.1ms)[0m  [1mSELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1[0m  [["id", "34"]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[35m (0.0ms)[0m  commit transaction
+Started GET "/oauth/authorize?redirect_uri=http%3A%2F%2Fuberclient.dot%2Foz&client_id=35&client_secret=&response_type=code&scope=read+write&state=bring+this+back" for 127.0.0.1 at 2013-04-03 00:17:32 +0200
+  [1m[36mRack::OAuth2::Server::Client Load (0.1ms)[0m  [1mSELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1[0m  [["id", "35"]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[35m (0.0ms)[0m  commit transaction
+Started GET "/oauth/authorize?redirect_uri=http%3A%2F%2Fuberclient.dot%2Foz&client_id=36&client_secret=&response_type=code&scope=read+write&state=bring+this+back" for 127.0.0.1 at 2013-04-03 00:17:32 +0200
+  [1m[36mRack::OAuth2::Server::Client Load (0.1ms)[0m  [1mSELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1[0m  [["id", "36"]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[35m (0.0ms)[0m  commit transaction
+Started GET "/oauth/authorize?redirect_uri=http%3A%2F%2Fuberclient.dot%2Foz&client_id=37&client_secret=&response_type=code&scope=read+write&state=bring+this+back" for 127.0.0.1 at 2013-04-03 00:17:32 +0200
+  [1m[36mRack::OAuth2::Server::Client Load (0.1ms)[0m  [1mSELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1[0m  [["id", "37"]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[35m (0.0ms)[0m  commit transaction
+Started GET "/oauth/authorize?redirect_uri=http%3A%2F%2Fuberclient.dot%2Fcallback&client_id&client_secret=&response_type=code&scope=read+write&state=bring+this+back" for 127.0.0.1 at 2013-04-03 00:17:32 +0200
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+Started GET "/oauth/authorize?redirect_uri=http%3A%2F%2Fuberclient.dot%2Fcallback&client_id&client_secret=&response_type=code&scope=read+write&state=bring+this+back" for 127.0.0.1 at 2013-04-03 00:17:32 +0200
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[35m (0.1ms)[0m  commit transaction
+Started GET "/oauth/authorize?redirect_uri=http%3A%2F%2Fuberclient.dot%2Fcallback&client_id&client_secret=&response_type=code&scope=read+write&state=bring+this+back" for 127.0.0.1 at 2013-04-03 00:17:32 +0200
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+Started GET "/oauth/authorize?redirect_uri=http%3A%2F%2Fuberclient.dot%2Fcallback&client_id&client_secret=&response_type=code&scope=read+write&state=bring+this+back" for 127.0.0.1 at 2013-04-03 00:17:32 +0200
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[35m (0.1ms)[0m  commit transaction
+Started GET "/oauth/authorize?redirect_uri&client_id=42&client_secret=&response_type=code&scope=read+write&state=bring+this+back" for 127.0.0.1 at 2013-04-03 00:17:32 +0200
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+Started GET "/oauth/authorize?redirect_uri=http%3A%2F%2Fuberclient.dot%2Fcallback&client_id=43&client_secret=&response_type&scope=read+write&state=bring+this+back" for 127.0.0.1 at 2013-04-03 00:17:32 +0200
+  [1m[35mRack::OAuth2::Server::Client Load (0.1ms)[0m  SELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1  [["id", "43"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+Started GET "/oauth/authorize?redirect_uri=http%3A%2F%2Fuberclient.dot%2Fcallback&client_id=44&client_secret=&response_type&scope=read+write&state=bring+this+back" for 127.0.0.1 at 2013-04-03 00:17:32 +0200
+  [1m[35mRack::OAuth2::Server::Client Load (0.1ms)[0m  SELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1  [["id", "44"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+Started GET "/oauth/authorize?redirect_uri=http%3A%2F%2Fuberclient.dot%2Fcallback&client_id=45&client_secret=&response_type&scope=read+write&state=bring+this+back" for 127.0.0.1 at 2013-04-03 00:17:32 +0200
+  [1m[35mRack::OAuth2::Server::Client Load (0.1ms)[0m  SELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1  [["id", "45"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+Started GET "/oauth/authorize?redirect_uri=http%3A%2F%2Fuberclient.dot%2Fcallback&client_id=46&client_secret=&response_type&scope=read+write&state=bring+this+back" for 127.0.0.1 at 2013-04-03 00:17:32 +0200
+  [1m[35mRack::OAuth2::Server::Client Load (0.1ms)[0m  SELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1  [["id", "46"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+Started GET "/oauth/authorize?redirect_uri=http%3A%2F%2Fuberclient.dot%2Fcallback&client_id=51&client_secret=&response_type=foobar&scope=read+write&state=bring+this+back" for 127.0.0.1 at 2013-04-03 00:17:32 +0200
+  [1m[35mRack::OAuth2::Server::Client Load (0.1ms)[0m  SELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1  [["id", "51"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+Started GET "/oauth/authorize?redirect_uri=http%3A%2F%2Fuberclient.dot%2Fcallback&client_id=52&client_secret=&response_type=foobar&scope=read+write&state=bring+this+back" for 127.0.0.1 at 2013-04-03 00:17:32 +0200
+  [1m[35mRack::OAuth2::Server::Client Load (0.1ms)[0m  SELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1  [["id", "52"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+Started GET "/oauth/authorize?redirect_uri=http%3A%2F%2Fuberclient.dot%2Fcallback&client_id=53&client_secret=&response_type=foobar&scope=read+write&state=bring+this+back" for 127.0.0.1 at 2013-04-03 00:17:32 +0200
+  [1m[35mRack::OAuth2::Server::Client Load (0.1ms)[0m  SELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1  [["id", "53"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+Started GET "/oauth/authorize?redirect_uri=http%3A%2F%2Fuberclient.dot%2Fcallback&client_id=54&client_secret=&response_type=foobar&scope=read+write&state=bring+this+back" for 127.0.0.1 at 2013-04-03 00:17:32 +0200
+  [1m[35mRack::OAuth2::Server::Client Load (0.1ms)[0m  SELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1  [["id", "54"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+Started GET "/oauth/authorize?redirect_uri=http%3A%2F%2Fuberclient.dot%2Fcallback&client_id=57&client_secret=&response_type=code&scope=read+write+math&state=bring+this+back" for 127.0.0.1 at 2013-04-03 00:17:32 +0200
+  [1m[35mRack::OAuth2::Server::Client Load (0.1ms)[0m  SELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1  [["id", "57"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+Started GET "/oauth/authorize?redirect_uri=http%3A%2F%2Fuberclient.dot%2Fcallback&client_id=58&client_secret=&response_type=code&scope=read+write+math&state=bring+this+back" for 127.0.0.1 at 2013-04-03 00:17:32 +0200
+  [1m[35mRack::OAuth2::Server::Client Load (0.1ms)[0m  SELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1  [["id", "58"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+Started GET "/oauth/authorize?redirect_uri=http%3A%2F%2Fuberclient.dot%2Fcallback&client_id=59&client_secret=&response_type=code&scope=read+write+math&state=bring+this+back" for 127.0.0.1 at 2013-04-03 00:17:32 +0200
+  [1m[35mRack::OAuth2::Server::Client Load (0.1ms)[0m  SELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1  [["id", "59"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+Started GET "/oauth/authorize?redirect_uri=http%3A%2F%2Fuberclient.dot%2Fcallback&client_id=60&client_secret=&response_type=code&scope=read+write+math&state=bring+this+back" for 127.0.0.1 at 2013-04-03 00:17:32 +0200
+  [1m[35mRack::OAuth2::Server::Client Load (0.1ms)[0m  SELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1  [["id", "60"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+Started GET "/oauth/authorize?redirect_uri=http%3A%2F%2Fuberclient.dot%2Fcallback&client_id=61&client_secret=&response_type=code&scope=read+write&state=bring+this+back" for 127.0.0.1 at 2013-04-03 00:17:32 +0200
+  [1m[35mRack::OAuth2::Server::Client Load (0.1ms)[0m  SELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1  [["id", "61"]]
+Started GET "/oauth/authorize?authorization" for 127.0.0.1 at 2013-04-03 00:17:32 +0200
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+Started GET "/oauth/authorize?redirect_uri=http%3A%2F%2Fuberclient.dot%2Fcallback&client_id=62&client_secret=&response_type=code&scope=read+write&state=bring+this+back" for 127.0.0.1 at 2013-04-03 00:17:32 +0200
+  [1m[35mRack::OAuth2::Server::Client Load (0.1ms)[0m  SELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1  [["id", "62"]]
+Started GET "/oauth/authorize?authorization" for 127.0.0.1 at 2013-04-03 00:17:32 +0200
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+Started GET "/oauth/authorize?redirect_uri=http%3A%2F%2Fuberclient.dot%2Fcallback&client_id=63&client_secret=&response_type=code&scope=read+write&state=bring+this+back" for 127.0.0.1 at 2013-04-03 00:17:32 +0200
+  [1m[35mRack::OAuth2::Server::Client Load (0.1ms)[0m  SELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1  [["id", "63"]]
+Started GET "/oauth/authorize?authorization=foobar" for 127.0.0.1 at 2013-04-03 00:17:32 +0200
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+Started GET "/oauth/authorize?redirect_uri=http%3A%2F%2Fuberclient.dot%2Fcallback&client_id=64&client_secret=&response_type=code&scope=read+write&state=bring+this+back" for 127.0.0.1 at 2013-04-03 00:17:32 +0200
+  [1m[35mRack::OAuth2::Server::Client Load (0.1ms)[0m  SELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1  [["id", "64"]]

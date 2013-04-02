@@ -10,9 +10,9 @@ module Rack
           # Authenticate a client request. This method takes three arguments,
           # Find Client from client identifier.
           def old_find(client_id)
-            id = BSON::ObjectId(client_id.to_s)
+            id = # BSON::ObjectId(client_id.to_s)
             Server.new_instance self, collection.find_one(id)
-          rescue BSON::InvalidObjectId
+          rescue #BSON::InvalidObjectId
           end
 
           # Create a new client. Client provides the following properties:
@@ -35,7 +35,7 @@ module Rack
                         :notes=>args[:notes].to_s, :scope=>scope,
                         :created_at=>Time.now.to_i, :revoked=>nil }
             if args[:id] && args[:secret]
-              fields[:_id], fields[:secret] = BSON::ObjectId(args[:id].to_s), args[:secret]
+              fields[:_id], fields[:secret] = # BSON::ObjectId(args[:id].to_s), args[:secret]
               collection.insert(fields, :safe=>true)
             else
               fields[:secret] = Server.secure_random
@@ -60,7 +60,7 @@ module Rack
 
           # Deletes client with given identifier (also, all related records).
           def old_delete(client_id)
-            id = BSON::ObjectId(client_id.to_s)
+            id = # BSON::ObjectId(client_id.to_s)
             Client.collection.remove({ :_id=>id })
             AuthRequest.collection.remove({ :client_id=>id })
             AccessGrant.collection.remove({ :client_id=>id })

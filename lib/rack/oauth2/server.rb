@@ -66,11 +66,14 @@ module Rack
         #     :scope=>config["scope"],
         #     :redirect_uri=>"http://example.com/oauth/callback"
         def register(args)
+          puts args.inspect
           if args[:id] && args[:secret] && (client = get_client(args[:id]))
             fail "Client secret does not match" unless client.secret == args[:secret]
             client.update args
           else
-            Client.create(args)
+            c = Client.create(args)
+            puts c.inspect
+            c
           end
         end
 
@@ -482,7 +485,7 @@ module Rack
         end
         raise InvalidClientError if client.revoked
         return client
-      rescue BSON::InvalidObjectId
+      rescue # BSON::InvalidObjectId
         raise InvalidClientError
       end
 
