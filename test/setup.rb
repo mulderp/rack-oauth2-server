@@ -68,15 +68,15 @@ when "rails"
 #    require 'active_record/fixtures'
     require "orm/#{ORM}"
   
-    class Test::Unit::TestCase
-      def app
-        ::Rails.application
-      end
-
-      def config
-        ::Rails.configuration.oauth
-      end
-    end
+#    class Test::Unit::TestCase
+#      def app
+#        ::Rails.application
+#      end
+#
+#      def config
+#        ::Rails.configuration.oauth
+#      end
+#    end
 
   else
     # Rails 2.x

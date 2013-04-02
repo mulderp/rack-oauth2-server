@@ -9158,3 +9158,490 @@ Migrating to CreateTables (20130401)
   [1m[35m (0.0ms)[0m  begin transaction
   [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
   [1m[35m (0.0ms)[0m  commit transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (1.2ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+Migrating to CreateTables (20130401)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "clients" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "secret" varchar(255) DEFAULT '' NOT NULL, "scope" varchar(255) DEFAULT '' NOT NULL, "redirect_uri" varchar(255) DEFAULT '' NOT NULL, "display_name" varchar(255) DEFAULT '' NOT NULL, "link" varchar(255) DEFAULT '' NOT NULL, "image_url" varchar(255) DEFAULT '' NOT NULL, "notes" varchar(255) DEFAULT '' NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20130401')[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (4.2ms)[0m  INSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+Started GET "/oauth/authorize?redirect_uri=http%3A%2F%2Fuberclient.dot%2Fcallback&client_id=foobar&client_secret=&response_type=code&scope=read+write&state=bring+this+back" for 127.0.0.1 at 2013-04-02 22:51:59 +0200
+  [1m[35mRack::OAuth2::Server::Client Load (0.2ms)[0m  SELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1  [["id", "foobar"]]
+
+NameError (uninitialized constant Rack::OAuth2::Server::BSON):
+  test/oauth/authorization_test.rb:48:in `request_authorization'
+  test/oauth/authorization_test.rb:80:in `block (2 levels) in <class:AuthorizationTest>'
+
+
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+Started GET "/oauth/authorize?redirect_uri=http%3A%2F%2Fuberclient.dot%2Fcallback&client_id&client_secret=&response_type=code&scope=read+write&state=bring+this+back" for 127.0.0.1 at 2013-04-02 22:51:59 +0200
+
+NameError (uninitialized constant Rack::OAuth2::Server::BSON):
+  test/oauth/authorization_test.rb:48:in `request_authorization'
+  test/oauth/authorization_test.rb:75:in `block (2 levels) in <class:AuthorizationTest>'
+
+
+Connecting to database specified by database.yml
+  [1m[36m (0.2ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (0.4ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (0.2ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (1.5ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+Migrating to CreateTables (20130401)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.5ms)[0m  CREATE TABLE "clients" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "secret" varchar(255) DEFAULT '' NOT NULL, "scope" varchar(255) DEFAULT '' NOT NULL, "redirect_uri" varchar(255) DEFAULT '' NOT NULL, "display_name" varchar(255) DEFAULT '' NOT NULL, "link" varchar(255) DEFAULT '' NOT NULL, "image_url" varchar(255) DEFAULT '' NOT NULL, "notes" varchar(255) DEFAULT '' NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20130401')[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (4.0ms)[0m  INSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+Started GET "/oauth/authorize?redirect_uri=http%3A%2F%2Fuberclient.dot%2Fcallback&client_id=foobar&client_secret=&response_type=code&scope=read+write&state=bring+this+back" for 127.0.0.1 at 2013-04-02 22:55:51 +0200
+  [1m[35mRack::OAuth2::Server::Client Load (0.2ms)[0m  SELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1  [["id", "foobar"]]
+
+NameError (uninitialized constant Rack::OAuth2::Server::BSON):
+  test/oauth/authorization_test.rb:47:in `request_authorization'
+  test/oauth/authorization_test.rb:79:in `block (2 levels) in <class:AuthorizationTest>'
+
+
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+Started GET "/oauth/authorize?redirect_uri=http%3A%2F%2Fuberclient.dot%2Fcallback&client_id&client_secret=&response_type=code&scope=read+write&state=bring+this+back" for 127.0.0.1 at 2013-04-02 22:55:51 +0200
+
+NameError (uninitialized constant Rack::OAuth2::Server::BSON):
+  test/oauth/authorization_test.rb:47:in `request_authorization'
+  test/oauth/authorization_test.rb:74:in `block (2 levels) in <class:AuthorizationTest>'
+
+
+Connecting to database specified by database.yml
+  [1m[36m (0.2ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (4.7ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+Migrating to CreateTables (20130401)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "clients" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "secret" varchar(255) DEFAULT '' NOT NULL, "scope" varchar(255) DEFAULT '' NOT NULL, "redirect_uri" varchar(255) DEFAULT '' NOT NULL, "display_name" varchar(255) DEFAULT '' NOT NULL, "link" varchar(255) DEFAULT '' NOT NULL, "image_url" varchar(255) DEFAULT '' NOT NULL, "notes" varchar(255) DEFAULT '' NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20130401')[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (5.3ms)[0m  INSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+Started GET "/oauth/authorize?redirect_uri=http%3A%2F%2Fuberclient.dot%2Fcallback&client_id=foobar&client_secret=&response_type=code&scope=read+write&state=bring+this+back" for 127.0.0.1 at 2013-04-02 23:46:19 +0200
+  [1m[35mRack::OAuth2::Server::Client Load (0.2ms)[0m  SELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1  [["id", "foobar"]]
+
+NameError (uninitialized constant Rack::OAuth2::Server::BSON):
+  test/oauth/authorization_test.rb:47:in `request_authorization'
+  test/oauth/authorization_test.rb:79:in `block (2 levels) in <class:AuthorizationTest>'
+
+
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+Started GET "/oauth/authorize?redirect_uri=http%3A%2F%2Fuberclient.dot%2Fcallback&client_id&client_secret=&response_type=code&scope=read+write&state=bring+this+back" for 127.0.0.1 at 2013-04-02 23:46:19 +0200
+
+NameError (uninitialized constant Rack::OAuth2::Server::BSON):
+  test/oauth/authorization_test.rb:47:in `request_authorization'
+  test/oauth/authorization_test.rb:74:in `block (2 levels) in <class:AuthorizationTest>'
+
+
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (1.3ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+Migrating to CreateTables (20130401)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "clients" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "secret" varchar(255) DEFAULT '' NOT NULL, "scope" varchar(255) DEFAULT '' NOT NULL, "redirect_uri" varchar(255) DEFAULT '' NOT NULL, "display_name" varchar(255) DEFAULT '' NOT NULL, "link" varchar(255) DEFAULT '' NOT NULL, "image_url" varchar(255) DEFAULT '' NOT NULL, "notes" varchar(255) DEFAULT '' NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20130401')[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (3.8ms)[0m  INSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+Started GET "/oauth/authorize?redirect_uri=http%3A%2F%2Fuberclient.dot%2Fcallback&client_id=foobar&client_secret=&response_type=code&scope=read+write&state=bring+this+back" for 127.0.0.1 at 2013-04-02 23:49:13 +0200
+  [1m[35mRack::OAuth2::Server::Client Load (0.2ms)[0m  SELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1  [["id", "foobar"]]
+
+NameError (uninitialized constant Rack::OAuth2::Server::BSON):
+  test/oauth/authorization_test.rb:48:in `request_authorization'
+  test/oauth/authorization_test.rb:80:in `block (2 levels) in <class:AuthorizationTest>'
+
+
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+Started GET "/oauth/authorize?redirect_uri=http%3A%2F%2Fuberclient.dot%2Fcallback&client_id&client_secret=&response_type=code&scope=read+write&state=bring+this+back" for 127.0.0.1 at 2013-04-02 23:49:13 +0200
+
+NameError (uninitialized constant Rack::OAuth2::Server::BSON):
+  test/oauth/authorization_test.rb:48:in `request_authorization'
+  test/oauth/authorization_test.rb:75:in `block (2 levels) in <class:AuthorizationTest>'
+
+
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (1.2ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+Migrating to CreateTables (20130401)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "clients" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "secret" varchar(255) DEFAULT '' NOT NULL, "scope" varchar(255) DEFAULT '' NOT NULL, "redirect_uri" varchar(255) DEFAULT '' NOT NULL, "display_name" varchar(255) DEFAULT '' NOT NULL, "link" varchar(255) DEFAULT '' NOT NULL, "image_url" varchar(255) DEFAULT '' NOT NULL, "notes" varchar(255) DEFAULT '' NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20130401')[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (4.0ms)[0m  INSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+Started GET "/oauth/authorize?redirect_uri=http%3A%2F%2Fuberclient.dot%2Fcallback&client_id=foobar&client_secret=&response_type=code&scope=read+write&state=bring+this+back" for 127.0.0.1 at 2013-04-02 23:50:09 +0200
+  [1m[35mRack::OAuth2::Server::Client Load (0.2ms)[0m  SELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1  [["id", "foobar"]]
+
+NameError (uninitialized constant Rack::OAuth2::Server::BSON):
+  test/oauth/authorization_test.rb:46:in `request_authorization'
+  test/oauth/authorization_test.rb:78:in `block (2 levels) in <class:AuthorizationTest>'
+
+
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+Started GET "/oauth/authorize?redirect_uri=http%3A%2F%2Fuberclient.dot%2Fcallback&client_id&client_secret=&response_type=code&scope=read+write&state=bring+this+back" for 127.0.0.1 at 2013-04-02 23:50:09 +0200
+
+NameError (uninitialized constant Rack::OAuth2::Server::BSON):
+  test/oauth/authorization_test.rb:46:in `request_authorization'
+  test/oauth/authorization_test.rb:73:in `block (2 levels) in <class:AuthorizationTest>'
+
+
+Connecting to database specified by database.yml
+  [1m[36m (0.3ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (0.6ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (0.4ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (3.3ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+Migrating to CreateTables (20130401)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.8ms)[0m  CREATE TABLE "clients" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "secret" varchar(255) DEFAULT '' NOT NULL, "scope" varchar(255) DEFAULT '' NOT NULL, "redirect_uri" varchar(255) DEFAULT '' NOT NULL, "display_name" varchar(255) DEFAULT '' NOT NULL, "link" varchar(255) DEFAULT '' NOT NULL, "image_url" varchar(255) DEFAULT '' NOT NULL, "notes" varchar(255) DEFAULT '' NOT NULL) 
+  [1m[36m (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20130401')[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (15.8ms)[0m  INSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[36m (0.2ms)[0m  [1mcommit transaction[0m
+Started GET "/oauth/authorize?redirect_uri=http%3A%2F%2Fuberclient.dot%2Fcallback&client_id=foobar&client_secret=&response_type=code&scope=read+write&state=bring+this+back" for 127.0.0.1 at 2013-04-02 23:52:08 +0200
+  [1m[35mRack::OAuth2::Server::Client Load (0.7ms)[0m  SELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1  [["id", "foobar"]]
+
+NameError (uninitialized constant Rack::OAuth2::Server::BSON):
+  test/oauth/authorization_test.rb:46:in `request_authorization'
+  test/oauth/authorization_test.rb:78:in `block (2 levels) in <class:AuthorizationTest>'
+
+
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.1ms)[0m  INSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+Started GET "/oauth/authorize?redirect_uri=http%3A%2F%2Fuberclient.dot%2Fcallback&client_id&client_secret=&response_type=code&scope=read+write&state=bring+this+back" for 127.0.0.1 at 2013-04-02 23:52:08 +0200
+
+NameError (uninitialized constant Rack::OAuth2::Server::BSON):
+  test/oauth/authorization_test.rb:46:in `request_authorization'
+  test/oauth/authorization_test.rb:73:in `block (2 levels) in <class:AuthorizationTest>'
+
+
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (1.3ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+Migrating to CreateTables (20130401)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "clients" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "secret" varchar(255) DEFAULT '' NOT NULL, "scope" varchar(255) DEFAULT '' NOT NULL, "redirect_uri" varchar(255) DEFAULT '' NOT NULL, "display_name" varchar(255) DEFAULT '' NOT NULL, "link" varchar(255) DEFAULT '' NOT NULL, "image_url" varchar(255) DEFAULT '' NOT NULL, "notes" varchar(255) DEFAULT '' NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20130401')[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (4.4ms)[0m  INSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+Started GET "/oauth/authorize?redirect_uri=http%3A%2F%2Fuberclient.dot%2Fcallback&client_id=foobar&client_secret=&response_type=code&scope=read+write&state=bring+this+back" for 127.0.0.1 at 2013-04-02 23:58:43 +0200
+  [1m[35mRack::OAuth2::Server::Client Load (0.2ms)[0m  SELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1  [["id", "foobar"]]
+
+NameError (uninitialized constant Rack::OAuth2::Server::BSON):
+  test/oauth/authorization_test.rb:46:in `request_authorization'
+  test/oauth/authorization_test.rb:78:in `block (2 levels) in <class:AuthorizationTest>'
+
+
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+Started GET "/oauth/authorize?redirect_uri=http%3A%2F%2Fuberclient.dot%2Fcallback&client_id&client_secret=&response_type=code&scope=read+write&state=bring+this+back" for 127.0.0.1 at 2013-04-02 23:58:43 +0200
+
+NameError (uninitialized constant Rack::OAuth2::Server::BSON):
+  test/oauth/authorization_test.rb:46:in `request_authorization'
+  test/oauth/authorization_test.rb:73:in `block (2 levels) in <class:AuthorizationTest>'
+
+
+Connecting to database specified by database.yml
+  [1m[36m (0.2ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (0.4ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (0.2ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (2.8ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+Migrating to CreateTables (20130401)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.5ms)[0m  CREATE TABLE "clients" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "secret" varchar(255) DEFAULT '' NOT NULL, "scope" varchar(255) DEFAULT '' NOT NULL, "redirect_uri" varchar(255) DEFAULT '' NOT NULL, "display_name" varchar(255) DEFAULT '' NOT NULL, "link" varchar(255) DEFAULT '' NOT NULL, "image_url" varchar(255) DEFAULT '' NOT NULL, "notes" varchar(255) DEFAULT '' NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20130401')[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (5.9ms)[0m  INSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+Started GET "/oauth/authorize?redirect_uri=http%3A%2F%2Fuberclient.dot%2Fcallback&client_id=foobar&client_secret=aaa&response_type=code&scope=read+write&state=bring+this+back" for 127.0.0.1 at 2013-04-02 23:59:43 +0200
+  [1m[35mRack::OAuth2::Server::Client Load (0.3ms)[0m  SELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1  [["id", "foobar"]]
+
+NameError (uninitialized constant Rack::OAuth2::Server::BSON):
+  test/oauth/authorization_test.rb:46:in `request_authorization'
+  test/oauth/authorization_test.rb:78:in `block (2 levels) in <class:AuthorizationTest>'
+
+
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+Started GET "/oauth/authorize?redirect_uri=http%3A%2F%2Fuberclient.dot%2Fcallback&client_id&client_secret=aaa&response_type=code&scope=read+write&state=bring+this+back" for 127.0.0.1 at 2013-04-02 23:59:43 +0200
+
+NameError (uninitialized constant Rack::OAuth2::Server::BSON):
+  test/oauth/authorization_test.rb:46:in `request_authorization'
+  test/oauth/authorization_test.rb:73:in `block (2 levels) in <class:AuthorizationTest>'
+
+
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (1.2ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+Migrating to CreateTables (20130401)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "clients" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "secret" varchar(255) DEFAULT '' NOT NULL, "scope" varchar(255) DEFAULT '' NOT NULL, "redirect_uri" varchar(255) DEFAULT '' NOT NULL, "display_name" varchar(255) DEFAULT '' NOT NULL, "link" varchar(255) DEFAULT '' NOT NULL, "image_url" varchar(255) DEFAULT '' NOT NULL, "notes" varchar(255) DEFAULT '' NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20130401')[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (4.0ms)[0m  INSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+Started GET "/oauth/authorize?redirect_uri=http%3A%2F%2Fuberclient.dot%2Fcallback&client_id=foobar&client_secret=aaa&response_type=code&scope=read+write&state=bring+this+back" for 127.0.0.1 at 2013-04-03 00:00:34 +0200
+  [1m[35mRack::OAuth2::Server::Client Load (0.2ms)[0m  SELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1  [["id", "foobar"]]
+
+NameError (uninitialized constant Rack::OAuth2::Server::BSON):
+  test/oauth/authorization_test.rb:47:in `request_authorization'
+  test/oauth/authorization_test.rb:79:in `block (2 levels) in <class:AuthorizationTest>'
+
+
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+Started GET "/oauth/authorize?redirect_uri=http%3A%2F%2Fuberclient.dot%2Fcallback&client_id&client_secret=aaa&response_type=code&scope=read+write&state=bring+this+back" for 127.0.0.1 at 2013-04-03 00:00:34 +0200
+
+NameError (uninitialized constant Rack::OAuth2::Server::BSON):
+  test/oauth/authorization_test.rb:47:in `request_authorization'
+  test/oauth/authorization_test.rb:74:in `block (2 levels) in <class:AuthorizationTest>'
+
+
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (1.2ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+Migrating to CreateTables (20130401)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "clients" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "secret" varchar(255) DEFAULT '' NOT NULL, "scope" varchar(255) DEFAULT '' NOT NULL, "redirect_uri" varchar(255) DEFAULT '' NOT NULL, "display_name" varchar(255) DEFAULT '' NOT NULL, "link" varchar(255) DEFAULT '' NOT NULL, "image_url" varchar(255) DEFAULT '' NOT NULL, "notes" varchar(255) DEFAULT '' NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20130401')[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (3.8ms)[0m  INSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+Started GET "/oauth/authorize?redirect_uri=http%3A%2F%2Fuberclient.dot%2Fcallback&client_id=foobar&client_secret=aaa&response_type=code&scope=read+write&state=bring+this+back" for 127.0.0.1 at 2013-04-03 00:01:39 +0200
+  [1m[35mRack::OAuth2::Server::Client Load (0.2ms)[0m  SELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1  [["id", "foobar"]]
+
+NameError (uninitialized constant Rack::OAuth2::Server::BSON):
+  test/oauth/authorization_test.rb:47:in `request_authorization'
+  test/oauth/authorization_test.rb:79:in `block (2 levels) in <class:AuthorizationTest>'
+
+
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+Started GET "/oauth/authorize?redirect_uri=http%3A%2F%2Fuberclient.dot%2Fcallback&client_id&client_secret=aaa&response_type=code&scope=read+write&state=bring+this+back" for 127.0.0.1 at 2013-04-03 00:01:39 +0200
+
+NameError (uninitialized constant Rack::OAuth2::Server::BSON):
+  test/oauth/authorization_test.rb:47:in `request_authorization'
+  test/oauth/authorization_test.rb:74:in `block (2 levels) in <class:AuthorizationTest>'
+
+
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (1.2ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+Migrating to CreateTables (20130401)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "clients" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "secret" varchar(255) DEFAULT '' NOT NULL, "scope" varchar(255) DEFAULT '' NOT NULL, "redirect_uri" varchar(255) DEFAULT '' NOT NULL, "display_name" varchar(255) DEFAULT '' NOT NULL, "link" varchar(255) DEFAULT '' NOT NULL, "image_url" varchar(255) DEFAULT '' NOT NULL, "notes" varchar(255) DEFAULT '' NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20130401')[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (3.9ms)[0m  INSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+Started GET "/oauth/authorize?redirect_uri=http%3A%2F%2Fuberclient.dot%2Fcallback&client_id=foobar&client_secret=aaa&response_type=code&scope=read+write&state=bring+this+back" for 127.0.0.1 at 2013-04-03 00:02:15 +0200
+  [1m[35mRack::OAuth2::Server::Client Load (0.2ms)[0m  SELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1  [["id", "foobar"]]
+
+NameError (uninitialized constant Rack::OAuth2::Server::BSON):
+  test/oauth/authorization_test.rb:47:in `request_authorization'
+  test/oauth/authorization_test.rb:80:in `block (2 levels) in <class:AuthorizationTest>'
+
+
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+Started GET "/oauth/authorize?redirect_uri=http%3A%2F%2Fuberclient.dot%2Fcallback&client_id&client_secret=aaa&response_type=code&scope=read+write&state=bring+this+back" for 127.0.0.1 at 2013-04-03 00:02:15 +0200
+
+NameError (uninitialized constant Rack::OAuth2::Server::BSON):
+  test/oauth/authorization_test.rb:47:in `request_authorization'
+  test/oauth/authorization_test.rb:75:in `block (2 levels) in <class:AuthorizationTest>'
+
+
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (1.2ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+Migrating to CreateTables (20130401)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "clients" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "secret" varchar(255) DEFAULT '' NOT NULL, "scope" varchar(255) DEFAULT '' NOT NULL, "redirect_uri" varchar(255) DEFAULT '' NOT NULL, "display_name" varchar(255) DEFAULT '' NOT NULL, "link" varchar(255) DEFAULT '' NOT NULL, "image_url" varchar(255) DEFAULT '' NOT NULL, "notes" varchar(255) DEFAULT '' NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20130401')[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (4.0ms)[0m  INSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+Started GET "/oauth/authorize?redirect_uri=http%3A%2F%2Fuberclient.dot%2Fcallback&client_id=foobar&client_secret=aaa&response_type=code&scope=read+write&state=bring+this+back" for 127.0.0.1 at 2013-04-03 00:03:12 +0200
+  [1m[35mRack::OAuth2::Server::Client Load (6.0ms)[0m  SELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1  [["id", "foobar"]]
+
+NameError (uninitialized constant Rack::OAuth2::Server::BSON):
+  test/oauth/authorization_test.rb:50:in `block in request_authorization'
+  test/oauth/authorization_test.rb:49:in `request_authorization'
+  test/oauth/authorization_test.rb:84:in `block (2 levels) in <class:AuthorizationTest>'
+
+
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+Started GET "/oauth/authorize?redirect_uri=http%3A%2F%2Fuberclient.dot%2Fcallback&client_id&client_secret=aaa&response_type=code&scope=read+write&state=bring+this+back" for 127.0.0.1 at 2013-04-03 00:03:13 +0200
+
+NameError (uninitialized constant Rack::OAuth2::Server::BSON):
+  test/oauth/authorization_test.rb:50:in `block in request_authorization'
+  test/oauth/authorization_test.rb:49:in `request_authorization'
+  test/oauth/authorization_test.rb:79:in `block (2 levels) in <class:AuthorizationTest>'
+
+
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (1.2ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+Migrating to CreateTables (20130401)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "clients" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "secret" varchar(255) DEFAULT '' NOT NULL, "scope" varchar(255) DEFAULT '' NOT NULL, "redirect_uri" varchar(255) DEFAULT '' NOT NULL, "display_name" varchar(255) DEFAULT '' NOT NULL, "link" varchar(255) DEFAULT '' NOT NULL, "image_url" varchar(255) DEFAULT '' NOT NULL, "notes" varchar(255) DEFAULT '' NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20130401')[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (4.2ms)[0m  INSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+Started GET "/oauth/authorize?redirect_uri=http%3A%2F%2Fuberclient.dot%2Fcallback&client_id=foobar&client_secret=aaa&response_type=code&scope=read+write&state=bring+this+back" for 127.0.0.1 at 2013-04-03 00:05:07 +0200
+  [1m[35mRack::OAuth2::Server::Client Load (4.8ms)[0m  SELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1  [["id", "foobar"]]
+
+NameError (uninitialized constant Rack::OAuth2::Server::BSON):
+  test/oauth/authorization_test.rb:51:in `block in request_authorization'
+  test/oauth/authorization_test.rb:50:in `request_authorization'
+  test/oauth/authorization_test.rb:85:in `block (2 levels) in <class:AuthorizationTest>'
+
+
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+Started GET "/oauth/authorize?redirect_uri=http%3A%2F%2Fuberclient.dot%2Fcallback&client_id&client_secret=aaa&response_type=code&scope=read+write&state=bring+this+back" for 127.0.0.1 at 2013-04-03 00:05:08 +0200
+
+NameError (uninitialized constant Rack::OAuth2::Server::BSON):
+  test/oauth/authorization_test.rb:51:in `block in request_authorization'
+  test/oauth/authorization_test.rb:50:in `request_authorization'
+  test/oauth/authorization_test.rb:80:in `block (2 levels) in <class:AuthorizationTest>'
+
+
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (1.2ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+Migrating to CreateTables (20130401)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "clients" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "secret" varchar(255) DEFAULT '' NOT NULL, "scope" varchar(255) DEFAULT '' NOT NULL, "redirect_uri" varchar(255) DEFAULT '' NOT NULL, "display_name" varchar(255) DEFAULT '' NOT NULL, "link" varchar(255) DEFAULT '' NOT NULL, "image_url" varchar(255) DEFAULT '' NOT NULL, "notes" varchar(255) DEFAULT '' NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20130401')[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (3.9ms)[0m  INSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+Started GET "/oauth/authorize?redirect_uri=http%3A%2F%2Fuberclient.dot%2Fcallback&client_id=foobar&client_secret=aaa&response_type=code&scope=read+write&state=bring+this+back" for 127.0.0.1 at 2013-04-03 00:06:16 +0200
+  [1m[35mRack::OAuth2::Server::Client Load (1.0ms)[0m  SELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1  [["id", "foobar"]]
+
+NameError (uninitialized constant Rack::OAuth2::Server::BSON):
+  test/oauth/authorization_test.rb:51:in `block in request_authorization'
+  test/oauth/authorization_test.rb:50:in `request_authorization'
+  test/oauth/authorization_test.rb:85:in `block (2 levels) in <class:AuthorizationTest>'
+
+
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+Started GET "/oauth/authorize?redirect_uri=http%3A%2F%2Fuberclient.dot%2Fcallback&client_id&client_secret=aaa&response_type=code&scope=read+write&state=bring+this+back" for 127.0.0.1 at 2013-04-03 00:06:16 +0200
+
+NameError (uninitialized constant Rack::OAuth2::Server::BSON):
+  test/oauth/authorization_test.rb:51:in `block in request_authorization'
+  test/oauth/authorization_test.rb:50:in `request_authorization'
+  test/oauth/authorization_test.rb:80:in `block (2 levels) in <class:AuthorizationTest>'
+
+
+Connecting to database specified by database.yml
+  [1m[36m (0.2ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (0.4ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (0.2ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (1.5ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+Migrating to CreateTables (20130401)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.5ms)[0m  CREATE TABLE "clients" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "secret" varchar(255) DEFAULT '' NOT NULL, "scope" varchar(255) DEFAULT '' NOT NULL, "redirect_uri" varchar(255) DEFAULT '' NOT NULL, "display_name" varchar(255) DEFAULT '' NOT NULL, "link" varchar(255) DEFAULT '' NOT NULL, "image_url" varchar(255) DEFAULT '' NOT NULL, "notes" varchar(255) DEFAULT '' NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20130401')[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (6.4ms)[0m  INSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+Started GET "/oauth/authorize?redirect_uri=http%3A%2F%2Fuberclient.dot%2Fcallback&client_id=foobar&client_secret=aaa&response_type=code&scope=read+write&state=bring+this+back" for 127.0.0.1 at 2013-04-03 00:07:52 +0200
+  [1m[35mRack::OAuth2::Server::Client Load (0.2ms)[0m  SELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1  [["id", "foobar"]]
+
+NameError (uninitialized constant Rack::OAuth2::Server::BSON):
+  test/oauth/authorization_test.rb:51:in `request_authorization'
+  test/oauth/authorization_test.rb:85:in `block (2 levels) in <class:AuthorizationTest>'
+
+
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+Started GET "/oauth/authorize?redirect_uri=http%3A%2F%2Fuberclient.dot%2Fcallback&client_id&client_secret=aaa&response_type=code&scope=read+write&state=bring+this+back" for 127.0.0.1 at 2013-04-03 00:07:52 +0200
+
+NameError (uninitialized constant Rack::OAuth2::Server::BSON):
+  test/oauth/authorization_test.rb:51:in `request_authorization'
+  test/oauth/authorization_test.rb:80:in `block (2 levels) in <class:AuthorizationTest>'
+
+
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (2.0ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+Migrating to CreateTables (20130401)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "clients" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "secret" varchar(255) DEFAULT '' NOT NULL, "scope" varchar(255) DEFAULT '' NOT NULL, "redirect_uri" varchar(255) DEFAULT '' NOT NULL, "display_name" varchar(255) DEFAULT '' NOT NULL, "link" varchar(255) DEFAULT '' NOT NULL, "image_url" varchar(255) DEFAULT '' NOT NULL, "notes" varchar(255) DEFAULT '' NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20130401')[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (3.8ms)[0m  INSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[35m (0.0ms)[0m  commit transaction

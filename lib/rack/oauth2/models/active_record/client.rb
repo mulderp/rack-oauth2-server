@@ -45,12 +45,12 @@ module Rack
           end
 
           # Lookup client by ID, display name or URL.
-          def lookup(field)
-            id = BSON::ObjectId(field.to_s)
-            Server.new_instance self, collection.find_one(id)
-          rescue BSON::InvalidObjectId
-            Server.new_instance self, collection.find_one({ :display_name=>field }) || collection.find_one({ :link=>field })
-          end
+#           def lookup(field)
+#             id = BSON::ObjectId(field.to_s)
+#             Server.new_instance self, collection.find_one(id)
+#           rescue BSON::InvalidObjectId
+#             Server.new_instance self, collection.find_one({ :display_name=>field }) || collection.find_one({ :link=>field })
+#           end
 
           # Returns all the clients in the database, sorted alphabetically.
           def old_all
@@ -102,28 +102,28 @@ module Rack
 
         # Revoke all authorization requests, access grants and access tokens for
         # this client. Ward off the evil.
-        def revoke!
-          self.revoked = Time.now.to_i
-          Client.collection.update({ :_id=>id }, { :$set=>{ :revoked=>revoked } })
-          AuthRequest.collection.update({ :client_id=>id }, { :$set=>{ :revoked=>revoked } })
-          AccessGrant.collection.update({ :client_id=>id }, { :$set=>{ :revoked=>revoked } })
-          AccessToken.collection.update({ :client_id=>id }, { :$set=>{ :revoked=>revoked } })
-        end
-
-        def update(args)
-          fields = [:display_name, :link, :image_url, :notes].inject({}) { |h,k| v = args[k]; h[k] = v if v; h }
-          fields[:redirect_uri] = Server::Utils.parse_redirect_uri(args[:redirect_uri]).to_s if args[:redirect_uri]
-          fields[:scope] = Server::Utils.normalize_scope(args[:scope])
-          self.class.collection.update({ :_id=>id }, { :$set=>fields })
-          self.class.find(id)
-        end
-
-        Server.create_indexes do
-          # For quickly returning clients sorted by display name, or finding
-          # client from a URL.
-          collection.create_index [[:display_name, Mongo::ASCENDING]]
-          collection.create_index [[:link, Mongo::ASCENDING]]
-        end
+###        def revoke!
+###          self.revoked = Time.now.to_i
+###          Client.collection.update({ :_id=>id }, { :$set=>{ :revoked=>revoked } })
+###          AuthRequest.collection.update({ :client_id=>id }, { :$set=>{ :revoked=>revoked } })
+###          AccessGrant.collection.update({ :client_id=>id }, { :$set=>{ :revoked=>revoked } })
+###          AccessToken.collection.update({ :client_id=>id }, { :$set=>{ :revoked=>revoked } })
+###        end
+###
+###        def update(args)
+###          fields = [:display_name, :link, :image_url, :notes].inject({}) { |h,k| v = args[k]; h[k] = v if v; h }
+###          fields[:redirect_uri] = Server::Utils.parse_redirect_uri(args[:redirect_uri]).to_s if args[:redirect_uri]
+###          fields[:scope] = Server::Utils.normalize_scope(args[:scope])
+###          self.class.collection.update({ :_id=>id }, { :$set=>fields })
+###          self.class.find(id)
+###        end
+###
+###        Server.create_indexes do
+###          # For quickly returning clients sorted by display name, or finding
+###          # client from a URL.
+###          collection.create_index [[:display_name, Mongo::ASCENDING]]
+###          collection.create_index [[:link, Mongo::ASCENDING]]
+###        end
       end
 
     end
