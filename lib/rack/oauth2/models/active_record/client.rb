@@ -75,31 +75,30 @@ module Rack
         end
 
         # Client identifier.
-        attr_reader :_id
-        alias :id :_id
+        # attr_reader :_id
+        # alias :id :_id
         # Client secret: random, long, and hexy.
-        attr_reader :secret
+        # attr_reader :secret
         # User see this.
-        attr_reader :display_name
         # Link to client's Web site.
-        attr_reader :link
+        # attr_reader :link
         # Preferred image URL for this icon.
-        attr_reader :image_url
+        # attr_reader :image_url
         # Redirect URL. Supplied by the client if they want to restrict redirect
         # URLs (better security).
-        attr_reader :redirect_uri
-        # List of scope the client is allowed to request.
-        attr_reader :scope
-        # Free form fields for internal use.
-        attr_reader :notes
-        # Does what it says on the label.
-        attr_reader :created_at
-        # Timestamp if revoked.
-        attr_accessor :revoked
-        # Counts how many access tokens were granted.
-        attr_reader :tokens_granted
-        # Counts how many access tokens were revoked.
-        attr_reader :tokens_revoked
+      #  attr_reader :redirect_uri
+        # # List of scope the client is allowed to request.
+        # attr_reader :scope
+        # # Free form fields for internal use.
+        # attr_reader :notes
+        # # Does what it says on the label.
+        # attr_reader :created_at
+        # # Timestamp if revoked.
+        # attr_accessor :revoked
+        # # Counts how many access tokens were granted.
+        # attr_reader :tokens_granted
+        # # Counts how many access tokens were revoked.
+        # attr_reader :tokens_revoked
 
         # Revoke all authorization requests, access grants and access tokens for
         # this client. Ward off the evil.

@@ -1,13 +1,13 @@
 class CreateTables < ActiveRecord::Migration
   def self.up
     create_table :clients do |t|
-      t.string :secret
-      t.string :scope
-      t.string :redirect_uri
-      t.string :display_name
-      t.string :link
-      t.string :image_url
-      t.string :notes
+      t.string :secret, :null => false, :default => ""
+      t.string :scope, :null => false, :default => ""
+      t.string :redirect_uri, :null => false, :default => ""
+      t.string :display_name, :null => false, :default => ""
+      t.string :link, :null => false, :default => ""
+      t.string :image_url, :null => false, :default => ""
+      t.string :notes, :null => false, :default => ""
     end
   end
     def self.down

@@ -115,6 +115,9 @@ class Test::Unit::TestCase
   attr_reader :client, :end_user
 
   def teardown
+  end
+
+  def mongo_teardown
     Server::Client.collection.drop
     Server::AuthRequest.collection.drop
     Server::AccessGrant.collection.drop
