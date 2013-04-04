@@ -9,6 +9,18 @@ class CreateTables < ActiveRecord::Migration
       t.string :image_url, :null => false, :default => ""
       t.string :notes, :null => false, :default => ""
     end
+
+    create_table :access_grants do |t|
+      t.string :identity
+      t.string :scope
+      t.string :client_id
+      t.string :redirect_uri
+      t.string :created_at
+      t.string :expires_at
+      t.string :granted_at
+      t.string :access_token
+      t.string :revoked
+    end
   end
     def self.down
 #    drop_table :users

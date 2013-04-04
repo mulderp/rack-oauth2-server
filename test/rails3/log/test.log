@@ -11229,3 +11229,1189 @@ Started GET "/oauth/authorize?authorization=foobar" for 127.0.0.1 at 2013-04-03 
   [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
 Started GET "/oauth/authorize?redirect_uri=http%3A%2F%2Fuberclient.dot%2Fcallback&client_id=64&client_secret=&response_type=code&scope=read+write&state=bring+this+back" for 127.0.0.1 at 2013-04-03 00:17:32 +0200
   [1m[35mRack::OAuth2::Server::Client Load (0.1ms)[0m  SELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1  [["id", "64"]]
+Connecting to database specified by database.yml
+  [1m[36m (0.2ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (4.7ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+Migrating to CreateTables (20130401)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  CREATE TABLE "clients" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "secret" varchar(255) DEFAULT '' NOT NULL, "scope" varchar(255) DEFAULT '' NOT NULL, "redirect_uri" varchar(255) DEFAULT '' NOT NULL, "display_name" varchar(255) DEFAULT '' NOT NULL, "link" varchar(255) DEFAULT '' NOT NULL, "image_url" varchar(255) DEFAULT '' NOT NULL, "notes" varchar(255) DEFAULT '' NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20130401')[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (9.0ms)[0m  INSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[35m (0.0ms)[0m  commit transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.2ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (0.4ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (0.2ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (1.5ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+Migrating to CreateTables (20130401)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.5ms)[0m  CREATE TABLE "clients" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "secret" varchar(255) DEFAULT '' NOT NULL, "scope" varchar(255) DEFAULT '' NOT NULL, "redirect_uri" varchar(255) DEFAULT '' NOT NULL, "display_name" varchar(255) DEFAULT '' NOT NULL, "link" varchar(255) DEFAULT '' NOT NULL, "image_url" varchar(255) DEFAULT '' NOT NULL, "notes" varchar(255) DEFAULT '' NOT NULL) 
+  [1m[36m (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20130401')[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (3.8ms)[0m  INSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[35m (0.0ms)[0m  commit transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (1.2ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+Migrating to CreateTables (20130401)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "clients" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "secret" varchar(255) DEFAULT '' NOT NULL, "scope" varchar(255) DEFAULT '' NOT NULL, "redirect_uri" varchar(255) DEFAULT '' NOT NULL, "display_name" varchar(255) DEFAULT '' NOT NULL, "link" varchar(255) DEFAULT '' NOT NULL, "image_url" varchar(255) DEFAULT '' NOT NULL, "notes" varchar(255) DEFAULT '' NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20130401')[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (1.4ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+Migrating to CreateTables (20130401)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "clients" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "secret" varchar(255) DEFAULT '' NOT NULL, "scope" varchar(255) DEFAULT '' NOT NULL, "redirect_uri" varchar(255) DEFAULT '' NOT NULL, "display_name" varchar(255) DEFAULT '' NOT NULL, "link" varchar(255) DEFAULT '' NOT NULL, "image_url" varchar(255) DEFAULT '' NOT NULL, "notes" varchar(255) DEFAULT '' NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20130401')[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (4.0ms)[0m  INSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+Started GET "/oauth/authorize?redirect_uri=http%3A%2F%2Fuberclient.dot%2Fcallback&client_id=4cc7bc483321e814b8000000&client_secret=&response_type=code&scope=read+write&state=bring+this+back" for 127.0.0.1 at 2013-04-04 21:30:01 +0200
+  [1m[35mRack::OAuth2::Server::Client Load (0.2ms)[0m  SELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1  [["id", "4cc7bc483321e814b8000000"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+Started GET "/oauth/authorize?redirect_uri=http%3A%2F%2Fuberclient.dot%2Fcallback&client_id=4cc7bc483321e814b8000000&client_secret=&response_type=code&scope=read+write&state=bring+this+back" for 127.0.0.1 at 2013-04-04 21:30:01 +0200
+  [1m[35mRack::OAuth2::Server::Client Load (0.1ms)[0m  SELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1  [["id", "4cc7bc483321e814b8000000"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+Started GET "/oauth/authorize?redirect_uri=http%3A%2F%2Fuberclient.dot%2Fcallback&client_id=4cc7bc483321e814b8000000&client_secret=&response_type=code&scope=read+write&state=bring+this+back" for 127.0.0.1 at 2013-04-04 21:30:01 +0200
+  [1m[35mRack::OAuth2::Server::Client Load (0.1ms)[0m  SELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1  [["id", "4cc7bc483321e814b8000000"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+Started GET "/oauth/authorize?redirect_uri=http%3A%2F%2Fuberclient.dot%2Fcallback&client_id=4&client_secret=&response_type=token&scope=read+write&state=bring+this+back" for 127.0.0.1 at 2013-04-04 21:30:01 +0200
+  [1m[35mRack::OAuth2::Server::Client Load (0.1ms)[0m  SELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1  [["id", "4"]]
+Started POST "/oauth/deny" for 127.0.0.1 at 2013-04-04 21:30:01 +0200
+Processing by OauthController#deny as HTML
+  Parameters: {"authorization"=>nil}
+Completed 500 Internal Server Error in 0ms
+
+NoMethodError (undefined method `include?' for nil:NilClass):
+  app/controllers/oauth_controller.rb:3:in `block in <class:OauthController>'
+  test/oauth/authorization_test.rb:222:in `block (3 levels) in <class:AuthorizationTest>'
+
+
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+Started GET "/oauth/authorize?redirect_uri=http%3A%2F%2Fuberclient.dot%2Fcallback&client_id=5&client_secret=&response_type=token&scope=read+write&state=bring+this+back" for 127.0.0.1 at 2013-04-04 21:30:01 +0200
+  [1m[35mRack::OAuth2::Server::Client Load (0.1ms)[0m  SELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1  [["id", "5"]]
+Started POST "/oauth/deny" for 127.0.0.1 at 2013-04-04 21:30:01 +0200
+Processing by OauthController#deny as HTML
+  Parameters: {"authorization"=>nil}
+Completed 500 Internal Server Error in 0ms
+
+NoMethodError (undefined method `include?' for nil:NilClass):
+  app/controllers/oauth_controller.rb:3:in `block in <class:OauthController>'
+  test/oauth/authorization_test.rb:222:in `block (3 levels) in <class:AuthorizationTest>'
+
+
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+Started GET "/oauth/authorize?redirect_uri=http%3A%2F%2Fuberclient.dot%2Fcallback&client_id=6&client_secret=&response_type=token&scope=read+write&state=bring+this+back" for 127.0.0.1 at 2013-04-04 21:30:01 +0200
+  [1m[35mRack::OAuth2::Server::Client Load (0.1ms)[0m  SELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1  [["id", "6"]]
+Started POST "/oauth/deny" for 127.0.0.1 at 2013-04-04 21:30:01 +0200
+Processing by OauthController#deny as HTML
+  Parameters: {"authorization"=>nil}
+Completed 500 Internal Server Error in 0ms
+
+NoMethodError (undefined method `include?' for nil:NilClass):
+  app/controllers/oauth_controller.rb:3:in `block in <class:OauthController>'
+  test/oauth/authorization_test.rb:222:in `block (3 levels) in <class:AuthorizationTest>'
+
+
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+Started GET "/oauth/authorize?redirect_uri=http%3A%2F%2Fuberclient.dot%2Fcallback&client_id=7&client_secret=&response_type=token&scope=read+write&state=bring+this+back" for 127.0.0.1 at 2013-04-04 21:30:01 +0200
+  [1m[35mRack::OAuth2::Server::Client Load (0.1ms)[0m  SELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1  [["id", "7"]]
+Started POST "/oauth/deny" for 127.0.0.1 at 2013-04-04 21:30:01 +0200
+Processing by OauthController#deny as HTML
+  Parameters: {"authorization"=>nil}
+Completed 500 Internal Server Error in 0ms
+
+NoMethodError (undefined method `include?' for nil:NilClass):
+  app/controllers/oauth_controller.rb:3:in `block in <class:OauthController>'
+  test/oauth/authorization_test.rb:222:in `block (3 levels) in <class:AuthorizationTest>'
+
+
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+Started GET "/oauth/authorize?redirect_uri=http%3A%2F%2Fuberclient.dot%2Fcallback&client_id=8&client_secret=&response_type=token&scope=read+write&state=bring+this+back" for 127.0.0.1 at 2013-04-04 21:30:01 +0200
+  [1m[35mRack::OAuth2::Server::Client Load (0.1ms)[0m  SELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1  [["id", "8"]]
+Started POST "/oauth/deny" for 127.0.0.1 at 2013-04-04 21:30:01 +0200
+Processing by OauthController#deny as HTML
+  Parameters: {"authorization"=>nil}
+Completed 500 Internal Server Error in 0ms
+
+NoMethodError (undefined method `include?' for nil:NilClass):
+  app/controllers/oauth_controller.rb:3:in `block in <class:OauthController>'
+  test/oauth/authorization_test.rb:222:in `block (3 levels) in <class:AuthorizationTest>'
+
+
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+Started GET "/oauth/authorize?redirect_uri=http%3A%2F%2Fuberclient.dot%2Fcallback&client_id=9&client_secret=&response_type=token&scope=read+write&state=bring+this+back" for 127.0.0.1 at 2013-04-04 21:30:01 +0200
+  [1m[35mRack::OAuth2::Server::Client Load (0.1ms)[0m  SELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1  [["id", "9"]]
+Started POST "/oauth/grant" for 127.0.0.1 at 2013-04-04 21:30:01 +0200
+Processing by OauthController#grant as HTML
+  Parameters: {"authorization"=>nil}
+Completed 500 Internal Server Error in 1ms
+
+NoMethodError (undefined method `include?' for nil:NilClass):
+  app/controllers/oauth_controller.rb:3:in `block in <class:OauthController>'
+  test/oauth/authorization_test.rb:193:in `block (3 levels) in <class:AuthorizationTest>'
+
+
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+Started GET "/oauth/authorize?redirect_uri=http%3A%2F%2Fuberclient.dot%2Fcallback&client_id=10&client_secret=&response_type=token&scope=read+write&state=bring+this+back" for 127.0.0.1 at 2013-04-04 21:30:01 +0200
+  [1m[35mRack::OAuth2::Server::Client Load (0.1ms)[0m  SELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1  [["id", "10"]]
+Started POST "/oauth/grant" for 127.0.0.1 at 2013-04-04 21:30:01 +0200
+Processing by OauthController#grant as HTML
+  Parameters: {"authorization"=>nil}
+Completed 500 Internal Server Error in 0ms
+
+NoMethodError (undefined method `include?' for nil:NilClass):
+  app/controllers/oauth_controller.rb:3:in `block in <class:OauthController>'
+  test/oauth/authorization_test.rb:193:in `block (3 levels) in <class:AuthorizationTest>'
+
+
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+Started GET "/oauth/authorize?redirect_uri=http%3A%2F%2Fuberclient.dot%2Fcallback&client_id=11&client_secret=&response_type=token&scope=read+write&state=bring+this+back" for 127.0.0.1 at 2013-04-04 21:30:01 +0200
+  [1m[35mRack::OAuth2::Server::Client Load (0.1ms)[0m  SELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1  [["id", "11"]]
+Started POST "/oauth/grant" for 127.0.0.1 at 2013-04-04 21:30:01 +0200
+Processing by OauthController#grant as HTML
+  Parameters: {"authorization"=>nil}
+Completed 500 Internal Server Error in 0ms
+
+NoMethodError (undefined method `include?' for nil:NilClass):
+  app/controllers/oauth_controller.rb:3:in `block in <class:OauthController>'
+  test/oauth/authorization_test.rb:193:in `block (3 levels) in <class:AuthorizationTest>'
+
+
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+Started GET "/oauth/authorize?redirect_uri=http%3A%2F%2Fuberclient.dot%2Fcallback&client_id=12&client_secret=&response_type=token&scope=read+write&state=bring+this+back" for 127.0.0.1 at 2013-04-04 21:30:01 +0200
+  [1m[35mRack::OAuth2::Server::Client Load (0.1ms)[0m  SELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1  [["id", "12"]]
+Started POST "/oauth/grant" for 127.0.0.1 at 2013-04-04 21:30:01 +0200
+Processing by OauthController#grant as HTML
+  Parameters: {"authorization"=>nil}
+Completed 500 Internal Server Error in 0ms
+
+NoMethodError (undefined method `include?' for nil:NilClass):
+  app/controllers/oauth_controller.rb:3:in `block in <class:OauthController>'
+  test/oauth/authorization_test.rb:193:in `block (3 levels) in <class:AuthorizationTest>'
+
+
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+Started GET "/oauth/authorize?redirect_uri=http%3A%2F%2Fuberclient.dot%2Fcallback&client_id=13&client_secret=&response_type=token&scope=read+write&state=bring+this+back" for 127.0.0.1 at 2013-04-04 21:30:01 +0200
+  [1m[35mRack::OAuth2::Server::Client Load (0.1ms)[0m  SELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1  [["id", "13"]]
+Started POST "/oauth/grant" for 127.0.0.1 at 2013-04-04 21:30:01 +0200
+Processing by OauthController#grant as HTML
+  Parameters: {"authorization"=>nil}
+Completed 500 Internal Server Error in 0ms
+
+NoMethodError (undefined method `include?' for nil:NilClass):
+  app/controllers/oauth_controller.rb:3:in `block in <class:OauthController>'
+  test/oauth/authorization_test.rb:193:in `block (3 levels) in <class:AuthorizationTest>'
+
+
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+Started GET "/oauth/authorize?redirect_uri=http%3A%2F%2Fuberclient.dot%2Fcallback&client_id=14&client_secret=&response_type=code&scope=read+write&state=bring+this+back" for 127.0.0.1 at 2013-04-04 21:30:01 +0200
+  [1m[35mRack::OAuth2::Server::Client Load (0.1ms)[0m  SELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1  [["id", "14"]]
+Started POST "/oauth/deny" for 127.0.0.1 at 2013-04-04 21:30:01 +0200
+Processing by OauthController#deny as HTML
+  Parameters: {"authorization"=>nil}
+Completed 500 Internal Server Error in 0ms
+
+NoMethodError (undefined method `include?' for nil:NilClass):
+  app/controllers/oauth_controller.rb:3:in `block in <class:OauthController>'
+  test/oauth/authorization_test.rb:155:in `block (3 levels) in <class:AuthorizationTest>'
+
+
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+Started GET "/oauth/authorize?redirect_uri=http%3A%2F%2Fuberclient.dot%2Fcallback&client_id=15&client_secret=&response_type=code&scope=read+write&state=bring+this+back" for 127.0.0.1 at 2013-04-04 21:30:01 +0200
+  [1m[35mRack::OAuth2::Server::Client Load (0.1ms)[0m  SELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1  [["id", "15"]]
+Started POST "/oauth/deny" for 127.0.0.1 at 2013-04-04 21:30:01 +0200
+Processing by OauthController#deny as HTML
+  Parameters: {"authorization"=>nil}
+Completed 500 Internal Server Error in 0ms
+
+NoMethodError (undefined method `include?' for nil:NilClass):
+  app/controllers/oauth_controller.rb:3:in `block in <class:OauthController>'
+  test/oauth/authorization_test.rb:155:in `block (3 levels) in <class:AuthorizationTest>'
+
+
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+Started GET "/oauth/authorize?redirect_uri=http%3A%2F%2Fuberclient.dot%2Fcallback&client_id=16&client_secret=&response_type=code&scope=read+write&state=bring+this+back" for 127.0.0.1 at 2013-04-04 21:30:01 +0200
+  [1m[35mRack::OAuth2::Server::Client Load (0.1ms)[0m  SELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1  [["id", "16"]]
+Started POST "/oauth/deny" for 127.0.0.1 at 2013-04-04 21:30:01 +0200
+Processing by OauthController#deny as HTML
+  Parameters: {"authorization"=>nil}
+Completed 500 Internal Server Error in 0ms
+
+NoMethodError (undefined method `include?' for nil:NilClass):
+  app/controllers/oauth_controller.rb:3:in `block in <class:OauthController>'
+  test/oauth/authorization_test.rb:155:in `block (3 levels) in <class:AuthorizationTest>'
+
+
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+Started GET "/oauth/authorize?redirect_uri=http%3A%2F%2Fuberclient.dot%2Fcallback&client_id=17&client_secret=&response_type=code&scope=read+write&state=bring+this+back" for 127.0.0.1 at 2013-04-04 21:30:01 +0200
+  [1m[35mRack::OAuth2::Server::Client Load (0.1ms)[0m  SELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1  [["id", "17"]]
+Started POST "/oauth/deny" for 127.0.0.1 at 2013-04-04 21:30:01 +0200
+Processing by OauthController#deny as HTML
+  Parameters: {"authorization"=>nil}
+Completed 500 Internal Server Error in 0ms
+
+NoMethodError (undefined method `include?' for nil:NilClass):
+  app/controllers/oauth_controller.rb:3:in `block in <class:OauthController>'
+  test/oauth/authorization_test.rb:155:in `block (3 levels) in <class:AuthorizationTest>'
+
+
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+Started GET "/oauth/authorize?redirect_uri=http%3A%2F%2Fuberclient.dot%2Fcallback&client_id=18&client_secret=&response_type=code&scope=read+write&state=bring+this+back" for 127.0.0.1 at 2013-04-04 21:30:01 +0200
+  [1m[35mRack::OAuth2::Server::Client Load (0.1ms)[0m  SELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1  [["id", "18"]]
+Started POST "/oauth/deny" for 127.0.0.1 at 2013-04-04 21:30:01 +0200
+Processing by OauthController#deny as HTML
+  Parameters: {"authorization"=>nil}
+Completed 500 Internal Server Error in 0ms
+
+NoMethodError (undefined method `include?' for nil:NilClass):
+  app/controllers/oauth_controller.rb:3:in `block in <class:OauthController>'
+  test/oauth/authorization_test.rb:155:in `block (3 levels) in <class:AuthorizationTest>'
+
+
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+Started GET "/oauth/authorize?redirect_uri=http%3A%2F%2Fuberclient.dot%2Fcallback&client_id=19&client_secret=&response_type=code&scope=read+write&state=bring+this+back" for 127.0.0.1 at 2013-04-04 21:30:01 +0200
+  [1m[35mRack::OAuth2::Server::Client Load (0.1ms)[0m  SELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1  [["id", "19"]]
+Started POST "/oauth/grant" for 127.0.0.1 at 2013-04-04 21:30:01 +0200
+Processing by OauthController#grant as HTML
+  Parameters: {"authorization"=>nil}
+Completed 500 Internal Server Error in 0ms
+
+NoMethodError (undefined method `include?' for nil:NilClass):
+  app/controllers/oauth_controller.rb:3:in `block in <class:OauthController>'
+  test/oauth/authorization_test.rb:126:in `block (3 levels) in <class:AuthorizationTest>'
+
+
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+Started GET "/oauth/authorize?redirect_uri=http%3A%2F%2Fuberclient.dot%2Fcallback&client_id=20&client_secret=&response_type=code&scope=read+write&state=bring+this+back" for 127.0.0.1 at 2013-04-04 21:30:01 +0200
+  [1m[35mRack::OAuth2::Server::Client Load (0.1ms)[0m  SELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1  [["id", "20"]]
+Started POST "/oauth/grant" for 127.0.0.1 at 2013-04-04 21:30:01 +0200
+Processing by OauthController#grant as HTML
+  Parameters: {"authorization"=>nil}
+Completed 500 Internal Server Error in 0ms
+
+NoMethodError (undefined method `include?' for nil:NilClass):
+  app/controllers/oauth_controller.rb:3:in `block in <class:OauthController>'
+  test/oauth/authorization_test.rb:126:in `block (3 levels) in <class:AuthorizationTest>'
+
+
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+Started GET "/oauth/authorize?redirect_uri=http%3A%2F%2Fuberclient.dot%2Fcallback&client_id=21&client_secret=&response_type=code&scope=read+write&state=bring+this+back" for 127.0.0.1 at 2013-04-04 21:30:01 +0200
+  [1m[35mRack::OAuth2::Server::Client Load (0.1ms)[0m  SELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1  [["id", "21"]]
+Started POST "/oauth/grant" for 127.0.0.1 at 2013-04-04 21:30:01 +0200
+Processing by OauthController#grant as HTML
+  Parameters: {"authorization"=>nil}
+Completed 500 Internal Server Error in 0ms
+
+NoMethodError (undefined method `include?' for nil:NilClass):
+  app/controllers/oauth_controller.rb:3:in `block in <class:OauthController>'
+  test/oauth/authorization_test.rb:126:in `block (3 levels) in <class:AuthorizationTest>'
+
+
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+Started GET "/oauth/authorize?redirect_uri=http%3A%2F%2Fuberclient.dot%2Fcallback&client_id=22&client_secret=&response_type=code&scope=read+write&state=bring+this+back" for 127.0.0.1 at 2013-04-04 21:30:01 +0200
+  [1m[35mRack::OAuth2::Server::Client Load (0.1ms)[0m  SELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1  [["id", "22"]]
+Started POST "/oauth/grant" for 127.0.0.1 at 2013-04-04 21:30:01 +0200
+Processing by OauthController#grant as HTML
+  Parameters: {"authorization"=>nil}
+Completed 500 Internal Server Error in 0ms
+
+NoMethodError (undefined method `include?' for nil:NilClass):
+  app/controllers/oauth_controller.rb:3:in `block in <class:OauthController>'
+  test/oauth/authorization_test.rb:126:in `block (3 levels) in <class:AuthorizationTest>'
+
+
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+Started GET "/oauth/authorize?redirect_uri=http%3A%2F%2Fuberclient.dot%2Fcallback&client_id=23&client_secret=&response_type=code&scope=read+write&state=bring+this+back" for 127.0.0.1 at 2013-04-04 21:30:01 +0200
+  [1m[35mRack::OAuth2::Server::Client Load (0.1ms)[0m  SELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1  [["id", "23"]]
+Started POST "/oauth/grant" for 127.0.0.1 at 2013-04-04 21:30:01 +0200
+Processing by OauthController#grant as HTML
+  Parameters: {"authorization"=>nil}
+Completed 500 Internal Server Error in 0ms
+
+NoMethodError (undefined method `include?' for nil:NilClass):
+  app/controllers/oauth_controller.rb:3:in `block in <class:OauthController>'
+  test/oauth/authorization_test.rb:126:in `block (3 levels) in <class:AuthorizationTest>'
+
+
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+Started GET "/oauth/authorize?redirect_uri=http%3A%2F%2Fuberclient.dot%2Fcallback&client_id=foobar&client_secret=&response_type=code&scope=read+write&state=bring+this+back" for 127.0.0.1 at 2013-04-04 21:30:01 +0200
+  [1m[35mRack::OAuth2::Server::Client Load (0.1ms)[0m  SELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1  [["id", "foobar"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+Started GET "/oauth/authorize?redirect_uri=http%3A%2F%2Fuberclient.dot%2Fcallback&client_id=foobar&client_secret=&response_type=code&scope=read+write&state=bring+this+back" for 127.0.0.1 at 2013-04-04 21:30:01 +0200
+  [1m[35mRack::OAuth2::Server::Client Load (0.1ms)[0m  SELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1  [["id", "foobar"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+Started GET "/oauth/authorize?redirect_uri=http%3A%2F%2Fuberclient.dot%2Fcallback&client_id=foobar&client_secret=&response_type=code&scope=read+write&state=bring+this+back" for 127.0.0.1 at 2013-04-04 21:30:01 +0200
+  [1m[35mRack::OAuth2::Server::Client Load (0.1ms)[0m  SELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1  [["id", "foobar"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+Started GET "/oauth/authorize?redirect_uri=http%3Anot-valid&client_id=27&client_secret=&response_type=code&scope=read+write&state=bring+this+back" for 127.0.0.1 at 2013-04-04 21:30:01 +0200
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[35m (0.0ms)[0m  commit transaction
+Started GET "/oauth/authorize?redirect_uri=http%3A%2F%2Fuberclient.dot%2Foz&client_id=28&client_secret=&response_type=code&scope=read+write&state=bring+this+back" for 127.0.0.1 at 2013-04-04 21:30:01 +0200
+  [1m[36mRack::OAuth2::Server::Client Load (0.1ms)[0m  [1mSELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1[0m  [["id", "28"]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[35m (0.1ms)[0m  commit transaction
+Started GET "/oauth/authorize?redirect_uri=http%3A%2F%2Fuberclient.dot%2Foz&client_id=29&client_secret=&response_type=code&scope=read+write&state=bring+this+back" for 127.0.0.1 at 2013-04-04 21:30:01 +0200
+  [1m[36mRack::OAuth2::Server::Client Load (0.1ms)[0m  [1mSELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1[0m  [["id", "29"]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[35m (0.0ms)[0m  commit transaction
+Started GET "/oauth/authorize?redirect_uri=http%3A%2F%2Fuberclient.dot%2Foz&client_id=30&client_secret=&response_type=code&scope=read+write&state=bring+this+back" for 127.0.0.1 at 2013-04-04 21:30:01 +0200
+  [1m[36mRack::OAuth2::Server::Client Load (0.1ms)[0m  [1mSELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1[0m  [["id", "30"]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[35m (0.0ms)[0m  commit transaction
+Started GET "/oauth/authorize?redirect_uri=http%3A%2F%2Fuberclient.dot%2Foz&client_id=31&client_secret=&response_type=code&scope=read+write&state=bring+this+back" for 127.0.0.1 at 2013-04-04 21:30:01 +0200
+  [1m[36mRack::OAuth2::Server::Client Load (0.1ms)[0m  [1mSELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1[0m  [["id", "31"]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[35m (0.1ms)[0m  commit transaction
+Started GET "/oauth/authorize?redirect_uri=http%3A%2F%2Fuberclient.dot%2Fcallback&client_id&client_secret=&response_type=code&scope=read+write&state=bring+this+back" for 127.0.0.1 at 2013-04-04 21:30:01 +0200
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+Started GET "/oauth/authorize?redirect_uri=http%3A%2F%2Fuberclient.dot%2Fcallback&client_id&client_secret=&response_type=code&scope=read+write&state=bring+this+back" for 127.0.0.1 at 2013-04-04 21:30:01 +0200
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[35m (0.0ms)[0m  commit transaction
+Started GET "/oauth/authorize?redirect_uri=http%3A%2F%2Fuberclient.dot%2Fcallback&client_id&client_secret=&response_type=code&scope=read+write&state=bring+this+back" for 127.0.0.1 at 2013-04-04 21:30:01 +0200
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+Started GET "/oauth/authorize?redirect_uri&client_id=35&client_secret=&response_type=code&scope=read+write&state=bring+this+back" for 127.0.0.1 at 2013-04-04 21:30:01 +0200
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[35m (0.0ms)[0m  commit transaction
+Started GET "/oauth/authorize?redirect_uri=http%3A%2F%2Fuberclient.dot%2Fcallback&client_id=36&client_secret=&response_type&scope=read+write&state=bring+this+back" for 127.0.0.1 at 2013-04-04 21:30:01 +0200
+  [1m[36mRack::OAuth2::Server::Client Load (0.1ms)[0m  [1mSELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1[0m  [["id", "36"]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[35m (0.0ms)[0m  commit transaction
+Started GET "/oauth/authorize?redirect_uri=http%3A%2F%2Fuberclient.dot%2Fcallback&client_id=37&client_secret=&response_type&scope=read+write&state=bring+this+back" for 127.0.0.1 at 2013-04-04 21:30:01 +0200
+  [1m[36mRack::OAuth2::Server::Client Load (0.1ms)[0m  [1mSELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1[0m  [["id", "37"]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[35m (0.0ms)[0m  commit transaction
+Started GET "/oauth/authorize?redirect_uri=http%3A%2F%2Fuberclient.dot%2Fcallback&client_id=38&client_secret=&response_type&scope=read+write&state=bring+this+back" for 127.0.0.1 at 2013-04-04 21:30:01 +0200
+  [1m[36mRack::OAuth2::Server::Client Load (0.1ms)[0m  [1mSELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1[0m  [["id", "38"]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+Started GET "/oauth/authorize?redirect_uri=http%3A%2F%2Fuberclient.dot%2Fcallback&client_id=42&client_secret=&response_type=foobar&scope=read+write&state=bring+this+back" for 127.0.0.1 at 2013-04-04 21:30:01 +0200
+  [1m[35mRack::OAuth2::Server::Client Load (0.1ms)[0m  SELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1  [["id", "42"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+Started GET "/oauth/authorize?redirect_uri=http%3A%2F%2Fuberclient.dot%2Fcallback&client_id=43&client_secret=&response_type=foobar&scope=read+write&state=bring+this+back" for 127.0.0.1 at 2013-04-04 21:30:01 +0200
+  [1m[35mRack::OAuth2::Server::Client Load (0.1ms)[0m  SELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1  [["id", "43"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+Started GET "/oauth/authorize?redirect_uri=http%3A%2F%2Fuberclient.dot%2Fcallback&client_id=44&client_secret=&response_type=foobar&scope=read+write&state=bring+this+back" for 127.0.0.1 at 2013-04-04 21:30:01 +0200
+  [1m[35mRack::OAuth2::Server::Client Load (0.1ms)[0m  SELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1  [["id", "44"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+Started GET "/oauth/authorize?redirect_uri=http%3A%2F%2Fuberclient.dot%2Fcallback&client_id=47&client_secret=&response_type=code&scope=read+write+math&state=bring+this+back" for 127.0.0.1 at 2013-04-04 21:30:01 +0200
+  [1m[35mRack::OAuth2::Server::Client Load (0.1ms)[0m  SELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1  [["id", "47"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+Started GET "/oauth/authorize?redirect_uri=http%3A%2F%2Fuberclient.dot%2Fcallback&client_id=48&client_secret=&response_type=code&scope=read+write+math&state=bring+this+back" for 127.0.0.1 at 2013-04-04 21:30:01 +0200
+  [1m[35mRack::OAuth2::Server::Client Load (0.1ms)[0m  SELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1  [["id", "48"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+Started GET "/oauth/authorize?redirect_uri=http%3A%2F%2Fuberclient.dot%2Fcallback&client_id=49&client_secret=&response_type=code&scope=read+write+math&state=bring+this+back" for 127.0.0.1 at 2013-04-04 21:30:01 +0200
+  [1m[35mRack::OAuth2::Server::Client Load (0.1ms)[0m  SELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1  [["id", "49"]]
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (1.2ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+Migrating to CreateTables (20130401)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "clients" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "secret" varchar(255) DEFAULT '' NOT NULL, "scope" varchar(255) DEFAULT '' NOT NULL, "redirect_uri" varchar(255) DEFAULT '' NOT NULL, "display_name" varchar(255) DEFAULT '' NOT NULL, "link" varchar(255) DEFAULT '' NOT NULL, "image_url" varchar(255) DEFAULT '' NOT NULL, "notes" varchar(255) DEFAULT '' NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20130401')[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (4.1ms)[0m  INSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["display_name", "MyApp"], ["image_url", "http://example.org/favicon.ico"], ["link", "http://example.org"], ["notes", ""], ["redirect_uri", "http://example.org/oauth/callback"], ["scope", ["read", "write"]], ["secret", ""]]
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "clients" [0m
+  [1m[35mRack::OAuth2::Server::Client Load (0.1ms)[0m  SELECT "clients".* FROM "clients" 
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (1.3ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+Migrating to CreateTables (20130401)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "clients" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "secret" varchar(255) DEFAULT '' NOT NULL, "scope" varchar(255) DEFAULT '' NOT NULL, "redirect_uri" varchar(255) DEFAULT '' NOT NULL, "display_name" varchar(255) DEFAULT '' NOT NULL, "link" varchar(255) DEFAULT '' NOT NULL, "image_url" varchar(255) DEFAULT '' NOT NULL, "notes" varchar(255) DEFAULT '' NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20130401')[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (4.0ms)[0m  INSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+  [1m[35mRack::OAuth2::Server::Client Load (0.2ms)[0m  SELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35mRack::OAuth2::Server::Client Load (0.1ms)[0m  SELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+  [1m[35mRack::OAuth2::Server::Client Load (0.1ms)[0m  SELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35mRack::OAuth2::Server::Client Load (0.1ms)[0m  SELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1  [["id", 4]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35mRack::OAuth2::Server::Client Load (0.1ms)[0m  SELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1  [["id", 5]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35mRack::OAuth2::Server::Client Load (0.1ms)[0m  SELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1  [["id", 6]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35mRack::OAuth2::Server::Client Load (0.1ms)[0m  SELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1  [["id", 7]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35mRack::OAuth2::Server::Client Load (0.1ms)[0m  SELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1  [["id", 8]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35mRack::OAuth2::Server::Client Load (0.1ms)[0m  SELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1  [["id", 9]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36mRack::OAuth2::Server::Client Load (0.1ms)[0m  [1mSELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1[0m  [["id", 13]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36mRack::OAuth2::Server::Client Load (0.2ms)[0m  [1mSELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1[0m  [["id", 14]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36mRack::OAuth2::Server::Client Load (0.1ms)[0m  [1mSELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1[0m  [["id", 15]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36mRack::OAuth2::Server::Client Load (0.1ms)[0m  [1mSELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1[0m  [["id", 18]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36mRack::OAuth2::Server::Client Load (0.1ms)[0m  [1mSELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1[0m  [["id", "4ce2488e3321e87ac1000004"]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35mRack::OAuth2::Server::Client Load (0.1ms)[0m  SELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1  [["id", 21]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35mRack::OAuth2::Server::Client Load (0.1ms)[0m  SELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1  [["id", 22]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["display_name", "MyApp"], ["image_url", "http://example.org/favicon.ico"], ["link", "http://example.org"], ["notes", ""], ["redirect_uri", "http://example.org/oauth/callback"], ["scope", ["read", "write"]], ["secret", ""]]
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["display_name", "MyApp"], ["image_url", "http://example.org/favicon.ico"], ["link", "http://example.org"], ["notes", ""], ["redirect_uri", "http://example.org/oauth/callback"], ["scope", ["read", "write"]], ["secret", ""]]
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["display_name", "MyApp"], ["image_url", "http://example.org/favicon.ico"], ["link", "http://example.org"], ["notes", ""], ["redirect_uri", "http://example.org/oauth/callback"], ["scope", ["read", "write"]], ["secret", ""]]
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "clients" [0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)  [["display_name", "MyApp"], ["image_url", "http://example.org/favicon.ico"], ["link", "http://example.org"], ["notes", ""], ["redirect_uri", "http://example.org/oauth/callback"], ["scope", ["read", "write"]], ["secret", ""]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35mRack::OAuth2::Server::Client Load (0.1ms)[0m  SELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1  [["id", 30]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["display_name", "MyApp"], ["image_url", "http://example.org/favicon.ico"], ["link", "http://example.org"], ["notes", ""], ["redirect_uri", "http://example.org/oauth/callback"], ["scope", ["read", "write"]], ["secret", ""]]
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36mRack::OAuth2::Server::Client Load (0.1ms)[0m  [1mSELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1[0m  [["id", 32]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)  [["display_name", "MyApp"], ["image_url", "http://example.org/favicon.ico"], ["link", "http://example.org"], ["notes", ""], ["redirect_uri", "http://example.org/oauth/callback"], ["scope", ["read", "write"]], ["secret", ""]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35mRack::OAuth2::Server::Client Load (0.1ms)[0m  SELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1  [["id", 34]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["display_name", "MyApp"], ["image_url", "http://example.org/favicon.ico"], ["link", "http://example.org"], ["notes", ""], ["redirect_uri", "http://example.org/oauth/callback"], ["scope", ["read", "write"]], ["secret", ""]]
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36mRack::OAuth2::Server::Client Load (0.1ms)[0m  [1mSELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1[0m  [["id", 36]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)  [["display_name", "MyApp"], ["image_url", "http://example.org/favicon.ico"], ["link", "http://example.org"], ["notes", ""], ["redirect_uri", "http://example.org/oauth/callback"], ["scope", ["read", "write"]], ["secret", ""]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35mRack::OAuth2::Server::Client Load (0.1ms)[0m  SELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1  [["id", 38]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35mRack::OAuth2::Server::Client Load (0.1ms)[0m  SELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1  [["id", "4ce24c423321e88ac5000015"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35mRack::OAuth2::Server::Client Load (0.1ms)[0m  SELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1  [["id", "4ce24c423321e88ac5000015"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35mRack::OAuth2::Server::Client Load (0.1ms)[0m  SELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1  [["id", "4ce24c423321e88ac5000015"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35mRack::OAuth2::Server::Client Load (0.1ms)[0m  SELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1  [["id", "4ce24c423321e88ac5000015"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35mRack::OAuth2::Server::Client Load (0.1ms)[0m  SELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1  [["id", "4ce24c423321e88ac5000015"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35mRack::OAuth2::Server::Client Load (0.1ms)[0m  SELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1  [["id", "4ce24c423321e88ac5000015"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+  [1m[35mRack::OAuth2::Server::Client Load (0.1ms)[0m  SELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1  [["id", "4ce24c423321e88ac5000015"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+  [1m[35mRack::OAuth2::Server::Client Load (0.1ms)[0m  SELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1  [["id", "4ce24c423321e88ac5000015"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+  [1m[35mRack::OAuth2::Server::Client Load (0.1ms)[0m  SELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1  [["id", "4ce24c423321e88ac5000015"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35mRack::OAuth2::Server::Client Load (0.1ms)[0m  SELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1  [["id", 48]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35mRack::OAuth2::Server::Client Load (0.1ms)[0m  SELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1  [["id", 49]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+  [1m[35mRack::OAuth2::Server::Client Load (0.1ms)[0m  SELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1  [["id", 50]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+  [1m[35mRack::OAuth2::Server::Client Load (0.1ms)[0m  SELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1  [["id", 51]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+  [1m[35mRack::OAuth2::Server::Client Load (0.1ms)[0m  SELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1  [["id", 52]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35mRack::OAuth2::Server::Client Load (0.1ms)[0m  SELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1  [["id", 53]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35mRack::OAuth2::Server::Client Load (0.1ms)[0m  SELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1  [["id", 54]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35mRack::OAuth2::Server::Client Load (0.1ms)[0m  SELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1  [["id", 55]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35mRack::OAuth2::Server::Client Load (0.1ms)[0m  SELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1  [["id", 56]]
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (1.2ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+Migrating to CreateTables (20130401)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "clients" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "secret" varchar(255) DEFAULT '' NOT NULL, "scope" varchar(255) DEFAULT '' NOT NULL, "redirect_uri" varchar(255) DEFAULT '' NOT NULL, "display_name" varchar(255) DEFAULT '' NOT NULL, "link" varchar(255) DEFAULT '' NOT NULL, "image_url" varchar(255) DEFAULT '' NOT NULL, "notes" varchar(255) DEFAULT '' NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20130401')[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (3.8ms)[0m  INSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+  [1m[35mRack::OAuth2::Server::Client Load (0.2ms)[0m  SELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1  [["id", 1]]
+Connecting to database specified by database.yml
+  [1m[36m (0.2ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (0.3ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (2.5ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+Migrating to CreateTables (20130401)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  CREATE TABLE "clients" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "secret" varchar(255) DEFAULT '' NOT NULL, "scope" varchar(255) DEFAULT '' NOT NULL, "redirect_uri" varchar(255) DEFAULT '' NOT NULL, "display_name" varchar(255) DEFAULT '' NOT NULL, "link" varchar(255) DEFAULT '' NOT NULL, "image_url" varchar(255) DEFAULT '' NOT NULL, "notes" varchar(255) DEFAULT '' NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20130401')[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (5.9ms)[0m  INSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+  [1m[35mRack::OAuth2::Server::Client Load (0.2ms)[0m  SELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1  [["id", 1]]
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (0.2ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (1.4ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+Migrating to CreateTables (20130401)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "clients" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "secret" varchar(255) DEFAULT '' NOT NULL, "scope" varchar(255) DEFAULT '' NOT NULL, "redirect_uri" varchar(255) DEFAULT '' NOT NULL, "display_name" varchar(255) DEFAULT '' NOT NULL, "link" varchar(255) DEFAULT '' NOT NULL, "image_url" varchar(255) DEFAULT '' NOT NULL, "notes" varchar(255) DEFAULT '' NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20130401')[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (3.9ms)[0m  INSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+  [1m[35mRack::OAuth2::Server::Client Load (0.2ms)[0m  SELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1  [["id", 1]]
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (1.2ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+Migrating to CreateTables (20130401)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "clients" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "secret" varchar(255) DEFAULT '' NOT NULL, "scope" varchar(255) DEFAULT '' NOT NULL, "redirect_uri" varchar(255) DEFAULT '' NOT NULL, "display_name" varchar(255) DEFAULT '' NOT NULL, "link" varchar(255) DEFAULT '' NOT NULL, "image_url" varchar(255) DEFAULT '' NOT NULL, "notes" varchar(255) DEFAULT '' NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20130401')[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (4.1ms)[0m  INSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+  [1m[35mRack::OAuth2::Server::Client Load (0.2ms)[0m  SELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1  [["id", 1]]
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (0.2ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (1.3ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+Migrating to CreateTables (20130401)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "clients" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "secret" varchar(255) DEFAULT '' NOT NULL, "scope" varchar(255) DEFAULT '' NOT NULL, "redirect_uri" varchar(255) DEFAULT '' NOT NULL, "display_name" varchar(255) DEFAULT '' NOT NULL, "link" varchar(255) DEFAULT '' NOT NULL, "image_url" varchar(255) DEFAULT '' NOT NULL, "notes" varchar(255) DEFAULT '' NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20130401')[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (3.8ms)[0m  INSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35mRack::OAuth2::Server::Client Load (0.2ms)[0m  SELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1  [["id", 1]]
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (1.3ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+Migrating to CreateTables (20130401)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "clients" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "secret" varchar(255) DEFAULT '' NOT NULL, "scope" varchar(255) DEFAULT '' NOT NULL, "redirect_uri" varchar(255) DEFAULT '' NOT NULL, "display_name" varchar(255) DEFAULT '' NOT NULL, "link" varchar(255) DEFAULT '' NOT NULL, "image_url" varchar(255) DEFAULT '' NOT NULL, "notes" varchar(255) DEFAULT '' NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20130401')[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (5.7ms)[0m  INSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+  [1m[35mRack::OAuth2::Server::Client Load (0.2ms)[0m  SELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1  [["id", 1]]
+Connecting to database specified by database.yml
+  [1m[36m (0.2ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (0.2ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (1.4ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+Migrating to CreateTables (20130401)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  CREATE TABLE "clients" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "secret" varchar(255) DEFAULT '' NOT NULL, "scope" varchar(255) DEFAULT '' NOT NULL, "redirect_uri" varchar(255) DEFAULT '' NOT NULL, "display_name" varchar(255) DEFAULT '' NOT NULL, "link" varchar(255) DEFAULT '' NOT NULL, "image_url" varchar(255) DEFAULT '' NOT NULL, "notes" varchar(255) DEFAULT '' NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20130401')[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (6.8ms)[0m  INSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+  [1m[35mRack::OAuth2::Server::Client Load (0.3ms)[0m  SELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1  [["id", 1]]
+Connecting to database specified by database.yml
+  [1m[36m (0.2ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (0.4ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (0.3ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (2.7ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+Migrating to CreateTables (20130401)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.6ms)[0m  CREATE TABLE "clients" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "secret" varchar(255) DEFAULT '' NOT NULL, "scope" varchar(255) DEFAULT '' NOT NULL, "redirect_uri" varchar(255) DEFAULT '' NOT NULL, "display_name" varchar(255) DEFAULT '' NOT NULL, "link" varchar(255) DEFAULT '' NOT NULL, "image_url" varchar(255) DEFAULT '' NOT NULL, "notes" varchar(255) DEFAULT '' NOT NULL) 
+  [1m[36m (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20130401')[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (7.6ms)[0m  INSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+  [1m[35mRack::OAuth2::Server::Client Load (0.4ms)[0m  SELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1  [["id", 1]]
+Connecting to database specified by database.yml
+  [1m[36m (0.2ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (0.2ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (1.3ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+Migrating to CreateTables (20130401)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "clients" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "secret" varchar(255) DEFAULT '' NOT NULL, "scope" varchar(255) DEFAULT '' NOT NULL, "redirect_uri" varchar(255) DEFAULT '' NOT NULL, "display_name" varchar(255) DEFAULT '' NOT NULL, "link" varchar(255) DEFAULT '' NOT NULL, "image_url" varchar(255) DEFAULT '' NOT NULL, "notes" varchar(255) DEFAULT '' NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20130401')[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (5.6ms)[0m  INSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+  [1m[35mRack::OAuth2::Server::Client Load (0.2ms)[0m  SELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1  [["id", 1]]
+Connecting to database specified by database.yml
+  [1m[36m (0.3ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (0.4ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (0.2ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (2.6ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+Migrating to CreateTables (20130401)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.5ms)[0m  CREATE TABLE "clients" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "secret" varchar(255) DEFAULT '' NOT NULL, "scope" varchar(255) DEFAULT '' NOT NULL, "redirect_uri" varchar(255) DEFAULT '' NOT NULL, "display_name" varchar(255) DEFAULT '' NOT NULL, "link" varchar(255) DEFAULT '' NOT NULL, "image_url" varchar(255) DEFAULT '' NOT NULL, "notes" varchar(255) DEFAULT '' NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20130401')[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (6.8ms)[0m  INSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+  [1m[35mRack::OAuth2::Server::Client Load (0.3ms)[0m  SELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mRack::OAuth2::Server::Client Load (0.1ms)[0m  [1mSELECT "clients".* FROM "clients" [0m
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (1.3ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+Migrating to CreateTables (20130401)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "clients" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "secret" varchar(255) DEFAULT '' NOT NULL, "scope" varchar(255) DEFAULT '' NOT NULL, "redirect_uri" varchar(255) DEFAULT '' NOT NULL, "display_name" varchar(255) DEFAULT '' NOT NULL, "link" varchar(255) DEFAULT '' NOT NULL, "image_url" varchar(255) DEFAULT '' NOT NULL, "notes" varchar(255) DEFAULT '' NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20130401')[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (3.9ms)[0m  INSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+  [1m[35mRack::OAuth2::Server::Client Load (0.2ms)[0m  SELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1  [["id", 1]]
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (1.3ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+Migrating to CreateTables (20130401)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "clients" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "secret" varchar(255) DEFAULT '' NOT NULL, "scope" varchar(255) DEFAULT '' NOT NULL, "redirect_uri" varchar(255) DEFAULT '' NOT NULL, "display_name" varchar(255) DEFAULT '' NOT NULL, "link" varchar(255) DEFAULT '' NOT NULL, "image_url" varchar(255) DEFAULT '' NOT NULL, "notes" varchar(255) DEFAULT '' NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20130401')[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (4.1ms)[0m  INSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+  [1m[35mRack::OAuth2::Server::Client Load (0.2ms)[0m  SELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1  [["id", 1]]
+Connecting to database specified by database.yml
+  [1m[36m (0.2ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (0.2ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (1.3ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+Migrating to CreateTables (20130401)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  CREATE TABLE "clients" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "secret" varchar(255) DEFAULT '' NOT NULL, "scope" varchar(255) DEFAULT '' NOT NULL, "redirect_uri" varchar(255) DEFAULT '' NOT NULL, "display_name" varchar(255) DEFAULT '' NOT NULL, "link" varchar(255) DEFAULT '' NOT NULL, "image_url" varchar(255) DEFAULT '' NOT NULL, "notes" varchar(255) DEFAULT '' NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20130401')[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (4.6ms)[0m  INSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+  [1m[35mRack::OAuth2::Server::Client Load (0.2ms)[0m  SELECT "clients".* FROM "clients" 
+  [1m[36mRack::OAuth2::Server::Client Load (0.2ms)[0m  [1mSELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1[0m  [["id", 1]]
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (0.2ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (1.4ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+Migrating to CreateTables (20130401)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "clients" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "secret" varchar(255) DEFAULT '' NOT NULL, "scope" varchar(255) DEFAULT '' NOT NULL, "redirect_uri" varchar(255) DEFAULT '' NOT NULL, "display_name" varchar(255) DEFAULT '' NOT NULL, "link" varchar(255) DEFAULT '' NOT NULL, "image_url" varchar(255) DEFAULT '' NOT NULL, "notes" varchar(255) DEFAULT '' NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20130401')[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (4.0ms)[0m  INSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+  [1m[35mRack::OAuth2::Server::Client Load (0.1ms)[0m  SELECT "clients".* FROM "clients" 
+  [1m[36mRack::OAuth2::Server::Client Load (0.2ms)[0m  [1mSELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1[0m  [["id", 1]]
+Connecting to database specified by database.yml
+  [1m[36m (0.2ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (0.2ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (1.4ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+Migrating to CreateTables (20130401)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "clients" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "secret" varchar(255) DEFAULT '' NOT NULL, "scope" varchar(255) DEFAULT '' NOT NULL, "redirect_uri" varchar(255) DEFAULT '' NOT NULL, "display_name" varchar(255) DEFAULT '' NOT NULL, "link" varchar(255) DEFAULT '' NOT NULL, "image_url" varchar(255) DEFAULT '' NOT NULL, "notes" varchar(255) DEFAULT '' NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20130401')[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (4.1ms)[0m  INSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+  [1m[35mRack::OAuth2::Server::Client Load (0.1ms)[0m  SELECT "clients".* FROM "clients" 
+  [1m[36mRack::OAuth2::Server::Client Load (0.2ms)[0m  [1mSELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1[0m  [["id", 1]]
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (1.3ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+Migrating to CreateTables (20130401)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "clients" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "secret" varchar(255) DEFAULT '' NOT NULL, "scope" varchar(255) DEFAULT '' NOT NULL, "redirect_uri" varchar(255) DEFAULT '' NOT NULL, "display_name" varchar(255) DEFAULT '' NOT NULL, "link" varchar(255) DEFAULT '' NOT NULL, "image_url" varchar(255) DEFAULT '' NOT NULL, "notes" varchar(255) DEFAULT '' NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20130401')[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (4.0ms)[0m  INSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+  [1m[35mRack::OAuth2::Server::Client Load (0.1ms)[0m  SELECT "clients".* FROM "clients" 
+  [1m[36mRack::OAuth2::Server::Client Load (0.2ms)[0m  [1mSELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1[0m  [["id", 1]]
+Connecting to database specified by database.yml
+  [1m[36m (0.2ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (1.3ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+Migrating to CreateTables (20130401)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "clients" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "secret" varchar(255) DEFAULT '' NOT NULL, "scope" varchar(255) DEFAULT '' NOT NULL, "redirect_uri" varchar(255) DEFAULT '' NOT NULL, "display_name" varchar(255) DEFAULT '' NOT NULL, "link" varchar(255) DEFAULT '' NOT NULL, "image_url" varchar(255) DEFAULT '' NOT NULL, "notes" varchar(255) DEFAULT '' NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20130401')[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (4.0ms)[0m  INSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+  [1m[35mRack::OAuth2::Server::Client Load (0.1ms)[0m  SELECT "clients".* FROM "clients" 
+  [1m[36mRack::OAuth2::Server::Client Load (0.2ms)[0m  [1mSELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1[0m  [["id", 1]]
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (1.2ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+Migrating to CreateTables (20130401)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "clients" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "secret" varchar(255) DEFAULT '' NOT NULL, "scope" varchar(255) DEFAULT '' NOT NULL, "redirect_uri" varchar(255) DEFAULT '' NOT NULL, "display_name" varchar(255) DEFAULT '' NOT NULL, "link" varchar(255) DEFAULT '' NOT NULL, "image_url" varchar(255) DEFAULT '' NOT NULL, "notes" varchar(255) DEFAULT '' NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20130401')[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (3.9ms)[0m  INSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+  [1m[35mRack::OAuth2::Server::Client Load (0.1ms)[0m  SELECT "clients".* FROM "clients" 
+  [1m[36mRack::OAuth2::Server::Client Load (0.2ms)[0m  [1mSELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1[0m  [["id", 1]]
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (1.4ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+Migrating to CreateTables (20130401)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "clients" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "secret" varchar(255) DEFAULT '' NOT NULL, "scope" varchar(255) DEFAULT '' NOT NULL, "redirect_uri" varchar(255) DEFAULT '' NOT NULL, "display_name" varchar(255) DEFAULT '' NOT NULL, "link" varchar(255) DEFAULT '' NOT NULL, "image_url" varchar(255) DEFAULT '' NOT NULL, "notes" varchar(255) DEFAULT '' NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20130401')[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (4.0ms)[0m  INSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+  [1m[35mRack::OAuth2::Server::Client Load (0.1ms)[0m  SELECT "clients".* FROM "clients" 
+  [1m[36mRack::OAuth2::Server::Client Load (0.2ms)[0m  [1mSELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1[0m  [["id", 1]]
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (1.3ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+Migrating to CreateTables (20130401)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "clients" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "secret" varchar(255) DEFAULT '' NOT NULL, "scope" varchar(255) DEFAULT '' NOT NULL, "redirect_uri" varchar(255) DEFAULT '' NOT NULL, "display_name" varchar(255) DEFAULT '' NOT NULL, "link" varchar(255) DEFAULT '' NOT NULL, "image_url" varchar(255) DEFAULT '' NOT NULL, "notes" varchar(255) DEFAULT '' NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20130401')[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (3.9ms)[0m  INSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+  [1m[35mRack::OAuth2::Server::Client Load (0.1ms)[0m  SELECT "clients".* FROM "clients" 
+  [1m[36mRack::OAuth2::Server::Client Load (0.2ms)[0m  [1mSELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1[0m  [["id", 1]]
+Connecting to database specified by database.yml
+  [1m[36m (0.2ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (0.2ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (2.2ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+Migrating to CreateTables (20130401)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  CREATE TABLE "clients" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "secret" varchar(255) DEFAULT '' NOT NULL, "scope" varchar(255) DEFAULT '' NOT NULL, "redirect_uri" varchar(255) DEFAULT '' NOT NULL, "display_name" varchar(255) DEFAULT '' NOT NULL, "link" varchar(255) DEFAULT '' NOT NULL, "image_url" varchar(255) DEFAULT '' NOT NULL, "notes" varchar(255) DEFAULT '' NOT NULL) 
+  [1m[36m (0.4ms)[0m  [1mCREATE TABLE "access_grants" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "identity" varchar(255) DEFAULT '' NOT NULL, "scope" varchar(255) DEFAULT '' NOT NULL, "client_id" varchar(255) DEFAULT '' NOT NULL, "redirect_uri" varchar(255) DEFAULT '' NOT NULL, "created_at" varchar(255) DEFAULT '' NOT NULL, "expires_at" varchar(255) DEFAULT '' NOT NULL, "granted_at" varchar(255) DEFAULT '' NOT NULL, "access_token" varchar(255) DEFAULT '' NOT NULL, "revoked" varchar(255) DEFAULT '' NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20130401')
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (4.0ms)[0m  [1mINSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36mRack::OAuth2::Server::Client Load (0.1ms)[0m  [1mSELECT "clients".* FROM "clients" [0m
+  [1m[35mRack::OAuth2::Server::Client Load (0.2ms)[0m  SELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.9ms)[0m  INSERT INTO "access_grants" ("access_token", "client_id", "created_at", "expires_at", "granted_at", "identity", "redirect_uri", "revoked", "scope") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["access_token", ""], ["client_id", nil], ["created_at", 2013-04-04 20:25:23 UTC], ["expires_at", ""], ["granted_at", ""], ["identity", "Batman"], ["redirect_uri", "http://uberclient.dot/callback"], ["revoked", ""], ["scope", ["read"]]]
+SQLite3::ConstraintException: constraint failed: INSERT INTO "access_grants" ("access_token", "client_id", "created_at", "expires_at", "granted_at", "identity", "redirect_uri", "revoked", "scope") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (1.2ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+Migrating to CreateTables (20130401)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "clients" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "secret" varchar(255) DEFAULT '' NOT NULL, "scope" varchar(255) DEFAULT '' NOT NULL, "redirect_uri" varchar(255) DEFAULT '' NOT NULL, "display_name" varchar(255) DEFAULT '' NOT NULL, "link" varchar(255) DEFAULT '' NOT NULL, "image_url" varchar(255) DEFAULT '' NOT NULL, "notes" varchar(255) DEFAULT '' NOT NULL) 
+  [1m[36m (0.2ms)[0m  [1mCREATE TABLE "access_grants" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "identity" varchar(255), "scope" varchar(255), "client_id" varchar(255), "redirect_uri" varchar(255), "created_at" varchar(255), "expires_at" varchar(255), "granted_at" varchar(255), "access_token" varchar(255), "revoked" varchar(255)) [0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20130401')
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (3.9ms)[0m  [1mINSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36mRack::OAuth2::Server::Client Load (0.1ms)[0m  [1mSELECT "clients".* FROM "clients" [0m
+  [1m[35mRack::OAuth2::Server::Client Load (0.2ms)[0m  SELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "access_grants" ("access_token", "client_id", "created_at", "expires_at", "granted_at", "identity", "redirect_uri", "revoked", "scope") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["access_token", nil], ["client_id", nil], ["created_at", 2013-04-04 20:26:02 UTC], ["expires_at", nil], ["granted_at", nil], ["identity", "Batman"], ["redirect_uri", "http://uberclient.dot/callback"], ["revoked", nil], ["scope", ["read"]]]
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+Started POST "/oauth/access_token" for 127.0.0.1 at 2013-04-04 22:26:02 +0200
+  [1m[35mRack::OAuth2::Server::Client Load (0.2ms)[0m  SELECT "clients".* FROM "clients" 
+  [1m[36mRack::OAuth2::Server::Client Load (0.1ms)[0m  [1mSELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1[0m  [["id", "1"]]
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (0.2ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (1.4ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+Migrating to CreateTables (20130401)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "clients" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "secret" varchar(255) DEFAULT '' NOT NULL, "scope" varchar(255) DEFAULT '' NOT NULL, "redirect_uri" varchar(255) DEFAULT '' NOT NULL, "display_name" varchar(255) DEFAULT '' NOT NULL, "link" varchar(255) DEFAULT '' NOT NULL, "image_url" varchar(255) DEFAULT '' NOT NULL, "notes" varchar(255) DEFAULT '' NOT NULL) 
+  [1m[36m (0.2ms)[0m  [1mCREATE TABLE "access_grants" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "identity" varchar(255), "scope" varchar(255), "client_id" varchar(255), "redirect_uri" varchar(255), "created_at" varchar(255), "expires_at" varchar(255), "granted_at" varchar(255), "access_token" varchar(255), "revoked" varchar(255)) [0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20130401')
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (4.9ms)[0m  [1mINSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36mRack::OAuth2::Server::Client Load (0.2ms)[0m  [1mSELECT "clients".* FROM "clients" [0m
+  [1m[35mRack::OAuth2::Server::Client Load (0.3ms)[0m  SELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.9ms)[0m  INSERT INTO "access_grants" ("access_token", "client_id", "created_at", "expires_at", "granted_at", "identity", "redirect_uri", "revoked", "scope") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["access_token", nil], ["client_id", nil], ["created_at", 2013-04-04 20:26:38 UTC], ["expires_at", nil], ["granted_at", nil], ["identity", "Batman"], ["redirect_uri", "http://uberclient.dot/callback"], ["revoked", nil], ["scope", ["read"]]]
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+Started POST "/oauth/access_token" for 127.0.0.1 at 2013-04-04 22:26:38 +0200
+  [1m[35mRack::OAuth2::Server::Client Load (0.2ms)[0m  SELECT "clients".* FROM "clients" 
+  [1m[36mRack::OAuth2::Server::Client Load (0.1ms)[0m  [1mSELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1[0m  [["id", "1"]]
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (1.2ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+Migrating to CreateTables (20130401)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "clients" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "secret" varchar(255) DEFAULT '' NOT NULL, "scope" varchar(255) DEFAULT '' NOT NULL, "redirect_uri" varchar(255) DEFAULT '' NOT NULL, "display_name" varchar(255) DEFAULT '' NOT NULL, "link" varchar(255) DEFAULT '' NOT NULL, "image_url" varchar(255) DEFAULT '' NOT NULL, "notes" varchar(255) DEFAULT '' NOT NULL) 
+  [1m[36m (0.2ms)[0m  [1mCREATE TABLE "access_grants" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "identity" varchar(255), "scope" varchar(255), "client_id" varchar(255), "redirect_uri" varchar(255), "created_at" varchar(255), "expires_at" varchar(255), "granted_at" varchar(255), "access_token" varchar(255), "revoked" varchar(255)) [0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20130401')
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (3.9ms)[0m  [1mINSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36mRack::OAuth2::Server::Client Load (0.1ms)[0m  [1mSELECT "clients".* FROM "clients" [0m
+  [1m[35mRack::OAuth2::Server::Client Load (0.2ms)[0m  SELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "access_grants" ("access_token", "client_id", "created_at", "expires_at", "granted_at", "identity", "redirect_uri", "revoked", "scope") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["access_token", nil], ["client_id", nil], ["created_at", 2013-04-04 20:27:31 UTC], ["expires_at", nil], ["granted_at", nil], ["identity", "Batman"], ["redirect_uri", "http://uberclient.dot/callback"], ["revoked", nil], ["scope", ["read"]]]
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+Started POST "/oauth/access_token" for 127.0.0.1 at 2013-04-04 22:27:31 +0200
+  [1m[35mRack::OAuth2::Server::Client Load (0.1ms)[0m  SELECT "clients".* FROM "clients" 
+  [1m[36mRack::OAuth2::Server::Client Load (0.1ms)[0m  [1mSELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1[0m  [["id", "1"]]
+Connecting to database specified by database.yml
+  [1m[36m (0.2ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (1.3ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+Migrating to CreateTables (20130401)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "clients" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "secret" varchar(255) DEFAULT '' NOT NULL, "scope" varchar(255) DEFAULT '' NOT NULL, "redirect_uri" varchar(255) DEFAULT '' NOT NULL, "display_name" varchar(255) DEFAULT '' NOT NULL, "link" varchar(255) DEFAULT '' NOT NULL, "image_url" varchar(255) DEFAULT '' NOT NULL, "notes" varchar(255) DEFAULT '' NOT NULL) 
+  [1m[36m (0.2ms)[0m  [1mCREATE TABLE "access_grants" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "identity" varchar(255), "scope" varchar(255), "client_id" varchar(255), "redirect_uri" varchar(255), "created_at" varchar(255), "expires_at" varchar(255), "granted_at" varchar(255), "access_token" varchar(255), "revoked" varchar(255)) [0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20130401')
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (4.0ms)[0m  [1mINSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36mRack::OAuth2::Server::Client Load (0.1ms)[0m  [1mSELECT "clients".* FROM "clients" [0m
+  [1m[35mRack::OAuth2::Server::Client Load (0.2ms)[0m  SELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "access_grants" ("access_token", "client_id", "created_at", "expires_at", "granted_at", "identity", "redirect_uri", "revoked", "scope") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["access_token", nil], ["client_id", nil], ["created_at", 2013-04-04 20:28:38 UTC], ["expires_at", nil], ["granted_at", nil], ["identity", "Batman"], ["redirect_uri", "http://uberclient.dot/callback"], ["revoked", nil], ["scope", ["read"]]]
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+Started POST "/oauth/access_token" for 127.0.0.1 at 2013-04-04 22:28:38 +0200
+  [1m[35mRack::OAuth2::Server::Client Load (0.1ms)[0m  SELECT "clients".* FROM "clients" 
+  [1m[36mRack::OAuth2::Server::Client Load (0.1ms)[0m  [1mSELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1[0m  [["id", "1"]]
+
+TypeError (exception class/object expected):
+  test/oauth/server_methods_test.rb:156:in `block (2 levels) in <class:ServerTest>'
+
+
+Connecting to database specified by database.yml
+  [1m[36m (0.2ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (0.2ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (2.5ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+Migrating to CreateTables (20130401)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  CREATE TABLE "clients" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "secret" varchar(255) DEFAULT '' NOT NULL, "scope" varchar(255) DEFAULT '' NOT NULL, "redirect_uri" varchar(255) DEFAULT '' NOT NULL, "display_name" varchar(255) DEFAULT '' NOT NULL, "link" varchar(255) DEFAULT '' NOT NULL, "image_url" varchar(255) DEFAULT '' NOT NULL, "notes" varchar(255) DEFAULT '' NOT NULL) 
+  [1m[36m (0.2ms)[0m  [1mCREATE TABLE "access_grants" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "identity" varchar(255), "scope" varchar(255), "client_id" varchar(255), "redirect_uri" varchar(255), "created_at" varchar(255), "expires_at" varchar(255), "granted_at" varchar(255), "access_token" varchar(255), "revoked" varchar(255)) [0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20130401')
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (6.4ms)[0m  [1mINSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36mRack::OAuth2::Server::Client Load (0.1ms)[0m  [1mSELECT "clients".* FROM "clients" [0m
+  [1m[35mRack::OAuth2::Server::Client Load (0.2ms)[0m  SELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.1ms)[0m  INSERT INTO "access_grants" ("access_token", "client_id", "created_at", "expires_at", "granted_at", "identity", "redirect_uri", "revoked", "scope") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["access_token", nil], ["client_id", nil], ["created_at", 2013-04-04 20:31:13 UTC], ["expires_at", nil], ["granted_at", nil], ["identity", "Batman"], ["redirect_uri", "http://uberclient.dot/callback"], ["revoked", nil], ["scope", ["read"]]]
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+Started POST "/oauth/access_token" for 127.0.0.1 at 2013-04-04 22:31:13 +0200
+  [1m[35mRack::OAuth2::Server::Client Load (0.1ms)[0m  SELECT "clients".* FROM "clients" 
+  [1m[36mRack::OAuth2::Server::Client Load (0.1ms)[0m  [1mSELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1[0m  [["id", "1"]]
+Connecting to database specified by database.yml
+  [1m[36m (0.2ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (1.2ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+Migrating to CreateTables (20130401)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "clients" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "secret" varchar(255) DEFAULT '' NOT NULL, "scope" varchar(255) DEFAULT '' NOT NULL, "redirect_uri" varchar(255) DEFAULT '' NOT NULL, "display_name" varchar(255) DEFAULT '' NOT NULL, "link" varchar(255) DEFAULT '' NOT NULL, "image_url" varchar(255) DEFAULT '' NOT NULL, "notes" varchar(255) DEFAULT '' NOT NULL) 
+  [1m[36m (0.2ms)[0m  [1mCREATE TABLE "access_grants" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "identity" varchar(255), "scope" varchar(255), "client_id" varchar(255), "redirect_uri" varchar(255), "created_at" varchar(255), "expires_at" varchar(255), "granted_at" varchar(255), "access_token" varchar(255), "revoked" varchar(255)) [0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20130401')
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (4.1ms)[0m  [1mINSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36mRack::OAuth2::Server::Client Load (0.1ms)[0m  [1mSELECT "clients".* FROM "clients" [0m
+  [1m[35mRack::OAuth2::Server::Client Load (0.2ms)[0m  SELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "access_grants" ("access_token", "client_id", "created_at", "expires_at", "granted_at", "identity", "redirect_uri", "revoked", "scope") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["access_token", nil], ["client_id", nil], ["created_at", 2013-04-04 20:32:54 UTC], ["expires_at", nil], ["granted_at", nil], ["identity", "Batman"], ["redirect_uri", "http://uberclient.dot/callback"], ["revoked", nil], ["scope", ["read"]]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+Started POST "/oauth/access_token" for 127.0.0.1 at 2013-04-04 22:32:54 +0200
+  [1m[35mRack::OAuth2::Server::Client Load (0.1ms)[0m  SELECT "clients".* FROM "clients" 
+  [1m[36mRack::OAuth2::Server::Client Load (0.1ms)[0m  [1mSELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1[0m  [["id", "1"]]
+Connecting to database specified by database.yml
+  [1m[36m (0.2ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (0.4ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (0.2ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (2.6ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+Migrating to CreateTables (20130401)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.5ms)[0m  CREATE TABLE "clients" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "secret" varchar(255) DEFAULT '' NOT NULL, "scope" varchar(255) DEFAULT '' NOT NULL, "redirect_uri" varchar(255) DEFAULT '' NOT NULL, "display_name" varchar(255) DEFAULT '' NOT NULL, "link" varchar(255) DEFAULT '' NOT NULL, "image_url" varchar(255) DEFAULT '' NOT NULL, "notes" varchar(255) DEFAULT '' NOT NULL) 
+  [1m[36m (0.3ms)[0m  [1mCREATE TABLE "access_grants" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "identity" varchar(255), "scope" varchar(255), "client_id" varchar(255), "redirect_uri" varchar(255), "created_at" varchar(255), "expires_at" varchar(255), "granted_at" varchar(255), "access_token" varchar(255), "revoked" varchar(255)) [0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20130401')
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (6.6ms)[0m  [1mINSERT INTO "clients" ("display_name", "image_url", "link", "notes", "redirect_uri", "scope", "secret") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["display_name", "UberClient"], ["image_url", ""], ["link", ""], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["scope", ["read", "write", "oauth-admin"]], ["secret", ""]]
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36mRack::OAuth2::Server::Client Load (0.8ms)[0m  [1mSELECT "clients".* FROM "clients" [0m
+  [1m[35mRack::OAuth2::Server::Client Load (0.3ms)[0m  SELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "access_grants" ("access_token", "client_id", "created_at", "expires_at", "granted_at", "identity", "redirect_uri", "revoked", "scope") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["access_token", nil], ["client_id", nil], ["created_at", 2013-04-04 20:33:28 UTC], ["expires_at", nil], ["granted_at", nil], ["identity", "Batman"], ["redirect_uri", "http://uberclient.dot/callback"], ["revoked", nil], ["scope", ["read"]]]
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+Started POST "/oauth/access_token" for 127.0.0.1 at 2013-04-04 22:33:28 +0200
+  [1m[35mRack::OAuth2::Server::Client Load (0.1ms)[0m  SELECT "clients".* FROM "clients" 
+  [1m[36mRack::OAuth2::Server::Client Load (0.1ms)[0m  [1mSELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1[0m  [["id", "1"]]

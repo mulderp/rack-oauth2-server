@@ -7,14 +7,6 @@ module Rack
       class Client < ActiveRecord::Base
 
         class << self
-          # Authenticate a client request. This method takes three arguments,
-          # Find Client from client identifier.
-          def old_find(client_id)
-            id = # BSON::ObjectId(client_id.to_s)
-            Server.new_instance self, collection.find_one(id)
-          rescue #BSON::InvalidObjectId
-          end
-
           # Create a new client. Client provides the following properties:
           # # :display_name -- Name to show (e.g. UberClient)
           # # :link -- Link to client Web site (e.g. http://uberclient.dot)
@@ -60,7 +52,7 @@ module Rack
 
           # Deletes client with given identifier (also, all related records).
           def old_delete(client_id)
-            id = # BSON::ObjectId(client_id.to_s)
+            id = 1 # BSON::ObjectId(client_id.to_s)
             Client.collection.remove({ :_id=>id })
             AuthRequest.collection.remove({ :client_id=>id })
             AccessGrant.collection.remove({ :client_id=>id })

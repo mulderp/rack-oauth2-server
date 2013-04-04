@@ -52,7 +52,7 @@ class ServerTest < Test::Unit::TestCase
       end
 
       should "create new client" do
-        assert_equal 2, Server::Client.collection.count
+        assert_equal 2, Server::Client.count
         assert_contains Server::Client.all.map(&:id), @client.id
       end
 

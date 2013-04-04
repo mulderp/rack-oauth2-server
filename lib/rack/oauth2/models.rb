@@ -8,15 +8,6 @@ module Rack
     class Server
 
       class << self
-        # Create new instance of the klass and populate its attributes.
-        def new_instance(klass, fields)
-          return unless fields
-          instance = klass.new
-          fields.each do |name, value|
-            instance.instance_variable_set :"@#{name}", value
-          end
-          instance
-        end
 
         # Long, random and hexy.
         def secure_random

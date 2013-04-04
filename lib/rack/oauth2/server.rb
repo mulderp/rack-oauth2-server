@@ -30,8 +30,12 @@ module Rack
         # @param [String] client_id Client identifier (e.g. from oauth.client.id)
         # @return [Client]
         def get_client(client_id)
+          puts "client_id: #{client_id}"
           return client_id if Client === client_id
-          Client.find(client_id)
+          puts Client.all.inspect
+          client = Client.find(client_id)
+          new_client = client.dup
+          new_client
         end
 
         # Registers and returns a new Client. Can also be used to update
@@ -89,7 +93,7 @@ module Rack
         # @return [String] Access grant authorization code
         def access_grant(identity, client_id, scope = nil, expires_in = nil)
           client = get_client(client_id) or fail "No such client"
-          AccessGrant.create(identity, client, scope || client.scope, nil, expires_in).code
+          AccessGrant.build(identity, client, scope || client.scope, nil, expires_in).code
         end
 
         # Returns AccessToken from token.
@@ -472,6 +476,7 @@ module Rack
       def get_client(request, options={})
         # 2.1  Client Password Credentials
         if request.basic?
+          puts "credentials:  #{request.credentials}"
           client_id, client_secret = request.credentials
         elsif request.post?
           client_id, client_secret = request.POST.values_at("client_id", "client_secret")

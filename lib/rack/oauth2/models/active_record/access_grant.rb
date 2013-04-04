@@ -4,7 +4,7 @@ module Rack
 
       # The access grant is a nonce, new grant created each time we need it and
       # good for redeeming one access token.
-      class AccessGrant
+      class AccessGrant < ActiveRecord::Base
         class << self
           # Find AccessGrant from authentication code.
           def from_code(code)
@@ -12,22 +12,17 @@ module Rack
           end
 
           # Create a new access grant.
-          def create(identity, client, scope, redirect_uri = nil, expires = nil)
+          def build(identity, client, scope, redirect_uri = nil, expires = nil)
             raise ArgumentError, "Identity must be String or Integer" unless String === identity || Integer === identity
-            scope = Utils.normalize_scope(scope) & client.scope # Only allowed scope
+            scope = Utils.normalize_scope(scope) & YAML.load(client.scope) # Only allowed scope
             expires_at = Time.now.to_i + (expires || 300)
-            fields = { :_id=>Server.secure_random, :identity=>identity, :scope=>scope,
+            fields = { :identity=>identity, :scope=>scope,
                        :client_id=>client.id, :redirect_uri=>client.redirect_uri || redirect_uri,
                        :created_at=>Time.now.to_i, :expires_at=>expires_at, :granted_at=>nil,
                        :access_token=>nil, :revoked=>nil }
-            collection.insert fields
-            Server.new_instance self, fields
+            AccessGrant.create fields
           end
 
-          def collection
-            prefix = Server.options[:collection_prefix]
-            Server.database["#{prefix}.access_grants"]
-          end
         end
 
         # Authorization code. We are nothing without it.
