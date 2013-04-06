@@ -11,7 +11,8 @@ module Rack
 
           # Find AccessToken from token. Does not return revoked tokens.
           def from_token(token)
-            Server.new_instance self, collection.find_one({ :_id=>token, :revoked=>nil })
+            # Server.new_instance self, collection.find_one({ :_id=>token, :revoked=>nil })
+            "42"
           end
 
           # Get an access token (create new one if necessary).
@@ -22,7 +23,7 @@ module Rack
             raise ArgumentError, "Identity must be String or Integer" unless String === identity || Integer === identity
             scope = Utils.normalize_scope(scope) & client.scope # Only allowed scope
 
-            token = collection.find_one({
+            token = AccessToken.find({
               :$or=>[{:expires_at=>nil}, {:expires_at=>{:$gt=>Time.now.to_i}}],
               :identity=>identity, :scope=>scope,
               :client_id=>client.id, :revoked=>nil})
@@ -35,26 +36,28 @@ module Rack
 
           # Creates a new AccessToken for the given client and scope.
           def create_token_for(client, scope, identity = nil, expires = nil)
+            puts "create_token *********"
             expires_at = Time.now.to_i + expires if expires && expires != 0
             token = { :_id=>Server.secure_random, :scope=>scope,
                       :client_id=>client.id, :created_at=>Time.now.to_i,
                       :expires_at=>expires_at, :revoked=>nil }
             token[:identity] = identity if identity
-            collection.insert token
-            Client.collection.update({ :_id=>client.id }, { :$inc=>{ :tokens_granted=>1 } })
-            Server.new_instance self, token
+            access_token = AccessToken.create token
+            client.tokens_granted += 1
+            client.save
+            access_token
           end
 
           # Find all AccessTokens for an identity.
           def from_identity(identity)
-            collection.find({ :identity=>identity }).map { |fields| Server.new_instance self, fields }
+            self.find({ :identity=>identity }).map { |fields| Server.new_instance self, fields }
           end
 
           # Returns all access tokens for a given client, Use limit and offset
           # to return a subset of tokens, sorted by creation date.
           def for_client(client_id, offset = 0, limit = 100)
-            client_id = BSON::ObjectId(client_id.to_s)
-            collection.find({ :client_id=>client_id }, { :sort=>[[:created_at, Mongo::ASCENDING]], :skip=>offset, :limit=>limit }).
+            client_id = 1 #BSON::ObjectId(client_id.to_s)
+            self.find({ :client_id=>client_id }, { :sort=>[[:created_at, Mongo::ASCENDING]], :skip=>offset, :limit=>limit }).
               map { |token| Server.new_instance self, token }
           end
 
@@ -74,7 +77,7 @@ module Rack
               select[:revoked] = filter[:revoked] ? { :$ne=>nil } : { :$eq=>nil }
             end
             select[:client_id] = BSON::ObjectId(filter[:client_id].to_s) if filter[:client_id]
-            collection.find(select).count
+            self.find(select).count
           end
 
           def historical(filter = {})
@@ -84,15 +87,11 @@ module Rack
             if filter[:client_id]
               select[:client_id] = BSON::ObjectId(filter[:client_id].to_s)
             end
-            raw = Server::AccessToken.collection.group("function (token) { return { ts: Math.floor(token.created_at / 86400) } }",
+            raw = Server::AccessToken.group("function (token) { return { ts: Math.floor(token.created_at / 86400) } }",
               select, { :granted=>0 }, "function (token, state) { state.granted++ }")
             raw.sort { |a, b| a["ts"] - b["ts"] }
           end
 
-          def collection
-            prefix = Server.options[:collection_prefix]
-            Server.database["#{prefix}.access_tokens"]
-          end
         end
 
         # Access token. As unique as they come.
@@ -119,7 +118,7 @@ module Rack
         def access!
           today = (Time.now.to_i / 3600) * 3600
           if last_access.nil? || last_access < today
-            AccessToken.collection.update({ :_id=>token }, { :$set=>{ :last_access=>today, :prev_access=>last_access } })
+            # AccessToken.collection.update({ :_id=>token }, { :$set=>{ :last_access=>today, :prev_access=>last_access } })
             self.last_access = today
           end
         end
@@ -127,17 +126,10 @@ module Rack
         # Revokes this access token.
         def revoke!
           self.revoked = Time.now.to_i
-          AccessToken.collection.update({ :_id=>token }, { :$set=>{ :revoked=>revoked } })
-          Client.collection.update({ :_id=>client_id }, { :$inc=>{ :tokens_revoked=>1 } })
+          # AccessToken.collection.update({ :_id=>token }, { :$set=>{ :revoked=>revoked } })
+          # Client.collection.update({ :_id=>client_id }, { :$inc=>{ :tokens_revoked=>1 } })
         end
 
-        Server.create_indexes do
-          # Used to revoke all pending access grants when revoking client.
-          collection.create_index [[:client_id, Mongo::ASCENDING]]
-          # Used to get/revoke access tokens for an identity, also to find and
-          # return existing access token.
-          collection.create_index [[:identity, Mongo::ASCENDING]]
-        end
       end
 
     end

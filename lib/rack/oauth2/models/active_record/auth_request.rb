@@ -9,8 +9,8 @@ module Rack
         class << self
           # Find AuthRequest from identifier.
           def find(request_id)
-            id = BSON::ObjectId(request_id.to_s)
-            Server.new_instance self, collection.find_one(id)
+            id = 1 # BSON::ObjectId(request_id.to_s)
+            # Server.new_instance self, collection.find_one(id)
           rescue BSON::InvalidObjectId
           end
 
@@ -23,11 +23,12 @@ module Rack
                        :response_type=>response_type, :state=>state,
                        :grant_code=>nil, :authorized_at=>nil,
                        :created_at=>Time.now.to_i, :revoked=>nil }
-            fields[:_id] = collection.insert(fields)
-            Server.new_instance self, fields
+            # fields[:_id] = collection.insert(fields)
+            # Server.new_instance self, fields
+            "auth_42"
           end
 
-          def collection
+          def old_collection
             prefix = Server.options[:collection_prefix]
             Server.database["#{prefix}.auth_requests"]
           end
@@ -66,11 +67,11 @@ module Rack
           if response_type == "code" # Requested authorization code
             access_grant = AccessGrant.create(identity, client, scope, redirect_uri)
             self.grant_code = access_grant.code
-            self.class.collection.update({ :_id=>id, :revoked=>nil }, { :$set=>{ :grant_code=>access_grant.code, :authorized_at=>authorized_at } })
+            # self.class.collection.update({ :_id=>id, :revoked=>nil }, { :$set=>{ :grant_code=>access_grant.code, :authorized_at=>authorized_at } })
           else # Requested access token
             access_token = AccessToken.get_token_for(identity, client, scope, expires_in)
             self.access_token = access_token.token
-            self.class.collection.update({ :_id=>id, :revoked=>nil, :access_token=>nil }, { :$set=>{ :access_token=>access_token.token, :authorized_at=>authorized_at } })
+            # self.class.collection.update({ :_id=>id, :revoked=>nil, :access_token=>nil }, { :$set=>{ :access_token=>access_token.token, :authorized_at=>authorized_at } })
           end
           true
         end
@@ -78,12 +79,7 @@ module Rack
         # Deny access.
         def deny!
           self.authorized_at = Time.now.to_i
-          self.class.collection.update({ :_id=>id }, { :$set=>{ :authorized_at=>authorized_at } })
-        end
-
-        Server.create_indexes do
-          # Used to revoke all pending access grants when revoking client.
-          collection.create_index [[:client_id, Mongo::ASCENDING]]
+          # self.class.collection.update({ :_id=>id }, { :$set=>{ :authorized_at=>authorized_at } })
         end
 
       end

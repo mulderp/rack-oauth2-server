@@ -30,12 +30,7 @@ module Rack
         # @param [String] client_id Client identifier (e.g. from oauth.client.id)
         # @return [Client]
         def get_client(client_id)
-          puts "client_id: #{client_id}"
-          return client_id if Client === client_id
-          puts Client.all.inspect
-          client = Client.find(client_id)
-          new_client = client.dup
-          new_client
+          Client.find(client_id)
         end
 
         # Registers and returns a new Client. Can also be used to update
@@ -70,13 +65,11 @@ module Rack
         #     :scope=>config["scope"],
         #     :redirect_uri=>"http://example.com/oauth/callback"
         def register(args)
-          puts args.inspect
           if args[:id] && args[:secret] && (client = get_client(args[:id]))
             fail "Client secret does not match" unless client.secret == args[:secret]
             client.update args
           else
-            c = Client.create(args)
-            puts c.inspect
+            c = Client.prepare(args)
             c
           end
         end
@@ -211,7 +204,7 @@ module Rack
       #
       Options = Struct.new(:access_token_path, :authenticator, :assertion_handler, :authorization_types,
         :authorize_path, :database, :host, :param_authentication, :path, :realm, 
-        :expires_in,:logger, :collection_prefix)
+        :expires_in,:logger)
 
       # Global options. This is what we set during configuration (e.g. Rails'
       # config/application), and options all handlers inherit by default.
@@ -230,7 +223,6 @@ module Rack
         @options.authorize_path ||= "/oauth/authorize"
         @options.authorization_types ||=  %w{code token}
         @options.param_authentication ||= false
-        @options.collection_prefix ||= "oauth2"
       end
 
       # Options specific for this handle. @see Options
@@ -476,7 +468,6 @@ module Rack
       def get_client(request, options={})
         # 2.1  Client Password Credentials
         if request.basic?
-          puts "credentials:  #{request.credentials}"
           client_id, client_secret = request.credentials
         elsif request.post?
           client_id, client_secret = request.POST.values_at("client_id", "client_secret")
@@ -490,10 +481,7 @@ module Rack
         end
         raise InvalidClientError if client.revoked
         return client
-      rescue # BSON::InvalidObjectId
-        raise InvalidClientError
       end
-
       # Rack redirect response.
       # The argument is typically a URI object, and the status should be a 302 or 303.
       def redirect_to(uri, status = 302)

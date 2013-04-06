@@ -12415,3 +12415,872 @@ Migrating to CreateTables (20130401)
 Started POST "/oauth/access_token" for 127.0.0.1 at 2013-04-04 22:33:28 +0200
   [1m[35mRack::OAuth2::Server::Client Load (0.1ms)[0m  SELECT "clients".* FROM "clients" 
   [1m[36mRack::OAuth2::Server::Client Load (0.1ms)[0m  [1mSELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1[0m  [["id", "1"]]
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (1.2ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+Migrating to CreateTables (20130401)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "clients" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "secret" varchar(255) DEFAULT '' NOT NULL, "scope" varchar(255) DEFAULT '' NOT NULL, "redirect_uri" varchar(255) DEFAULT '' NOT NULL, "display_name" varchar(255) DEFAULT '' NOT NULL, "link" varchar(255) DEFAULT '' NOT NULL, "image_url" varchar(255) DEFAULT '' NOT NULL, "notes" varchar(255) DEFAULT '' NOT NULL) 
+  [1m[36m (0.2ms)[0m  [1mCREATE TABLE "access_grants" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "identity" varchar(255), "scope" varchar(255), "client_id" varchar(255), "redirect_uri" varchar(255), "created_at" varchar(255), "expires_at" varchar(255), "granted_at" varchar(255), "access_token" varchar(255), "revoked" varchar(255)) [0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20130401')
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35mRack::OAuth2::Server::Client Load (0.1ms)[0m  SELECT "clients".* FROM "clients" WHERE "clients"."secret" IS NULL LIMIT 1
+Connecting to database specified by database.yml
+  [1m[36m (0.2ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (1.3ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+Migrating to CreateTables (20130401)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "clients" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "secret" varchar(255) DEFAULT '' NOT NULL, "scope" varchar(255) DEFAULT '' NOT NULL, "redirect_uri" varchar(255) DEFAULT '' NOT NULL, "display_name" varchar(255) DEFAULT '' NOT NULL, "link" varchar(255) DEFAULT '' NOT NULL, "image_url" varchar(255) DEFAULT '' NOT NULL, "notes" varchar(255) DEFAULT '' NOT NULL) 
+  [1m[36m (0.2ms)[0m  [1mCREATE TABLE "access_grants" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "identity" varchar(255), "scope" varchar(255), "client_id" varchar(255), "redirect_uri" varchar(255), "created_at" varchar(255), "expires_at" varchar(255), "granted_at" varchar(255), "access_token" varchar(255), "revoked" varchar(255)) [0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20130401')
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35mRack::OAuth2::Server::Client Load (0.1ms)[0m  SELECT "clients".* FROM "clients" WHERE "clients"."secret" IS NULL LIMIT 1
+Connecting to database specified by database.yml
+  [1m[36m (0.2ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (0.4ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (0.2ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (1.5ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+Migrating to CreateTables (20130401)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "clients" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "secret" varchar(255) DEFAULT '' NOT NULL, "scope" varchar(255) DEFAULT '' NOT NULL, "redirect_uri" varchar(255) DEFAULT '' NOT NULL, "display_name" varchar(255) DEFAULT '' NOT NULL, "link" varchar(255) DEFAULT '' NOT NULL, "image_url" varchar(255) DEFAULT '' NOT NULL, "notes" varchar(255) DEFAULT '' NOT NULL, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.2ms)[0m  [1mCREATE TABLE "access_grants" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "identity" varchar(255), "scope" varchar(255), "client_id" varchar(255), "redirect_uri" varchar(255), "created_at" varchar(255), "expires_at" varchar(255), "granted_at" varchar(255), "access_token" varchar(255), "revoked" varchar(255)) [0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20130401')
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35mRack::OAuth2::Server::Client Load (0.2ms)[0m  SELECT "clients".* FROM "clients" WHERE "clients"."secret" IS NULL LIMIT 1
+Connecting to database specified by database.yml
+  [1m[36m (0.2ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (0.2ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (1.5ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+Migrating to CreateTables (20130401)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.5ms)[0m  CREATE TABLE "clients" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "secret" varchar(255) DEFAULT '' NOT NULL, "scope" varchar(255) DEFAULT '' NOT NULL, "redirect_uri" varchar(255) DEFAULT '' NOT NULL, "display_name" varchar(255) DEFAULT '' NOT NULL, "link" varchar(255) DEFAULT '' NOT NULL, "image_url" varchar(255) DEFAULT '' NOT NULL, "notes" varchar(255) DEFAULT '' NOT NULL, "revoked" boolean, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.2ms)[0m  [1mCREATE TABLE "access_grants" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "identity" varchar(255), "scope" varchar(255), "client_id" varchar(255), "redirect_uri" varchar(255), "created_at" varchar(255), "expires_at" varchar(255), "granted_at" varchar(255), "access_token" varchar(255), "revoked" varchar(255)) [0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20130401')
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+  [1m[35mRack::OAuth2::Server::Client Load (0.2ms)[0m  SELECT "clients".* FROM "clients" WHERE "clients"."secret" IS NULL LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Binary data inserted for `string` type on column `secret`
+  [1m[35mSQL (10.9ms)[0m  INSERT INTO "clients" ("created_at", "display_name", "image_url", "link", "notes", "redirect_uri", "revoked", "scope", "secret", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["created_at", 1365109401], ["display_name", "UberClient"], ["image_url", nil], ["link", nil], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["revoked", nil], ["scope", ["oauth-admin", "read", "write"]], ["secret", "676e10240cbcee792ee6f69f99e1a2f934617de052578c46c525ac39829de280"], ["updated_at", Thu, 04 Apr 2013 21:03:21 UTC +00:00]]
+SQLite3::ConstraintException: constraint failed: INSERT INTO "clients" ("created_at", "display_name", "image_url", "link", "notes", "redirect_uri", "revoked", "scope", "secret", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+Connecting to database specified by database.yml
+  [1m[36m (0.2ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (1.3ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+Migrating to CreateTables (20130401)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "clients" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "secret" varchar(255) DEFAULT '' NOT NULL, "scope" varchar(255) DEFAULT '' NOT NULL, "redirect_uri" varchar(255) DEFAULT '' NOT NULL, "display_name" varchar(255) DEFAULT '' NOT NULL, "link" varchar(255), "image_url" varchar(255), "notes" varchar(255), "revoked" boolean, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.2ms)[0m  [1mCREATE TABLE "access_grants" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "identity" varchar(255), "scope" varchar(255), "client_id" varchar(255), "redirect_uri" varchar(255), "created_at" varchar(255), "expires_at" varchar(255), "granted_at" varchar(255), "access_token" varchar(255), "revoked" varchar(255)) [0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20130401')
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35mRack::OAuth2::Server::Client Load (0.1ms)[0m  SELECT "clients".* FROM "clients" WHERE "clients"."secret" IS NULL LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Binary data inserted for `string` type on column `secret`
+  [1m[35mSQL (5.1ms)[0m  INSERT INTO "clients" ("created_at", "display_name", "image_url", "link", "notes", "redirect_uri", "revoked", "scope", "secret", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["created_at", 1365109436], ["display_name", "UberClient"], ["image_url", nil], ["link", nil], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["revoked", nil], ["scope", ["oauth-admin", "read", "write"]], ["secret", "86033940c148a51ddae7c8bed07515e6c5fd832290d2322c9ae67e67b793011c"], ["updated_at", Thu, 04 Apr 2013 21:03:56 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+  [1m[35mRack::OAuth2::Server::Client Load (0.1ms)[0m  SELECT "clients".* FROM "clients" 
+  [1m[36mRack::OAuth2::Server::Client Load (0.1ms)[0m  [1mSELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "access_grants" ("access_token", "client_id", "created_at", "expires_at", "granted_at", "identity", "redirect_uri", "revoked", "scope") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["access_token", nil], ["client_id", nil], ["created_at", 2013-04-04 21:03:56 UTC], ["expires_at", nil], ["granted_at", nil], ["identity", "Batman"], ["redirect_uri", "http://uberclient.dot/callback"], ["revoked", nil], ["scope", ["read"]]]
+  [1m[35m (0.1ms)[0m  commit transaction
+Started POST "/oauth/access_token" for 127.0.0.1 at 2013-04-04 23:03:56 +0200
+  [1m[36mRack::OAuth2::Server::Client Load (0.1ms)[0m  [1mSELECT "clients".* FROM "clients" [0m
+  [1m[35mRack::OAuth2::Server::Client Load (0.1ms)[0m  SELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1  [["id", "1"]]
+
+NameError (undefined local variable or method `collection' for #<Class:0x007fb3961ae680>):
+  test/oauth/server_methods_test.rb:157:in `block (2 levels) in <class:ServerTest>'
+
+
+Connecting to database specified by database.yml
+  [1m[36m (0.2ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (0.5ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (0.2ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (1.6ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+Migrating to CreateTables (20130401)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  CREATE TABLE "clients" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "secret" varchar(255) DEFAULT '' NOT NULL, "scope" varchar(255) DEFAULT '' NOT NULL, "redirect_uri" varchar(255) DEFAULT '' NOT NULL, "display_name" varchar(255) DEFAULT '' NOT NULL, "link" varchar(255), "image_url" varchar(255), "notes" varchar(255), "revoked" boolean, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.2ms)[0m  [1mCREATE TABLE "access_grants" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "identity" varchar(255), "scope" varchar(255), "client_id" varchar(255), "redirect_uri" varchar(255), "created_at" varchar(255), "expires_at" varchar(255), "granted_at" varchar(255), "access_token" varchar(255), "revoked" varchar(255)) [0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20130401')
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35mRack::OAuth2::Server::Client Load (0.1ms)[0m  SELECT "clients".* FROM "clients" WHERE "clients"."secret" IS NULL LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Binary data inserted for `string` type on column `secret`
+  [1m[35mSQL (5.4ms)[0m  INSERT INTO "clients" ("created_at", "display_name", "image_url", "link", "notes", "redirect_uri", "revoked", "scope", "secret", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["created_at", 1365109610], ["display_name", "UberClient"], ["image_url", nil], ["link", nil], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["revoked", nil], ["scope", ["oauth-admin", "read", "write"]], ["secret", "fc203d1d25457df423ddd5f1e9071809601c1ec2a75b86f8a7ba64b7935b41ec"], ["updated_at", Thu, 04 Apr 2013 21:06:50 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+  [1m[35mRack::OAuth2::Server::Client Load (0.1ms)[0m  SELECT "clients".* FROM "clients" 
+  [1m[36mRack::OAuth2::Server::Client Load (0.1ms)[0m  [1mSELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "access_grants" ("access_token", "client_id", "created_at", "expires_at", "granted_at", "identity", "redirect_uri", "revoked", "scope") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["access_token", nil], ["client_id", nil], ["created_at", 2013-04-04 21:06:50 UTC], ["expires_at", nil], ["granted_at", nil], ["identity", "Batman"], ["redirect_uri", "http://uberclient.dot/callback"], ["revoked", nil], ["scope", ["read"]]]
+  [1m[35m (0.1ms)[0m  commit transaction
+Started POST "/oauth/access_token" for 127.0.0.1 at 2013-04-04 23:06:50 +0200
+  [1m[36mRack::OAuth2::Server::Client Load (0.1ms)[0m  [1mSELECT "clients".* FROM "clients" [0m
+  [1m[35mRack::OAuth2::Server::Client Load (0.1ms)[0m  SELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1  [["id", "1"]]
+
+NameError (undefined local variable or method `collection' for #<Class:0x007f945afb6e68>):
+  test/oauth/server_methods_test.rb:157:in `block (2 levels) in <class:ServerTest>'
+
+
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (1.3ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+Migrating to CreateTables (20130401)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "clients" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "secret" varchar(255) DEFAULT '' NOT NULL, "scope" varchar(255) DEFAULT '' NOT NULL, "redirect_uri" varchar(255) DEFAULT '' NOT NULL, "display_name" varchar(255) DEFAULT '' NOT NULL, "link" varchar(255), "image_url" varchar(255), "notes" varchar(255), "revoked" boolean, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.2ms)[0m  [1mCREATE TABLE "access_grants" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "identity" varchar(255), "scope" varchar(255), "client_id" varchar(255), "redirect_uri" varchar(255), "created_at" varchar(255), "expires_at" varchar(255), "granted_at" varchar(255), "access_token" varchar(255), "revoked" varchar(255)) [0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20130401')
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35mRack::OAuth2::Server::Client Load (0.1ms)[0m  SELECT "clients".* FROM "clients" WHERE "clients"."secret" IS NULL LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Binary data inserted for `string` type on column `secret`
+  [1m[35mSQL (5.0ms)[0m  INSERT INTO "clients" ("created_at", "display_name", "image_url", "link", "notes", "redirect_uri", "revoked", "scope", "secret", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["created_at", 1365109677], ["display_name", "UberClient"], ["image_url", nil], ["link", nil], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["revoked", nil], ["scope", ["oauth-admin", "read", "write"]], ["secret", "62009d6d8160d9c50a452464f6372c118cc106bb5672a2bcbafe328fa63fcca9"], ["updated_at", Thu, 04 Apr 2013 21:07:57 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+  [1m[35mRack::OAuth2::Server::Client Load (0.1ms)[0m  SELECT "clients".* FROM "clients" 
+  [1m[36mRack::OAuth2::Server::Client Load (0.1ms)[0m  [1mSELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "access_grants" ("access_token", "client_id", "created_at", "expires_at", "granted_at", "identity", "redirect_uri", "revoked", "scope") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["access_token", nil], ["client_id", nil], ["created_at", 2013-04-04 21:07:57 UTC], ["expires_at", nil], ["granted_at", nil], ["identity", "Batman"], ["redirect_uri", "http://uberclient.dot/callback"], ["revoked", nil], ["scope", ["read"]]]
+  [1m[35m (0.1ms)[0m  commit transaction
+Started POST "/oauth/access_token" for 127.0.0.1 at 2013-04-04 23:07:57 +0200
+  [1m[36mRack::OAuth2::Server::Client Load (0.2ms)[0m  [1mSELECT "clients".* FROM "clients" [0m
+  [1m[35mRack::OAuth2::Server::Client Load (0.1ms)[0m  SELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1  [["id", "1"]]
+
+NameError (undefined local variable or method `collection' for #<Class:0x007faac324dbd0>):
+  test/oauth/server_methods_test.rb:157:in `block (2 levels) in <class:ServerTest>'
+
+
+Connecting to database specified by database.yml
+  [1m[36m (0.2ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (1.2ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+Migrating to CreateTables (20130401)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "clients" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "secret" varchar(255) DEFAULT '' NOT NULL, "scope" varchar(255) DEFAULT '' NOT NULL, "redirect_uri" varchar(255) DEFAULT '' NOT NULL, "display_name" varchar(255) DEFAULT '' NOT NULL, "link" varchar(255), "image_url" varchar(255), "notes" varchar(255), "revoked" boolean, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.2ms)[0m  [1mCREATE TABLE "access_grants" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "identity" varchar(255), "scope" varchar(255), "client_id" varchar(255), "redirect_uri" varchar(255), "created_at" varchar(255), "expires_at" varchar(255), "granted_at" varchar(255), "access_token" varchar(255), "revoked" varchar(255)) [0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20130401')
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35mRack::OAuth2::Server::Client Load (0.1ms)[0m  SELECT "clients".* FROM "clients" WHERE "clients"."secret" IS NULL LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Binary data inserted for `string` type on column `secret`
+  [1m[35mSQL (5.2ms)[0m  INSERT INTO "clients" ("created_at", "display_name", "image_url", "link", "notes", "redirect_uri", "revoked", "scope", "secret", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["created_at", 1365109864], ["display_name", "UberClient"], ["image_url", nil], ["link", nil], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["revoked", nil], ["scope", ["oauth-admin", "read", "write"]], ["secret", "062eb9ddcd0c89b2b9ee6abe55c71a40025e2cb16638162c7fff7a0aacae6b26"], ["updated_at", Thu, 04 Apr 2013 21:11:04 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+  [1m[35mRack::OAuth2::Server::Client Load (0.1ms)[0m  SELECT "clients".* FROM "clients" 
+  [1m[36mRack::OAuth2::Server::Client Load (0.1ms)[0m  [1mSELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (37.2ms)[0m  [1mINSERT INTO "access_grants" ("access_token", "client_id", "created_at", "expires_at", "granted_at", "identity", "redirect_uri", "revoked", "scope") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["access_token", nil], ["client_id", nil], ["created_at", 2013-04-04 21:11:04 UTC], ["expires_at", nil], ["granted_at", nil], ["identity", "Batman"], ["redirect_uri", "http://uberclient.dot/callback"], ["revoked", nil], ["scope", ["read"]]]
+  [1m[35m (0.1ms)[0m  commit transaction
+Started POST "/oauth/access_token" for 127.0.0.1 at 2013-04-04 23:11:04 +0200
+  [1m[36mRack::OAuth2::Server::Client Load (0.2ms)[0m  [1mSELECT "clients".* FROM "clients" [0m
+  [1m[35mRack::OAuth2::Server::Client Load (0.1ms)[0m  SELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1  [["id", "1"]]
+
+NameError (undefined local variable or method `collection' for #<Class:0x007f99c3bd4ac0>):
+  test/oauth/server_methods_test.rb:157:in `block (2 levels) in <class:ServerTest>'
+
+
+Connecting to database specified by database.yml
+  [1m[36m (0.2ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (0.2ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (1.7ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+Migrating to CreateTables (20130401)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  CREATE TABLE "clients" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "secret" varchar(255) DEFAULT '' NOT NULL, "scope" varchar(255) DEFAULT '' NOT NULL, "redirect_uri" varchar(255) DEFAULT '' NOT NULL, "display_name" varchar(255) DEFAULT '' NOT NULL, "link" varchar(255), "image_url" varchar(255), "notes" varchar(255), "revoked" boolean, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.2ms)[0m  [1mCREATE TABLE "access_grants" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "identity" varchar(255), "scope" varchar(255), "client_id" varchar(255), "redirect_uri" varchar(255), "created_at" varchar(255), "expires_at" varchar(255), "granted_at" varchar(255), "access_token" varchar(255), "revoked" varchar(255)) [0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20130401')
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35mRack::OAuth2::Server::Client Load (0.2ms)[0m  SELECT "clients".* FROM "clients" WHERE "clients"."secret" IS NULL LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Binary data inserted for `string` type on column `secret`
+  [1m[35mSQL (4.9ms)[0m  INSERT INTO "clients" ("created_at", "display_name", "image_url", "link", "notes", "redirect_uri", "revoked", "scope", "secret", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["created_at", 1365110119], ["display_name", "UberClient"], ["image_url", nil], ["link", nil], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["revoked", nil], ["scope", ["oauth-admin", "read", "write"]], ["secret", "e26b68e65ba794147057a439c0af7efd35bbfd7e83061eb07db60ad06f06994d"], ["updated_at", Thu, 04 Apr 2013 21:15:19 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (1.4ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+Migrating to CreateTables (20130401)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "clients" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "secret" varchar(255) DEFAULT '' NOT NULL, "scope" varchar(255) DEFAULT '' NOT NULL, "redirect_uri" varchar(255) DEFAULT '' NOT NULL, "display_name" varchar(255) DEFAULT '' NOT NULL, "link" varchar(255), "image_url" varchar(255), "notes" varchar(255), "revoked" boolean, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.3ms)[0m  [1mCREATE TABLE "access_grants" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "identity" varchar(255), "scope" varchar(255), "client_id" varchar(255), "redirect_uri" varchar(255), "created_at" varchar(255), "expires_at" varchar(255), "granted_at" varchar(255), "access_token" varchar(255), "revoked" varchar(255)) [0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20130401')
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+  [1m[35mRack::OAuth2::Server::Client Load (0.2ms)[0m  SELECT "clients".* FROM "clients" WHERE "clients"."secret" IS NULL LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Binary data inserted for `string` type on column `secret`
+  [1m[35mSQL (6.7ms)[0m  INSERT INTO "clients" ("created_at", "display_name", "image_url", "link", "notes", "redirect_uri", "revoked", "scope", "secret", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["created_at", 1365110166], ["display_name", "UberClient"], ["image_url", nil], ["link", nil], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["revoked", nil], ["scope", ["oauth-admin", "read", "write"]], ["secret", "c554407bcbdaec978eea666bc350f4f0342d41052e664e4165be5cf0c1b0af81"], ["updated_at", Thu, 04 Apr 2013 21:16:06 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (1.2ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+Migrating to CreateTables (20130401)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  CREATE TABLE "clients" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "secret" varchar(255) DEFAULT '' NOT NULL, "scope" varchar(255) DEFAULT '' NOT NULL, "redirect_uri" varchar(255) DEFAULT '' NOT NULL, "display_name" varchar(255) DEFAULT '' NOT NULL, "link" varchar(255), "image_url" varchar(255), "notes" varchar(255), "revoked" boolean, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.2ms)[0m  [1mCREATE TABLE "access_grants" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "identity" varchar(255), "scope" varchar(255), "client_id" varchar(255), "redirect_uri" varchar(255), "created_at" varchar(255), "expires_at" varchar(255), "granted_at" varchar(255), "access_token" varchar(255), "revoked" varchar(255)) [0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20130401')
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35mRack::OAuth2::Server::Client Load (0.1ms)[0m  SELECT "clients".* FROM "clients" WHERE "clients"."secret" IS NULL LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Binary data inserted for `string` type on column `secret`
+  [1m[35mSQL (5.1ms)[0m  INSERT INTO "clients" ("created_at", "display_name", "image_url", "link", "notes", "redirect_uri", "revoked", "scope", "secret", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["created_at", 1365110289], ["display_name", "UberClient"], ["image_url", nil], ["link", nil], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["revoked", nil], ["scope", ["oauth-admin", "read", "write"]], ["secret", "3293c9ea9980ae03072decb14b65d97eb77b4f36fca5d8184eb7018c0081d043"], ["updated_at", Thu, 04 Apr 2013 21:18:09 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+  [1m[35mRack::OAuth2::Server::Client Load (0.2ms)[0m  SELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "access_grants" ("access_token", "client_id", "created_at", "expires_at", "granted_at", "identity", "redirect_uri", "revoked", "scope") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["access_token", nil], ["client_id", 1], ["created_at", 2013-04-04 21:18:09 UTC], ["expires_at", nil], ["granted_at", nil], ["identity", "Batman"], ["redirect_uri", "http://uberclient.dot/callback"], ["revoked", nil], ["scope", ["read"]]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+Started POST "/oauth/access_token" for 127.0.0.1 at 2013-04-04 23:18:09 +0200
+  [1m[35mRack::OAuth2::Server::Client Load (0.1ms)[0m  SELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1  [["id", "1"]]
+
+NameError (undefined local variable or method `collection' for #<Class:0x007fcdeb80b2e8>):
+  test/oauth/server_methods_test.rb:157:in `block (2 levels) in <class:ServerTest>'
+
+
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (1.2ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+Migrating to CreateTables (20130401)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "clients" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "secret" varchar(255) DEFAULT '' NOT NULL, "scope" varchar(255) DEFAULT '' NOT NULL, "redirect_uri" varchar(255) DEFAULT '' NOT NULL, "display_name" varchar(255) DEFAULT '' NOT NULL, "link" varchar(255), "image_url" varchar(255), "notes" varchar(255), "revoked" boolean, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.2ms)[0m  [1mCREATE TABLE "access_grants" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "identity" varchar(255), "scope" varchar(255), "client_id" varchar(255), "redirect_uri" varchar(255), "created_at" varchar(255), "expires_at" varchar(255), "granted_at" varchar(255), "access_token" varchar(255), "revoked" varchar(255)) [0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20130401')
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35mRack::OAuth2::Server::Client Load (0.2ms)[0m  SELECT "clients".* FROM "clients" WHERE "clients"."secret" IS NULL LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Binary data inserted for `string` type on column `secret`
+  [1m[35mSQL (4.8ms)[0m  INSERT INTO "clients" ("created_at", "display_name", "image_url", "link", "notes", "redirect_uri", "revoked", "scope", "secret", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["created_at", 1365110381], ["display_name", "UberClient"], ["image_url", nil], ["link", nil], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["revoked", nil], ["scope", ["oauth-admin", "read", "write"]], ["secret", "9b0b81dad66a3d9f19538de507fd13ad047259f33f69c34d328a53faffe884e6"], ["updated_at", Thu, 04 Apr 2013 21:19:41 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+  [1m[35mRack::OAuth2::Server::Client Load (0.2ms)[0m  SELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "access_grants" ("access_token", "client_id", "created_at", "expires_at", "granted_at", "identity", "redirect_uri", "revoked", "scope") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["access_token", nil], ["client_id", 1], ["created_at", 2013-04-04 21:19:41 UTC], ["expires_at", nil], ["granted_at", nil], ["identity", "Batman"], ["redirect_uri", "http://uberclient.dot/callback"], ["revoked", nil], ["scope", ["read"]]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+Started POST "/oauth/access_token" for 127.0.0.1 at 2013-04-04 23:19:41 +0200
+  [1m[35mRack::OAuth2::Server::Client Load (0.1ms)[0m  SELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1  [["id", "1"]]
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (1.2ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+Migrating to CreateTables (20130401)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  CREATE TABLE "clients" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "secret" varchar(255) DEFAULT '' NOT NULL, "scope" varchar(255) DEFAULT '' NOT NULL, "redirect_uri" varchar(255) DEFAULT '' NOT NULL, "display_name" varchar(255) DEFAULT '' NOT NULL, "link" varchar(255), "image_url" varchar(255), "notes" varchar(255), "revoked" boolean, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.2ms)[0m  [1mCREATE TABLE "access_grants" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "identity" varchar(255), "scope" varchar(255), "client_id" varchar(255), "redirect_uri" varchar(255), "created_at" varchar(255), "expires_at" varchar(255), "granted_at" varchar(255), "access_token" varchar(255), "revoked" varchar(255)) [0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20130401')
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35mRack::OAuth2::Server::Client Load (0.1ms)[0m  SELECT "clients".* FROM "clients" WHERE "clients"."secret" IS NULL LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Binary data inserted for `string` type on column `secret`
+  [1m[35mSQL (4.9ms)[0m  INSERT INTO "clients" ("created_at", "display_name", "image_url", "link", "notes", "redirect_uri", "revoked", "scope", "secret", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["created_at", 1365110473], ["display_name", "UberClient"], ["image_url", nil], ["link", nil], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["revoked", nil], ["scope", ["oauth-admin", "read", "write"]], ["secret", "987a3e11653b3a97532ded87dbc84aeb3661614a7be8dc5539abdaef8cf72e14"], ["updated_at", Thu, 04 Apr 2013 21:21:13 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+  [1m[35mRack::OAuth2::Server::Client Load (0.2ms)[0m  SELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "access_grants" ("access_token", "client_id", "created_at", "expires_at", "granted_at", "identity", "redirect_uri", "revoked", "scope") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["access_token", nil], ["client_id", 1], ["created_at", 2013-04-04 21:21:13 UTC], ["expires_at", nil], ["granted_at", nil], ["identity", "Batman"], ["redirect_uri", "http://uberclient.dot/callback"], ["revoked", nil], ["scope", ["read"]]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+Started POST "/oauth/access_token" for 127.0.0.1 at 2013-04-04 23:21:14 +0200
+  [1m[35mRack::OAuth2::Server::Client Load (0.1ms)[0m  SELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1  [["id", "1"]]
+
+NameError (undefined local variable or method `collection' for #<Class:0x007fbb9629ae60>):
+  test/oauth/server_methods_test.rb:157:in `block (2 levels) in <class:ServerTest>'
+
+
+Connecting to database specified by database.yml
+  [1m[36m (0.2ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (0.2ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (1.5ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+Migrating to CreateTables (20130401)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  CREATE TABLE "clients" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "secret" varchar(255) DEFAULT '' NOT NULL, "scope" varchar(255) DEFAULT '' NOT NULL, "redirect_uri" varchar(255) DEFAULT '' NOT NULL, "display_name" varchar(255) DEFAULT '' NOT NULL, "link" varchar(255), "image_url" varchar(255), "notes" varchar(255), "revoked" boolean, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.2ms)[0m  [1mCREATE TABLE "access_grants" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "identity" varchar(255), "scope" varchar(255), "client_id" varchar(255), "redirect_uri" varchar(255), "created_at" varchar(255), "expires_at" varchar(255), "granted_at" varchar(255), "access_token" varchar(255), "revoked" varchar(255)) [0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20130401')
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35mRack::OAuth2::Server::Client Load (0.1ms)[0m  SELECT "clients".* FROM "clients" WHERE "clients"."secret" IS NULL LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Binary data inserted for `string` type on column `secret`
+  [1m[35mSQL (4.7ms)[0m  INSERT INTO "clients" ("created_at", "display_name", "image_url", "link", "notes", "redirect_uri", "revoked", "scope", "secret", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["created_at", 1365110504], ["display_name", "UberClient"], ["image_url", nil], ["link", nil], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["revoked", nil], ["scope", ["oauth-admin", "read", "write"]], ["secret", "1f842a6f25a04ee36a2d567406243c1d4fad023d33fbdb4d663d5cc73324c953"], ["updated_at", Thu, 04 Apr 2013 21:21:44 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+  [1m[35mRack::OAuth2::Server::Client Load (0.2ms)[0m  SELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "access_grants" ("access_token", "client_id", "created_at", "expires_at", "granted_at", "identity", "redirect_uri", "revoked", "scope") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["access_token", nil], ["client_id", 1], ["created_at", 2013-04-04 21:21:44 UTC], ["expires_at", nil], ["granted_at", nil], ["identity", "Batman"], ["redirect_uri", "http://uberclient.dot/callback"], ["revoked", nil], ["scope", ["read"]]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+Started POST "/oauth/access_token" for 127.0.0.1 at 2013-04-04 23:21:44 +0200
+  [1m[35mRack::OAuth2::Server::Client Load (0.1ms)[0m  SELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1  [["id", "1"]]
+
+TypeError (exception class/object expected):
+  test/oauth/server_methods_test.rb:157:in `block (2 levels) in <class:ServerTest>'
+
+
+Connecting to database specified by database.yml
+  [1m[36m (0.2ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (1.3ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+Migrating to CreateTables (20130401)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  CREATE TABLE "clients" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "secret" varchar(255) DEFAULT '' NOT NULL, "scope" varchar(255) DEFAULT '' NOT NULL, "redirect_uri" varchar(255) DEFAULT '' NOT NULL, "display_name" varchar(255) DEFAULT '' NOT NULL, "link" varchar(255), "image_url" varchar(255), "notes" varchar(255), "revoked" boolean, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.2ms)[0m  [1mCREATE TABLE "access_grants" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "identity" varchar(255), "scope" varchar(255), "client_id" varchar(255), "redirect_uri" varchar(255), "created_at" varchar(255), "expires_at" varchar(255), "granted_at" varchar(255), "access_token" varchar(255), "revoked" varchar(255)) [0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20130401')
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+  [1m[35mRack::OAuth2::Server::Client Load (0.1ms)[0m  SELECT "clients".* FROM "clients" WHERE "clients"."secret" IS NULL LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Binary data inserted for `string` type on column `secret`
+  [1m[35mSQL (5.0ms)[0m  INSERT INTO "clients" ("created_at", "display_name", "image_url", "link", "notes", "redirect_uri", "revoked", "scope", "secret", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["created_at", 1365110639], ["display_name", "UberClient"], ["image_url", nil], ["link", nil], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["revoked", nil], ["scope", ["oauth-admin", "read", "write"]], ["secret", "750414c0e66d4bfdfe8aa06b9e8000319e3d3d68867c20161550668a35698e28"], ["updated_at", Thu, 04 Apr 2013 21:23:59 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+  [1m[35mRack::OAuth2::Server::Client Load (0.2ms)[0m  SELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "access_grants" ("access_token", "client_id", "created_at", "expires_at", "granted_at", "identity", "redirect_uri", "revoked", "scope") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["access_token", nil], ["client_id", 1], ["created_at", 2013-04-04 21:23:59 UTC], ["expires_at", nil], ["granted_at", nil], ["identity", "Batman"], ["redirect_uri", "http://uberclient.dot/callback"], ["revoked", nil], ["scope", ["read"]]]
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+Started POST "/oauth/access_token" for 127.0.0.1 at 2013-04-04 23:23:59 +0200
+  [1m[35mRack::OAuth2::Server::Client Load (0.1ms)[0m  SELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1  [["id", "1"]]
+
+NameError (undefined local variable or method `collection' for #<Class:0x007f81bc3fca10>):
+  test/oauth/server_methods_test.rb:157:in `block (2 levels) in <class:ServerTest>'
+
+
+Connecting to database specified by database.yml
+  [1m[36m (0.2ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (1.3ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+Migrating to CreateTables (20130401)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "clients" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "secret" varchar(255) DEFAULT '' NOT NULL, "scope" varchar(255) DEFAULT '' NOT NULL, "redirect_uri" varchar(255) DEFAULT '' NOT NULL, "display_name" varchar(255) DEFAULT '' NOT NULL, "link" varchar(255), "image_url" varchar(255), "notes" varchar(255), "revoked" boolean, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.2ms)[0m  [1mCREATE TABLE "access_grants" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "identity" varchar(255), "scope" varchar(255), "client_id" varchar(255), "redirect_uri" varchar(255), "created_at" varchar(255), "expires_at" varchar(255), "granted_at" varchar(255), "access_token" varchar(255), "revoked" varchar(255)) [0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20130401')
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35mRack::OAuth2::Server::Client Load (0.2ms)[0m  SELECT "clients".* FROM "clients" WHERE "clients"."secret" IS NULL LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Binary data inserted for `string` type on column `secret`
+  [1m[35mSQL (5.0ms)[0m  INSERT INTO "clients" ("created_at", "display_name", "image_url", "link", "notes", "redirect_uri", "revoked", "scope", "secret", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["created_at", 1365110803], ["display_name", "UberClient"], ["image_url", nil], ["link", nil], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["revoked", nil], ["scope", ["oauth-admin", "read", "write"]], ["secret", "f5e5f6fdbe399b7c8ea0b05484e299d355932caeeda7d1b98bbe2fc48e9617c2"], ["updated_at", Thu, 04 Apr 2013 21:26:43 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+  [1m[35mRack::OAuth2::Server::Client Load (0.2ms)[0m  SELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "access_grants" ("access_token", "client_id", "created_at", "expires_at", "granted_at", "identity", "redirect_uri", "revoked", "scope") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["access_token", nil], ["client_id", 1], ["created_at", 2013-04-04 21:26:43 UTC], ["expires_at", nil], ["granted_at", nil], ["identity", "Batman"], ["redirect_uri", "http://uberclient.dot/callback"], ["revoked", nil], ["scope", ["read"]]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+Started POST "/oauth/access_token" for 127.0.0.1 at 2013-04-04 23:26:43 +0200
+  [1m[35mRack::OAuth2::Server::Client Load (0.1ms)[0m  SELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1  [["id", "1"]]
+
+TypeError (exception class/object expected):
+  test/oauth/server_methods_test.rb:157:in `block (2 levels) in <class:ServerTest>'
+
+
+Connecting to database specified by database.yml
+  [1m[36m (0.2ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (0.2ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (1.3ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+Migrating to CreateTables (20130401)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "clients" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "secret" varchar(255) DEFAULT '' NOT NULL, "scope" varchar(255) DEFAULT '' NOT NULL, "redirect_uri" varchar(255) DEFAULT '' NOT NULL, "display_name" varchar(255) DEFAULT '' NOT NULL, "link" varchar(255), "image_url" varchar(255), "notes" varchar(255), "revoked" boolean, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.2ms)[0m  [1mCREATE TABLE "access_grants" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "identity" varchar(255), "scope" varchar(255), "client_id" varchar(255), "redirect_uri" varchar(255), "created_at" varchar(255), "expires_at" varchar(255), "granted_at" varchar(255), "access_token" varchar(255), "revoked" varchar(255)) [0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20130401')
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35mRack::OAuth2::Server::Client Load (0.1ms)[0m  SELECT "clients".* FROM "clients" WHERE "clients"."secret" IS NULL LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Binary data inserted for `string` type on column `secret`
+  [1m[35mSQL (5.1ms)[0m  INSERT INTO "clients" ("created_at", "display_name", "image_url", "link", "notes", "redirect_uri", "revoked", "scope", "secret", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["created_at", 1365110877], ["display_name", "UberClient"], ["image_url", nil], ["link", nil], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["revoked", nil], ["scope", ["oauth-admin", "read", "write"]], ["secret", "c3e00a79c97231904aaaf90e91b98badb77a65e96590c47fbae47dab3b301fe9"], ["updated_at", Thu, 04 Apr 2013 21:27:57 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+  [1m[35mRack::OAuth2::Server::Client Load (0.1ms)[0m  SELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "access_grants" ("access_token", "client_id", "created_at", "expires_at", "granted_at", "identity", "redirect_uri", "revoked", "scope") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["access_token", nil], ["client_id", 1], ["created_at", 2013-04-04 21:27:57 UTC], ["expires_at", nil], ["granted_at", nil], ["identity", "Batman"], ["redirect_uri", "http://uberclient.dot/callback"], ["revoked", nil], ["scope", ["read"]]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+Started POST "/oauth/access_token" for 127.0.0.1 at 2013-04-04 23:27:57 +0200
+
+NoMethodError (undefined method `get_client' for #<Rack::OAuth2::Server:0x007f9bcfb856d8>):
+  test/oauth/server_methods_test.rb:157:in `block (2 levels) in <class:ServerTest>'
+
+
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (0.2ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (1.3ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+Migrating to CreateTables (20130401)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.5ms)[0m  CREATE TABLE "clients" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "secret" varchar(255) DEFAULT '' NOT NULL, "scope" varchar(255) DEFAULT '' NOT NULL, "redirect_uri" varchar(255) DEFAULT '' NOT NULL, "display_name" varchar(255) DEFAULT '' NOT NULL, "link" varchar(255), "image_url" varchar(255), "notes" varchar(255), "revoked" boolean, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.2ms)[0m  [1mCREATE TABLE "access_grants" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "identity" varchar(255), "scope" varchar(255), "client_id" varchar(255), "redirect_uri" varchar(255), "created_at" varchar(255), "expires_at" varchar(255), "granted_at" varchar(255), "access_token" varchar(255), "revoked" varchar(255)) [0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20130401')
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35mRack::OAuth2::Server::Client Load (0.1ms)[0m  SELECT "clients".* FROM "clients" WHERE "clients"."secret" IS NULL LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Binary data inserted for `string` type on column `secret`
+  [1m[35mSQL (4.9ms)[0m  INSERT INTO "clients" ("created_at", "display_name", "image_url", "link", "notes", "redirect_uri", "revoked", "scope", "secret", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["created_at", 1365111165], ["display_name", "UberClient"], ["image_url", nil], ["link", nil], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["revoked", nil], ["scope", ["oauth-admin", "read", "write"]], ["secret", "9f41d7dd6c884070a5fe46315092a8b79c9d711a4fc4a8d9597b91fa492ef620"], ["updated_at", Thu, 04 Apr 2013 21:32:45 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+  [1m[35mRack::OAuth2::Server::Client Load (0.2ms)[0m  SELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "access_grants" ("access_token", "client_id", "created_at", "expires_at", "granted_at", "identity", "redirect_uri", "revoked", "scope") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["access_token", nil], ["client_id", 1], ["created_at", 2013-04-04 21:32:45 UTC], ["expires_at", nil], ["granted_at", nil], ["identity", "Batman"], ["redirect_uri", "http://uberclient.dot/callback"], ["revoked", nil], ["scope", ["read"]]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+Started POST "/oauth/access_token" for 127.0.0.1 at 2013-04-04 23:32:45 +0200
+  [1m[35mRack::OAuth2::Server::Client Load (0.1ms)[0m  SELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1  [["id", "1"]]
+
+NameError (undefined local variable or method `collection' for #<Class:0x007ff62549d4c8>):
+  test/oauth/server_methods_test.rb:157:in `block (2 levels) in <class:ServerTest>'
+
+
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (1.3ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+Migrating to CreateTables (20130401)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "clients" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "secret" varchar(255) DEFAULT '' NOT NULL, "scope" varchar(255) DEFAULT '' NOT NULL, "redirect_uri" varchar(255) DEFAULT '' NOT NULL, "display_name" varchar(255) DEFAULT '' NOT NULL, "link" varchar(255), "image_url" varchar(255), "notes" varchar(255), "revoked" boolean, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.2ms)[0m  [1mCREATE TABLE "access_grants" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "identity" varchar(255), "scope" varchar(255), "client_id" varchar(255), "redirect_uri" varchar(255), "created_at" varchar(255), "expires_at" varchar(255), "granted_at" varchar(255), "access_token" varchar(255), "revoked" varchar(255)) [0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20130401')
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35mRack::OAuth2::Server::Client Load (0.1ms)[0m  SELECT "clients".* FROM "clients" WHERE "clients"."secret" IS NULL LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Binary data inserted for `string` type on column `secret`
+  [1m[35mSQL (5.0ms)[0m  INSERT INTO "clients" ("created_at", "display_name", "image_url", "link", "notes", "redirect_uri", "revoked", "scope", "secret", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["created_at", 1365111221], ["display_name", "UberClient"], ["image_url", nil], ["link", nil], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["revoked", nil], ["scope", ["oauth-admin", "read", "write"]], ["secret", "f223d09358f9138376b854fd90edc78c953188ba56210e74e00865c033749241"], ["updated_at", Thu, 04 Apr 2013 21:33:41 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+  [1m[35mRack::OAuth2::Server::Client Load (0.2ms)[0m  SELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "access_grants" ("access_token", "client_id", "created_at", "expires_at", "granted_at", "identity", "redirect_uri", "revoked", "scope") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["access_token", nil], ["client_id", 1], ["created_at", 2013-04-04 21:33:41 UTC], ["expires_at", nil], ["granted_at", nil], ["identity", "Batman"], ["redirect_uri", "http://uberclient.dot/callback"], ["revoked", nil], ["scope", ["read"]]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+Started POST "/oauth/access_token" for 127.0.0.1 at 2013-04-04 23:33:41 +0200
+  [1m[35mRack::OAuth2::Server::Client Load (0.1ms)[0m  SELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1  [["id", "1"]]
+
+NameError (undefined local variable or method `collection' for #<Class:0x007fdd2352eb78>):
+  test/oauth/server_methods_test.rb:157:in `block (2 levels) in <class:ServerTest>'
+
+
+Connecting to database specified by database.yml
+  [1m[36m (0.2ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (0.4ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (0.2ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (1.7ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+Migrating to CreateTables (20130401)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  CREATE TABLE "clients" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "secret" varchar(255) DEFAULT '' NOT NULL, "scope" varchar(255) DEFAULT '' NOT NULL, "redirect_uri" varchar(255) DEFAULT '' NOT NULL, "display_name" varchar(255) DEFAULT '' NOT NULL, "link" varchar(255), "image_url" varchar(255), "notes" varchar(255), "revoked" boolean, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.3ms)[0m  [1mCREATE TABLE "access_grants" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "identity" varchar(255), "scope" varchar(255), "client_id" varchar(255), "redirect_uri" varchar(255), "created_at" varchar(255), "expires_at" varchar(255), "granted_at" varchar(255), "access_token" varchar(255), "revoked" varchar(255)) [0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20130401')
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+  [1m[35mRack::OAuth2::Server::Client Load (0.2ms)[0m  SELECT "clients".* FROM "clients" WHERE "clients"."secret" IS NULL LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Binary data inserted for `string` type on column `secret`
+  [1m[35mSQL (7.4ms)[0m  INSERT INTO "clients" ("created_at", "display_name", "image_url", "link", "notes", "redirect_uri", "revoked", "scope", "secret", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["created_at", 1365111628], ["display_name", "UberClient"], ["image_url", nil], ["link", nil], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["revoked", nil], ["scope", ["oauth-admin", "read", "write"]], ["secret", "8d041d509c1a7925903e08c2b64f91085a4bbd4d1dc3ba95dfe435a4730a7f6a"], ["updated_at", Thu, 04 Apr 2013 21:40:28 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+  [1m[35mRack::OAuth2::Server::Client Load (0.2ms)[0m  SELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "access_grants" ("access_token", "client_id", "created_at", "expires_at", "granted_at", "identity", "redirect_uri", "revoked", "scope") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["access_token", nil], ["client_id", 1], ["created_at", 2013-04-04 21:40:28 UTC], ["expires_at", nil], ["granted_at", nil], ["identity", "Batman"], ["redirect_uri", "http://uberclient.dot/callback"], ["revoked", nil], ["scope", ["read"]]]
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+Started POST "/oauth/access_token" for 127.0.0.1 at 2013-04-04 23:40:28 +0200
+  [1m[35mRack::OAuth2::Server::Client Load (0.1ms)[0m  SELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1  [["id", "1"]]
+
+NameError (undefined local variable or method `collection' for #<Class:0x007fcb5d79c298>):
+  test/oauth/server_methods_test.rb:157:in `block (2 levels) in <class:ServerTest>'
+
+
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (1.2ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+Migrating to CreateTables (20130401)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "clients" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "secret" varchar(255) DEFAULT '' NOT NULL, "scope" varchar(255) DEFAULT '' NOT NULL, "redirect_uri" varchar(255) DEFAULT '' NOT NULL, "display_name" varchar(255) DEFAULT '' NOT NULL, "link" varchar(255), "image_url" varchar(255), "notes" varchar(255), "revoked" boolean, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.2ms)[0m  [1mCREATE TABLE "access_grants" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "identity" varchar(255), "scope" varchar(255), "client_id" varchar(255), "redirect_uri" varchar(255), "created_at" varchar(255), "expires_at" varchar(255), "granted_at" varchar(255), "access_token" varchar(255), "revoked" varchar(255)) [0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20130401')
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35mRack::OAuth2::Server::Client Load (0.1ms)[0m  SELECT "clients".* FROM "clients" WHERE "clients"."secret" IS NULL LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Binary data inserted for `string` type on column `secret`
+  [1m[35mSQL (4.9ms)[0m  INSERT INTO "clients" ("created_at", "display_name", "image_url", "link", "notes", "redirect_uri", "revoked", "scope", "secret", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["created_at", 1365111791], ["display_name", "UberClient"], ["image_url", nil], ["link", nil], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["revoked", nil], ["scope", ["oauth-admin", "read", "write"]], ["secret", "67bf16b5b98a20287330da27cb527108ed9e3f5a3799ef6dea9d1051ad30c3ea"], ["updated_at", Thu, 04 Apr 2013 21:43:11 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+  [1m[35mRack::OAuth2::Server::Client Load (0.1ms)[0m  SELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "access_grants" ("access_token", "client_id", "created_at", "expires_at", "granted_at", "identity", "redirect_uri", "revoked", "scope") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["access_token", nil], ["client_id", 1], ["created_at", 2013-04-04 21:43:11 UTC], ["expires_at", nil], ["granted_at", nil], ["identity", "Batman"], ["redirect_uri", "http://uberclient.dot/callback"], ["revoked", nil], ["scope", ["read"]]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+Started POST "/oauth/access_token" for 127.0.0.1 at 2013-04-04 23:43:11 +0200
+  [1m[35mRack::OAuth2::Server::Client Load (0.1ms)[0m  SELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1  [["id", "1"]]
+
+NameError (undefined local variable or method `collection' for #<Class:0x007fa2ae856bc0>):
+  test/oauth/server_methods_test.rb:157:in `block (2 levels) in <class:ServerTest>'
+
+
+Connecting to database specified by database.yml
+  [1m[36m (0.3ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (4.6ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+Migrating to CreateTables (20130401)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.5ms)[0m  CREATE TABLE "clients" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "secret" varchar(255) DEFAULT '' NOT NULL, "scope" varchar(255) DEFAULT '' NOT NULL, "redirect_uri" varchar(255) DEFAULT '' NOT NULL, "display_name" varchar(255) DEFAULT '' NOT NULL, "link" varchar(255), "image_url" varchar(255), "notes" varchar(255), "revoked" boolean, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.3ms)[0m  [1mCREATE TABLE "access_grants" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "identity" varchar(255), "scope" varchar(255), "client_id" varchar(255), "redirect_uri" varchar(255), "created_at" varchar(255), "expires_at" varchar(255), "granted_at" varchar(255), "access_token" varchar(255), "revoked" varchar(255)) [0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20130401')
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+  [1m[35mRack::OAuth2::Server::Client Load (0.1ms)[0m  SELECT "clients".* FROM "clients" WHERE "clients"."secret" IS NULL LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Binary data inserted for `string` type on column `secret`
+  [1m[35mSQL (9.9ms)[0m  INSERT INTO "clients" ("created_at", "display_name", "image_url", "link", "notes", "redirect_uri", "revoked", "scope", "secret", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["created_at", 1365244532], ["display_name", "UberClient"], ["image_url", nil], ["link", nil], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["revoked", nil], ["scope", ["oauth-admin", "read", "write"]], ["secret", "fbb3aad7a3e114df0ec9577fc949822972681e64740e2b60b06c24a2411e91d5"], ["updated_at", Sat, 06 Apr 2013 10:35:32 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+  [1m[35mRack::OAuth2::Server::Client Load (0.2ms)[0m  SELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "access_grants" ("access_token", "client_id", "created_at", "expires_at", "granted_at", "identity", "redirect_uri", "revoked", "scope") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["access_token", nil], ["client_id", 1], ["created_at", 2013-04-06 10:35:33 UTC], ["expires_at", nil], ["granted_at", nil], ["identity", "Batman"], ["redirect_uri", "http://uberclient.dot/callback"], ["revoked", nil], ["scope", ["read"]]]
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+Started POST "/oauth/access_token" for 127.0.0.1 at 2013-04-06 12:35:33 +0200
+  [1m[35mRack::OAuth2::Server::Client Load (0.1ms)[0m  SELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1  [["id", "1"]]
+
+NameError (undefined local variable or method `collection' for #<Class:0x007fd30aa170b8>):
+  test/oauth/server_methods_test.rb:157:in `block (2 levels) in <class:ServerTest>'
+
+
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (1.4ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+Migrating to CreateTables (20130401)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "clients" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "secret" varchar(255) DEFAULT '' NOT NULL, "scope" varchar(255) DEFAULT '' NOT NULL, "redirect_uri" varchar(255) DEFAULT '' NOT NULL, "display_name" varchar(255) DEFAULT '' NOT NULL, "link" varchar(255), "image_url" varchar(255), "notes" varchar(255), "revoked" boolean, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.2ms)[0m  [1mCREATE TABLE "access_grants" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "identity" varchar(255), "scope" varchar(255), "client_id" varchar(255), "redirect_uri" varchar(255), "created_at" varchar(255), "expires_at" varchar(255), "granted_at" varchar(255), "access_token" varchar(255), "revoked" varchar(255)) [0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20130401')
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35mRack::OAuth2::Server::Client Load (0.1ms)[0m  SELECT "clients".* FROM "clients" WHERE "clients"."secret" IS NULL LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Binary data inserted for `string` type on column `secret`
+  [1m[35mSQL (5.3ms)[0m  INSERT INTO "clients" ("created_at", "display_name", "image_url", "link", "notes", "redirect_uri", "revoked", "scope", "secret", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["created_at", 1365245238], ["display_name", "UberClient"], ["image_url", nil], ["link", nil], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["revoked", nil], ["scope", ["oauth-admin", "read", "write"]], ["secret", "8a4e7e14506b723641444bb1ceb9ee84e89f29d007c4fbc95a276c0ff617b3a7"], ["updated_at", Sat, 06 Apr 2013 10:47:18 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+  [1m[35mRack::OAuth2::Server::Client Load (0.2ms)[0m  SELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "access_grants" ("access_token", "client_id", "created_at", "expires_at", "granted_at", "identity", "redirect_uri", "revoked", "scope") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["access_token", nil], ["client_id", 1], ["created_at", 2013-04-06 10:47:18 UTC], ["expires_at", nil], ["granted_at", nil], ["identity", "Batman"], ["redirect_uri", "http://uberclient.dot/callback"], ["revoked", nil], ["scope", ["read"]]]
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+Started POST "/oauth/access_token" for 127.0.0.1 at 2013-04-06 12:47:18 +0200
+  [1m[35mRack::OAuth2::Server::Client Load (0.1ms)[0m  SELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1  [["id", "1"]]
+
+NameError (undefined local variable or method `collection' for #<Class:0x007fcfcbbe4338>):
+  test/oauth/server_methods_test.rb:157:in `block (2 levels) in <class:ServerTest>'
+
+
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (1.2ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+Migrating to CreateTables (20130401)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "clients" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "secret" varchar(255) DEFAULT '' NOT NULL, "scope" varchar(255) DEFAULT '' NOT NULL, "redirect_uri" varchar(255) DEFAULT '' NOT NULL, "display_name" varchar(255) DEFAULT '' NOT NULL, "link" varchar(255), "image_url" varchar(255), "notes" varchar(255), "revoked" boolean, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.2ms)[0m  [1mCREATE TABLE "access_grants" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "identity" varchar(255), "scope" varchar(255), "client_id" varchar(255), "redirect_uri" varchar(255), "created_at" varchar(255), "expires_at" varchar(255), "granted_at" varchar(255), "access_token" varchar(255), "revoked" varchar(255)) [0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20130401')
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35mRack::OAuth2::Server::Client Load (0.1ms)[0m  SELECT "clients".* FROM "clients" WHERE "clients"."secret" IS NULL LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Binary data inserted for `string` type on column `secret`
+  [1m[35mSQL (4.7ms)[0m  INSERT INTO "clients" ("created_at", "display_name", "image_url", "link", "notes", "redirect_uri", "revoked", "scope", "secret", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["created_at", 1365245402], ["display_name", "UberClient"], ["image_url", nil], ["link", nil], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["revoked", nil], ["scope", ["oauth-admin", "read", "write"]], ["secret", "7f7da072cd28eeb864c1b1be2c500811a00c1f9b847ab257ecdc2d01399c6c59"], ["updated_at", Sat, 06 Apr 2013 10:50:02 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+  [1m[35mRack::OAuth2::Server::Client Load (0.2ms)[0m  SELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (36.4ms)[0m  INSERT INTO "access_grants" ("access_token", "client_id", "created_at", "expires_at", "granted_at", "identity", "redirect_uri", "revoked", "scope") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["access_token", nil], ["client_id", 1], ["created_at", 2013-04-06 10:50:02 UTC], ["expires_at", nil], ["granted_at", nil], ["identity", "Batman"], ["redirect_uri", "http://uberclient.dot/callback"], ["revoked", nil], ["scope", ["read"]]]
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+Started POST "/oauth/access_token" for 127.0.0.1 at 2013-04-06 12:50:02 +0200
+  [1m[35mRack::OAuth2::Server::Client Load (0.1ms)[0m  SELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1  [["id", "1"]]
+
+NameError (undefined local variable or method `collection' for #<Class:0x007fdc95b77c20>):
+  test/oauth/server_methods_test.rb:157:in `block (2 levels) in <class:ServerTest>'
+
+
+Connecting to database specified by database.yml
+  [1m[36m (0.2ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (0.4ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (0.2ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (2.0ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+Migrating to CreateTables (20130401)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  CREATE TABLE "clients" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "secret" varchar(255) DEFAULT '' NOT NULL, "scope" varchar(255) DEFAULT '' NOT NULL, "redirect_uri" varchar(255) DEFAULT '' NOT NULL, "display_name" varchar(255) DEFAULT '' NOT NULL, "link" varchar(255), "image_url" varchar(255), "notes" varchar(255), "revoked" boolean, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.2ms)[0m  [1mCREATE TABLE "access_grants" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "identity" varchar(255), "scope" varchar(255), "client_id" varchar(255), "redirect_uri" varchar(255), "created_at" varchar(255), "expires_at" varchar(255), "granted_at" varchar(255), "access_token" varchar(255), "revoked" varchar(255)) [0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20130401')
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35mRack::OAuth2::Server::Client Load (0.2ms)[0m  SELECT "clients".* FROM "clients" WHERE "clients"."secret" IS NULL LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Binary data inserted for `string` type on column `secret`
+  [1m[35mSQL (5.8ms)[0m  INSERT INTO "clients" ("created_at", "display_name", "image_url", "link", "notes", "redirect_uri", "revoked", "scope", "secret", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["created_at", 1365245426], ["display_name", "UberClient"], ["image_url", nil], ["link", nil], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["revoked", nil], ["scope", ["oauth-admin", "read", "write"]], ["secret", "1a7f08bbeab2944fdace6b6043005b40952668bffe1477148a548b7ccfa2ead3"], ["updated_at", Sat, 06 Apr 2013 10:50:26 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+  [1m[35mRack::OAuth2::Server::Client Load (0.2ms)[0m  SELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "access_grants" ("access_token", "client_id", "created_at", "expires_at", "granted_at", "identity", "redirect_uri", "revoked", "scope") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["access_token", nil], ["client_id", 1], ["created_at", 2013-04-06 10:50:26 UTC], ["expires_at", nil], ["granted_at", nil], ["identity", "Batman"], ["redirect_uri", "http://uberclient.dot/callback"], ["revoked", nil], ["scope", ["read"]]]
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+Started POST "/oauth/access_token" for 127.0.0.1 at 2013-04-06 12:50:26 +0200
+  [1m[35mRack::OAuth2::Server::Client Load (0.1ms)[0m  SELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1  [["id", "1"]]
+
+NameError (undefined local variable or method `collection' for #<Class:0x007fa58d3e6860>):
+  test/oauth/server_methods_test.rb:157:in `block (2 levels) in <class:ServerTest>'
+
+
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (0.2ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (1.3ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+Migrating to CreateTables (20130401)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "clients" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "secret" varchar(255) DEFAULT '' NOT NULL, "scope" varchar(255) DEFAULT '' NOT NULL, "redirect_uri" varchar(255) DEFAULT '' NOT NULL, "display_name" varchar(255) DEFAULT '' NOT NULL, "link" varchar(255), "image_url" varchar(255), "notes" varchar(255), "revoked" boolean, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.2ms)[0m  [1mCREATE TABLE "access_grants" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "identity" varchar(255), "scope" varchar(255), "client_id" varchar(255), "redirect_uri" varchar(255), "created_at" varchar(255), "expires_at" varchar(255), "granted_at" varchar(255), "access_token" varchar(255), "revoked" varchar(255)) [0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20130401')
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35mRack::OAuth2::Server::Client Load (0.2ms)[0m  SELECT "clients".* FROM "clients" WHERE "clients"."secret" IS NULL LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Binary data inserted for `string` type on column `secret`
+  [1m[35mSQL (5.1ms)[0m  INSERT INTO "clients" ("created_at", "display_name", "image_url", "link", "notes", "redirect_uri", "revoked", "scope", "secret", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["created_at", 1365245448], ["display_name", "UberClient"], ["image_url", nil], ["link", nil], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["revoked", nil], ["scope", ["oauth-admin", "read", "write"]], ["secret", "7fd78ba47447623f1b8f170028891e34c3a75df75437a54b49068e1505908008"], ["updated_at", Sat, 06 Apr 2013 10:50:48 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+  [1m[35mRack::OAuth2::Server::Client Load (0.2ms)[0m  SELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "access_grants" ("access_token", "client_id", "created_at", "expires_at", "granted_at", "identity", "redirect_uri", "revoked", "scope") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["access_token", nil], ["client_id", 1], ["created_at", 2013-04-06 10:50:48 UTC], ["expires_at", nil], ["granted_at", nil], ["identity", "Batman"], ["redirect_uri", "http://uberclient.dot/callback"], ["revoked", nil], ["scope", ["read"]]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+Started POST "/oauth/access_token" for 127.0.0.1 at 2013-04-06 12:50:48 +0200
+  [1m[35mRack::OAuth2::Server::Client Load (0.1ms)[0m  SELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1  [["id", "1"]]
+
+NameError (undefined local variable or method `collection' for #<Class:0x007fa615e83088>):
+  test/oauth/server_methods_test.rb:157:in `block (2 levels) in <class:ServerTest>'
+
+
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (1.2ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+Migrating to CreateTables (20130401)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "clients" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "secret" varchar(255) DEFAULT '' NOT NULL, "scope" varchar(255) DEFAULT '' NOT NULL, "redirect_uri" varchar(255) DEFAULT '' NOT NULL, "display_name" varchar(255) DEFAULT '' NOT NULL, "link" varchar(255), "image_url" varchar(255), "notes" varchar(255), "revoked" boolean, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.2ms)[0m  [1mCREATE TABLE "access_grants" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "identity" varchar(255), "scope" varchar(255), "client_id" varchar(255), "redirect_uri" varchar(255), "created_at" varchar(255), "expires_at" varchar(255), "granted_at" varchar(255), "access_token" varchar(255), "revoked" varchar(255)) [0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20130401')
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35mRack::OAuth2::Server::Client Load (0.1ms)[0m  SELECT "clients".* FROM "clients" WHERE "clients"."secret" IS NULL LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Binary data inserted for `string` type on column `secret`
+  [1m[35mSQL (4.8ms)[0m  INSERT INTO "clients" ("created_at", "display_name", "image_url", "link", "notes", "redirect_uri", "revoked", "scope", "secret", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["created_at", 1365245478], ["display_name", "UberClient"], ["image_url", nil], ["link", nil], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["revoked", nil], ["scope", ["oauth-admin", "read", "write"]], ["secret", "79b33accc2a943679b52a31f0310c20fdc549150b989f738ed2893e08e429470"], ["updated_at", Sat, 06 Apr 2013 10:51:18 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+  [1m[35mRack::OAuth2::Server::Client Load (0.1ms)[0m  SELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "access_grants" ("access_token", "client_id", "created_at", "expires_at", "granted_at", "identity", "redirect_uri", "revoked", "scope") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["access_token", nil], ["client_id", 1], ["created_at", 2013-04-06 10:51:18 UTC], ["expires_at", nil], ["granted_at", nil], ["identity", "Batman"], ["redirect_uri", "http://uberclient.dot/callback"], ["revoked", nil], ["scope", ["read"]]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+Started POST "/oauth/access_token" for 127.0.0.1 at 2013-04-06 12:51:18 +0200
+  [1m[35mRack::OAuth2::Server::Client Load (0.1ms)[0m  SELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1  [["id", "1"]]
+
+NameError (undefined local variable or method `collection' for #<Class:0x007fbaac2f3d98>):
+  test/oauth/server_methods_test.rb:157:in `block (2 levels) in <class:ServerTest>'
+
+
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (1.2ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+Migrating to CreateTables (20130401)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "clients" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "secret" varchar(255) DEFAULT '' NOT NULL, "scope" varchar(255) DEFAULT '' NOT NULL, "redirect_uri" varchar(255) DEFAULT '' NOT NULL, "display_name" varchar(255) DEFAULT '' NOT NULL, "link" varchar(255), "image_url" varchar(255), "notes" varchar(255), "revoked" boolean, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.2ms)[0m  [1mCREATE TABLE "access_grants" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "identity" varchar(255), "scope" varchar(255), "client_id" varchar(255), "redirect_uri" varchar(255), "created_at" varchar(255), "expires_at" varchar(255), "granted_at" varchar(255), "access_token" varchar(255), "revoked" varchar(255)) [0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20130401')
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35mRack::OAuth2::Server::Client Load (0.1ms)[0m  SELECT "clients".* FROM "clients" WHERE "clients"."secret" IS NULL LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Binary data inserted for `string` type on column `secret`
+  [1m[35mSQL (5.9ms)[0m  INSERT INTO "clients" ("created_at", "display_name", "image_url", "link", "notes", "redirect_uri", "revoked", "scope", "secret", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["created_at", 1365245493], ["display_name", "UberClient"], ["image_url", nil], ["link", nil], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["revoked", nil], ["scope", ["oauth-admin", "read", "write"]], ["secret", "16638f26a9b217182aa9cc74c943fb11b6e28e18d5b68a23a31772a0707b8f44"], ["updated_at", Sat, 06 Apr 2013 10:51:33 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+  [1m[35mRack::OAuth2::Server::Client Load (0.2ms)[0m  SELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "access_grants" ("access_token", "client_id", "created_at", "expires_at", "granted_at", "identity", "redirect_uri", "revoked", "scope") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["access_token", nil], ["client_id", 1], ["created_at", 2013-04-06 10:51:33 UTC], ["expires_at", nil], ["granted_at", nil], ["identity", "Batman"], ["redirect_uri", "http://uberclient.dot/callback"], ["revoked", nil], ["scope", ["read"]]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+Started POST "/oauth/access_token" for 127.0.0.1 at 2013-04-06 12:51:33 +0200
+  [1m[35mRack::OAuth2::Server::Client Load (0.1ms)[0m  SELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1  [["id", "1"]]
+
+NameError (undefined local variable or method `collection' for #<Class:0x007ff25c07a5e8>):
+  test/oauth/server_methods_test.rb:157:in `block (2 levels) in <class:ServerTest>'
+
+
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (1.2ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+Migrating to CreateTables (20130401)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "clients" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "secret" varchar(255) DEFAULT '' NOT NULL, "scope" varchar(255) DEFAULT '' NOT NULL, "redirect_uri" varchar(255) DEFAULT '' NOT NULL, "display_name" varchar(255) DEFAULT '' NOT NULL, "link" varchar(255), "image_url" varchar(255), "notes" varchar(255), "revoked" boolean, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.2ms)[0m  [1mCREATE TABLE "access_grants" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "identity" varchar(255), "scope" varchar(255), "client_id" varchar(255), "redirect_uri" varchar(255), "created_at" varchar(255), "expires_at" varchar(255), "granted_at" varchar(255), "access_token" varchar(255), "revoked" varchar(255)) [0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20130401')
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35mRack::OAuth2::Server::Client Load (0.1ms)[0m  SELECT "clients".* FROM "clients" WHERE "clients"."secret" IS NULL LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Binary data inserted for `string` type on column `secret`
+  [1m[35mSQL (4.9ms)[0m  INSERT INTO "clients" ("created_at", "display_name", "image_url", "link", "notes", "redirect_uri", "revoked", "scope", "secret", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["created_at", 1365245513], ["display_name", "UberClient"], ["image_url", nil], ["link", nil], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["revoked", nil], ["scope", ["oauth-admin", "read", "write"]], ["secret", "519a045218e85efcdb785ea6866366c0f44951fd5cc66aa50d21441149cedc9b"], ["updated_at", Sat, 06 Apr 2013 10:51:53 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+  [1m[35mRack::OAuth2::Server::Client Load (0.2ms)[0m  SELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "access_grants" ("access_token", "client_id", "created_at", "expires_at", "granted_at", "identity", "redirect_uri", "revoked", "scope") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["access_token", nil], ["client_id", 1], ["created_at", 2013-04-06 10:51:53 UTC], ["expires_at", nil], ["granted_at", nil], ["identity", "Batman"], ["redirect_uri", "http://uberclient.dot/callback"], ["revoked", nil], ["scope", ["read"]]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+Started POST "/oauth/access_token" for 127.0.0.1 at 2013-04-06 12:51:53 +0200
+  [1m[35mRack::OAuth2::Server::Client Load (0.1ms)[0m  SELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1  [["id", "1"]]
+
+NameError (undefined local variable or method `collection' for #<Class:0x007fcb7496a478>):
+  test/oauth/server_methods_test.rb:157:in `block (2 levels) in <class:ServerTest>'
+
+
+Connecting to database specified by database.yml
+  [1m[36m (0.2ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (0.2ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (1.5ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+Migrating to CreateTables (20130401)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.5ms)[0m  CREATE TABLE "clients" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "secret" varchar(255) DEFAULT '' NOT NULL, "scope" varchar(255) DEFAULT '' NOT NULL, "redirect_uri" varchar(255) DEFAULT '' NOT NULL, "display_name" varchar(255) DEFAULT '' NOT NULL, "link" varchar(255), "image_url" varchar(255), "notes" varchar(255), "revoked" boolean, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.3ms)[0m  [1mCREATE TABLE "access_grants" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "identity" varchar(255), "scope" varchar(255), "client_id" varchar(255), "redirect_uri" varchar(255), "created_at" varchar(255), "expires_at" varchar(255), "granted_at" varchar(255), "access_token" varchar(255), "revoked" varchar(255)) [0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20130401')
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+  [1m[35mRack::OAuth2::Server::Client Load (0.2ms)[0m  SELECT "clients".* FROM "clients" WHERE "clients"."secret" IS NULL LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Binary data inserted for `string` type on column `secret`
+  [1m[35mSQL (6.5ms)[0m  INSERT INTO "clients" ("created_at", "display_name", "image_url", "link", "notes", "redirect_uri", "revoked", "scope", "secret", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["created_at", 1365245958], ["display_name", "UberClient"], ["image_url", nil], ["link", nil], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["revoked", nil], ["scope", ["oauth-admin", "read", "write"]], ["secret", "f1ba343c8841a6d74c88d96df23601aee247dccbc7a4ace8ea0d6e8ece22490f"], ["updated_at", Sat, 06 Apr 2013 10:59:18 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+  [1m[35mRack::OAuth2::Server::Client Load (0.2ms)[0m  SELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "access_grants" ("access_token", "client_id", "created_at", "expires_at", "granted_at", "identity", "redirect_uri", "revoked", "scope") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["access_token", nil], ["client_id", 1], ["created_at", 2013-04-06 10:59:18 UTC], ["expires_at", nil], ["granted_at", nil], ["identity", "Batman"], ["redirect_uri", "http://uberclient.dot/callback"], ["revoked", nil], ["scope", ["read"]]]
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+Started POST "/oauth/access_token" for 127.0.0.1 at 2013-04-06 12:59:18 +0200
+  [1m[35mRack::OAuth2::Server::Client Load (0.1ms)[0m  SELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1  [["id", "1"]]
+
+NameError (undefined local variable or method `collection' for #<Class:0x007fa58b772058>):
+  test/oauth/server_methods_test.rb:157:in `block (2 levels) in <class:ServerTest>'
+
+
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (1.3ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+Migrating to CreateTables (20130401)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "clients" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "secret" varchar(255) DEFAULT '' NOT NULL, "scope" varchar(255) DEFAULT '' NOT NULL, "redirect_uri" varchar(255) DEFAULT '' NOT NULL, "display_name" varchar(255) DEFAULT '' NOT NULL, "link" varchar(255), "image_url" varchar(255), "notes" varchar(255), "revoked" boolean, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.2ms)[0m  [1mCREATE TABLE "access_grants" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "identity" varchar(255), "scope" varchar(255), "client_id" varchar(255), "redirect_uri" varchar(255), "created_at" varchar(255), "expires_at" varchar(255), "granted_at" varchar(255), "access_token" varchar(255), "revoked" varchar(255)) [0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20130401')
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35mRack::OAuth2::Server::Client Load (0.1ms)[0m  SELECT "clients".* FROM "clients" WHERE "clients"."secret" IS NULL LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Binary data inserted for `string` type on column `secret`
+  [1m[35mSQL (5.2ms)[0m  INSERT INTO "clients" ("created_at", "display_name", "image_url", "link", "notes", "redirect_uri", "revoked", "scope", "secret", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["created_at", 1365246104], ["display_name", "UberClient"], ["image_url", nil], ["link", nil], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["revoked", nil], ["scope", ["oauth-admin", "read", "write"]], ["secret", "952f8f39af0f2b3a6d44d6284cf8903c5fa6fcb4db025726179fcd1c8be30d8b"], ["updated_at", Sat, 06 Apr 2013 11:01:45 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+  [1m[35mRack::OAuth2::Server::Client Load (0.2ms)[0m  SELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "access_grants" ("access_token", "client_id", "created_at", "expires_at", "granted_at", "identity", "redirect_uri", "revoked", "scope") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["access_token", nil], ["client_id", 1], ["created_at", 2013-04-06 11:01:45 UTC], ["expires_at", nil], ["granted_at", nil], ["identity", "Batman"], ["redirect_uri", "http://uberclient.dot/callback"], ["revoked", nil], ["scope", ["read"]]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+Started POST "/oauth/access_token" for 127.0.0.1 at 2013-04-06 13:01:45 +0200
+  [1m[35mRack::OAuth2::Server::Client Load (0.1ms)[0m  SELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1  [["id", "1"]]
+
+NameError (undefined local variable or method `collection' for #<Class:0x007fd1dd1ae1e8>):
+  test/oauth/server_methods_test.rb:157:in `block (2 levels) in <class:ServerTest>'
+
+
+Connecting to database specified by database.yml
+  [1m[36m (0.2ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (0.4ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (0.2ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (1.7ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+Migrating to CreateTables (20130401)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.5ms)[0m  CREATE TABLE "clients" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "secret" varchar(255) DEFAULT '' NOT NULL, "scope" varchar(255) DEFAULT '' NOT NULL, "redirect_uri" varchar(255) DEFAULT '' NOT NULL, "display_name" varchar(255) DEFAULT '' NOT NULL, "link" varchar(255), "image_url" varchar(255), "notes" varchar(255), "revoked" boolean, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.3ms)[0m  [1mCREATE TABLE "access_grants" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "identity" varchar(255), "scope" varchar(255), "client_id" varchar(255), "redirect_uri" varchar(255), "created_at" varchar(255), "expires_at" varchar(255), "granted_at" varchar(255), "access_token" varchar(255), "revoked" varchar(255)) [0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "access_tokens" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "identity" varchar(255), "scope" varchar(255), "client_id" varchar(255), "redirect_uri" varchar(255), "created_at" varchar(255), "expires_at" varchar(255), "granted_at" varchar(255), "access_token" varchar(255), "revoked" varchar(255)) 
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20130401')[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36mRack::OAuth2::Server::Client Load (0.2ms)[0m  [1mSELECT "clients".* FROM "clients" WHERE "clients"."secret" IS NULL LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Binary data inserted for `string` type on column `secret`
+  [1m[36mSQL (5.9ms)[0m  [1mINSERT INTO "clients" ("created_at", "display_name", "image_url", "link", "notes", "redirect_uri", "revoked", "scope", "secret", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", 1365246339], ["display_name", "UberClient"], ["image_url", nil], ["link", nil], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["revoked", nil], ["scope", ["oauth-admin", "read", "write"]], ["secret", "cec99d3369e4d2c7665064d466ee3c518d700cce0e28cbc2eea1ac2ac4d26889"], ["updated_at", Sat, 06 Apr 2013 11:05:39 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36mRack::OAuth2::Server::Client Load (0.2ms)[0m  [1mSELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO "access_grants" ("access_token", "client_id", "created_at", "expires_at", "granted_at", "identity", "redirect_uri", "revoked", "scope") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["access_token", nil], ["client_id", 1], ["created_at", 2013-04-06 11:05:39 UTC], ["expires_at", nil], ["granted_at", nil], ["identity", "Batman"], ["redirect_uri", "http://uberclient.dot/callback"], ["revoked", nil], ["scope", ["read"]]]
+  [1m[35m (0.1ms)[0m  commit transaction
+Started POST "/oauth/access_token" for 127.0.0.1 at 2013-04-06 13:05:39 +0200
+  [1m[36mRack::OAuth2::Server::Client Load (0.1ms)[0m  [1mSELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1[0m  [["id", "1"]]
+
+NameError (undefined local variable or method `collection' for #<Class:0x007f969240d8c0>):
+  test/oauth/server_methods_test.rb:157:in `block (2 levels) in <class:ServerTest>'
+
+
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (2.2ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+Migrating to CreateTables (20130401)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.5ms)[0m  CREATE TABLE "clients" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "secret" varchar(255) DEFAULT '' NOT NULL, "scope" varchar(255) DEFAULT '' NOT NULL, "redirect_uri" varchar(255) DEFAULT '' NOT NULL, "display_name" varchar(255) DEFAULT '' NOT NULL, "link" varchar(255), "image_url" varchar(255), "notes" varchar(255), "revoked" boolean, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.3ms)[0m  [1mCREATE TABLE "access_grants" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "identity" varchar(255), "scope" varchar(255), "client_id" varchar(255), "redirect_uri" varchar(255), "created_at" varchar(255), "expires_at" varchar(255), "granted_at" varchar(255), "access_token" varchar(255), "revoked" varchar(255)) [0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "access_tokens" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "identity" varchar(255), "scope" varchar(255), "client_id" varchar(255), "redirect_uri" varchar(255), "created_at" varchar(255), "expires_at" varchar(255), "granted_at" varchar(255), "access_token" varchar(255), "revoked" varchar(255)) 
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20130401')[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36mRack::OAuth2::Server::Client Load (0.2ms)[0m  [1mSELECT "clients".* FROM "clients" WHERE "clients"."secret" IS NULL LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Binary data inserted for `string` type on column `secret`
+  [1m[36mSQL (9.3ms)[0m  [1mINSERT INTO "clients" ("created_at", "display_name", "image_url", "link", "notes", "redirect_uri", "revoked", "scope", "secret", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", 1365246511], ["display_name", "UberClient"], ["image_url", nil], ["link", nil], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["revoked", nil], ["scope", ["oauth-admin", "read", "write"]], ["secret", "c3168042713575d34c90a631ef93e8e876140b06a8dc8b5125e1665659c2c3a8"], ["updated_at", Sat, 06 Apr 2013 11:08:31 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36mRack::OAuth2::Server::Client Load (0.2ms)[0m  [1mSELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO "access_grants" ("access_token", "client_id", "created_at", "expires_at", "granted_at", "identity", "redirect_uri", "revoked", "scope") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["access_token", nil], ["client_id", 1], ["created_at", 2013-04-06 11:08:31 UTC], ["expires_at", nil], ["granted_at", nil], ["identity", "Batman"], ["redirect_uri", "http://uberclient.dot/callback"], ["revoked", nil], ["scope", ["read"]]]
+  [1m[35m (0.1ms)[0m  commit transaction
+Started POST "/oauth/access_token" for 127.0.0.1 at 2013-04-06 13:08:31 +0200
+  [1m[36mRack::OAuth2::Server::Client Load (0.1ms)[0m  [1mSELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1[0m  [["id", "1"]]
+
+NameError (undefined local variable or method `collection' for #<Class:0x007fd3c3d384b8>):
+  test/oauth/server_methods_test.rb:157:in `block (2 levels) in <class:ServerTest>'
+
+
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (0.2ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (1.3ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+Migrating to CreateTables (20130401)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "clients" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "secret" varchar(255) DEFAULT '' NOT NULL, "scope" varchar(255) DEFAULT '' NOT NULL, "redirect_uri" varchar(255) DEFAULT '' NOT NULL, "display_name" varchar(255) DEFAULT '' NOT NULL, "link" varchar(255), "image_url" varchar(255), "notes" varchar(255), "revoked" boolean, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.2ms)[0m  [1mCREATE TABLE "access_grants" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "identity" varchar(255), "scope" varchar(255), "client_id" varchar(255), "redirect_uri" varchar(255), "created_at" varchar(255), "expires_at" varchar(255), "granted_at" varchar(255), "access_token" varchar(255), "revoked" varchar(255)) [0m
+  [1m[35m (0.2ms)[0m  CREATE TABLE "access_tokens" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "identity" varchar(255), "scope" varchar(255), "client_id" varchar(255), "redirect_uri" varchar(255), "created_at" varchar(255), "expires_at" varchar(255), "granted_at" varchar(255), "access_token" varchar(255), "revoked" varchar(255)) 
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20130401')[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36mRack::OAuth2::Server::Client Load (0.1ms)[0m  [1mSELECT "clients".* FROM "clients" WHERE "clients"."secret" IS NULL LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Binary data inserted for `string` type on column `secret`
+  [1m[36mSQL (4.8ms)[0m  [1mINSERT INTO "clients" ("created_at", "display_name", "image_url", "link", "notes", "redirect_uri", "revoked", "scope", "secret", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", 1365246677], ["display_name", "UberClient"], ["image_url", nil], ["link", nil], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["revoked", nil], ["scope", ["oauth-admin", "read", "write"]], ["secret", "ae5b7811e58786397782ac547ccc5b79b3708b77659de3216fb966129c438d68"], ["updated_at", Sat, 06 Apr 2013 11:11:17 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36mRack::OAuth2::Server::Client Load (0.1ms)[0m  [1mSELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "access_grants" ("access_token", "client_id", "created_at", "expires_at", "granted_at", "identity", "redirect_uri", "revoked", "scope") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["access_token", nil], ["client_id", 1], ["created_at", 2013-04-06 11:11:17 UTC], ["expires_at", nil], ["granted_at", nil], ["identity", "Batman"], ["redirect_uri", "http://uberclient.dot/callback"], ["revoked", nil], ["scope", ["read"]]]
+  [1m[35m (0.0ms)[0m  commit transaction
+Started POST "/oauth/access_token" for 127.0.0.1 at 2013-04-06 13:11:17 +0200
+  [1m[36mRack::OAuth2::Server::Client Load (0.1ms)[0m  [1mSELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1[0m  [["id", "1"]]
+
+NoMethodError (undefined method `client_id' for "from_code_42":String):
+  test/oauth/server_methods_test.rb:157:in `block (2 levels) in <class:ServerTest>'
+
+
+Connecting to database specified by database.yml
+  [1m[36m (0.2ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (1.3ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+Migrating to CreateTables (20130401)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "clients" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "secret" varchar(255) DEFAULT '' NOT NULL, "scope" varchar(255) DEFAULT '' NOT NULL, "redirect_uri" varchar(255) DEFAULT '' NOT NULL, "display_name" varchar(255) DEFAULT '' NOT NULL, "link" varchar(255), "image_url" varchar(255), "notes" varchar(255), "revoked" boolean, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.2ms)[0m  [1mCREATE TABLE "access_grants" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "identity" varchar(255), "scope" varchar(255), "client_id" varchar(255), "redirect_uri" varchar(255), "created_at" varchar(255), "expires_at" varchar(255), "granted_at" varchar(255), "access_token" varchar(255), "revoked" varchar(255)) [0m
+  [1m[35m (0.2ms)[0m  CREATE TABLE "access_tokens" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "identity" varchar(255), "scope" varchar(255), "client_id" varchar(255), "redirect_uri" varchar(255), "created_at" varchar(255), "expires_at" varchar(255), "granted_at" varchar(255), "access_token" varchar(255), "revoked" varchar(255)) 
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20130401')[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36mRack::OAuth2::Server::Client Load (0.2ms)[0m  [1mSELECT "clients".* FROM "clients" WHERE "clients"."secret" IS NULL LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Binary data inserted for `string` type on column `secret`
+  [1m[36mSQL (5.7ms)[0m  [1mINSERT INTO "clients" ("created_at", "display_name", "image_url", "link", "notes", "redirect_uri", "revoked", "scope", "secret", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", 1365246767], ["display_name", "UberClient"], ["image_url", nil], ["link", nil], ["notes", ""], ["redirect_uri", "http://uberclient.dot/callback"], ["revoked", nil], ["scope", ["oauth-admin", "read", "write"]], ["secret", "d87a399501d86350631acf870e403455dc52f18c0c3530c8575cf454ba01fb69"], ["updated_at", Sat, 06 Apr 2013 11:12:47 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36mRack::OAuth2::Server::Client Load (0.2ms)[0m  [1mSELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "access_grants" ("access_token", "client_id", "created_at", "expires_at", "granted_at", "identity", "redirect_uri", "revoked", "scope") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["access_token", nil], ["client_id", 1], ["created_at", 2013-04-06 11:12:47 UTC], ["expires_at", nil], ["granted_at", nil], ["identity", "Batman"], ["redirect_uri", "http://uberclient.dot/callback"], ["revoked", nil], ["scope", ["read"]]]
+  [1m[35m (0.0ms)[0m  commit transaction
+Started POST "/oauth/access_token" for 127.0.0.1 at 2013-04-06 13:12:47 +0200
+  [1m[36mRack::OAuth2::Server::Client Load (0.1ms)[0m  [1mSELECT "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1[0m  [["id", "1"]]

@@ -19,21 +19,20 @@ module Rack
           # not required to set them, use them, or use them as suggested. Using
           # them as suggested would result in better user experience.  Don't ask
           # how we learned that.
-          def old_create(args)
+          def prepare(args)
             redirect_uri = Server::Utils.parse_redirect_uri(args[:redirect_uri]).to_s if args[:redirect_uri]
             scope = Server::Utils.normalize_scope(args[:scope])
             fields =  { :display_name=>args[:display_name], :link=>args[:link],
                         :image_url=>args[:image_url], :redirect_uri=>redirect_uri,
                         :notes=>args[:notes].to_s, :scope=>scope,
                         :created_at=>Time.now.to_i, :revoked=>nil }
-            if args[:id] && args[:secret]
-              fields[:_id], fields[:secret] = # BSON::ObjectId(args[:id].to_s), args[:secret]
-              collection.insert(fields, :safe=>true)
+            if (client = Client.find_by_secret(args[:secret]))
+              # update ...
             else
-              fields[:secret] = Server.secure_random
-              fields[:_id] = collection.insert(fields)
+              # create
+              client = Client.create(fields.merge(:secret => Server.secure_random))
             end
-            Server.new_instance self, fields
+            client
           end
 
           # Lookup client by ID, display name or URL.
@@ -46,17 +45,17 @@ module Rack
 
           # Returns all the clients in the database, sorted alphabetically.
           def old_all
-            collection.find({}, { :sort=>[[:display_name, Mongo::ASCENDING]] }).
+            Client.find({}, { :sort=>[[:display_name, Mongo::ASCENDING]] }).
               map { |fields| Server.new_instance self, fields }
           end
 
           # Deletes client with given identifier (also, all related records).
           def old_delete(client_id)
             id = 1 # BSON::ObjectId(client_id.to_s)
-            Client.collection.remove({ :_id=>id })
-            AuthRequest.collection.remove({ :client_id=>id })
-            AccessGrant.collection.remove({ :client_id=>id })
-            AccessToken.collection.remove({ :client_id=>id })
+            Client.delete(id)
+            AuthRequest.remove({ :client_id=>id })
+            AccessGrant.remove({ :client_id=>id })
+            AccessToken.remove({ :client_id=>id })
           end
 
           def old_collection

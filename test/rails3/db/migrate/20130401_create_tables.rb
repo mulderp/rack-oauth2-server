@@ -5,12 +5,26 @@ class CreateTables < ActiveRecord::Migration
       t.string :scope, :null => false, :default => ""
       t.string :redirect_uri, :null => false, :default => ""
       t.string :display_name, :null => false, :default => ""
-      t.string :link, :null => false, :default => ""
-      t.string :image_url, :null => false, :default => ""
-      t.string :notes, :null => false, :default => ""
+      t.string :link
+      t.string :image_url
+      t.string :notes
+      t.boolean :revoked
+      t.timestamps
     end
 
     create_table :access_grants do |t|
+      t.string :identity
+      t.string :scope
+      t.string :client_id
+      t.string :redirect_uri
+      t.string :created_at
+      t.string :expires_at
+      t.string :granted_at
+      t.string :access_token
+      t.string :revoked
+    end
+
+    create_table :access_tokens do |t|
       t.string :identity
       t.string :scope
       t.string :client_id

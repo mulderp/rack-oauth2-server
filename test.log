@@ -1278,3 +1278,11 @@ E, [2013-04-01T21:32:39.028968 #51513] ERROR -- : RO2S: Authorization request wi
 E, [2013-04-01T21:32:39.094569 #51513] ERROR -- : RO2S: Authorization request with invalid redirect_uri:  Missing redirect URL
 E, [2013-04-01T21:32:39.104924 #51513] ERROR -- : RO2S: Authorization request with invalid redirect_uri:  Missing redirect URL
 E, [2013-04-01T21:32:39.113877 #51513] ERROR -- : RO2S: Authorization request with invalid redirect_uri:  Missing redirect URL
+<<<<<<< Updated upstream
+=======
+E, [2013-04-04T22:49:42.187573 #12516] ERROR -- : RO2S: Access token request error invalid_client: Client ID and client secret do not match.
+E, [2013-04-04T22:52:32.729620 #12851] ERROR -- : RO2S: Access token request error invalid_client: Client ID and client secret do not match.
+I, [2013-04-04T22:53:48.490855 #13235]  INFO -- : RO2S: Access token 09d91ef70a21c952300b3af97db02f46d946bedd9cad29573de1f6f8fa1716e4 granted to client UberClient, identity Batman
+>>>>>>> Stashed changes
+E, [2013-04-04T23:19:41.556676 #16869] ERROR -- : RO2S: Access token request error invalid_client: Client ID and client secret do not match.
+E, [2013-04-06T13:12:47.249368 #50497] ERROR -- : RO2S: Access token request error invalid_grant: Wrong redirect URI
