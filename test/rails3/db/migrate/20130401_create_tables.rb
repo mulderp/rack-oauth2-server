@@ -8,6 +8,8 @@ class CreateTables < ActiveRecord::Migration
       t.string :link
       t.string :image_url
       t.string :notes
+      t.integer :tokens_granted, :default => 0
+      t.integer :tokens_revoked, :default => 0
       t.boolean :revoked
       t.timestamps
     end
@@ -15,11 +17,11 @@ class CreateTables < ActiveRecord::Migration
     create_table :access_grants do |t|
       t.string :identity
       t.string :scope
-      t.string :client_id
+      t.integer :client_id
       t.string :redirect_uri
-      t.string :created_at
-      t.string :expires_at
-      t.string :granted_at
+      t.integer :created_at
+      t.integer :expires_at
+      t.integer :granted_at
       t.string :access_token
       t.string :revoked
     end
@@ -27,11 +29,12 @@ class CreateTables < ActiveRecord::Migration
     create_table :access_tokens do |t|
       t.string :identity
       t.string :scope
-      t.string :client_id
+      t.string :token
+      t.integer :client_id
       t.string :redirect_uri
-      t.string :created_at
-      t.string :expires_at
-      t.string :granted_at
+      t.integer :created_at
+      t.integer :expires_at
+      t.integer :granted_at
       t.string :access_token
       t.string :revoked
     end

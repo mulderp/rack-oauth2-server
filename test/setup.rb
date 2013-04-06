@@ -1,6 +1,8 @@
 ENV["RAILS_ENV"] = "test"
+ENV["RACK_ENV"] = "test"
 
-require 'mocha'
+require 'test/unit'
+require 'mocha/setup'
 require 'logger'
 require 'shoulda'
 
@@ -11,7 +13,6 @@ require "rack/oauth2/server"
 require "rack/oauth2/server/admin"
 
 
-ENV["RACK_ENV"] = "test"
 ENV["DB"] = "rack_oauth2_server_test"
 # DATABASE = Mongo::Connection.new[ENV["DB"]]
 FRAMEWORK = ENV["FRAMEWORK"] || "rails"

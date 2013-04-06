@@ -9,11 +9,11 @@ module Rack
           # Find AccessGrant from authentication code.
           def from_code(code)
             # Server.new_instance self, collection.find_one({ :_id=>code, :revoked=>nil })
-            OpenStruct.new(:client_id => 1)
+            AccessGrant.where(:id => code, :revoked => nil).first
           end
 
           # Create a new access grant.
-          def build(identity, client, scope, redirect_uri = nil, expires = nil)
+          def generate(identity, client, scope, redirect_uri = nil, expires = nil)
             raise ArgumentError, "Identity must be String or Integer" unless String === identity || Integer === identity
             scope = Utils.normalize_scope(scope) & YAML.load(client.scope) # Only allowed scope
             expires_at = Time.now.to_i + (expires || 300)
@@ -27,26 +27,16 @@ module Rack
         end
 
         # Authorization code. We are nothing without it.
-        attr_reader :_id
-        alias :code :_id
+        alias :code :id
         # The identity we authorized access to.
-        attr_reader :identity
         # Client that was granted this access token.
-        attr_reader :client_id
         # Redirect URI for this grant.
-        attr_reader :redirect_uri
         # The scope requested in this grant.
-        attr_reader :scope
         # Does what it says on the label.
-        attr_reader :created_at
         # Tells us when (and if) access token was created.
-        attr_accessor :granted_at
         # Tells us when this grant expires.
-        attr_accessor :expires_at
         # Access token created from this grant. Set and spent.
-        attr_accessor :access_token
         # Timestamp if revoked.
-        attr_accessor :revoked
 
         # Authorize access and return new access token.
         #
@@ -56,7 +46,9 @@ module Rack
         # InvalidGrantError.
         def authorize!(expires_in = nil)
           raise InvalidGrantError, "You can't use the same access grant twice" if self.access_token || self.revoked
-          client = Client.find(client_id) or raise InvalidGrantError
+          client = Client.where(id: client_id).first or raise InvalidGrantError
+          puts client.inspect
+          puts "*******"
           access_token = AccessToken.get_token_for(identity, client, scope, expires_in)
           self.access_token = access_token.token
           self.granted_at = Time.now.to_i

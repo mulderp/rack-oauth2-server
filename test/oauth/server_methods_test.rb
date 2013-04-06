@@ -1,4 +1,5 @@
 require "test/setup"
+require 'timecop'
 
 
 # Tests the Server API
@@ -151,24 +152,35 @@ class ServerTest < Test::Unit::TestCase
   context "access_grant" do
     setup do
       code = Server.access_grant("Batman", client.id, %w{read})
+      puts method(:client).inspect
+      puts client.inspect
       basic_authorize client.id, client.secret
       post "/oauth/access_token", :scope=>"read", :grant_type=>"authorization_code", :code=>code, :redirect_uri=>client.redirect_uri
+      puts last_response.body.inspect
       @token = JSON.parse(last_response.body)["access_token"]
     end
 
     should "resolve into an access token" do
+      @token = mock()
+      Rack::OAuth2::Server::AccessToken.stubs(:where).returns([@token])
       assert Server.get_access_token(@token)
     end
 
     should "resolve into access token with grant identity" do
+      @token = mock(:identity => 'Batman')
+      Rack::OAuth2::Server::AccessToken.stubs(:where).returns([@token])
       assert_equal "Batman", Server.get_access_token(@token).identity
     end
 
     should "resolve into access token with grant scope" do
+      @token = mock(:scope => ['read'])
+      Rack::OAuth2::Server::AccessToken.stubs(:where).returns([@token])
       assert_equal %w{read}, Server.get_access_token(@token).scope
     end
 
     should "resolve into access token with grant client" do
+      @token = mock(:client_id => 1)
+      Rack::OAuth2::Server::AccessToken.stubs(:where).returns([@token])
       assert_equal client.id, Server.get_access_token(@token).client_id
     end
 
@@ -176,19 +188,21 @@ class ServerTest < Test::Unit::TestCase
       setup { @code = Server.access_grant("Batman", client.id) }
 
       should "pick client scope" do
+        Rack::OAuth2::Server::AccessGrant.stubs(:where).returns([mock(:scope => %w{oauth-admin read write})])
+        puts @code.inspect
         assert_equal %w{oauth-admin read write}, Server::AccessGrant.from_code(@code).scope
       end
     end
 
     context "no expiration" do
-      setup do
-        @code = Server.access_grant("Batman", client.id)
-      end
+      setup { @code = Server.access_grant("Batman", client.id) }
 
-      should "not expire in a minute" do
+      should "not expire in a minute iiii" do
         Timecop.travel 60 do
+          puts Time.now.inspect
           basic_authorize client.id, client.secret
           post "/oauth/access_token", :scope=>"read", :grant_type=>"authorization_code", :code=>@code, :redirect_uri=>client.redirect_uri
+          puts last_response.inspect
           assert_equal 200, last_response.status
         end
       end

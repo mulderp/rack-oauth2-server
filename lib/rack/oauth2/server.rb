@@ -29,9 +29,9 @@ module Rack
         #
         # @param [String] client_id Client identifier (e.g. from oauth.client.id)
         # @return [Client]
-        def get_client(client_id)
-          Client.find(client_id)
-        end
+#        def get_client(client_id)
+#          
+#        end
 
         # Registers and returns a new Client. Can also be used to update
         # existing client registration, by passing identifier (and secret) of
@@ -85,8 +85,8 @@ module Rack
         # expires (default to 5 minutes)
         # @return [String] Access grant authorization code
         def access_grant(identity, client_id, scope = nil, expires_in = nil)
-          client = get_client(client_id) or fail "No such client"
-          AccessGrant.build(identity, client, scope || client.scope, nil, expires_in).code
+          client = Client.where(id: client_id).first or fail "No such client"
+          AccessGrant.generate(identity, client, scope || client.scope, nil, expires_in).code
         end
 
         # Returns AccessToken from token.
@@ -94,6 +94,7 @@ module Rack
         # @param [String] token Access token (e.g. from oauth.access_token)
         # @return [AccessToken]
         def get_access_token(token)
+          puts "######"
           AccessToken.from_token(token)
         end
 
@@ -108,7 +109,7 @@ module Rack
         # expires, defaults to never. If zero or nil, token never expires.
         # @return [String] Access token
         def token_for(identity, client_id, scope = nil, expires_in = nil)
-          client = get_client(client_id) or fail "No such client"
+          client = Client.where(id: client_id).first or fail "No such client"
           AccessToken.get_token_for(identity, client, scope || client.scope, expires_in).token
         end
 
@@ -315,7 +316,7 @@ module Rack
               return bad_request("Invalid authorization request")
             end
             response_type = auth_request.response_type # Needed for error handling
-            client = self.class.get_client(auth_request.client_id)
+            client = Client.where(id: auth_request.client_id).first
             # Pass back to application, watch for 403 (deny!)
             logger.info "RO2S: Client #{client.display_name} requested #{auth_request.response_type} with scope #{auth_request.scope.join(" ")}" if logger
             request.env["oauth.authorization"] = auth_request.id.to_s
@@ -411,11 +412,34 @@ module Rack
           when "authorization_code"
             # 4.1.1.  Authorization Code
             grant = AccessGrant.from_code(request.POST["code"])
-            raise InvalidGrantError, "Wrong client" unless grant && client.id == grant.client_id
-            unless client.redirect_uri.nil? || client.redirect_uri.to_s.empty?
-              raise InvalidGrantError, "Wrong redirect URI" unless grant.redirect_uri == Utils.parse_redirect_uri(request.POST["redirect_uri"]).to_s
+            puts ".... ok 0"
+            if grant && client.id == grant.client_id
+              puts ".... ok 1"
+            else
+              puts ".... nok 1"
+              puts grant.inspect
+              puts client.inspect
+              puts grant.inspect
+            raise InvalidGrantError, "Wrong client"
             end
-            raise InvalidGrantError, "This access grant expired" if grant.expires_at && grant.expires_at <= Time.now.to_i
+
+            if client.redirect_uri.nil? || client.redirect_uri.to_s.empty?
+              puts client.redirect_uri.nil?
+              puts client.redirect_uri.to_s.empty?
+              puts "..... nok 2"
+              raise InvalidGrantError, "Wrong redirect URI" unless grant.redirect_uri == Utils.parse_redirect_uri(request.POST["redirect_uri"]).to_s
+            else
+              puts "..... ok 2"
+            end
+            if grant.expires_at && grant.expires_at <= Time.now.to_i
+              puts grant.expires_at
+              puts Time.now.to_i
+              puts "..... nok 3"
+            raise InvalidGrantError, "This access grant expired" 
+            else
+              puts "..... ok 3"
+            end
+            puts "yeah"
             access_token = grant.authorize!(options.expires_in)
           when "password"
             raise UnsupportedGrantType unless options.authenticator
@@ -474,7 +498,7 @@ module Rack
         else
           client_id, client_secret = request.GET.values_at("client_id", "client_secret")
         end
-        client = self.class.get_client(client_id)
+        client = Client.where(id: client_id).first
         raise InvalidClientError if !client
         unless options[:dont_authenticate]
           raise InvalidClientError unless client.secret == client_secret
